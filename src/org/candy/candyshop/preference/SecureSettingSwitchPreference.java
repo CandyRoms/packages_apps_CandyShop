@@ -17,8 +17,8 @@
 package org.candy.candyshop.preference;
 
 import android.content.Context;
-import android.support.v14.preference.SwitchPreference;
 import android.provider.Settings;
+import android.support.v14.preference.SwitchPreference;
 import android.util.AttributeSet;
 
 public class SecureSettingSwitchPreference extends SwitchPreference {
@@ -58,7 +58,7 @@ public class SecureSettingSwitchPreference extends SwitchPreference {
 
     @Override
     protected void onSetInitialValue(boolean restoreValue, Object defaultValue) {
-        setChecked(Settings.Secure.getString(getContext().getContentResolver(), getKey()) != null ? getPersistedBoolean(isChecked())
+        setChecked(Settings.System.getString(getContext().getContentResolver(), getKey()) != null ? getPersistedBoolean(isChecked())
                 : (Boolean) defaultValue);
     }
 }
