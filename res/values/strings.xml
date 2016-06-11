@@ -911,4 +911,7 @@
     <string name="chooser_activity_blacklist_pref_title">Add app</string>
     <string name="chooser_activity_blacklist_pref_summary">Tap here to add, tap on added app to remove it</string>
 
+    <!-- Disable QS on secure Lockscreen -->
+    <string name="lockscreen_qs_disabled_title">Disable quick settings when locked</string>
+    <string name="lockscreen_qs_disabled_summary">Disable expanding quick settings on secure lock screens</string>
 </resources>

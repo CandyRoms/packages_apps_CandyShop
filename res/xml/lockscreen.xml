@@ -59,6 +59,12 @@
         android:summary="@string/face_auto_unlock_summary"
         android:defaultValue="false" />
 
+          <org.candy.candyshop.preference.SecureSettingSwitchPreference
+        android:key="lockscreen_qs_disabled"
+        android:title="@string/lockscreen_qs_disabled_title"
+        android:summary="@string/lockscreen_qs_disabled_summary"
+        android:defaultValue="false" />
+
         <Preference
            android:title="@string/lockscreen_tuner_title"
            android:summary="@string/ls_shortcuts_preference_summary" >
