@@ -914,4 +914,8 @@
     <!-- Disable QS on secure Lockscreen -->
     <string name="lockscreen_qs_disabled_title">Disable quick settings when locked</string>
     <string name="lockscreen_qs_disabled_summary">Disable expanding quick settings on secure lock screens</string>
+
+    <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Music visualizer</string>
+    <string name="lockscreen_visualizer_summary">Toggles visualizer display on lockscreen</string>
 </resources>

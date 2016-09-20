@@ -65,6 +65,12 @@
         android:summary="@string/lockscreen_qs_disabled_summary"
         android:defaultValue="false" />
 
+          <org.candy.candyshop.preference.SecureSettingSwitchPreference
+        android:key="lockscreen_visualizer"
+        android:title="@string/lockscreen_visualizer_title"
+        android:summary="@string/lockscreen_visualizer_summary"
+        android:defaultValue="false"/>
+
         <Preference
            android:title="@string/lockscreen_tuner_title"
            android:summary="@string/ls_shortcuts_preference_summary" >
