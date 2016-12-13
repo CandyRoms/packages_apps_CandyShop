@@ -115,6 +115,7 @@
     <string name="qs_columns_portrait_title">Tiles columns on portrait</string>
     <string name="qs_columns_landscape_title">Tiles columns on landscape</string>
     <string name="qs_tile_title_visibility_title">Show tiles title</string>
+    <string name="qs_small_tiles_title">Small QS tiles</string>
 
     <!-- Battery light -->
     <string name="battery_light_allow_on_dnd_title">Battery light in Do Not Disturb mode</string>
