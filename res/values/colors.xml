@@ -25,4 +25,7 @@
     <color name="theme_accent">#ffC0C0C0</color>
     <color name="action_picker_fab_background">@color/theme_accent</color>
 
+    <!-- Gesture Anywhere -->
+    <color name="ga_gesture_color">@color/material_deep_teal_500</color>
+
 </resources>

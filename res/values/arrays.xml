@@ -236,4 +236,153 @@
         <item>2</item>
         <item>3</item>
     </string-array>
+
+    <!-- Gesture Anywhere -->
+    <string-array name="gesture_anywhere_position_entries" translatable="false">
+        <item>@string/gesture_anywhere_position_left</item>
+        <item>@string/gesture_anywhere_position_right</item>
+    </string-array>
+
+    <string-array name="gesture_anywhere_position_values" translatable="false">
+        <item>3</item>
+        <item>5</item>
+    </string-array>
+
+    <!-- GA-->
+    <string-array name="gesture_anywhere_trigger_width_entries">
+        <item>@string/gesture_anywhere_4</item>
+        <item>@string/gesture_anywhere_8</item>
+        <item>@string/gesture_anywhere_12</item>
+        <item>@string/gesture_anywhere_16</item>
+        <item>@string/gesture_anywhere_20</item>
+        <item>@string/gesture_anywhere_24</item>
+        <item>@string/gesture_anywhere_28</item>
+        <item>@string/gesture_anywhere_32</item>
+        <item>@string/gesture_anywhere_36</item>
+        <item>@string/gesture_anywhere_40</item>
+        <item>@string/gesture_anywhere_44</item>
+        <item>@string/gesture_anywhere_48</item>
+        <item>@string/gesture_anywhere_52</item>
+        <item>@string/gesture_anywhere_56</item>
+        <item>@string/gesture_anywhere_60</item>
+        <item>@string/gesture_anywhere_64</item>
+        <item>@string/gesture_anywhere_68</item>
+    </string-array>
+
+    <string-array name="gesture_anywhere_trigger_width_values">
+        <item>4</item>
+        <item>8</item>
+        <item>12</item>
+        <item>16</item>
+        <item>20</item>
+        <item>24</item>
+        <item>28</item>
+        <item>32</item>
+        <item>36</item>
+        <item>40</item>
+        <item>44</item>
+        <item>48</item>
+        <item>52</item>
+        <item>56</item>
+        <item>60</item>
+        <item>64</item>
+                <item>68</item>
+    </string-array>
+
+    <!-- GA -->
+    <string-array name="gesture_anywhere_trigger_top_entries">
+        <item>@string/gesture_anywhere_0</item>
+        <item>@string/gesture_anywhere_5</item>
+        <item>@string/gesture_anywhere_10</item>
+        <item>@string/gesture_anywhere_15</item>
+        <item>@string/gesture_anywhere_20</item>
+        <item>@string/gesture_anywhere_25</item>
+        <item>@string/gesture_anywhere_30</item>
+        <item>@string/gesture_anywhere_35</item>
+        <item>@string/gesture_anywhere_40</item>
+        <item>@string/gesture_anywhere_45</item>
+        <item>@string/gesture_anywhere_50</item>
+        <item>@string/gesture_anywhere_55</item>
+        <item>@string/gesture_anywhere_60</item>
+        <item>@string/gesture_anywhere_65</item>
+        <item>@string/gesture_anywhere_70</item>
+        <item>@string/gesture_anywhere_75</item>
+        <item>@string/gesture_anywhere_80</item>
+        <item>@string/gesture_anywhere_85</item>
+        <item>@string/gesture_anywhere_90</item>
+        <item>@string/gesture_anywhere_95</item>
+                <item>@string/gesture_anywhere_100</item>
+    </string-array>
+
+    <string-array name="gesture_anywhere_trigger_top_values">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+        <item>60</item>
+        <item>65</item>
+        <item>70</item>
+        <item>75</item>
+        <item>80</item>
+        <item>85</item>
+        <item>90</item>
+        <item>95</item>
+        <item>100</item>
+    </string-array>
+
+    <!-- GA -->
+    <string-array name="gesture_anywhere_trigger_bottom_entries">
+        <item>@string/gesture_anywhere_1</item>
+        <item>@string/gesture_anywhere_5</item>
+        <item>@string/gesture_anywhere_10</item>
+        <item>@string/gesture_anywhere_15</item>
+        <item>@string/gesture_anywhere_20</item>
+        <item>@string/gesture_anywhere_25</item>
+        <item>@string/gesture_anywhere_30</item>
+        <item>@string/gesture_anywhere_35</item>
+        <item>@string/gesture_anywhere_40</item>
+        <item>@string/gesture_anywhere_45</item>
+        <item>@string/gesture_anywhere_50</item>
+        <item>@string/gesture_anywhere_55</item>
+        <item>@string/gesture_anywhere_60</item>
+        <item>@string/gesture_anywhere_65</item>
+        <item>@string/gesture_anywhere_70</item>
+        <item>@string/gesture_anywhere_75</item>
+        <item>@string/gesture_anywhere_80</item>
+        <item>@string/gesture_anywhere_85</item>
+        <item>@string/gesture_anywhere_90</item>
+        <item>@string/gesture_anywhere_95</item>
+    </string-array>
+
+    <string-array name="gesture_anywhere_trigger_bottom_values">
+            <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+        <item>60</item>
+        <item>65</item>
+        <item>70</item>
+        <item>75</item>
+        <item>80</item>
+        <item>85</item>
+        <item>90</item>
+        <item>95</item>
+    </string-array>
+
 </resources>
