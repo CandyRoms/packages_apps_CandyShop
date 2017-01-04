@@ -26,4 +26,9 @@
     <declare-styleable name="ColorPreference">
         <attr name="defaultColorValue" format="integer" />
     </declare-styleable>
+
+    <!-- Navbar Animation -->
+    <string name="pixel_navbar_anim_title">Pixel navbar animation</string>
+    <string name="pixel_navbar_anim_summary">Requires a config change(display size, navbar position, reboot) themes may overwrite</string>
+
 </resources>
