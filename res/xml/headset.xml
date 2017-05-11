@@ -16,21 +16,13 @@
  -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/multitasking_category"
-    android:layout="@layout/tab" >
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <org.candy.candyshop.preference.SystemSettingSwitchPreference
+    <ListPreference
         android:key="headset_connect_player"
         android:title="@string/headset_connect_player_title"
-        android:summary="@string/headset_connect_player_summary"
-        android:defaultValue="false" />
-
-    <Preference
-        android:key="headset"
-        android:title="@string/headset_title"
-        android:fragment="org.candy.candyshop.fragments.Headset" />
+        android:entries="@array/headset_connect_player_entries"
+        android:entryValues="@array/headset_connect_player_values" />
 
 </PreferenceScreen>
-
 

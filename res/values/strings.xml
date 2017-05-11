@@ -36,6 +36,8 @@
     <string name="button_category">Button</string>
     <string name="quicksettings_category">Quick settings</string>
 
+    <string name="headset_title">Headset</string>
+
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
     <string name="press_color_to_apply">Press on color below to apply</string>
@@ -64,5 +66,11 @@
     <!-- Launch music player when headset is connected -->
     <string name="headset_connect_player_title">Launch music app on headset connection</string>
     <string name="headset_connect_player_summary">Launch the default music app when headset is connected</string>
+    <string name="headset_connect_player_disabled">Disabled</string>
+    <string name="headset_connect_player_wired">When wired headset is plugged in</string>
+    <string name="headset_connect_player_bt_no_carkit">When BT headset (no carkit) is plugged in</string>
+    <string name="headset_connect_player_bt">When BT headset is plugged in</string>
+    <string name="headset_connect_player_both_no_carkit">When wired or BT headset (no carkit) is plugged in</string>
+    <string name="headset_connect_player_both">When wired or BT headset is plugged in</string>
 
 </resources>
