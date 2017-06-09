@@ -42,6 +42,7 @@
     <string name="button_title">Button</string>
     <string name="quicksettings_title">Quick settings</string>
     <string name="torch_title">Torch</string>
+    <string name="battery_title">Battery settings</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
@@ -87,5 +88,10 @@
     <string name="torch_power_button_gesture_none">Disabled</string>
     <string name="torch_power_button_gesture_dt">Double tap power to toggle torch (will add a small delay to single tap)</string>
     <string name="torch_power_button_gesture_lp">Long press power to toggle torch</string>
+
+    <!-- Battery saver color settings -->
+    <string name="status_bar_battery_saver_color_title">Statusbar battery saver color</string>
+    <string name="status_bar_battery_saver_color_summary">Note: If battery saver already enabled, for new color be effective, disbale and renable battery saver!</string>
+
 
 </resources>
