@@ -72,6 +72,11 @@
     <string name="battery_light_medium_color">Medium battery</string>
     <string name="battery_light_full_color">Almost full battery</string>
     <string name="battery_light_reallyfull_color">Full battery (100)</string>
+    <string name="fast_color_cat_title">Fast charging</string>
+    <string name="fast_charging_led_enabled_title">Enable fast charging color</string>
+    <string name="fast_charging_led_enabled_summary">When fast charging, use different color till 90% charged</string>
+    <string name="fast_charging_light_color_title">Color</string>
+    <string name="fast_charging_light_color_summary"></string>
 
     <!-- QS footer warnings -->
     <string name="qs_footer_warnings_title">QS footer warnings</string>
