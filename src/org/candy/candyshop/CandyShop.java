@@ -45,6 +45,7 @@ import org.candy.candyshop.tabs.StatusBar;
 import org.candy.candyshop.tabs.QuickSettings;
 import org.candy.candyshop.tabs.Navigation;
 import org.candy.candyshop.tabs.MultiTasking;
+import org.candy.candyshop.tabs.Button;
 import org.candy.candyshop.PagerSlidingTabStrip;
 import com.android.settings.R;
 import com.android.settings.dashboard.SummaryLoader;
@@ -110,6 +111,7 @@ public class CandyShop extends SettingsPreferenceFragment {
             frags[3] = new QuickSettings();
             frags[4] = new Navigation();
             frags[5] = new MultiTasking();
+            frags[6] = new Button();
         }
 
         @Override
@@ -136,7 +138,8 @@ public class CandyShop extends SettingsPreferenceFragment {
                     getString(R.string.statusbar_category),
                     getString(R.string.quicksettings_category),
                     getString(R.string.navigation_category),
-                    getString(R.string.multitasking_category)};
+                    getString(R.string.multitasking_category),
+                    getString(R.string.button_category)};
         return titleString;
     }
 

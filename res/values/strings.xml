@@ -33,6 +33,8 @@
     <string name="brightness_icon_title">Brightness slider icon</string>
     <string name="brightness_icon_summary">Show a brightness icon to the right of the brightness slider to toggle auto-brightness</string>
 
+    <string name="button_category">Button</string>
+
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
     <string name="press_color_to_apply">Press on color below to apply</string>
@@ -42,5 +44,12 @@
     <string name="hex_hint">#ff000000</string>
     <string name="set">Set</string>
     <string name="color_default">Default</string>
+
+    <string name="swap_volume_buttons">Swap volume buttons rotation based</string>
+
+    <string name="double_tap_sleep_navbar">Double tap to sleep on navbar</string>
+
+    <string name="volume_keys_control_media_stream_title">Volume keys control media volume</string>
+    <string name="volume_keys_control_media_stream_summary">Volume panel will show media volume slider by default</string>
 
 </resources>
