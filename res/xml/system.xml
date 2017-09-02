@@ -40,6 +40,12 @@
         android:fragment="org.candy.candyshop.fragments.PowerMenu"
         android:title="@string/powermenu_title" />
 
+    <Preference
+        android:key="wakelock_blocker"
+        android:title="@string/wakelock_blocker_title"
+        android:summary="@string/wakelock_blocker_summary"
+        android:fragment="org.candy.candyshop.fragments.WakeLockBlocker"/>
+
     <PreferenceCategory
         android:key="notifications_category"
         android:title="@string/notifications_category_title" >
