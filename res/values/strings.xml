@@ -41,6 +41,7 @@
     <string name="headset_title">Headset</string>
     <string name="button_title">Button</string>
     <string name="quicksettings_title">Quick settings</string>
+    <string name="torch_title">Torch</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
@@ -80,5 +81,11 @@
     <!-- Toast icon -->
     <string name="toast_icon_title">App\'s icon in toast</string>
     <string name="toast_icon_summary">Display the app icon corresponding with the toast</string>
+
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">Screen off power button torch</string>
+    <string name="torch_power_button_gesture_none">Disabled</string>
+    <string name="torch_power_button_gesture_dt">Double tap power to toggle torch (will add a small delay to single tap)</string>
+    <string name="torch_power_button_gesture_lp">Long press power to toggle torch</string>
 
 </resources>

@@ -25,6 +25,11 @@
         android:title="@string/button_title"
         android:fragment="org.candy.candyshop.fragments.Button" />
 
+    <Preference
+        android:key="torch"
+        android:title="@string/torch_title"
+        android:fragment="org.candy.candyshop.fragments.Torch" />
+
     <org.candy.candyshop.preference.SystemSettingSwitchPreference
         android:key="toast_icon"
         android:title="@string/toast_icon_title"
