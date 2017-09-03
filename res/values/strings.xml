@@ -107,6 +107,19 @@
     <string name="brightness_icon_title">Brightness slider icon</string>
     <string name="brightness_icon_summary">Show a brightness icon to the right of the brightness slider to toggle auto-brightness</string>
 
+<<<<<<< HEAD
+=======
+    <string name="button_category">Buttons</string>
+
+    <string name="statusbar_notifications_category">Status bar notifications</string>
+
+    <!-- Fragments -->
+    <string name="headset_title">Headset</string>
+    <string name="button_title">Button</string>
+    <string name="quicksettings_title">Quick settings</string>
+    <string name="torch_title">Torch</string>
+
+>>>>>>> 3d306993... Allow to doubletap or longpress power to toggle flashlight [2/3]
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
     <string name="press_color_to_apply">Press on color below to apply</string>
@@ -252,5 +265,12 @@
     <string name="qs_show_brightness_summary">Show a brightness slider in the quick settings panel</string>
     <string name="qs_brightness_position_bottom_title">Brightness slider on bottom</string>
     <string name="qs_brightness_position_bottom_summary">Show a brightness slider on bottom quick settings</string>
+
+    <!-- Torch Power button gestures -->
+    <string name="torch_power_button_gesture_title">Screen off power button torch</string>
+    <string name="torch_power_button_gesture_none">Disabled</string>
+    <string name="torch_power_button_gesture_dt">Double tap power to toggle torch (will add a small delay to single tap)</string>
+    <string name="torch_power_button_gesture_dt_toast">Double tab camera gesture is now disabled</string>
+    <string name="torch_power_button_gesture_lp">Long press power to toggle torch</string>
 
 </resources>

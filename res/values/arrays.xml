@@ -82,12 +82,14 @@
         <item>@string/clock_date_style_lowercase</item>
         <item>@string/clock_date_style_uppercase</item>
     </string-array>
-      <string-array name="clock_date_style_values" translatable="false">
+
+    <string-array name="clock_date_style_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
     </string-array>
-      <string-array name="clock_date_format_entries_values">
+
+    <string-array name="clock_date_format_entries_values">
         <item>dd/MM/yy</item>
         <item>MM/dd/yy</item>
         <item>yyyy-MM-dd</item>
@@ -109,4 +111,18 @@
         <item>@string/clock_date_format_custom</item>
     </string-array>
 
- </resources>
+    <!-- Torch Power button gestures -->
+    <string-array name="torch_power_button_gesture_entries">
+        <item>@string/torch_power_button_gesture_none</item>
+        <item>@string/torch_power_button_gesture_dt</item>
+        <item>@string/torch_power_button_gesture_lp</item>
+    </string-array>
+
+    <string-array name="torch_power_button_gesture_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+</resources>
+
