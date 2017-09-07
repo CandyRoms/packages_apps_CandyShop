@@ -30,4 +30,9 @@
         android:title="@string/battery_title"
         android:fragment="org.candy.candyshop.fragments.StatusbarBatteryStyle" />
 
+    <org.candy.candyshop.preference.SystemSettingSwitchPreference
+        android:key="double_tap_sleep_gesture"
+        android:title="@string/double_tap_sleep_gesture_title"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
