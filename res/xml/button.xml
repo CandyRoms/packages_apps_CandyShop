@@ -19,6 +19,18 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <org.candy.candyshop.preference.SecureSettingSwitchPreference
+        android:key="sysui_volume_up_silent"
+        android:title="@string/volbtn_up_zen_title"
+        android:summary="@string/volbtn_up_zen_summary"
+        android:defaultValue="true"/>
+
+    <org.candy.candyshop.preference.SecureSettingSwitchPreference
+        android:key="sysui_volume_down_silent"
+        android:title="@string/volbtn_down_zen_title"
+        android:summary="@string/volbtn_down_zen_summary"
+        android:defaultValue="true"/>
+
     <org.candy.candyshop.preference.SystemSettingSwitchPreference
         android:key="swap_volume_buttons"
         android:title="@string/swap_volume_buttons"
