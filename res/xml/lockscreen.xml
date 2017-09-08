@@ -43,4 +43,17 @@
         android:summary="@string/lockscreen_battery_info_summary"
         android:defaultValue="false" />
 
+    <Preference
+            android:title="@string/lockscreen_tuner_title" >
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.LockscreenActivity" />
+    </Preference>
+
+    <Preference
+        android:key="various_lockscreen"
+        android:title="@string/various_lockscreen_title"
+        android:fragment="org.candy.candyshop.fragments.VariousLockscreen" />
+
+
 </PreferenceScreen>
