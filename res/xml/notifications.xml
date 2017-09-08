@@ -19,12 +19,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <Preference
+    <!--<Preference
             android:title="@string/power_notification_title" >
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.tuner.PowerActivity" />
-    </Preference>
+    </Preference>-->
 
     <org.candy.candyshop.preference.SystemSettingSwitchPreference
         android:key="toast_icon"
