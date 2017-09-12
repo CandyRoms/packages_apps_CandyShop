@@ -62,6 +62,11 @@
         android:id="@+id/qs_options_category"
         android:title="@string/qs_options_category_title" >
 
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="qs_tile_title_visibility"
+            android:title="@string/qs_tile_title_visibility_title"
+            android:defaultValue="false" />
+
         <org.candy.candyshop.preference.SecureSettingSwitchPreference
             android:key="quick_settings_vibrate"
             android:title="@string/quick_settings_vibrate_title"
