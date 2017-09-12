@@ -37,7 +37,13 @@
             android:summary="@string/quick_settings_vibrate_summary"
             android:defaultValue="false"/>
 
-         <org.candy.candyshop.preference.SecureSettingSwitchPreference
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="qs_tile_title_visibility"
+            android:title="@string/qs_tile_title_visibility_title"
+            android:title="@string/qs_tile_title_visibility_summary"
+            android:defaultValue="false" />
+
+        <org.candy.candyshop.preference.SecureSettingSwitchPreference
             android:key="qs_show_brightness"
             android:title="@string/qs_show_brightness_title"
             android:summary="@string/qs_show_brightness_summary"

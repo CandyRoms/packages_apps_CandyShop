@@ -157,11 +157,13 @@
     <string name="volte_icon_hd">HD Icon</string>
 
      <!-- QS rows and columns -->
-    <string name="qs_rows_columns_title">QS Panel Layout</string>
-    <string name="qs_rows_portrait_title">Tiles rows on portrait</string>
-    <string name="qs_rows_landscape_title">Tiles rows on landscape</string>
-    <string name="qs_columns_portrait_title">Tiles columns on portrait</string>
-    <string name="qs_columns_landscape_title">Tiles columns on landscape</string>
+    <string name="qs_rows_columns_title">QS Panel tile layout</string>
+    <string name="qs_rows_portrait_title">Portrait rows</string>
+    <string name="qs_rows_landscape_title">Landscape rows</string>
+    <string name="qs_columns_portrait_title">Portrait columns</string>
+    <string name="qs_columns_landscape_title">Landscape columns</string>
+    <string name="qs_tile_title_visibility_title">Show tiles title</string>
+    <string name="qs_tile_title_visibility_summary">Show tiles names underneath them</string>
 
     <!-- QuickSettings haptic feedback -->
     <string name="quick_settings_vibrate_title">Vibrate on touch</string>
