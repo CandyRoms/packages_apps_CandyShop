@@ -30,6 +30,11 @@
         android:title="@string/battery_title"
         android:fragment="org.candy.candyshop.fragments.StatusbarBatteryStyle" />
 
+    <Preference
+        android:key="network_traffic"
+        android:title="@string/network_traffic_title"
+        android:fragment="org.candy.candyshop.fragments.NetworkTraffic" />
+
     <org.candy.candyshop.preference.SystemSettingSwitchPreference
         android:key="double_tap_sleep_gesture"
         android:title="@string/double_tap_sleep_gesture_title"

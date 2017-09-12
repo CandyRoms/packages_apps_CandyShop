@@ -45,6 +45,7 @@
     <string name="battery_title">Battery settings</string>
     <string name="leds_title">LED Lights</string>
     <string name="battery_light_settings">Battery charging light</string>
+    <string name="network_traffic_title">Network traffic</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
@@ -115,5 +116,9 @@
     <string name="battery_light_medium_color">Medium battery</string>
     <string name="battery_light_full_color">Almost full battery</string>
     <string name="battery_light_reallyfull_color">Full (100) battery</string>
+
+    <!-- Statusbar net monitor -->
+    <string name="network_traffic_state_title">Show net activity in statusbar</string>
+    <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
 
 </resources>
