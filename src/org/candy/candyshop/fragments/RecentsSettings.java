@@ -78,6 +78,7 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mSlimToggle;
     private Preference mStockIconPacks;
     private Preference mMemoryBar;
+
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
     private ListPreference mRecentsClearAllLocation;
     private SwitchPreference mRecentsClearAll;
@@ -85,6 +86,9 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
     private SystemSettingSwitchPreference mShowClearAllButton;
     private ListPreference mRecentsButtonLocation;
     private SwitchPreference mSystemuiRecents;
+
+    private static final String IMMERSIVE_RECENTS = "immersive_recents";
+    private ListPreference mImmersiveRecents;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -118,6 +122,12 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
         mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntry());
         mRecentsClearAllLocation.setOnPreferenceChangeListener(this);
 
+        mImmersiveRecents = (ListPreference) findPreference(IMMERSIVE_RECENTS);
+        mImmersiveRecents.setValue(String.valueOf(Settings.System.getInt(
+                resolver, Settings.System.IMMERSIVE_RECENTS, 0)));
+        mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
+        mImmersiveRecents.setOnPreferenceChangeListener(this);
+
     }
 
     @Override
@@ -146,6 +156,12 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
             Settings.System.putIntForUser(getActivity().getContentResolver(),
                     Settings.System.RECENTS_CLEAR_ALL_LOCATION, location, UserHandle.USER_CURRENT);
             mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntries()[index]);
+            return true;
+        } else if (preference == mImmersiveRecents) {
+            Settings.System.putInt(getContentResolver(), Settings.System.IMMERSIVE_RECENTS,
+                    Integer.valueOf((String) newValue));
+            mImmersiveRecents.setValue(String.valueOf(newValue));
+            mImmersiveRecents.setSummary(mImmersiveRecents.getEntry());
             return true;
         }
         return false;
