@@ -20,8 +20,13 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <Preference
-                android:key="charging_light"
-                android:fragment="org.candy.candyshop.fragments.BatteryLightSettings"
-                android:title="@string/battery_light_settings" />
+            android:key="charging_light"
+            android:fragment="org.candy.candyshop.fragments.BatteryLightSettings"
+            android:title="@string/battery_light_settings" />
+
+    <Preference
+            android:key="notification_light"
+            android:fragment="com.android.settings.applications.NotificationApps"
+            android:title="@string/notification_light_settings" />
 
 </PreferenceScreen>
