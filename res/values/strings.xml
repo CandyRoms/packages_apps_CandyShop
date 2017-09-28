@@ -33,10 +33,14 @@
     <string name="brightness_icon_title">Brightness slider icon</string>
     <string name="brightness_icon_summary">Show a brightness icon to the right of the brightness slider to toggle auto-brightness</string>
 
-    <string name="button_category">Button</string>
-    <string name="quicksettings_category">Quick settings</string>
+    <string name="button_category">Buttons</string>
 
+    <string name="statusbar_notifications_category">Status bar notifications</string>
+
+    <!-- Fragments -->
     <string name="headset_title">Headset</string>
+    <string name="button_title">Button</string>
+    <string name="quicksettings_title">Quick settings</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>

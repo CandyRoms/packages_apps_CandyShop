@@ -20,4 +20,9 @@
     android:title="@string/system_category"
     android:layout="@layout/tab" >
 
+    <Preference
+        android:key="button"
+        android:title="@string/button_title"
+        android:fragment="org.candy.candyshop.fragments.Button" />
+
 </PreferenceScreen>

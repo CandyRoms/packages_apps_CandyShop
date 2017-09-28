@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.candy.candyshop.tabs;
+package org.candy.candyshop.fragments;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -36,15 +36,12 @@ import com.android.settings.Utils;
 
 public class QuickSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-    private static final String TAG = "QuickSettings";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.quicksettings);
-
-        ContentResolver resolver = getActivity().getContentResolver();
     }
 
     @Override
@@ -57,13 +54,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         super.onResume();
     }
 
-    @Override
-    public void onPause() {
-        super.onPause();
-    }
-
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        final String key = preference.getKey();
         return true;
     }
 

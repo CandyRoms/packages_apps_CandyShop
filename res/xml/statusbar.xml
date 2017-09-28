@@ -20,4 +20,9 @@
     android:title="@string/statusbar_category"
     android:layout="@layout/tab" >
 
+    <Preference
+        android:key="quicksettings"
+        android:title="@string/quicksettings_title"
+        android:fragment="org.candy.candyshop.fragments.QuickSettings" />
+
 </PreferenceScreen>
