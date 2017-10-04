@@ -19,15 +19,20 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:key="navigation"
-        android:title="@string/candyshop_category"
+        android:title="@string/navigation_category"
         android:layout="@layout/tab" >
 
     <PreferenceCategory
         android:title="@string/navbar_category_title" >
 
+        <SwitchPreference
+            android:key="navigation_bar_enabled"
+            android:title="@string/navigation_bar_enabled_title" />
+
         <Preference
-            android:title="@string/navbar_tuner_title"
-            android:summary="@string/navbar_tuner_summary">
+            android:title="@string/navbar_buttons_title"
+            android:summary="@string/navbar_buttons_summary"
+            android:dependency="navigation_bar_enabled">
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.tuner.NavBarTunerActivity" />
