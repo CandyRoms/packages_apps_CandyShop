@@ -53,7 +53,7 @@ public class LedSettings extends SettingsPreferenceFragment implements
         if (mChargingLeds != null
                 && !getResources().getBoolean(
                         com.android.internal.R.bool.config_intrusiveBatteryLed)) {
-            mLedsCategory.removePreference(mChargingLeds);
+            prefSet.removePreference(mChargingLeds);
         }
         if (mChargingLeds == null) {
             prefSet.removePreference(mLedsCategory);
