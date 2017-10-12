@@ -200,7 +200,6 @@
     <string name="less_boring_heads_up_title">Make heads up less annoying</string>
     <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
 
-
     <!-- QuickSettings -->
 
     <!-- QS rows and columns -->
@@ -223,6 +222,13 @@
     <string name="battery_light_medium_color">Medium battery</string>
     <string name="battery_light_full_color">Almost full battery</string>
     <string name="battery_light_reallyfull_color">Full (100) battery</string>
+
+    <!-- Statusbar logo -->
+    <string name="status_bar_logo_title">Custom Candy logo</string>
+    <string name="status_bar_logo_dialog_title">Set Candy logo position</string>
+    <string name="status_bar_logo_disabled">Disabled</string>
+    <string name="status_bar_logo_left">Left</string>
+    <string name="status_bar_logo_right">Right</string>
 
     <!-- Statusbar net monitor -->
     <string name="network_traffic_state_title">Show net activity in statusbar</string>
