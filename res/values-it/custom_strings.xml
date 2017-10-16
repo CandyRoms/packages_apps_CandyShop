@@ -132,11 +132,6 @@
     <string name="dialog_pick_iconpack_title">Seleziona pacchetto</string>
     <string name="default_iconpack_title">Icone predefinite</string>
 
-    <string name="ticker_mode_title">Ticker barra di stato</string>
-    <string name="ticker_disabled">Disattivato</string>
-    <string name="ticker_enabled">Ticker notifiche</string>
-    <string name="ticker_media_enabled">Ticker notifiche e musica</string>
-
     <string name="slim_recents_title">Recenti Slim</string>
     <string name="use_slim_recents_title">Usa pannello recenti alternativo</string>
     <string name="use_slim_recents_summary">Usa Recenti Slim invece del pannello predefinito</string>
@@ -167,4 +162,9 @@
     <string name="slim_blacklist_apps_summary">Apps da non mostrare nel pannello</string>
     <string name="slim_blacklist_add_apps_title">Aggiungi app</string>
     <string name="slim_blacklist_add_apps_summary">Tap qui per aggiungere, tap su un\'app aggiunta per rimuoverla</string>
+
+    <string name="ticker_mode_title">Ticker barra di stato</string>
+    <string name="ticker_disabled">Disattivato</string>
+    <string name="ticker_enabled">Ticker notifiche</string>
+    <string name="ticker_media_enabled">Ticker notifiche e musica</string>
 </resources>
