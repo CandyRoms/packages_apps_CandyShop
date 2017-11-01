@@ -26,4 +26,11 @@
 
     <string name="candyshop_summary_title">Have some Candy, on us!</string>
 
+    <!-- Categories -->
+
+    <!-- QuickSettings -->
+    <!-- Quick Settings brightness icon -->
+    <string name="brightness_icon_title">Brightness slider icon</string>
+    <string name="brightness_icon_summary">Show a brightness icon to the right of the brightness slider to toggle auto-brightness</string>
+
 </resources>
