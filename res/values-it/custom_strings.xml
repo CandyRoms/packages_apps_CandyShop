@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2017 ABC Rom
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="abc_settings_title">Impostazioni addizionali ROM</string>
+    <string name="abc_interface">Interfaccia</string>
+    <string name="lockscreen_abc_settings_title">Lockscreen e sicurezza</string>
+    <string name="navigationbar_settings_title">Navigazione</string>
+    <string name="notification_drawer_settings_title">Notifiche e QS</string>
+    <string name="statusbar_settings_title">Barra di stato</string>
+    <string name="abc_sys">Miscellaneo</string>
+    <string name="power_settings_title">Energia e tasto power</string>
+    <string name="volumerocker_settings_title">Volume e media</string>
+    <string name="screen_settings_title">Display</string>
+    <string name="other_settings_title">Altro</string>
+    <string name="abc_leds">Luce LED</string>
+    <string name="abc_battery_light_settings">Luce caricamento batteria</string>
+    <string name="abc_notification_light_settings">Luce di notifica</string>
+    <string name="recent_settings_title">Pannello Recenti</string>
+
+    <string name="press_color_to_apply">Premi sul colore in basso per applicare</string>
+
+    <string name="double_tap_sleep_navbar">Doppio tap sulla navbar per sospendere</string>
+    <string name="double_tap_sleep_lockscreen">Doppio tap sulla lockscreen per sospendere</string>
+
+    <string name="swap_volume_buttons">Inverti pulsanti volume se ruotato</string>
+    <string name="volume_keys_control_media_stream_title">Volume Media come primario</string>
+    <string name="volume_keys_control_media_stream_summary">I pulsanti volume cambieranno il volume Media anzichè Notifiche</string>
+
+    <string name="status_bar_quick_qs_pulldown">Pulldown rapido</string>
+    <string name="status_bar_quick_qs_pulldown_summary">Trascina in basso la barra di stato da destra per mostrare subito le tiles</string>
+
+    <string name="volume_rocker_music_controls_title">Cambia traccia</string>
+    <string name="volume_rocker_music_controls_summary">La pressione lunga dei tasti volume a schermo spento permetterà di cambiare traccia musicale</string>
+
+    <string name="media_art_title">Cover art</string>
+    <string name="media_art_summary">Attiva le copertine degli album in riproduzione nella lockscreen</string>
+
+    <string name="apps_security_options_title">Sicurezza app</string>
+    <string name="sms_outgoing_check_max_count_title">Limite messaggi SMS</string>
+    <string name="sms_outgoing_check_max_count_dialog">Quanti SMS per minuto può inviare un\'app prima di mostrare un messaggio di avvertimento</string>
+    <string name="sms_outgoing_check_max_count_default">30 per minuto (default)</string>
+    <string name="sms_outgoing_check_max_count_hundred">100 per minuto</string>
+    <string name="sms_outgoing_check_max_count_sixhundred">600 per minuto</string>
+
+    <string name="torch_power_button_gesture_title">Pulsante torcia a schermo spento</string>
+    <string name="torch_power_button_gesture_none">Disattivato</string>
+    <string name="torch_power_button_gesture_dt">Doppio tap sul pulsante power per usare la torcia</string>
+    <string name="torch_power_button_gesture_lp">Tap lungo sul pulsante power per usare la torcia</string>
+
+    <string name="headset_connect_player_title">Avvia app musicale con headset connesso</string>
+    <string name="headset_connect_player_disabled">Disattivato</string>
+    <string name="headset_connect_player_wired">Quando un headset con filo è connesso</string>
+    <string name="headset_connect_player_bt_no_carkit">Quando un headset BT (no carkit) è connesso</string>
+    <string name="headset_connect_player_bt">Quando un headset BT è connesso</string>
+    <string name="headset_connect_player_both_no_carkit">Quando un headset BT (no carkit) o con filo è connesso</string>
+    <string name="headset_connect_player_both">Quando un headset BT o con filo è connesso</string>
+
+    <string name="battery_light_allow_on_dnd_title">Luce batteria durante Non Disturbare</string>
+    <string name="battery_light_low_blinking_title">Luce lampeggiante per batteria scarica</string>
+    <string name="battery_light_cat">Colore luce batteria durante caricamento</string>
+    <string name="battery_light_low_color">Batteria scarica</string>
+    <string name="battery_light_medium_color">Batteria media</string>
+    <string name="battery_light_full_color">Batteria quasi carica</string>
+    <string name="battery_light_reallyfull_color">Batteria completamente carica</string>
+
+    <string name="qs_footer_warnings_title">Avvisi pannello tiles</string>
+    <string name="qs_footer_warnings_summary">Mostra un avviso nella parte bassa del pannello delle tiles quando la rete è monitorata da app esterne o vpn</string>
+
+    <string name="double_tap_sleep_gesture_title">Doppio tap barra di stato per sospendere</string>
+
+    <string name="status_bar_icon_blacklist_title">Icone barra di stato</string>
+    <string name="status_bar_icon_blacklist_summary">Configura le icone da mostrare nella barra di stato</string>
+    <string name="lockscreen_shortcuts_title">Collegamenti lockscreen</string>
+    <string name="lockscreen_shortcuts_summary">Collegamenti parte bassa lockscreen</string>
+    <string name="navbar_buttons_title">Pulsanti barra di navigazione</string>
+    <string name="navbar_buttons_summary">Layout barra e pulsanti personalizzati</string>
+    <string name="qs_brightness_slider_title">Slider luminosità</string>
+    <string name="qs_brightness_slider_summary">Mostra lo slider luminosità nel pannello delle tiles</string>
+    <string name="vol_dnd_category_title">Modalità Non Disturbare</string>
+    <string name="volbtn_down_zen_title">Volume giù in Non Disturbare</string>
+    <string name="volbtn_down_zen_summary">Portando al minimo il volume si attiverà Non Disturbare</string>
+    <string name="volbtn_up_zen_title">Volume su in Non Disturbare</string>
+    <string name="volbtn_up_zen_summary">Aumentando il volume si disattiverà Non Disturbare</string>
+    <string name="doze_always_on_title">Ambient Display sempre attivo</string>
+    <string name="doze_always_on_summary">Ambient sarà sempre attivo se il dispositivo non è coperto</string>
+    <string name="notifications_category_title">Notifiche</string>
+    <string name="qs_cat_title">Pannello tiles</string>
+
+    <string name="less_boring_heads_up_title">Heads up meno intrusive</string>
+    <string name="less_boring_heads_up_summary">Mostra le heads up solo per telefono e SMS quando le app non sono in primo piano</string>
+
+    <string name="qs_rows_columns_title">Colonne e righe pannello tiles</string>
+    <string name="qs_rows_portrait_title">Righe in modalità portrait</string>
+    <string name="qs_rows_landscape_title">Righe in modalità landscape</string>
+    <string name="qs_columns_portrait_title">Colonne in modalità portrait</string>
+    <string name="qs_columns_landscape_title">Colonne in modalità landscape</string>
+    <string name="qs_tile_title_visibility_title">Mostra titolo tiles</string>
+
+    <string name="network_traffic_state_title">Monitor di rete nella barra di stato</string>
+    <string name="network_traffic_autohide_threshold_title">Soglia monitor di rete (KB/s)</string>
+
+    <string name="wake_when_plugged_or_unplugged_title">Risveglio caricatore</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Attiva lo schermo se viene connesso o disconnesso il caricatore</string>
+    <string name="vibration_on_charge_state_changed_title">Vibrazione caricatore</string>
+    <string name="vibration_on_charge_state_changed_summary">Vibra se viene connesso o disconnesso il caricatore</string>
+
+    <string name="ringtone_focus_mode_title">Uscita audio per suoneria</string>
+    <string name="ringtone_focus_mode_dynamic">Headset se connesso e se musica in riproduzione</string>
+    <string name="ringtone_focus_mode_stock">"Altoparlante (aosp default)"</string>
+
+    <string name="lockscreen_power_menu_disabled_title">Menu power sicuro</string>
+    <string name="lockscreen_power_menu_disabled_summary">Non mostrare il menu power nella lockscreen sicura</string>
+
+    <string name="navigation_bar_enabled_title">Attiva barra navigazione</string>
+
+    <string name="recents_icon_pack_title">Pacchetto icone</string>
+    <string name="recents_icon_pack_summary">Usa un pacchetto icone per il pannello Recenti</string>
+    <string name="no_iconpacks_summary">Nessun pacchetto icone installato</string>
+    <string name="dialog_pick_iconpack_title">Seleziona pacchetto</string>
+    <string name="default_iconpack_title">Icone predefinite</string>
+
+    <string name="ticker_mode_title">Ticker barra di stato</string>
+    <string name="ticker_disabled">Disattivato</string>
+    <string name="ticker_enabled">Ticker notifiche</string>
+    <string name="ticker_media_enabled">Ticker notifiche e musica</string>
+
+    <string name="slim_recents_title">Recenti Slim</string>
+    <string name="use_slim_recents_title">Usa pannello recenti alternativo</string>
+    <string name="use_slim_recents_summary">Usa Recenti Slim invece del pannello predefinito</string>
+    <string name="slim_recents_settings_title">Impostazioni Recenti Slim</string>
+    <string name="slim_recents_settings_summary">Configurazione Recenti Slim</string>
+    <string name="recents_max_apps_title">Numero massimo apps</string>
+    <string name="recent_panel_scale_title">Dimensione</string>
+    <string name="recent_panel_expanded_mode_title">Espansione anteprime</string>
+    <string name="recent_panel_expanded_mode_summary">Espansione anteprime</string>
+    <string name="recent_panel_expanded_mode_auto">Auto (default)</string>
+    <string name="recent_panel_expanded_mode_always">Tutte</string>
+    <string name="recent_panel_expanded_mode_never">Off (modalità fast engine)</string>
+    <string name="recent_panel_bg_color_title">Sfondo pannello</string>
+    <string name="recent_card_bg_color_title">Sfondo cards</string>
+    <string name="recent_reset_title">Resetta colori</string>
+    <string name="recent_reset_confirm">Sicuro di voler resettare i colori?</string>
+    <string name="default_auto_string">Default (in base all\'app)</string>
+    <string name="slim_icon_pack_title">Pacchetti icone</string>
+    <string name="slim_icon_pack_summary">Usa un pacchetto icone personalizzato</string>
+    <string name="slim_recents_corner_radius_title">Arrotonda i bordi delle cards</string>
+    <string name="recent_panel_lefty_mode_title">Mostra a sinistra</string>
+    <string name="recent_panel_lefty_mode_summary">Mostra il pannello a sinistra dello schermo</string>
+    <string name="profile_choose_app">Scegli l\'app</string>
+    <string name="dialog_delete_title">Rimuovi</string>
+    <string name="dialog_delete_message">Rimuovere?</string>
+    <string name="slim_blacklist_apps_cat_title">Blacklist</string>
+    <string name="slim_blacklist_apps_title">Blacklist apps</string>
+    <string name="slim_blacklist_apps_summary">Apps da non mostrare nel pannello</string>
+    <string name="slim_blacklist_add_apps_title">Aggiungi app</string>
+    <string name="slim_blacklist_add_apps_summary">Tap qui per aggiungere, tap su un\'app aggiunta per rimuoverla</string>
+</resources>
