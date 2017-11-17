@@ -17,8 +17,8 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/multitasking_category" >
-
+    android:title="@string/multitasking_category"
+    android:layout="@layout/tab" >
 
 </PreferenceScreen>
 
