@@ -143,7 +143,6 @@
             android:defaultValue="0xffffff"
             alphaSlider="true"
             android:dependency="eos_fling_show_ripple" />
-
      </PreferenceCategory>
 
     <PreferenceCategory
