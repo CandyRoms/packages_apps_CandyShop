@@ -133,7 +133,6 @@ public class CandyShop extends SettingsPreferenceFragment {
                     getString(R.string.system_category),
                     getString(R.string.lockscreen_category),
                     getString(R.string.statusbar_category),
-                    getString(R.string.quicksettings_category),
                     getString(R.string.navigation_category),
                     getString(R.string.multitasking_category)};
         return titleString;

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016 Ground Zero Roms
+ * Copyright (C) 2014-2016 The Dirty Unicorns Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,44 +21,27 @@ import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
+import android.provider.Settings;
+import android.support.v7.preference.ListPreference;
+import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
-import android.support.v7.preference.ListPreference;
-import android.support.v14.preference.SwitchPreference;
-import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
-import android.provider.Settings;
+import android.support.v14.preference.SwitchPreference;
 
 import com.android.settings.R;
-import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.Utils;
 
-public class LedSettings extends SettingsPreferenceFragment implements
+public class VariousLockscreen extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-
-    private PreferenceCategory mLedsCategory;
-    private Preference mChargingLeds;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.led_settings);
-
-        PreferenceScreen prefSet = getPreferenceScreen();
-
-        mLedsCategory = (PreferenceCategory) findPreference("leds");
-        mChargingLeds = (Preference) findPreference("charging_light");
-        if (mChargingLeds != null
-                && !getResources().getBoolean(
-                        com.android.internal.R.bool.config_intrusiveBatteryLed)) {
-            prefSet.removePreference(mChargingLeds);
-        }
-        if (mChargingLeds == null) {
-            prefSet.removePreference(mLedsCategory);
-        }
-
+        addPreferencesFromResource(R.xml.various_lockscreen);
     }
 
     @Override
@@ -71,7 +54,9 @@ public class LedSettings extends SettingsPreferenceFragment implements
         super.onResume();
     }
 
-    public boolean onPreferenceChange(Preference preference, Object value) {
-         return true;
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
+        return true;
     }
+
 }
+

@@ -47,9 +47,4 @@
                 android:targetClass="com.android.systemui.tuner.StatusbarItemsActivity" />
     </Preference>
 
-    <Preference
-        android:key="various_statusbar"
-        android:title="@string/various_statusbar_title"
-        android:fragment="org.candy.candyshop.fragments.VariousStatusbar" />
-
 </PreferenceScreen>

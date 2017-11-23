@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package corg.candy.candyshop.fragments;
+package org.candy.candyshop.fragments;
 
 import android.content.Context;
 import android.content.ContentResolver;
