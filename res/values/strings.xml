@@ -39,15 +39,20 @@
 
     <!-- Fragments -->
     <string name="headset_title">Headset</string>
-    <string name="button_title">Button</string>
+    <string name="button_title">Buttons</string>
     <string name="quicksettings_title">Quick settings</string>
     <string name="torch_title">Torch</string>
     <string name="battery_title">Battery settings</string>
-    <string name="leds_title">LED Lights</string>
+    <string name="leds_title">Lights</string>
     <string name="battery_light_settings">Battery charging light</string>
     <string name="network_traffic_title">Network traffic</string>
     <string name="notification_light_settings">Notifications light</string>
     <string name="powermenu_title">Power menu</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="various_system_title">Various</string>
+    <string name="various_lockscreen_title">Various</string>
+    <string name="various_statusbar_title">Various</string>
+    <string name="various_navigation_title">Various</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
