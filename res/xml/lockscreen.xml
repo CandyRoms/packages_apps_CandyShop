@@ -20,4 +20,9 @@
     android:title="@string/lockscreen_category"
     android:layout="@layout/tab" >
 
+    <com.gzr.wolvesden.preference.SystemSettingSwitchPreference
+        android:key="double_tap_sleep_lockscreen"
+        android:title="@string/double_tap_sleep_lockscreen"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
