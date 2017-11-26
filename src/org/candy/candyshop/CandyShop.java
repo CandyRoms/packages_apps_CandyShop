@@ -47,6 +47,7 @@ import org.candy.candyshop.tabs.Navigation;
 import org.candy.candyshop.tabs.MultiTasking;
 import org.candy.candyshop.tabs.Button;
 import org.candy.candyshop.PagerSlidingTabStrip;
+
 import com.android.settings.R;
 import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.SettingsPreferenceFragment;
@@ -139,7 +140,8 @@ public class CandyShop extends SettingsPreferenceFragment {
                     getString(R.string.quicksettings_category),
                     getString(R.string.navigation_category),
                     getString(R.string.multitasking_category),
-                    getString(R.string.button_category)};
+                    getString(R.string.button_category),
+                    getString(R.string.quicksettings_category)};
         return titleString;
     }
 

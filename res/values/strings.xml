@@ -34,6 +34,7 @@
     <string name="brightness_icon_summary">Show a brightness icon to the right of the brightness slider to toggle auto-brightness</string>
 
     <string name="button_category">Button</string>
+    <string name="quicksettings_category">Quick settings</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
@@ -44,6 +45,9 @@
     <string name="hex_hint">#ff000000</string>
     <string name="set">Set</string>
     <string name="color_default">Default</string>
+
+    <string name="status_bar_quick_qs_pulldown">Quick Pulldown</string>
+    <string name="status_bar_quick_qs_pulldown_summary">Pulldown statusbar from right side to show QS panel</string>
 
     <string name="double_tap_sleep_lockscreen">Double tap to sleep on lockscreen</string>
 
