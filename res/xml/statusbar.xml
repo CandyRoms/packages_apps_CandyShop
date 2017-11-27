@@ -21,11 +21,6 @@
     android:layout="@layout/tab" >
 
     <Preference
-        android:key="quicksettings"
-        android:title="@string/quicksettings_title"
-        android:fragment="org.candy.candyshop.fragments.QuickSettings" />
-
-    <Preference
         android:key="status_bar_battery_style"
         android:title="@string/battery_title"
         android:fragment="org.candy.candyshop.fragments.StatusbarBatteryStyle" />
