@@ -34,7 +34,7 @@
     <Preference
         android:key="recent_settings"
         android:title="@string/recent_settings_title"
-        android:fragment="com.gzr.wolvesden.fragments.RecentsSettings" />
+        android:fragment="org.candy.candyshop.fragments.RecentsSettings" />
 
 </PreferenceScreen>
 
