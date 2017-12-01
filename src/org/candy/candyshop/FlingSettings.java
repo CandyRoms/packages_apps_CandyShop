@@ -29,7 +29,7 @@ import com.android.internal.utils.du.DUActionUtils;
 import com.android.internal.utils.du.Config.ButtonConfig;
 import com.android.settings.R;
 import org.candy.candyshop.IconPickHelper;
-import org.candy.candyshop.preferences.ActionPreference;
+import org.candy.candyshop.preference.ActionPreference;
 
 import android.app.ActionBar;
 import android.content.Context;

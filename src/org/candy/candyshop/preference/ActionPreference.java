@@ -18,7 +18,7 @@
  * key is identical to the target ConfigMap tag in ActionConstants 
  */
 
-package org.candy.candyshop.preferences;
+package org.candy.candyshop.preference;
 
 import java.util.Map;
 

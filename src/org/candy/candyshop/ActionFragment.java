@@ -29,7 +29,7 @@ import com.android.internal.utils.du.Config.ActionConfig;
 import com.android.internal.utils.du.Config.ButtonConfig;
 
 import org.candy.candyshop.ShortcutPickHelper;
-import org.candy.candyshop.preferences.ActionPreference;
+import org.candy.candyshop.preference.ActionPreference;
 import org.candy.candyshop.CustomActionListAdapter;
 
 import android.app.AlertDialog;
