@@ -246,6 +246,9 @@
     <string name="slim_blacklist_add_apps_title">Add app</string>
     <string name="slim_blacklist_add_apps_summary">Tap here to add, tap on added app to remove it</string>
 
+    <!-- Navbar -->
+    <string name="navbar_summary">Configure Navbar options</string>
+
     <!-- Navigation -->
     <string name="buttons_title">Buttons</string>
     <string name="buttons_summary">Configure hardware keys and/or volume rocker options</string>

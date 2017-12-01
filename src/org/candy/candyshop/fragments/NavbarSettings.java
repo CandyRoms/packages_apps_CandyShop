@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.candy.candyshop;
+package org.candy.candyshop.fragments;
 
 import java.util.ArrayList;
 
