@@ -20,10 +20,27 @@
     android:title="@string/navigation_category"
     android:layout="@layout/tab" >
 
-    <Preference
-        android:key="navbar"
-        android:fragment="org.candy.candyshop.fragments.NavbarSettings"
-        android:title="@string/navbar_title"
-        android:summary="@string/navbar_summary" />
+    <PreferenceCategory
+        android:title="@string/navbar_category_title" >
+
+        <Preference
+            android:key="navbar"
+            android:title="@string/navbar_title"
+            android:summary="@string/navbar_summary"
+            android:fragment="org.candy.candyshop.fragments.NavbarSettings" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/hwkeys_category_title" >
+
+        <Preference
+            android:key="hwkeys"
+            android:title="@string/hwkeys_settings_title"
+            android:summary="@string/hwkeys_settings_summary"
+            android:fragment="org.candy.candyshop.fragments.HwKeysSettings" />
+
+    </PreferenceCategory>
+
 
 </PreferenceScreen>
