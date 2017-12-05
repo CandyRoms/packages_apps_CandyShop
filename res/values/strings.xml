@@ -35,8 +35,6 @@
 
     <string name="button_category">Buttons</string>
 
-    <string name="statusbar_notifications_category">Status bar notifications</string>
-
     <!-- Fragments -->
     <string name="headset_title">Headset</string>
     <string name="button_title">Buttons</string>
@@ -432,8 +430,10 @@
     <string name="smartbar_double_tap_sleep_summary">Double tap on empty navbar areas to sleep</string>
 
     <!-- Heads up options -->
-    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
-    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app if they are not in foreground</string>
+    <string name="statusbar_notifications">Statusbar notifications</string>
+    <string name="statusbar_notifications_title">Statusbar ticker and heads-up options</string>
+    <string name="less_boring_heads_up_title">Statusbar ticker - Make heads-up less annoying</string>
+    <string name="less_boring_heads_up_summary">Show ticker with heads up notifications only for dialer or messaging app if they are not in foreground</string>
 
     <!-- Statusbar ticker -->
     <string name="ticker_mode_title">Statusbar notification ticker</string>
