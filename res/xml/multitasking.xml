@@ -27,6 +27,11 @@
         android:defaultValue="false" />
 
     <Preference
+       android:key="gesture_anywhere"
+       android:fragment="org.candy.candyshop.gestureanywhere.GestureAnywhereSettings"
+       android:title="@string/gesture_anywhere_title" />
+
+    <Preference
         android:key="headset"
         android:title="@string/headset_title"
         android:fragment="org.candy.candyshop.fragments.Headset" />
@@ -42,5 +47,4 @@
        android:title="@string/gesture_anywhere_title" />
 
 </PreferenceScreen>
-
 
