@@ -842,4 +842,12 @@
     <string name="alarm_blocker_warning_title">Proceed with caution</string>
     <string name="alarm_blocker_warning">Blocking alarms have the potential to cause instability, crashes or data loss.</string>
 
+    <string name="volume_steps_title">Volume steps</string>
+    <string name="volume_steps_summary">Configure available steps for different audio volumes</string>
+    <string name="volume_steps_30">30 steps</string>
+    <string name="volume_steps_15">15 steps</string>
+    <string name="volume_steps_7">7 steps</string>
+    <string name="volume_steps_5">5 steps</string>
+    <string name="system_volume_option_title">System volume</string>
+    <string name="call_volume_option_title">Voice call volume</string>
 </resources>

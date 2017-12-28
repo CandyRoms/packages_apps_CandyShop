@@ -48,4 +48,9 @@
         android:summary="@string/volume_rocker_music_controls_summary"
         android:defaultValue="true" />
 
+        <Preference
+         android:key="volume_steps"
+         android:title="@string/volume_steps_title"
+         android:summary="@string/volume_steps_summary"
+         android:fragment="org.candy.candyshop.fragments.VolumeSteps" />
 </PreferenceScreen>
