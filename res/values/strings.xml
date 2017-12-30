@@ -68,6 +68,8 @@
     <string name="ime_title">Keyboard and IME Settings</string>
     <string name="brightness_category_title">Brightness slider</string>
     <string name="animations_title">Animations</string>
+    <string name="power_button_gestures_title">Power button gestures</string>
+    <string name="power_button_reboot_menu_title">Power button reboot menu</string>
 
     <!-- Fragments -->
     <string name="headset_title">Headset</string>
@@ -95,7 +97,7 @@
     <!-- Fragment summaries -->
     <string name="headset_preference_summary">Headset connect options</string>
     <string name="buttons_preference_summary">Volume key behavior options</string>
-    <string name="power_button_preference_summary">Power key gesture and menu options</string>
+    <string name="power_button_preference_summary">Power key gesture and reboot menu options</string>
     <string name="powermenu_preference_summary">Configure power menu options</string>
     <string name="leds_preference_summary">Battery and notification LED options</string>
     <string name="ls_shortcuts_preference_summary">Lockscreen bottom shorcut options</string>
@@ -240,6 +242,13 @@
     <string name="dialog_about_candy_title">About CandyRoms</string>
     <string name="candy_links_title">Useful Links</string>
     <string name="candy_team_title">The Candy Team</string>
+
+    <!-- Power Menu -->
+    <string name="powermenu_reboot_title">Reboot</string>
+    <string name="powermenu_advanced_reboot_title">Advanced reboot</string>
+    <string name="powermenu_advanced_reboot_summary">Enables the advanced reboot menu for options to reboot to recovery, bootloader, restart systemui or trigger a hot reboot</string>
+    <string name="powermenu_screenshot_title">Screenshot</string>
+    <string name="powermenu_airplane_title">Airplane mode</string>
 
     <!-- Changelog -->
     <string name="changelog_title">Changelog</string>

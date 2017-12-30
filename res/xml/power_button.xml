@@ -19,10 +19,33 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <ListPreference
-        android:key="torch_power_button_gesture"
-        android:title="@string/torch_power_button_gesture_title"
-        android:entries="@array/torch_power_button_gesture_entries"
-        android:entryValues="@array/torch_power_button_gesture_values" />
+    <PreferenceCategory
+        android:title="@string/power_button_gestures_title" />
+
+        <ListPreference
+            android:key="torch_power_button_gesture"
+            android:title="@string/torch_power_button_gesture_title"
+            android:entries="@array/torch_power_button_gesture_entries"
+            android:entryValues="@array/torch_power_button_gesture_values" />
+
+    <PreferenceCategory
+        android:title="@string/power_button_reboot_menu_title" />
+
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="powermenu_reboot"
+            android:title="@string/powermenu_reboot_title"
+            android:defaultValue="true" />
+
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="powermenu_advanced_reboot"
+            android:title="@string/powermenu_advanced_reboot_title"
+            android:summary="@string/powermenu_advanced_reboot_summary"
+            android:dependency="powermenu_reboot"
+            android:defaultValue="false" />
+
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="powermenu_screenshot"
+            android:title="@string/powermenu_screenshot_title"
+            android:defaultValue="false" />
 
 </PreferenceScreen>
