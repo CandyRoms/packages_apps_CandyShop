@@ -77,7 +77,7 @@
 
     </PreferenceCategory>
 
-    <!--<PreferenceCategory
+    <!-- <PreferenceCategory
         android:key="statusbar_notifications"
         android:title="@string/statusbar_notifications_title" >
 
