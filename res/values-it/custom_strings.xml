@@ -167,4 +167,7 @@
     <string name="ticker_disabled">Disattivato</string>
     <string name="ticker_enabled">Ticker notifiche</string>
     <string name="ticker_media_enabled">Ticker notifiche e musica</string>
+
+    <string name="notification_sound_vib_screen_on_title">Notifiche rumorose a schermo acceso</string>
+    <string name="notification_sound_vib_screen_on_summary">Disattivare per bloccare il suono e la vibrazione delle notifiche quando lo schermo è acceso</string>
 </resources>
