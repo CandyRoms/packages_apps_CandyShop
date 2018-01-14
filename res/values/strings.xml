@@ -86,6 +86,7 @@
     <string name="recent_settings_title">Recents</string>
     <string name="status_bar_clock_title">Clock options</string>
     <string name="navigationbar_settings_title">Navigation bar options</string>
+    <string name="carrier_label_title">Carrier label</string>
 
     <!-- Fragment summaries -->
     <string name="headset_preference_summary">Headset connect options</string>
@@ -104,6 +105,7 @@
     <string name="custom_carrier_label_preference_summary">Statusbar carrier text customization</string>
     <string name="navigationbar_settings_summary">- NavBar\n- SmartBar\n- Fling</string>
     <string name="hwkeys_options_summary">NOTE: These are device-specific!\n- Hardware key remapping\n- Hardware buttons disable\n- Swap Recents and Back\n- Button backlight brightness\n- Button backlight timeout\n- Button backlight on key touch</string>
+    <string name="carrier_label_summary">Customize your statusbar carrier label</string>
 
     <!-- Buttons -->
     <string name="volbtn_down_zen_title">Volume down for do not disturb</string>
@@ -472,4 +474,14 @@
     <string name="show_lte_fourgee_title">4G/LTE network icon</string>
     <string name="show_lte_fourgee_summary">Display the 4G or LTE network icon when available in the statusbar</string>
 
+    <!-- Carrier Label -->
+    <string name="carrier_options">Select display locations</string>
+    <string name="custom_carrier_label_title">Custom carrier label</string>
+    <string name="custom_carrier_label_explain">Enter a custom label. Leave blank to use your network name</string>
+    <string name="custom_carrier_label_notset">Custom label currently not set</string>
+    <string name="show_carrier_title">Carrier label</string>
+    <string name="show_carrier_disabled">Disabled</string>
+    <string name="show_carrier_keyguard">Lockscreen</string>
+    <string name="show_carrier_statusbar">Status bar</string>
+    <string name="show_carrier_enabled">Both</string>
 </resources>
