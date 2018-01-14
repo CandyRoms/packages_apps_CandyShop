@@ -76,6 +76,8 @@
     <string name="leds_title">Lights</string>
     <string name="network_traffic_title">Network traffic</string>
     <string name="notification_light_settings">Notifications light</string>
+
+
     <string name="powermenu_title">Power menu</string>
     <string name="navbar_title">Navbar</string>
     <string name="notifications_title">Notifications</string>
@@ -484,4 +486,5 @@
     <string name="show_carrier_keyguard">Lockscreen</string>
     <string name="show_carrier_statusbar">Status bar</string>
     <string name="show_carrier_enabled">Both</string>
+    <string name="carrier_label_warning_text">Be advised that the custom carrier label is not available in the extended statusbar area, also known as the quick settings area. Also using emojis as your carrier label might cause some visibility issues on lighter backgrounds.</string>
 </resources>
