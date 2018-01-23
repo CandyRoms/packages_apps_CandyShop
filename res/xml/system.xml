@@ -88,7 +88,7 @@
         android:id="@+id/animations_category"
         android:key="animations_category"
         android:title="@string/animations_title"
-        android:icon="@drawable/ic_settings_animations" >
+        android:icon="@drawable/ic_settings_animations" />
 
         <Preference
             android:key="system_animation"
@@ -96,6 +96,11 @@
             android:summary="@string/system_animation_summary"
             android:fragment="org.candy.candyshop.fragments.SystemAnimationControls" />
 
-    </PreferenceCategory>
+        <SystemSettingListPreference 
+            android:key="screen_off_animation" 
+            android:title="@string/screen_off_animation_title" 
+            android:entries="@array/screen_off_animation_entries" 
+            android:entryValues="@array/screen_off_animation_values"
+            android:defaultValue="0" /> 
 
 </PreferenceScreen>
