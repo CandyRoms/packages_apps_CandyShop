@@ -473,4 +473,7 @@
     <string name="notification_sound_vib_screen_on_never">Never</string>
     <string name="notification_sound_vib_screen_on_always">Always (default)</string>
     <string name="notification_sound_vib_screen_on_nomedia">If no media is playing</string>
+
+    <string name="force_ambient_for_media_title">Show Ambient on new track</string>
+    <string name="force_ambient_for_media_summary">Show an Ambient Display notification when a new track is being played</string>
 </resources>

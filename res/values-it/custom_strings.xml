@@ -172,4 +172,7 @@
     <string name="notification_sound_vib_screen_on_never">Mai</string>
     <string name="notification_sound_vib_screen_on_always">Sempre (predefinito)</string>
     <string name="notification_sound_vib_screen_on_nomedia">Se nessun media in riproduzione</string>
+
+    <string name="force_ambient_for_media_title">Notifiche Ambient per nuove tracce</string>
+    <string name="force_ambient_for_media_summary">Mostra una notifica Ambient Display quando una nuova traccia è riprodotta</string>
 </resources>
