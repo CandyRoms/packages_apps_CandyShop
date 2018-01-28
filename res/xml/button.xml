@@ -48,10 +48,4 @@
         android:summary="@string/volume_rocker_music_controls_summary"
         android:defaultValue="true" />
 
-    <Preference
-        android:key="force_ambient_for_media_pref"
-        android:fragment="org.candy.candyshop.AmbientTicker"
-        android:title="@string/force_ambient_for_media_pref_title"
-        android:summary="@string/force_ambient_for_media_pref_summary"/>
-
 </PreferenceScreen>
