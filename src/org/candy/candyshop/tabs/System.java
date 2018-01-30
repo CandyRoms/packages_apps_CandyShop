@@ -38,6 +38,8 @@ public class System extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "System";
 
+    private ListPreference mAnnoyingNotification;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +47,13 @@ public class System extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.system);
 
         ContentResolver resolver = getActivity().getContentResolver();
+
+        mAnnoyingNotification = (ListPreference) findPreference("less_notification_sounds");
+        mAnnoyingNotification.setOnPreferenceChangeListener(this);
+        int threshold = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD,
+                30000, UserHandle.USER_CURRENT);
+        mAnnoyingNotification.setValue(String.valueOf(threshold));
     }
 
     @Override
@@ -62,9 +71,16 @@ public class System extends SettingsPreferenceFragment implements
         super.onPause();
     }
 
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
         final String key = preference.getKey();
-        return true;
+        if (preference.equals(mAnnoyingNotification)) {
+            int mode = Integer.parseInt(((String) newValue).toString());
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD, mode, UserHandle.USER_CURRENT);
+            return true;
+        }
+
+        return false;
     }
 
 }

@@ -40,22 +40,33 @@
         android:fragment="org.candy.candyshop.fragments.PowerMenu"
         android:title="@string/powermenu_title" />
 
-    <org.candy.candyshop.preference.SystemSettingSwitchPreference
-        android:key="toast_icon"
-        android:title="@string/toast_icon_title"
-        android:summary="@string/toast_icon_summary"
-        android:defaultValue="false" />
+    <PreferenceCategory
+        android:key="notifications_category"
+        android:title="@string/notifications_category_title" >
 
-    <org.candy.candyshop.preference.SystemSettingSwitchPreference
-        android:key="wake_when_plugged_or_unplugged"
-        android:title="@string/wake_when_plugged_or_unplugged_title"
-        android:summary="@string/wake_when_plugged_or_unplugged_summary"
-        android:defaultValue="false" />
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="toast_icon"
+            android:title="@string/toast_icon_title"
+            android:summary="@string/toast_icon_summary"
+            android:defaultValue="false" />
 
-    <org.candy.candyshop.preference.SystemSettingSwitchPreference
-        android:key="vibration_on_charge_state_changed"
-        android:title="@string/vibration_on_charge_state_changed_title"
-        android:summary="@string/vibration_on_charge_state_changed_summary"
-        android:defaultValue="true" />
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="wake_when_plugged_or_unplugged"
+            android:title="@string/wake_when_plugged_or_unplugged_title"
+            android:summary="@string/wake_when_plugged_or_unplugged_summary"
+            android:defaultValue="false" />
 
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="vibration_on_charge_state_changed"
+            android:title="@string/vibration_on_charge_state_changed_title"
+            android:summary="@string/vibration_on_charge_state_changed_summary"
+            android:defaultValue="true" />
+
+        <ListPreference
+            android:key="less_notification_sounds"
+            android:title="@string/less_notification_sounds_title"
+            android:summary="@string/less_notification_sounds_summary"
+            android:entries="@array/less_notification_sounds_entries"
+            android:entryValues="@array/less_notification_sounds_values" />
+    </PreferenceCategory>
 </PreferenceScreen>

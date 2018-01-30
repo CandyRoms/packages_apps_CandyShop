@@ -113,6 +113,33 @@
     <string name="qs_footer_warnings_title">QS footer warnings</string>
     <string name="qs_footer_warnings_summary">Display a warning at bottom of QS panel when network is monitored by external apps or vpn</string>
 
+    <!--SysUI tuner options -->
+    <string name="status_bar_icon_blacklist_title">Status bar icons</string>
+    <string name="status_bar_icon_blacklist_summary">Configure what icons are shown on status bar</string>
+    <string name="lockscreen_shortcuts_title">Lockscreen shortcuts</string>
+    <string name="lockscreen_shortcuts_summary">Lockscreen bottom shortcuts</string>
+    <string name="navbar_buttons_title">Navbar buttons</string>
+    <string name="navbar_buttons_summary">Navbar layout and custom buttons</string>
+    <string name="qs_brightness_slider_title">Brightness slider</string>
+    <string name="qs_brightness_slider_summary">Show brightness slider on quick settings panel</string>
+    <string name="vol_dnd_category_title">Do not disturb mode</string>
+    <string name="volbtn_down_zen_title">Volume down for do not disturb</string>
+    <string name="volbtn_down_zen_summary">Allow volume down to enter do not disturb mode</string>
+    <string name="volbtn_up_zen_title">Volume up in do not disturb</string>
+    <string name="volbtn_up_zen_summary">Allow volume up to exit do not disturb mode</string>
+    <string name="vol_zen_title">Do not disturb switch</string>
+    <string name="vol_zen_summary">Show do not disturb swith on volume panel</string>
+    <string name="doze_always_on_title">Always-on Ambient Display</string>
+    <string name="doze_always_on_summary">Ambient will be on when the proximity sensor is uncovered</string>
+    <string name="powern_notifications_title">Power notifications</string>
+    <string name="powern_notifications_summary">Advanced notifications control on long press</string>
+    <string name="notifications_category_title">Annoying notifications protection</string>
+    <string name="qs_cat_title">Quick settings panel</string>
+
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
+
     <!-- QS rows and columns -->
     <string name="qs_rows_columns_title">QS rows and columns</string>
     <string name="qs_rows_portrait_title">Tiles rows on portrait</string>
@@ -161,13 +188,6 @@
 
     <!-- Power notification controls -->
     <string name="power_notification_title">Power notification controls</string>
-
-    <!-- Volume down enter do not disturb -->
-    <string name="volbtn_down_zen_title">Volume down for do not disturb</string>
-    <string name="volbtn_down_zen_summary">allow volume down to enter do not disturb mode</string>
-    <!-- Volume up exit do not disturb -->
-    <string name="volbtn_up_zen_title">Volume up in do not disturb</string>
-    <string name="volbtn_up_zen_summary">allow volume up to exit do not disturb mode</string>
 
     <!-- Lockscreen icons -->
     <string name="lockscreen_tuner_title">Lockscreen shortcuts</string>
@@ -471,8 +491,6 @@
     <!-- Heads up options -->
     <string name="statusbar_notifications">Statusbar notifications</string>
     <string name="statusbar_notifications_title">Statusbar ticker and heads-up options</string>
-    <string name="less_boring_heads_up_title">Statusbar ticker - Make heads-up less annoying</string>
-    <string name="less_boring_heads_up_summary">Show ticker with heads up notifications only for dialer or messaging app if they are not in foreground</string>
 
     <!-- Statusbar ticker -->
     <string name="ticker_mode_title">Statusbar notification ticker</string>
@@ -579,4 +597,12 @@
     <string name="gesture_anywhere_64">64px</string>
     <string name="gesture_anywhere_68">68px</string>
 
+    <!-- Less Notification sounds -->
+    <string name="less_notification_sounds_title">Smart notification sounds</string>
+    <string name="less_notification_sounds_summary">Play the notification sound of each app only once per set time period</string>
+    <string name="less_notification_sounds_default">App default</string>
+    <string name="less_notification_sounds_10s">Every 10 seconds</string>
+    <string name="less_notification_sounds_30s">Every 30 seconds</string>
+    <string name="less_notification_sounds_1m">Every minute</string>
+    <string name="less_notification_sounds_2m">Every 2 minutes</string>
 </resources>

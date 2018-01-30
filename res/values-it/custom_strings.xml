@@ -96,7 +96,7 @@
     <string name="volbtn_up_zen_summary">Aumentando il volume si disattiverà Non Disturbare</string>
     <string name="doze_always_on_title">Ambient Display sempre attivo</string>
     <string name="doze_always_on_summary">Ambient sarà sempre attivo se il dispositivo non è coperto</string>
-    <string name="notifications_category_title">Notifiche</string>
+    <string name="notifications_category_title">Protezione notifiche irritanti</string>
     <string name="qs_cat_title">Pannello tiles</string>
 
     <string name="less_boring_heads_up_title">Heads up meno intrusive</string>
@@ -183,4 +183,12 @@
     <string name="force_ambient_for_media_on">Normale</string>
     <string name="force_ambient_for_media_on_forced">Normale e forzata</string>
     <string name="force_ambient_for_media_on_forced_clean">Minimale (forzata)</string>
+
+    <string name="less_notification_sounds_title">Suoni notifica intelligenti</string>
+    <string name="less_notification_sounds_summary">Riproduci le notifiche sonore consecutive di ogni app solo dopo il tempo impostato</string>
+    <string name="less_notification_sounds_default">App default</string>
+    <string name="less_notification_sounds_10s">Ogni 10 secondi</string>
+    <string name="less_notification_sounds_30s">Ogni 30 secondi</string>
+    <string name="less_notification_sounds_1m">Ogni minuto</string>
+    <string name="less_notification_sounds_2m">Ogni 2 minuti</string>
 </resources>
