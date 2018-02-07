@@ -25,7 +25,7 @@
         android:title="@string/double_tap_sleep_lockscreen"
         android:defaultValue="true" />
 
-    <org.candy.candyshop.preference.SystemSettingSwitchPreference
+    <org.candy.candyshop.preference.SecureSettingSwitchPreference
         android:key="lockscreen_power_menu_disabled"
         android:title="@string/lockscreen_power_menu_disabled_title"
         android:summary="@string/lockscreen_power_menu_disabled_summary"
