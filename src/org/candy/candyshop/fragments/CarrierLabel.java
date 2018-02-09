@@ -42,6 +42,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import java.util.Locale;
+import android.text.InputFilter;
+import android.text.Spannable;
 import android.text.TextUtils;
 import android.text.Spannable;
 import android.view.View;
@@ -127,7 +129,9 @@ public class CarrierLabel extends SettingsPreferenceFragment implements
 
             // Set an EditText view to get user input
             final EditText input = new EditText(getActivity());
+            int maxLength = 14;
             input.setText(TextUtils.isEmpty(mCustomCarrierLabelText) ? "" : mCustomCarrierLabelText);
+            input.setFilters(new InputFilter[] {new InputFilter.LengthFilter(maxLength)});
             input.setSelection(input.getText().length());
             alert.setView(input);
             alert.setPositiveButton(getString(android.R.string.ok),
