@@ -667,8 +667,15 @@
     <string name="less_notification_sounds_2m">Every 2 minutes</string>
 
     <!-- Statusbar Clock options -->
-    <string name="status_bar_show_clock_title">Show clock &amp; date</string>
+
+    <!-- Status bar clock options -->
+    <string name="status_bar_clock">Clock &amp; Date</string>
+    <string name="status_bar_clock_summary">Configure statusbar clock and date appearance</string>
     <string name="clock_title_enable">Alignment</string>
+    <string name="clock_enabled">Enabled</string>
+    <string name="clock_disabled">Disabled</string>
+    <string name="status_bar_clock_style_reset">Reset color</string>
+    <string name="status_bar_show_clock_title">Show clock &amp; date</string>
     <string name="right_clock">Right clock</string>
     <string name="center_clock">Center clock</string>
     <string name="status_bar_clock_seconds_title">Clock seconds</string>
