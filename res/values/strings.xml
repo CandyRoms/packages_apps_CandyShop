@@ -24,6 +24,7 @@
     <string name="statusbar_category">Statusbar</string>
     <string name="navigation_category">Navigation</string>
     <string name="stockroom_category">StockRoom</string>
+    <string name="battery_category">Battery icon</string>
 
     <!-- Bottom Navigation -->
     <string name="system_bottom_nav_title">System</string>
@@ -46,6 +47,7 @@
     <string name="lockscreen_other_category_title">Other</string>
     <string name="notifications_category_title">Annoying notifications protection</string>
     <string name="qs_cat_title">Quick settings panel</string>
+    <string name="battery_style_category_title">Battery icon</string>
     <string name="statusbar_options_category_title">Statusbar options</string>
     <string name="statusbar_notifications">Statusbar notifications</string>
     <string name="statusbar_notifications_title">Statusbar ticker and heads-up options</string>
@@ -135,17 +137,18 @@
     <string name="lock_screen_shortcuts_title">Lock screen shortcuts</string>
     <string name="lock_screen_shortcuts_summary">Manage lock screen bottom shortcuts</string>
 
-     <!-- Battery Styles -->
-    <string name="battery_style_title">Battery icon style</string>
-    <string name="battery_style_summary">Change the look of the icon in the statusbar</string>
-    <string name="battery_style_port">Portrait</string>
-    <string name="battery_style_circle">Circle</string>
-    <string name="battery_style_dotted_circle">Dotted circle</string>
-    <string name="battery_style_big_circle">Big circle</string>
-    <string name="battery_style_big_dotted_circle">Big dotted circle</string>
-    <string name="battery_style_text">Text</string>
-    <string name="show_battery_percent_title">Show battery percentage</string>
-    <string name="show_battery_percent_summary">Show battery level percentage near the icon</string>
-    <string name="battery_style_category_title">Battery level</string>
+    <!-- Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Battery percentage</string>
+    <string name="status_bar_battery_percentage_default">Hidden</string>
+    <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
+    <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
+
+    <!-- Status bar battery style-->
+    <string name="status_bar_battery_style_title">Battery style</string>
+    <string name="status_bar_battery_style_port">Portrait</string>
+    <string name="status_bar_battery_style_circle">Circle</string>
+    <string name="status_bar_battery_style_dotted_circle">Dotted circle</string>
+    <string name="status_bar_battery_style_text">Text</string>
+    <string name="status_bar_battery_style_hidden">Hidden</string>
 
 </resources>

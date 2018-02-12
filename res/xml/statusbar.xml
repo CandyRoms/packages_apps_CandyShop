@@ -38,12 +38,10 @@
             settings:min="0"
             settings:units="" />
 
-        <ListPreference
-            android:key="battery_style"
-            android:title="@string/battery_style_title"
-            android:summary="@string/battery_style_summary"
-            android:entries="@array/battery_style_entries"
-            android:entryValues="@array/battery_style_values" />
+        <Preference
+            android:key="battery_settings"
+            android:title="@string/battery_style_category_title"
+            android:fragment="org.candy.candyshop.fragments.BatterySettings" />
 
         <Preference
             android:title="@string/status_bar_tuner_title"
