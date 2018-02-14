@@ -118,13 +118,14 @@
 
     <!-- QS rows and columns -->
     <string name="qs_rows_columns_title">Ряды и столбцы</string>
-    <string name="qs_rows_portrait_title">Число плиток в ряду (портрет.)</string>
-    <string name="qs_rows_landscape_title">Число плиток в ряду (альбом.)</string>
-    <string name="qs_columns_portrait_title">Число плиток в столбце (портрет.)</string>
-    <string name="qs_columns_landscape_title">Число плиток в столбце (альбом.)</string>
+    <string name="qs_rows_portrait_title">Число рядов (портрет.)</string>
+    <string name="qs_rows_landscape_title">Число рядов (альбом.)</string>
+    <string name="qs_columns_portrait_title">Число столбцов (портрет.)</string>
+    <string name="qs_columns_landscape_title">Число столбцов (альбом.)</string>
     <string name="qs_tile_title_visibility_title">Отображать подписи плиток</string>
 
     <!-- Statusbar net monitor -->
+    <string name="net_monitor_category_title">Индикатор передачи данных</string>
     <string name="network_traffic_state_title">Отображать скорость передачи данных в строке состояния</string>
     <string name="network_traffic_autohide_threshold_title">Порог неактивности (KB/s)</string>
 
@@ -386,4 +387,57 @@
     <string name="less_notification_sounds_1m">1 минута</string>
     <string name="less_notification_sounds_2m">2 минуты</string>
 
+    <!-- Clock and date settings -->
+    <string name="status_bar_clock">Часы и дата</string>
+    <string name="status_bar_clock_summary">Пользовательские настройки расположения часов и даты</string>
+    <string name="clock_title_enable">Расположение</string>
+    <string name="clock_enabled">Включено</string>
+    <string name="clock_disabled">Отключено</string>
+    <string name="status_bar_clock_style_reset">Сброс цвета</string>
+    <string name="status_bar_show_clock_title">Отображать часы и дату</string>
+    <string name="status_bar_clock_seconds_title">Отображать секунды</string>
+    <string name="status_bar_am_pm_title">Стиль индикатора «AM/PM»</string>
+    <string name="status_bar_am_pm_info">Включен 24-часовой формат времени</string>
+    <string name="enable_clock_weekday">День недели</string>
+    <string name="enable_clock_weekday_summary">Сокращенно отображать день недели перед часами</string>
+    <string name="right_clock">Справа</string>
+    <string name="left_clock">Слева</string>
+    <string name="dont_show">Не отображать</string>
+    <string name="clock_date_display">Дата</string>
+    <string name="clock_date_display_summary">Отображать дату перед часами</string>
+    <string name="clock_date_style">Стиль даты</string>
+    <string name="clock_date_format">Формат даты</string>
+    <string name="clock_date_string_edittext_title">Должен быть в DateFormat, например MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Введите значение</string>
+    <string name="am_pm_clock_normal">Обычный шрифт</string>
+    <string name="am_pm_clock_small">Мелкий шрифт</string>
+    <string name="am_pm_clock_none">Не отображать</string>
+    <string name="clock_date_display_none">Не отображать</string>
+    <string name="clock_date_display_small">Мелкий шрифт</string>
+    <string name="clock_date_display_normal">Обычный шрифт</string>
+    <string name="clock_date_style_normal">Стандартный</string>
+    <string name="clock_date_style_lowercase">Строчный</string>
+    <string name="clock_date_style_uppercase">Прописной</string>
+    <string name="clock_date_format_custom">Пользовательский формат</string>
+    <string name="clock_date_right">Справа от часов</string>
+    <string name="clock_date_left">Слева от часов</string>
+    <string name="clock_date_position">Положение даты</string>
+
+    <!-- Battery styles -->
+    <string name="battery_style_title">Стиль батареи</string>
+    <string name="battery_style_summary">Изменить вид иконки батареи в строке состояния</string>
+    <string name="battery_style_port">Вертикальный значок</string>
+    <string name="battery_style_land">Горизонтальный значок</string>
+    <string name="battery_style_circle">Круглый значок</string>
+    <string name="battery_style_dotted_circle">Пунктирный круг</string>
+    <string name="battery_style_big_circle">Большой круг</string>
+    <string name="battery_style_big_dotted_circle">Большой пунктирный круг</string>
+    <string name="battery_style_text">Текст</string>
+    <string name="battery_style_hidden">Не отображать</string>
+    <string name="show_battery_percent_title">Процент заряда батареи</string>
+    <string name="show_battery_percent_summary">Отображать процент заряда батареи рядом со значком</string>
+    <string name="battery_style_category_title">Заряд батареи</string>
+
+    <string name="incall_notifications_vibrate">Менее надоедливые уведомления во время вызова</string>
+    <string name="incall_notifications_vibrate_summary">Вибрация вместо звукового сигнала для уведомлений во время вызова</string>
 </resources>
