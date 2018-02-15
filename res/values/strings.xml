@@ -150,13 +150,19 @@
     <string name="less_boring_heads_up_title">Make heads up less annoying</string>
     <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
 
+
+    <!-- QuickSettings -->
+
     <!-- QS rows and columns -->
+    <string name="qs_layout_category">Layout</string>
+    <string name="qs_columns_title">Columns</string>
     <string name="qs_rows_columns_title">QS rows and columns</string>
     <string name="qs_rows_portrait_title">Tiles rows on portrait</string>
     <string name="qs_rows_landscape_title">Tiles rows on landscape</string>
     <string name="qs_columns_portrait_title">Tiles columns on portrait</string>
     <string name="qs_columns_landscape_title">Tiles columns on landscape</string>
     <string name="qs_tile_title_visibility_title">Show tiles title</string>
+    <string name="qs_tile_title_visibility_summary">Show titles underneath quick settings tiles</string>
     <string name="qs_small_tiles_title">Small QS tiles</string>
 
     <!-- Battery light -->
@@ -200,12 +206,6 @@
     <!-- Option to show brightness bar in quick settings -->
     <string name="show_brightness_title">Brightness slider</string>
     <string name="show_brightness_summary">Show the brightness slider</string>
-
-    <!-- Quick settings -->
-    <string name="qs_layout_category">Layout</string>
-    <string name="qs_columns_title">Columns</string>
-    <string name="qs_tile_title_visibility_title">Tile titles</string>
-    <string name="qs_tile_title_visibility_summary">Show titles underneath quick settings tiles</string>
 
     <!-- Clear all recents -->
     <string name="aosp_recents_title">AOSP recents</string>
@@ -558,12 +558,6 @@
     <!-- Heads up options -->
     <string name="statusbar_notifications">Statusbar notifications</string>
     <string name="statusbar_notifications_title">Statusbar ticker and heads-up options</string>
-
-    <!-- Statusbar ticker -->
-    <string name="ticker_mode_title">Statusbar notification ticker</string>
-    <string name="ticker_disabled">Disabled</string>
-    <string name="ticker_enabled">Notification ticker</string>
-    <string name="ticker_media_enabled">Notification and music ticker</string>
 
     <!-- Generic navigation -->
     <string name="navbar_category_title">Software keys</string>
