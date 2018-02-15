@@ -55,6 +55,13 @@
     <string name="recent_settings_title">Recents</string>
     <string name="status_bar_clock_title">Clock options</string>
 
+    <!-- Power Menu -->
+    <string name="powermenu_reboot_title">Reboot</string>
+    <string name="powermenu_advanced_reboot_title">Advanced reboot</string>
+    <string name="powermenu_advanced_reboot_summary">Enables the advanced reboot menu for options to reboot to recovery, bootloader, restart systemui or trigger a hot reboot</string>
+    <string name="powermenu_screenshot_title">Screenshot</string>
+    <string name="powermenu_airplane_title">Airplane mode</string>
+
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
     <string name="press_color_to_apply">Press on color below to apply</string>
