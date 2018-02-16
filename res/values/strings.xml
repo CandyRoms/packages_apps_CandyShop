@@ -72,17 +72,22 @@
     <string name="powermenu_ls_airplane_summary">Show the airplane mode option on the lockscreen</string>
 
     <!-- System theme -->
-    <string name="theme_category_title">System theme</string>
+    <string name="theme_category_title">System theme sweetness</string>
     <string name="systemui_theme_style_title">Background color</string>
     <string name="systemui_theme_style_auto">Automatic (wallpaper based)</string>
-    <string name="systemui_theme_style_light">Light</string>
-    <string name="systemui_theme_style_dark">Dark</string>
-    <string name="systemui_theme_style_blackaf">BlackAF</string>
-    <string name="system_dark_theme_toast_before">Applying theme! Please wait...</string>
-    <string name="system_dark_theme_toast_after">Theme applied!</string>
-    <string name="accent_picker_dialog_title">Select an accent color</string>
-    <string name="theme_accent_picker_title">Accent color</string>
-    <string name="theme_accent_picker_summary">Select system theme accent color</string>
+    <string name="systemui_theme_style_light">White Chocolate</string>
+    <string name="systemui_theme_style_dark">Dark Chocolate</string>
+    <string name="systemui_theme_style_blackaf">Black Licorice</string>
+    <string name="system_dark_theme_toast_before">Sweetening theme! Please wait...</string>
+    <string name="system_dark_theme_toast_after">Sweetness applied!</string>
+
+    <string name="applying_theme_toast">Sweetening theme, please wait...</string>
+    <string name="theme_applied_toast">Sweetness applied!</string>
+    <string name="substratum_installed_title">Sweet Themes are unavailable because Substratum is installed. Uninstall it if you wish to use Candy Sweetener instead.</string>
+
+    <string name="accent_picker_dialog_title">Sweetness accent color</string>
+    <string name="theme_accent_picker_title">Sweetness accent color</string>
+    <string name="theme_accent_picker_summary">Select system theme sweetness color</string>
     <string name="theme_accent_picker_default">Default</string>
     <string name="disable_fonts_installed_title">Font picker is unavailable to avoid conflicts with Substratum. Uninstall it if you wish to use the font picker.</string>
 

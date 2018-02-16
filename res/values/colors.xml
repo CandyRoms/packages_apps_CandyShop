@@ -28,6 +28,18 @@
     <!-- Gesture Anywhere -->
     <color name="ga_gesture_color">@color/material_deep_teal_500</color>
 
+    <!-- Dirty Tweaks -->
+    <color name="preference_background_color">@*android:color/accent_device_default_light</color>
+
+    <!-- Accent picker -->
+    <color name="accent_picker_white_accent">@android:color/white</color>
+    <color name="accent_picker_dark_accent">@android:color/black</color>
+
+    <!-- Bottom navigation -->
+    <color name="BottomBarBackgroundColor">@android:color/white</color>
+    <color name="bottom_nav_text_icon_active">@android:color/black</color>
+    <color name="bottom_nav_text_icon_inactive">@*android:color/hint_foreground_light</color>
+
     <!-- Accent picker -->
     <color name="accent_picker_white_accent">@android:color/white</color>
     <color name="accent_picker_dark_accent">@android:color/black</color>
