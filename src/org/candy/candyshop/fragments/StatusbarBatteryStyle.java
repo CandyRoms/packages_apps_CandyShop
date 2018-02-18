@@ -64,19 +64,22 @@ public class StatusbarBatteryStyle extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.statusbar_battery_style);
 
         PreferenceScreen prefSet = getPreferenceScreen();
-        ContentResolver resolver = getActivity().getContentResolver();
+        final ContentResolver resolver = getActivity().getContentResolver();
 
+        int batteryStyle = Settings.Secure.getInt(resolver,
+                Settings.Secure.STATUS_BAR_BATTERY_STYLE, 0);
         mBatteryIconStyle = (ListPreference) findPreference(BATTERY_STYLE);
-        mBatteryIconStyle.setValue(Integer.toString(Settings.Secure.getInt(resolver,
-               Settings.Secure.STATUS_BAR_BATTERY_STYLE, 0)));
+        mBatteryIconStyle.setValue(Integer.toString(batteryStyle));
+        int valueIndex = mBatteryIconStyle.findIndexOfValue(String.valueOf(batteryStyle));
+        mBatteryIconStyle.setSummary(mBatteryIconStyle.getEntries()[valueIndex]);
         mBatteryIconStyle.setOnPreferenceChangeListener(this);
 
-        int mBatteryPercentageShowing = Settings.System.getInt(resolver,
-                Settings.System.SHOW_BATTERY_PERCENT, 0);
+        int showPercent = Settings.System.getInt(resolver,
+                Settings.System.SHOW_BATTERY_PERCENT, 1);
         mShowBatteryPercent = (SystemSettingSwitchPreference) findPreference(KEY_BATTERY_PERCENTAGE);
-        mShowBatteryPercent.setChecked(mBatteryPercentageShowing == 1);
         mShowBatteryPercent.setOnPreferenceChangeListener(this);
-
+        boolean hideForcePercent = batteryStyle == 6 || batteryStyle == 7; /*text or hidden style*/
+        mShowBatteryPercent.setEnabled(!hideForcePercent);
     }
 
     @Override
@@ -92,6 +95,11 @@ public class StatusbarBatteryStyle extends SettingsPreferenceFragment implements
             int value = Integer.valueOf((String) newValue);
             Settings.Secure.putInt(getContentResolver(),
                     Settings.Secure.STATUS_BAR_BATTERY_STYLE, value);
+            int valueIndex = mBatteryIconStyle
+                    .findIndexOfValue((String) newValue);
+            mBatteryIconStyle
+                    .setSummary(mBatteryIconStyle.getEntries()[valueIndex]);
+            boolean hideForcePercent = value == 6 || value == 7;/*text or hidden style*/
             return true;
         } else if (preference == mShowBatteryPercent) {
             boolean showPercentage = (Boolean) newValue;
