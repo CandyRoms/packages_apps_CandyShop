@@ -19,6 +19,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <org.candy.candyshop.preference.SystemSettingSwitchPreference
+        android:key="systemui_recents_mem_display"
+        android:title="@string/recents_show_membar_title"
+        android:summary="@string/recents_show_membar_summary"
+        android:defaultValue="false" />
+
     <Preference
         android:key="recents_icon_pack"
         android:title="@string/recents_icon_pack_title"
