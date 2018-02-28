@@ -133,6 +133,10 @@
     <string name="navbar_tuner_title">Edit navigation bar</string>
     <string name="navbar_tuner_summary">Edit the navigation bar layout and buttons</string>
 
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Three finger gesture</string>
+    <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
+
     <!-- Toggle Navbar -->
     <string name="navigation_bar_enabled">Enable the Navbar</string>
     <string name="navigation_bar_enabled_title">Enable the on-screen Navbar</string>
