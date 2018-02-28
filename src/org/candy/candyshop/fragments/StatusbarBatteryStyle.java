@@ -25,6 +25,7 @@ import android.content.res.Resources;
 import android.net.TrafficStats;
 import android.os.Bundle;
 import android.os.RemoteException;
+import android.os.UserHandle;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceGroup;
@@ -40,15 +41,17 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.Utils;
 
-import net.margaritov.preference.colorpicker.ColorPickerPreference;
+import org.candy.candyshop.preference.SystemSettingSwitchPreference;
 
 public class StatusbarBatteryStyle extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "StatusbarBatteryStyle";
 
-    private static final String STATUS_BAR_BATTERY_SAVER_COLOR = "status_bar_battery_saver_color";
+    private static final String BATTERY_STYLE = "battery_style";
+    private static final String KEY_BATTERY_PERCENTAGE = "battery_percentage";
 
-    private ColorPickerPreference mBatterySaverColor;
+    private ListPreference mBatteryIconStyle;
+    private SystemSettingSwitchPreference mShowBatteryPercent;
 
     @Override
     public int getMetricsCategory() {
@@ -60,15 +63,20 @@ public class StatusbarBatteryStyle extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.statusbar_battery_style);
 
+        PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 
-        int batterySaverColor = Settings.Secure.getInt(resolver,
-                Settings.Secure.STATUS_BAR_BATTERY_SAVER_COLOR, 0xfff4511e);
-        mBatterySaverColor = (ColorPickerPreference) findPreference("status_bar_battery_saver_color");
-        mBatterySaverColor.setNewPreviewColor(batterySaverColor);
-        mBatterySaverColor.setOnPreferenceChangeListener(this);
+        mBatteryIconStyle = (ListPreference) findPreference(BATTERY_STYLE);
+        mBatteryIconStyle.setValue(Integer.toString(Settings.Secure.getInt(resolver,
+               Settings.Secure.STATUS_BAR_BATTERY_STYLE, 0)));
+        mBatteryIconStyle.setOnPreferenceChangeListener(this);
 
-        enableStatusBarBatteryDependents();
+        int mBatteryPercentageShowing = Settings.System.getInt(resolver,
+                Settings.System.SHOW_BATTERY_PERCENT, 0);
+        mShowBatteryPercent = (SystemSettingSwitchPreference) findPreference(KEY_BATTERY_PERCENTAGE);
+        mShowBatteryPercent.setChecked(mBatteryPercentageShowing == 1);
+        mShowBatteryPercent.setOnPreferenceChangeListener(this);
+
     }
 
     @Override
@@ -80,16 +88,18 @@ public class StatusbarBatteryStyle extends SettingsPreferenceFragment implements
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
-        if (preference.equals(mBatterySaverColor)) {
-            int color = ((Integer) newValue).intValue();
-            Settings.Secure.putInt(resolver,
-                    Settings.Secure.STATUS_BAR_BATTERY_SAVER_COLOR, color);
+        if (preference == mBatteryIconStyle) {
+            int value = Integer.valueOf((String) newValue);
+            Settings.Secure.putInt(getContentResolver(),
+                    Settings.Secure.STATUS_BAR_BATTERY_STYLE, value);
+            return true;
+        } else if (preference == mShowBatteryPercent) {
+            boolean showPercentage = (Boolean) newValue;
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.SHOW_BATTERY_PERCENT, showPercentage ? 1 : 0);
             return true;
         }
         return false;
     }
 
-    private void enableStatusBarBatteryDependents() {
-        mBatterySaverColor.setEnabled(true);
-    }
 }

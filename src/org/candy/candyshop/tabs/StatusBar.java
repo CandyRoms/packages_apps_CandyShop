@@ -37,11 +37,9 @@ import com.android.settings.Utils;
 public class StatusBar extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "StatusBar";
-    private static final String BATTERY_STYLE = "battery_style";
 
     private ListPreference mTickerMode;
     private ListPreference mNoisyNotification;
-    private ListPreference mBatteryIconStyle;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -65,11 +63,6 @@ public class StatusBar extends SettingsPreferenceFragment implements
                 1, UserHandle.USER_CURRENT);
         mNoisyNotification.setValue(String.valueOf(mode));
         mNoisyNotification.setSummary(mNoisyNotification.getEntry());
-
-        mBatteryIconStyle = (ListPreference) findPreference(BATTERY_STYLE);
-        mBatteryIconStyle.setValue(Integer.toString(Settings.Secure.getInt(resolver,
-               Settings.Secure.STATUS_BAR_BATTERY_STYLE, 0)));
-        mBatteryIconStyle.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -100,11 +93,6 @@ public class StatusBar extends SettingsPreferenceFragment implements
             int index = mNoisyNotification.findIndexOfValue((String) newValue);
             mNoisyNotification.setSummary(
                     mNoisyNotification.getEntries()[index]);
-            return true;
-        } else  if (preference == mBatteryIconStyle) {
-            int value = Integer.valueOf((String) newValue);
-            Settings.Secure.putInt(getContentResolver(),
-                    Settings.Secure.STATUS_BAR_BATTERY_STYLE, value);
             return true;
         }
 
