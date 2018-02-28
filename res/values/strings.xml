@@ -280,6 +280,10 @@
     <string name="dialog_pick_iconpack_title">Pick icon pack</string>
     <string name="default_iconpack_title">Default icons</string>
 
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Three finger gesture</string>
+    <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
+
     <!-- Slim Recents panel -->
     <string name="slim_recents_title">Slim recents</string>
     <string name="use_slim_recents_title">Use alternative recents panel</string>
