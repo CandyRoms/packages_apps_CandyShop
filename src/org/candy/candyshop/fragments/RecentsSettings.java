@@ -74,6 +74,7 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
 
     private SwitchPreference mSlimToggle;
     private Preference mStockIconPacks;
+    private Preference mMemoryBar;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -81,6 +82,7 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.recents_settings);
         ContentResolver resolver = getActivity().getContentResolver();
 
+        mMemoryBar = (Preference) findPreference("systemui_recents_mem_display");
         mStockIconPacks = (Preference) findPreference("recents_icon_pack");
         mSlimToggle = (SwitchPreference) findPreference("use_slim_recents");
         boolean enabled = Settings.System.getIntForUser(
@@ -88,6 +90,7 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
                 UserHandle.USER_CURRENT) == 1;
         mSlimToggle.setChecked(enabled);
         mStockIconPacks.setEnabled(!enabled);
+        mMemoryBar.setEnabled(!enabled);
         mSlimToggle.setOnPreferenceChangeListener(this);
 
     }
