@@ -167,7 +167,7 @@
     <string name="ticker_disabled">Disattivato</string>
     <string name="ticker_enabled">Ticker notifiche</string>
     <string name="ticker_media_enabled">Ticker notifiche e musica</string>
-    <string name="slim_recents_hints_footer">Per rimuovere le app recenti, esegui un pinch-in sul pannello stesso. Per impedire che un\'app venga rimossa, premi a lungo sulla sua icona per salvarla come favorita.\n\nGli Slim Recents permettono di avviare una sessione multifinestra in modo dinamico: trascina un\'app A sopra o sotto un\'app B per avviare la sessione multifinestra con A in alto e B in basso o viceversa.\n\nPer terminare un\'app e i relativi processi in background, tappa sui tre punti nella card dell\'app e quindi sull\'icona a forma di bomba.</string>
+    <string name="slim_recents_hints_footer">Per rimuovere le app recenti, esegui un pinch-in sul pannello stesso. Per impedire che un\'app venga rimossa, premi a lungo sulla sua icona per salvarla come favorita.\n\nPer altre funzioni muovi o premi a lungo su una card</string>
 
     <string name="notification_sound_vib_screen_on_title">Notifiche rumorose a schermo acceso</string>
     <string name="notification_sound_vib_screen_on_never">Mai</string>
