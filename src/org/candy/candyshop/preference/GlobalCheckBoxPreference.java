@@ -17,8 +17,8 @@
 package org.candy.candyshop.preference;
 
 import android.content.Context;
-import android.support.v7.preference.CheckBoxPreference;
 import android.provider.Settings;
+import android.support.v7.preference.CheckBoxPreference;
 import android.util.AttributeSet;
 
 public class GlobalCheckBoxPreference extends CheckBoxPreference {
@@ -58,12 +58,9 @@ public class GlobalCheckBoxPreference extends CheckBoxPreference {
                 getKey(), defaultReturnValue ? 1 : 0) != 0;
     }
 
-    /*
     @Override
-    protected boolean isPersisted() {
-        // Using getString instead of getInt so we can simply check for null
-        // instead of catching an exception. (All values are stored as strings.)
-        return Settings.Global.getString(getContext().getContentResolver(), getKey()) != null;
+    protected void onSetInitialValue(boolean restoreValue, Object defaultValue) {
+        setChecked(Settings.Secure.getString(getContext().getContentResolver(), getKey()) != null ? getPersistedBoolean(isChecked())
+                : (Boolean) defaultValue);
     }
-    */
 }
