@@ -40,6 +40,11 @@
         android:fragment="org.candy.candyshop.fragments.PowerMenu"
         android:title="@string/powermenu_title" />
 
+    <Preference
+        android:key="systemtheme"
+        android:fragment="org.candy.candyshop.fragments.SystemTheme"
+        android:title="@string/systemui_theme_style_title" />
+
     <PreferenceCategory
         android:key="notifications_category"
         android:title="@string/notifications_category_title" >

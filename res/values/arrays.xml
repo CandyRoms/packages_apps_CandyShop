@@ -490,7 +490,7 @@
         <item>6</item>
     </string-array>
 
-<!-- clear all recents button location -->
+    <!-- clear all recents button location -->
     <string-array name="recents_clear_all_location_entries" translatable="false">
         <item>@string/recents_clear_all_location_top_right</item>
         <item>@string/recents_clear_all_location_top_left</item>
@@ -522,5 +522,18 @@
         <item>1</item>
         <item>2</item>
         <item>3</item>
+    </string-array>
+
+    <!-- SystemUI theme -->
+    <string-array name="systemui_theme_style_entries" translatable="false">
+        <item>@string/systemui_theme_style_auto</item>
+        <item>@string/systemui_theme_style_light</item>
+        <item>@string/systemui_theme_style_dark</item>
+    </string-array>
+
+    <string-array name="systemui_theme_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
     </string-array>
 </resources>
