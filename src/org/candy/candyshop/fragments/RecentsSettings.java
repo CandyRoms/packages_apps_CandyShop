@@ -96,13 +96,14 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.recents_settings);
         ContentResolver resolver = getActivity().getContentResolver();
 
-        mSystemuiRecents = (Preference) findPreference("systemui_recents_mem_display");
-        mRecentsButtonLocation = (Preference) findPreference("recents_clear_all_location");
-        mShowClearAllButton = (Preference) findPreference("show_clear_all_recents");
+        mSystemuiRecents = (SwitchPreference) findPreference("systemui_recents_mem_display");
+        mRecentsButtonLocation = (ListPreference) findPreference("recents_clear_all_location");
+        mShowClearAllButton = (SystemSettingSwitchPreference) findPreference("show_clear_all_recents");
 
         mMemoryBar = (Preference) findPreference("systemui_recents_mem_display");
         mStockIconPacks = (Preference) findPreference("recents_icon_pack");
         mSlimToggle = (SwitchPreference) findPreference("use_slim_recents");
+
         boolean enabled = Settings.System.getIntForUser(
                 resolver, Settings.System.USE_SLIM_RECENTS, 0,
                 UserHandle.USER_CURRENT) == 1;
@@ -137,6 +138,15 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
+
+        mSystemuiRecents = (SwitchPreference) findPreference("systemui_recents_mem_display");
+        mRecentsButtonLocation = (ListPreference) findPreference("recents_clear_all_location");
+        mShowClearAllButton = (SystemSettingSwitchPreference) findPreference("show_clear_all_recents");
+
+        mMemoryBar = (Preference) findPreference("systemui_recents_mem_display");
+        mStockIconPacks = (Preference) findPreference("recents_icon_pack");
+        mSlimToggle = (SwitchPreference) findPreference("use_slim_recents");
+
         if (preference == mSlimToggle) {
             boolean value = (Boolean) newValue;
             Settings.System.putIntForUser(getActivity().getContentResolver(),
@@ -144,10 +154,10 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
                     UserHandle.USER_CURRENT);
             mSlimToggle.setChecked(value);
             mStockIconPacks.setEnabled(!value);
-            mMemoryBar.setEnabled(!enabled);
-            mShowClearAllButton.setEnabled(!enabled);
-            mRecentsButtonLocation.setEnabled(!enabled);
-            mSystemuiRecents.setEnabled(!enabled);
+//            mMemoryBar.setEnabled(!enabled);
+//            mShowClearAllButton.setEnabled(!enabled);
+//            mRecentsButtonLocation.setEnabled(!enabled);
+//            mSystemuiRecents.setEnabled(!enabled);
             return true;
         }
          if (preference == mRecentsClearAllLocation) {
