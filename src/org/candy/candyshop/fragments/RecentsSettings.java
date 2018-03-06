@@ -75,20 +75,15 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
     private AlertDialog mDialog;
     private ListView mListView;
 
-    private SwitchPreference mSlimToggle;
-    private Preference mStockIconPacks;
-    private Preference mMemoryBar;
-
-    private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
-    private ListPreference mRecentsClearAllLocation;
-    private SwitchPreference mRecentsClearAll;
-
-    private SystemSettingSwitchPreference mShowClearAllButton;
-    private ListPreference mRecentsButtonLocation;
-    private SwitchPreference mSystemuiRecents;
-
     private static final String IMMERSIVE_RECENTS = "immersive_recents";
     private ListPreference mImmersiveRecents;
+    private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
+    private SwitchPreference mShowClearAllButton;
+    private ListPreference mRecentsClearAllLocation;
+    private SystemSettingSwitchPreference mShowMemoryBar;
+    private Preference mStockIconPacks;
+
+    private SwitchPreference mSlimToggle;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -97,24 +92,24 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
         ContentResolver resolver = getActivity().getContentResolver();
 
         mImmersiveRecents = (ListPreference) findPreference("immersive_recents");
-        mSystemuiRecents = (SwitchPreference) findPreference("systemui_recents_mem_display");
-        mRecentsButtonLocation = (ListPreference) findPreference("recents_clear_all_location");
-        mShowClearAllButton = (SystemSettingSwitchPreference) findPreference("show_clear_all_recents");
-
-        mMemoryBar = (Preference) findPreference("systemui_recents_mem_display");
+        mShowClearAllButton = (SwitchPreference) findPreference("show_clear_all_recents");
+        mRecentsClearAllLocation = (ListPreference) findPreference("recents_clear_all_location");
+        mShowMemoryBar = (SystemSettingSwitchPreference) findPreference("systemui_recents_mem_display");
         mStockIconPacks = (Preference) findPreference("recents_icon_pack");
+
         mSlimToggle = (SwitchPreference) findPreference("use_slim_recents");
 
         boolean enabled = Settings.System.getIntForUser(
                 resolver, Settings.System.USE_SLIM_RECENTS, 0,
                 UserHandle.USER_CURRENT) == 1;
         mSlimToggle.setChecked(enabled);
-        mStockIconPacks.setEnabled(!enabled);
-        mMemoryBar.setEnabled(!enabled);
+
         mImmersiveRecents.setEnabled(!enabled);
         mShowClearAllButton.setEnabled(!enabled);
-        mRecentsButtonLocation.setEnabled(!enabled);
-        mSystemuiRecents.setEnabled(!enabled);
+        mRecentsClearAllLocation.setEnabled(!enabled);
+        mShowMemoryBar.setEnabled(!enabled);
+        mStockIconPacks.setEnabled(!enabled);
+
         mSlimToggle.setOnPreferenceChangeListener(this);
 
         // clear all recents
@@ -141,26 +136,17 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
 
-        mSystemuiRecents = (SwitchPreference) findPreference("systemui_recents_mem_display");
-        mRecentsButtonLocation = (ListPreference) findPreference("recents_clear_all_location");
-        mShowClearAllButton = (SystemSettingSwitchPreference) findPreference("show_clear_all_recents");
-
-        mMemoryBar = (Preference) findPreference("systemui_recents_mem_display");
-        mStockIconPacks = (Preference) findPreference("recents_icon_pack");
-        mSlimToggle = (SwitchPreference) findPreference("use_slim_recents");
-
         if (preference == mSlimToggle) {
             boolean value = (Boolean) newValue;
             Settings.System.putIntForUser(getActivity().getContentResolver(),
                     Settings.System.USE_SLIM_RECENTS, value ? 1 : 0,
                     UserHandle.USER_CURRENT);
             mSlimToggle.setChecked(value);
-            mStockIconPacks.setEnabled(!value);
-            mMemoryBar.setEnabled(!value);
             mImmersiveRecents.setEnabled(!value);
             mShowClearAllButton.setEnabled(!value);
-            mRecentsButtonLocation.setEnabled(!value);
-            mSystemuiRecents.setEnabled(!value);
+            mRecentsClearAllLocation.setEnabled(!value);
+            mShowMemoryBar.setEnabled(!value);
+            mStockIconPacks.setEnabled(!value);
             return true;
         }
          if (preference == mRecentsClearAllLocation) {
