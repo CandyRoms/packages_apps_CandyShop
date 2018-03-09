@@ -16,16 +16,16 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Main abc pref screens -->
     <string name="abc_settings_title">Ajustes adicionales ROM</string>
-    <string name="abc_interface">Interface</string>
+    <string name="abc_interface">Interfaz</string>
     <string name="lockscreen_abc_settings_title">Pant. bloqueo y seguridad</string>
-    <string name="notification_drawer_settings_title">Notificaciones y QS</string>
+    <string name="notification_drawer_settings_title">Notificaciones y Ajustes Rápidos</string>
     <string name="statusbar_settings_title">Barra de estado</string>
     <string name="abc_sys">Misc</string>
     <string name="power_settings_title">Botón de encendido</string>
     <string name="volumerocker_settings_title">Volumen y media</string>
     <string name="screen_settings_title">Pantalla</string>
     <string name="other_settings_title">Otros</string>
-    <string name="abc_leds">Luz Led</string>
+    <string name="abc_leds">Luz de Notificación</string>
     <string name="abc_battery_light_settings">Luz de carga de batería</string>
     <string name="abc_notification_light_settings">Luz de notificación</string>
     <string name="recent_settings_title">Aplicaciones recientes</string>
@@ -45,8 +45,8 @@
     <string name="volume_keys_control_media_stream_title">Botones de volumen controlan multimedia</string>
     <string name="volume_keys_control_media_stream_summary">Los botones de volumen controlan de volumen multimedia por defecto</string>
 
-    <string name="status_bar_quick_qs_pulldown">Acceso rápido</string>
-    <string name="status_bar_quick_qs_pulldown_summary">Mostrar siempre los accesos rápidos al descender la barra de estado</string>
+    <string name="status_bar_quick_qs_pulldown">Acceso a Ajustes Rápidos</string>
+    <string name="status_bar_quick_qs_pulldown_summary">Mostrar siempre los ajustes rápidos al descender la barra de estado</string>
 
     <string name="volume_rocker_music_controls_title">Controles de volumen</string>
     <string name="volume_rocker_music_controls_summary">Cuando la pantalla esté apagada, mantener presionados los botones de volumen buscará pistas de música</string>
@@ -193,6 +193,8 @@
     <string name="slim_blacklist_apps_summary">Estas aplic. no se mostraran en el panel</string>
     <string name="slim_blacklist_add_apps_title">Agregar aplic.</string>
     <string name="slim_blacklist_add_apps_summary">Toca aqui para agregar, toca la aplic. agregada para eliminarla</string>
+    <string name="slim_recents_hints_footer">Para borrar aplic. presina con dos dedos en el panel.  Para evitar que una aplicación se borre, mantenga presionado su ícono para marcarla.\n\nPara funciones adicionales en recientes como multiventana o cerrar una aplic, presiona largo tiempo o arrastra la tarjeta al panel.</string>
+
 
     <!-- Navigation -->
     <string name="buttons_title">Botones</string>
@@ -368,7 +370,7 @@
     <string name="smartbar_double_tap_sleep_title">Doble toque para dormir</string>
     <string name="smartbar_double_tap_sleep_summary">Doble toque para dormir en lugares vacíos</string>
 
-    <string name="notification_sound_vib_screen_on_title">Notificaciones y vibración si la pantalla esta encendidaS</string>
+    <string name="notification_sound_vib_screen_on_title">Notificaciones y vibración si la pantalla esta encendida</string>
     <string name="notification_sound_vib_screen_on_never">Nunca</string>
     <string name="notification_sound_vib_screen_on_always">Siempre (por defecto)</string>
     <string name="notification_sound_vib_screen_on_nomedia">Si no esta sonando música</string>
