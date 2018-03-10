@@ -28,4 +28,8 @@
     <!-- Gesture Anywhere -->
     <color name="ga_gesture_color">@color/material_deep_teal_500</color>
 
+    <!-- Accent picker -->
+    <color name="accent_picker_white_accent">@android:color/white</color>
+    <color name="accent_picker_dark_accent">@android:color/black</color>
+
 </resources>
