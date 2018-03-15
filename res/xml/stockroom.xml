@@ -49,6 +49,11 @@
             android:summary="@string/screenshot_shutter_sound_summary"
             android:defaultValue="false" />
 
+        <!-- Custom SS editor selection -->
+        <Preference
+            android:key="screenshot_edit_app"
+            android:title="@string/screenshot_edit_app"
+            android:summary="@string/screenshot_edit_app_summary" />
     </PreferenceCategory>
 
     <PreferenceCategory

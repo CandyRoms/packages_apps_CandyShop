@@ -375,4 +375,12 @@
     <!-- Swap navigation keys -->
     <string name="swap_navigation_keys_title">Swap keys</string>
     <string name="swap_navigation_keys_title_summary">Swap back and recents hardware keys</string>
+
+    <!-- Screenshot editor -->
+    <string name="screenshot_edit_app">Screenshot edit app</string>
+    <string name="screenshot_edit_app_summary">Choose which app should be launched when tapping on the screenshot notification edit button</string>
+    <string name="screenshot_edit_app_no_editor">No image editor available</string>
+    <string name="profile_choose_app">Choose app</string>
+    <string name="dialog_delete_title">Delete</string>
+    <string name="dialog_delete_message">Remove selected item?</string>
 </resources>
