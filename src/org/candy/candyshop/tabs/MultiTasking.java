@@ -16,8 +16,11 @@
 
 package org.candy.candyshop.tabs;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.ContentResolver;
+import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
@@ -28,15 +31,33 @@ import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v14.preference.SwitchPreference;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.RadioButton;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.Utils;
+import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+
+import org.candy.candyshop.preference.ScreenshotEditPackageListAdapter;
+import org.candy.candyshop.preference.ScreenshotEditPackageListAdapter.PackageItem;
 
 public class MultiTasking extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+        Preference.OnPreferenceChangeListener, Preference.OnPreferenceClickListener {
+
     private static final String TAG = "MultiTasking";
+
+    private static final int DIALOG_SCREENSHOT_EDIT_APP = 1;
+
+    private Preference mScreenshotEditAppPref;
+    private ScreenshotEditPackageListAdapter mPackageAdapter;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -45,6 +66,37 @@ public class MultiTasking extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.multitasking);
 
         ContentResolver resolver = getActivity().getContentResolver();
+
+        mPackageAdapter = new ScreenshotEditPackageListAdapter(getActivity());
+        mScreenshotEditAppPref = findPreference("screenshot_edit_app");
+        mScreenshotEditAppPref.setOnPreferenceClickListener(this);
+    }
+
+    @Override
+    public Dialog onCreateDialog(int dialogId) {
+        switch (dialogId) {
+            case DIALOG_SCREENSHOT_EDIT_APP: {
+                Dialog dialog;
+                AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
+                final ListView list = new ListView(getActivity());
+                list.setAdapter(mPackageAdapter);
+                alertDialog.setTitle(R.string.profile_choose_app);
+                alertDialog.setView(list);
+                dialog = alertDialog.create();
+                list.setOnItemClickListener(new OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        // Add empty application definition, the user will be able to edit it later
+                        PackageItem info = (PackageItem) parent.getItemAtPosition(position);
+                        Settings.System.putString(getActivity().getContentResolver(),
+                                Settings.System.SCREENSHOT_EDIT_USER_APP, info.packageName);
+                        dialog.cancel();
+                    }
+                });
+                return dialog;
+            }
+         }
+        return super.onCreateDialog(dialogId);
     }
 
     @Override
@@ -60,6 +112,17 @@ public class MultiTasking extends SettingsPreferenceFragment implements
     @Override
     public void onPause() {
         super.onPause();
+    }
+
+    public boolean onPreferenceClick(Preference preference) {
+        // Don't show the dialog if there are no available editor apps
+        if (preference == mScreenshotEditAppPref && mPackageAdapter.getCount() > 0) {
+            showDialog(DIALOG_SCREENSHOT_EDIT_APP);
+        } else {
+            Toast.makeText(getActivity(), getActivity().getString(R.string.screenshot_edit_app_no_editor),
+                    Toast.LENGTH_LONG).show();
+        }
+        return true;
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {

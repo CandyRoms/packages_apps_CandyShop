@@ -35,5 +35,10 @@
        android:fragment="org.candy.candyshop.gestureanywhere.GestureAnywhereSettings"
        android:title="@string/gesture_anywhere_title" />
 
+    <Preference
+        android:key="screenshot_edit_app"
+        android:title="@string/screenshot_edit_app"
+        android:summary="@string/screenshot_edit_app_summary" />
+
 </PreferenceScreen>
 

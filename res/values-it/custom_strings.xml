@@ -191,4 +191,57 @@
     <string name="less_notification_sounds_30s">Ogni 30 secondi</string>
     <string name="less_notification_sounds_1m">Ogni minuto</string>
     <string name="less_notification_sounds_2m">Ogni 2 minuti</string>
+
+    <string name="battery_style_title">Stile icona batteria</string>
+    <string name="battery_style_summary">Cambia l\'aspetto dell\'icona della batteria nella barra di stato</string>
+    <string name="battery_style_port">Verticale</string>
+    <string name="battery_style_circle">Cerchio</string>
+    <string name="battery_style_dotted_circle">Cerchio puntato</string>
+    <string name="battery_style_big_circle">Cerchio grande</string>
+    <string name="battery_style_big_dotted_circle">Cerchio grande puntato</string>
+    <string name="battery_style_text">Testo</string>
+    <string name="battery_style_hidden">Nascosta</string>
+    <string name="show_battery_percent_title">Mostra percentuale batteria</string>
+    <string name="show_battery_percent_summary">Mostra la percentuale di carica accanto all\'icona della batteria</string>
+    <string name="battery_style_category_title">Livello di carica</string>
+
+    <string name="status_bar_clock">Ora e data</string>
+    <string name="status_bar_clock_summary">Configura lo stile dell\'orologio e la data nella barra di stato</string>
+    <string name="clock_title_enable">Allineamento</string>
+    <string name="clock_enabled">Attivato</string>
+    <string name="clock_disabled">Disattivato</string>
+    <string name="status_bar_clock_style_reset">Resetta colore</string>
+    <string name="status_bar_show_clock_title">Mostra data e ora</string>
+    <string name="status_bar_clock_seconds_title">Mostra secondi</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">La modalità 24 ore è attiva</string>
+    <string name="enable_clock_weekday">Giorno della settimana</string>
+    <string name="enable_clock_weekday_summary">Giorno della settimana</string>
+    <string name="right_clock">Orologio a destra</string>
+    <string name="left_clock">Orologio a sinistra</string>
+    <string name="dont_show">Non mostrare</string>
+    <string name="clock_date_display">Data</string>
+    <string name="clock_date_display_summary">Mostra la data personalizzata prima dell\'ora</string>
+    <string name="clock_date_style">Stile data</string>
+    <string name="clock_date_format">Formato data</string>
+    <string name="clock_date_string_edittext_title">Deve essere in DateFormat, es. MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Inserisci stringa</string>
+    <string name="am_pm_clock_normal">Caratteri normali</string>
+    <string name="am_pm_clock_small">Caratteri piccoli</string>
+    <string name="am_pm_clock_none">Non mostrare</string>
+    <string name="clock_date_display_none">Non mostrare</string>
+    <string name="clock_date_display_small">Caratteri piccoli</string>
+    <string name="clock_date_display_normal">Caratteri normali</string>
+    <string name="clock_date_style_normal">Normale</string>
+    <string name="clock_date_style_lowercase">Minuscolo</string>
+    <string name="clock_date_style_uppercase">Maiuscolo</string>
+    <string name="clock_date_format_custom">Formato java personalizzato</string>
+    <string name="clock_date_right">A destra dell\'ora</string>
+    <string name="clock_date_left">A sinistra dell\'ora</string>
+    <string name="clock_date_position">Posizione data</string>
+
+    <string name="screenshot_edit_app">Editor screenshots</string>
+    <string name="screenshot_edit_app_summary">Scegli l\'app da usare come editor degli screenshots tramite il pulsante Modifica nella notifica</string>
+    <string name="screenshot_edit_app_no_editor">Nessun editor disponibile</string>
+
 </resources>
