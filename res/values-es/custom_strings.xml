@@ -445,4 +445,8 @@
 
     <string name="incall_notifications_vibrate">Notificaciones de llamada menos molestas</string>
     <string name="incall_notifications_vibrate_summary">Vibrar en lugar de reproducir un sonido para las notificaciones en llamada</string>
+    <string name="screenshot_edit_app">Editor de capturas</string>
+    <string name="screenshot_edit_app_summary">Selecciona el editor de imagenes para modificar las capturas</string>
+    <string name="screenshot_edit_app_no_editor">Ningun editor disponible</string>
+
 </resources>
