@@ -32,9 +32,9 @@
         android:title="@string/qs_cat_title" >
 
         <Preference
-            android:key="qs_rows_columns"
+            android:key="quick_settings"
             android:title="@string/qs_rows_columns_title"
-            android:fragment="org.candy.candyshop.fragments.QsRowsColumns" />
+            android:fragment="org.candy.candyshop.fragments.QuickSettings" />
     </PreferenceCategory>
 
     <PreferenceCategory

@@ -19,7 +19,7 @@
 
     <PreferenceCategory
         android:id="@+id/qs_options_category"
-        android:title="@string/qs_options_category_title" >
+        android:title="@string/qs_options_category_title" />
 
         <org.candy.candyshop.preference.SystemSettingSwitchPreference
             android:key="qs_tile_title_visibility"
@@ -50,11 +50,28 @@
             android:title="@string/status_bar_quick_qs_pulldown"
             android:summary="@string/status_bar_quick_qs_pulldown_summary"
             android:defaultValue="true" />
-    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="quick_settings_animations"
+        android:title="@string/animation_title"/>
+
+        <ListPreference
+            android:key="qs_tile_animation_style"
+            android:title="@string/qs_tile_animation_style_title"
+            android:entries="@array/qs_tile_animation_style_entries"
+            android:entryValues="@array/qs_tile_animation_style_values"
+            android:persistent="false" />
+
+        <ListPreference
+            android:key="qs_tile_animation_duration"
+            android:title="@string/qs_tile_animation_duration_title"
+            android:entries="@array/qs_tile_animation_duration_entries"
+            android:entryValues="@array/qs_tile_animation_duration_values"
+            android:persistent="false" />
 
     <PreferenceCategory
         android:id="@+id/qs_layout"
-        android:title="@string/qs_layout_category_title" >
+        android:title="@string/qs_layout_category_title" />
 
         <org.candy.candyshop.preference.CustomSeekBarPreference
             android:key="qs_rows_portrait"
@@ -91,5 +108,4 @@
             settings:min="3"
             settings:units=""
             android:persistent="false" />
-    </PreferenceCategory>
 </PreferenceScreen>
