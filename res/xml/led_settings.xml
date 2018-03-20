@@ -21,7 +21,7 @@
 
     <Preference
             android:key="charging_light"
-            android:fragment="org.candy.candyshop.fragments.BatteryLightSettings"
+            android:fragment="org.candy.candyshop.fragments.batterylight.BatteryLightSettings"
             android:title="@string/battery_light_settings" />
 
     <Preference

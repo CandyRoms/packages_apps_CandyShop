@@ -44,7 +44,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-import com.android.internal.util.du.ColorUtils;
+import com.android.internal.util.candy.ColorUtils;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -495,7 +495,7 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     @Override
     public int getDialogMetricsCategory(int id) {
         if (id == DIALOG_APPS) {
-            return MetricsEvent.DIRTYTWEAKS;
+            return MetricsEvent.CANDYSHOP;
         }
         return 0;
     }

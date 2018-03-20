@@ -37,7 +37,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
-import org.candy.candyshop.preferences.SystemSettingSwitchPreference;
+import org.candy.candyshop.preference.SystemSettingSwitchPreference;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -86,14 +86,18 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
                 com.android.internal.R.bool.config_intrusiveBatteryLed);
 
         mEnabledPref = (SystemSettingSwitchPreference)prefSet.findPreference(BATTERY_LIGHT_PREF);
-        mEnabledPref.setChecked(Settings.System.getInt(resolver,
+        if (mEnabledPref != null) {
+            mEnabledPref.setChecked(Settings.System.getInt(resolver,
                         Settings.System.BATTERY_LIGHT_ENABLED, mBatteryLightEnabled ? 1 : 0) != 0);
-        mEnabledPref.setOnPreferenceChangeListener(this);
+            mEnabledPref.setOnPreferenceChangeListener(this);
+        }
 
         mPulsePref = (SystemSettingSwitchPreference)prefSet.findPreference(BATTERY_PULSE_PREF);
-        mPulsePref.setChecked(Settings.System.getInt(resolver,
+        if (mPulsePref != null) {
+            mPulsePref.setChecked(Settings.System.getInt(resolver,
                         Settings.System.BATTERY_LIGHT_PULSE, mBatteryLightEnabled ? 1 : 0) != 0);
-        mPulsePref.setOnPreferenceChangeListener(this);
+            mPulsePref.setOnPreferenceChangeListener(this);
+        }
 
         mOnlyFullPref = (SystemSettingSwitchPreference)prefSet.findPreference(BATTERY_LIGHT_ONLY_FULL_PREF);
         mOnlyFullPref.setOnPreferenceChangeListener(this);

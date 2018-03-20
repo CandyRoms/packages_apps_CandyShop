@@ -37,7 +37,6 @@
     <string name="torch_title">Torch</string>
     <string name="battery_title">Battery settings</string>
     <string name="leds_title">Lights</string>
-    <string name="battery_light_settings">Battery charging light</string>
     <string name="network_traffic_title">Network traffic</string>
     <string name="notification_light_settings">Notifications light</string>
     <string name="powermenu_title">Power menu</string>
@@ -308,7 +307,6 @@
     <!-- ATTENTION: RTL languages need to replace left with right -->
     <string name="recent_panel_lefty_mode_title">Show on the left edge</string>
     <string name="recent_panel_lefty_mode_summary">Show recent apps panel on the left edge</string>
-    <string name="reset">Reset</string>
     <string name="profile_choose_app">Choose app</string>
     <string name="dialog_delete_title">Delete</string>
     <string name="dialog_delete_message">Remove selected item?</string>

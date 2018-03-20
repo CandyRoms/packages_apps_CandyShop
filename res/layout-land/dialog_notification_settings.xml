@@ -22,7 +22,7 @@
     android:layout_height="fill_parent"
     android:padding="@dimen/alert_dialog_padding_material">
 
-    <com.dirtyunicorns.tweaks.fragments.batterylight.preference.ColorPickerView
+    <org.candy.candyshop.fragments.batterylight.preference.ColorPickerView
         android:id="@+id/color_picker_view"
         android:layout_width="400dp"
         android:layout_height="match_parent"
