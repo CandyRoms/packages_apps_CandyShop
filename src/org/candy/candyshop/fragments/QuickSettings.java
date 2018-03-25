@@ -29,6 +29,7 @@ import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v14.preference.SwitchPreference;
 
+import org.candy.candyshop.preference.CustomSeekBarPreference;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
@@ -37,12 +38,9 @@ import com.android.settings.Utils;
 public class QuickSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    private static final String QS_PANEL_ALPHA = "qs_panel_alpha";
 
-        addPreferencesFromResource(R.xml.quicksettings);
-    }
+    private CustomSeekBarPreference mQsPanelAlpha;
 
     @Override
     public int getMetricsCategory() {
@@ -50,13 +48,33 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     }
 
     @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        addPreferencesFromResource(R.xml.quicksettings);
+
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        mQsPanelAlpha = (CustomSeekBarPreference) findPreference(QS_PANEL_ALPHA);
+        int qsPanelAlpha = Settings.System.getIntForUser(resolver,
+                Settings.System.QS_PANEL_BG_ALPHA, 255, UserHandle.USER_CURRENT);
+        mQsPanelAlpha.setValue(qsPanelAlpha);
+        mQsPanelAlpha.setOnPreferenceChangeListener(this);
+    }
+ 
+   @Override
     public void onResume() {
         super.onResume();
     }
-
     public boolean onPreferenceChange(Preference preference, Object objValue) {
+	ContentResolver resolver = getActivity().getContentResolver();
+     if (preference == mQsPanelAlpha) {
+        int bgAlpha = (Integer) objValue;
+        Settings.System.putIntForUser(getContentResolver(),
+                Settings.System.QS_PANEL_BG_ALPHA, bgAlpha,
+                UserHandle.USER_CURRENT);
         return true;
     }
+   return false;
+  }
 
 }
-
