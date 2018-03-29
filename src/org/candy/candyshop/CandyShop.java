@@ -72,7 +72,6 @@ public class CandyShop extends SettingsPreferenceFragment {
         StatusBarAdapter StatusBarAdapter = new StatusBarAdapter(getFragmentManager());
         mViewPager.setAdapter(StatusBarAdapter);
         mTabs.setViewPager(mViewPager);
-
         setHasOptionsMenu(true);
         return view;
     }
