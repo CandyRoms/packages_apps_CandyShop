@@ -23,12 +23,20 @@
     <string name="statusbar_category">Status Bar</string>
     <string name="navigation_category">Navigation</string>
     <string name="multitasking_category">Multi-Tasking</string>
+    <string name="stockroom_category">Stockroom</string>
 
+    <!-- CandyShop menu title -->
     <string name="candyshop_summary_title">Have some Candy, on us!</string>
 
-    <!-- Categories -->
-
-    <string name="button_category">Buttons</string>
+    <!-- Category titles -->
+    <string name="button_category_title">Buttons</string>
+    <string name="media_options_category_title">Media options</string>
+    <string name="sleep_controls_category_title">Sleep controls</string>
+    <string name="lockscreen_other_category_title">Other</string>
+    <string name="statusbar_options_category_title">Statusbar options</string>
+    <string name="multitasking_category_title">Multi-tasking</string>
+    <string name="screen_capture_options_category_title">Screen capture options</string>
+    <string name="miscellaneous_category_title">Miscellaneous</string>
 
     <!-- Fragments -->
     <string name="headset_title">Headset</string>

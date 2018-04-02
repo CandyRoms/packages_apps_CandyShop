@@ -20,47 +20,44 @@
     android:title="@string/system_category"
     android:layout="@layout/tab" >
 
-    <Preference
-        android:key="button"
-        android:title="@string/button_title"
-        android:fragment="org.candy.candyshop.fragments.Button" />
+    <PreferenceCategory
+        android:key="buttons_category"
+        android:title="@string/button_category_title" >
 
-    <Preference
-        android:key="torch"
-        android:title="@string/torch_title"
-        android:fragment="org.candy.candyshop.fragments.Torch" />
+        <Preference
+            android:key="button"
+            android:title="@string/button_title"
+            android:fragment="org.candy.candyshop.fragments.Button" />
 
-    <Preference
-        android:key="leds"
-        android:fragment="org.candy.candyshop.fragments.LedSettings"
-        android:title="@string/leds_title" />
+        <Preference
+            android:key="powermenu"
+            android:fragment="org.candy.candyshop.fragments.PowerMenu"
+            android:title="@string/powermenu_title" />
 
-    <Preference
-        android:key="powermenu"
-        android:fragment="org.candy.candyshop.fragments.PowerMenu"
-        android:title="@string/powermenu_title" />
-
-    <Preference
-        android:key="alarm_blocker"
-        android:title="@string/alarm_blocker"
-        android:summary="@string/alarm_blocker_summary"
-        android:fragment="org.candy.candyshop.fragments.AlarmBlocker"/>
-
-    <Preference
-        android:key="wakelock_blocker"
-        android:title="@string/wakelock_blocker_title"
-        android:summary="@string/wakelock_blocker_summary"
-        android:fragment="org.candy.candyshop.fragments.WakeLockBlocker"/>
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="notifications_category"
         android:title="@string/notifications_category_title" >
 
-        <org.candy.candyshop.preference.SystemSettingSwitchPreference
-            android:key="toast_icon"
-            android:title="@string/toast_icon_title"
-            android:summary="@string/toast_icon_summary"
-            android:defaultValue="false" />
+        <Preference
+            android:key="leds"
+            android:fragment="org.candy.candyshop.fragments.LedSettings"
+            android:title="@string/leds_title" />
+
+        <ListPreference
+            android:key="less_notification_sounds"
+            android:title="@string/less_notification_sounds_title"
+            android:summary="@string/less_notification_sounds_summary"
+            android:entries="@array/less_notification_sounds_entries"
+            android:entryValues="@array/less_notification_sounds_values" />
+
+        <ListPreference
+            android:key="notification_sound_vib_screen_on"
+            android:title="@string/notification_sound_vib_screen_on_title"
+            android:entries="@array/notification_sound_vib_screen_on_entries"
+            android:entryValues="@array/notification_sound_vib_screen_on_values"
+            android:summary="%s" />
 
         <org.candy.candyshop.preference.SystemSettingSwitchPreference
             android:key="wake_when_plugged_or_unplugged"
@@ -75,22 +72,10 @@
             android:defaultValue="true" />
 
         <org.candy.candyshop.preference.SystemSettingSwitchPreference
-            android:key="three_finger_gesture"
-            android:title="@string/three_finger_gesture"
-            android:summary="@string/three_finger_gesture_summary"
+            android:key="toast_icon"
+            android:title="@string/toast_icon_title"
+            android:summary="@string/toast_icon_summary"
             android:defaultValue="false" />
 
-        <org.candy.candyshop.preference.SystemSettingSwitchPreference	
-            android:key="pocket_judge"
-            android:title="@string/pocket_judge_title"
-            android:summary="@string/pocket_judge_summary"
-            android:defaultValue="false" />
-
-        <ListPreference
-            android:key="less_notification_sounds"
-            android:title="@string/less_notification_sounds_title"
-            android:summary="@string/less_notification_sounds_summary"
-            android:entries="@array/less_notification_sounds_entries"
-            android:entryValues="@array/less_notification_sounds_values" />
     </PreferenceCategory>
 </PreferenceScreen>

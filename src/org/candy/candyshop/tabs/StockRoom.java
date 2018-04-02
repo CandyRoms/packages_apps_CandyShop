@@ -49,10 +49,10 @@ import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import org.candy.candyshop.preference.ScreenshotEditPackageListAdapter;
 import org.candy.candyshop.preference.ScreenshotEditPackageListAdapter.PackageItem;
 
-public class MultiTasking extends SettingsPreferenceFragment implements
+public class StockRoom extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Preference.OnPreferenceClickListener {
 
-    private static final String TAG = "MultiTasking";
+    private static final String TAG = "StockRoom";
 
     private static final int DIALOG_SCREENSHOT_EDIT_APP = 1;
 
@@ -63,7 +63,7 @@ public class MultiTasking extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.multitasking);
+        addPreferencesFromResource(R.xml.stockroom);
 
         ContentResolver resolver = getActivity().getContentResolver();
 

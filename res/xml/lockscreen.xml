@@ -20,28 +20,46 @@
     android:title="@string/lockscreen_category"
     android:layout="@layout/tab" >
 
-    <org.candy.candyshop.preference.SystemSettingSwitchPreference
-        android:key="double_tap_sleep_lockscreen"
-        android:title="@string/double_tap_sleep_lockscreen"
-        android:defaultValue="true" />
+    <PreferenceCategory
+        android:key="media_options_category"
+        android:title="@string/media_options_category_title" >
 
-    <org.candy.candyshop.preference.SystemSettingSwitchPreference
-        android:key="lockscreen_media_metadata"
-        android:title="@string/media_art_title"
-        android:summary="@string/media_art_summary"
-        android:defaultValue="false" />
+        <Preference
+            android:key="force_ambient_for_media_pref"
+            android:fragment="org.candy.candyshop.AmbientTicker"
+            android:title="@string/force_ambient_for_media_pref_title"
+            android:summary="@string/force_ambient_for_media_pref_summary"/>
 
-    <Preference
-        android:key="force_ambient_for_media_pref"
-        android:fragment="org.candy.candyshop.AmbientTicker"
-        android:title="@string/force_ambient_for_media_pref_title"
-        android:summary="@string/force_ambient_for_media_pref_summary"/>
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="lockscreen_media_metadata"
+            android:title="@string/media_art_title"
+            android:summary="@string/media_art_summary"
+            android:defaultValue="false" />
 
-    <Preference
-            android:title="@string/lockscreen_tuner_title" >
-            <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.tuner.LockscreenActivity" />
-    </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="sleep_controls_category"
+        android:title="@string/sleep_controls_category_title" >
+
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="double_tap_sleep_lockscreen"
+            android:title="@string/double_tap_sleep_lockscreen"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="lockscreen_other_category"
+        android:title="@string/lockscreen_other_category_title" >
+
+        <Preference
+           android:title="@string/lockscreen_tuner_title" >
+               <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.android.systemui"
+                    android:targetClass="com.android.systemui.tuner.LockscreenActivity" />
+        </Preference>
+
+    </PreferenceCategory>
 
 </PreferenceScreen>

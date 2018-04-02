@@ -16,8 +16,70 @@
  -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/stockroom_category"
+    android:layout="@layout/tab" >
 
-<!-- Restock the shelves -->
+    <PreferenceCategory
+        android:key="multi_tasking_category"
+        android:title="@string/multitasking_category_title" >
+
+        <Preference
+            android:key="recent_settings"
+            android:title="@string/recent_settings_title"
+            android:fragment="org.candy.candyshop.fragments.RecentsSettings" />
+
+        <Preference
+           android:key="gesture_anywhere"
+           android:fragment="org.candy.candyshop.gestureanywhere.GestureAnywhereSettings"
+           android:title="@string/gesture_anywhere_title" />
+
+        <Preference
+            android:key="alarm_blocker"
+            android:title="@string/alarm_blocker"
+            android:summary="@string/alarm_blocker_summary"
+            android:fragment="org.candy.candyshop.fragments.AlarmBlocker"/>
+
+        <Preference
+            android:key="wakelock_blocker"
+            android:title="@string/wakelock_blocker_title"
+            android:summary="@string/wakelock_blocker_summary"
+            android:fragment="org.candy.candyshop.fragments.WakeLockBlocker"/>        
+    
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="screen_capture_category"
+        android:title="@string/screen_capture_options_category_title" >
+
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="three_finger_gesture"
+            android:title="@string/three_finger_gesture"
+            android:summary="@string/three_finger_gesture_summary"
+            android:defaultValue="false" />
+
+        <Preference
+            android:key="screenshot_edit_app"
+            android:title="@string/screenshot_edit_app"
+            android:summary="@string/screenshot_edit_app_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="miscellaneous_category"
+        android:title="@string/miscellaneous_category_title" >
+
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference	
+            android:key="pocket_judge"
+            android:title="@string/pocket_judge_title"
+            android:summary="@string/pocket_judge_summary"
+            android:defaultValue="false" />
+
+        <Preference
+            android:key="headset"
+            android:title="@string/headset_title"
+            android:fragment="org.candy.candyshop.fragments.Headset" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>

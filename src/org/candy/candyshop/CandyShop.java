@@ -43,7 +43,7 @@ import org.candy.candyshop.tabs.System;
 import org.candy.candyshop.tabs.Lockscreen;
 import org.candy.candyshop.tabs.StatusBar;
 import org.candy.candyshop.tabs.Navigation;
-import org.candy.candyshop.tabs.MultiTasking;
+import org.candy.candyshop.tabs.StockRoom;
 import org.candy.candyshop.PagerSlidingTabStrip;
 
 import com.android.settings.R;
@@ -107,7 +107,7 @@ public class CandyShop extends SettingsPreferenceFragment {
             frags[1] = new Lockscreen();
             frags[2] = new StatusBar();
             frags[3] = new Navigation();
-            frags[4] = new MultiTasking();
+            frags[4] = new StockRoom();
         }
 
         @Override
@@ -133,7 +133,7 @@ public class CandyShop extends SettingsPreferenceFragment {
                     getString(R.string.lockscreen_category),
                     getString(R.string.statusbar_category),
                     getString(R.string.navigation_category),
-                    getString(R.string.multitasking_category)};
+                    getString(R.string.stockroom_category)};
         return titleString;
     }
 
