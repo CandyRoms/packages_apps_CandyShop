@@ -77,6 +77,7 @@
     <string name="systemui_theme_style_auto">Automatic (wallpaper based)</string>
     <string name="systemui_theme_style_light">Light</string>
     <string name="systemui_theme_style_dark">Dark</string>
+    <string name="systemui_theme_style_blackaf">BlackAF</string>
     <string name="system_dark_theme_toast_before">Applying theme! Please wait...</string>
     <string name="system_dark_theme_toast_after">Theme applied!</string>
     <string name="accent_picker_dialog_title">Select an accent color</string>
