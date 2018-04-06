@@ -80,6 +80,12 @@
             android:title="@string/headset_title"
             android:fragment="org.candy.candyshop.fragments.Headset" />
 
-    </PreferenceCategory>
+        <org.candy.candyshop.preference.GlobalSettingSwitchPreference
+            android:key="system_default_animation"
+            android:title="@string/system_default_animation_title"
+            android:summary="@string/system_default_animation_summary"
+            android:defaultValue="false" />
+
+       </PreferenceCategory>
 
 </PreferenceScreen>

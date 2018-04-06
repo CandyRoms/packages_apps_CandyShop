@@ -859,4 +859,9 @@
     <string name="volume_steps_5">5 steps</string>
     <string name="system_volume_option_title">System volume</string>
     <string name="call_volume_option_title">Voice call volume</string>
+
+    <!-- System default animation -->
+    <string name="system_default_animation_title">Android P animation style</string>
+    <string name="system_default_animation_summary">Enable Android P \"Default\" animations</string>
+
 </resources>
