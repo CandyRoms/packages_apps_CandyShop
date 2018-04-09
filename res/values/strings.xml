@@ -40,9 +40,9 @@
 
     <!-- Fragments -->
     <string name="headset_title">Headset</string>
-    <string name="button_title">Buttons</string>
+    <string name="button_title">Volume buttons</string>
     <string name="quicksettings_title">Quick settings</string>
-    <string name="torch_title">Torch</string>
+    <string name="torch_title">Power button torch control</string>
     <string name="battery_title">Battery settings</string>
     <string name="leds_title">Lights</string>
     <string name="network_traffic_title">Network traffic</string>

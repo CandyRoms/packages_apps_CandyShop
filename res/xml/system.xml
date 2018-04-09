@@ -30,6 +30,11 @@
             android:fragment="org.candy.candyshop.fragments.Button" />
 
         <Preference
+            android:key="torch"
+            android:title="@string/torch_title"
+            android:fragment="org.candy.candyshop.fragments.Torch" />
+
+        <Preference
             android:key="powermenu"
             android:fragment="org.candy.candyshop.fragments.PowerMenu"
             android:title="@string/powermenu_title" />
