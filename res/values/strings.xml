@@ -84,6 +84,7 @@
     <string name="theme_accent_picker_title">Accent color</string>
     <string name="theme_accent_picker_summary">Select system theme accent color</string>
     <string name="theme_accent_picker_default">Default</string>
+    <string name="disable_fonts_installed_title">Font picker is unavailable to avoid conflicts with Substratum. Uninstall it if you wish to use the font picker.</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
