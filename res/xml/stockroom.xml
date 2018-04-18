@@ -58,6 +58,11 @@
             android:summary="@string/three_finger_gesture_summary"
             android:defaultValue="false" />
 
+        <!-- Screenshot sound -->
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="screenshot_shutter_sound"
+            android:title="@string/screenshot_shutter_sound_title" />
+
         <Preference
             android:key="screenshot_edit_app"
             android:title="@string/screenshot_edit_app"
