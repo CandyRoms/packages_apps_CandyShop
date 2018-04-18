@@ -277,4 +277,8 @@
     <string name="notification_sound_vib_screen_on_title">Noisy notifications if screen on</string>
     <string name="notification_sound_vib_screen_on_summary">Disable to block notifications sound and vibration when the screen is awake</string>
 
+    <!-- Screenshot sound -->
+    <string name="screenshot_shutter_sound_title">Screenshot shutter sound</string>
+    <string name="screenshot_shutter_sound_summary">Disable screen shot sounds</string>
+
 </resources>
