@@ -15,13 +15,24 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Main abc pref screens -->
+  <string name="abc_settings_title">Дополнительные настройки</string>
+  <string name="abc_interface">Интерфейс</string>
+  <string name="lockscreen_abc_settings_title">Настройки блокировки</string>
+  <string name="notification_drawer_settings_title">Уведомления и тайлы</string>
+  <string name="statusbar_settings_title">Строка состояния</string>
+  <string name="abc_sys">Разные настройки</string>
+  <string name="power_settings_title">Настройки питания</string>
+  <string name="volumerocker_settings_title">Громкость и мультимедиа</string>
+  <string name="screen_settings_title">Экран</string>
+  <string name="other_settings_title">Другие настройки</string>
+  <string name="abc_leds">Индикатор уведомлений</string>
+  <string name="abc_battery_light_settings">Индикация батареи</string>
+  <string name="abc_notification_light_settings">Индикация уведомлений</string>
+  <string name="recent_settings_title">Недавние приложения</string>
   <!-- Color Picker -->
   <string name="dialog_color_picker">Выбор цвета</string>
   <string name="press_color_to_apply">Нажмите на цвет, чтобы применить</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
   <string name="set">Выбрать</string>
   <string name="color_default">По умолчанию</string>
   <string name="double_tap_sleep_lockscreen">Двойное нажатие по экрану блокировки для сна</string>
@@ -100,6 +111,7 @@
   <string name="qs_columns_landscape_title">Число столбцов (альбом.)</string>
   <string name="qs_tile_title_visibility_title">Отображать подписи плиток</string>
   <!-- Statusbar net monitor -->
+  <string name="net_monitor_category_title">Индикатор передачи данных</string>
   <string name="network_traffic_state_title">Отображать скорость передачи данных в строке состояния</string>
   <string name="network_traffic_autohide_threshold_title">Порог неактивности (KB/s)</string>
   <!-- Power plug events -->
@@ -110,7 +122,7 @@
   <!-- Headset ringtone audio focus -->
   <string name="ringtone_focus_mode_title">Играть мелодию вызова через</string>
   <string name="ringtone_focus_mode_dynamic">Наушники, при включенной музыке</string>
-  <string name="ringtone_focus_mode_stock">"Динамик (по умолчанию)"</string>
+  <string name="ringtone_focus_mode_stock">Динамик (по умолчанию)</string>
   <!-- Power menu on secure lockscreen -->
   <string name="lockscreen_power_menu_disabled_title">Меню питания при блокировке</string>
   <string name="lockscreen_power_menu_disabled_summary">Отключить меню питания на защищенном экране блокировки</string>
@@ -157,7 +169,6 @@
   <string name="slim_blacklist_apps_summary">Приложения не будут отображаться в панели</string>
   <string name="slim_blacklist_add_apps_title">Добавить приложение</string>
   <string name="slim_blacklist_add_apps_summary">Нажмите здесь чтобы добавить, нажмите по добавленному приложению чтобы убрать</string>
-  <string name="slim_recents_hints_footer">To clear all apps, pinch-in with two fingers on the panel. To block an app from being cleared, long press on its icon to star it.\n\nFor additional recents features such as multiwindow or to kill an app, long press or drag an app card in the panel.</string>
   <!-- Navigation -->
   <string name="buttons_title">Кнопки</string>
   <string name="buttons_summary">Настройки аппаратных кнопок и/или кнопок громкости</string>
@@ -344,7 +355,7 @@
   <string name="less_notification_sounds_30s">30 секунд</string>
   <string name="less_notification_sounds_1m">1 минута</string>
   <string name="less_notification_sounds_2m">2 минуты</string>
-  <!-- Status bar clock options -->
+  <!-- Clock and date settings -->
   <string name="status_bar_clock">Часы и дата</string>
   <string name="status_bar_clock_summary">Пользовательские настройки расположения часов и даты</string>
   <string name="clock_title_enable">Расположение</string>
@@ -379,10 +390,11 @@
   <string name="clock_date_right">Справа от часов</string>
   <string name="clock_date_left">Слева от часов</string>
   <string name="clock_date_position">Положение даты</string>
-  <!-- Battery Styles -->
+  <!-- Battery styles -->
   <string name="battery_style_title">Стиль батареи</string>
   <string name="battery_style_summary">Изменить вид иконки батареи в строке состояния</string>
   <string name="battery_style_port">Вертикальный значок</string>
+  <string name="battery_style_land">Горизонтальный значок</string>
   <string name="battery_style_circle">Круглый значок</string>
   <string name="battery_style_dotted_circle">Пунктирный круг</string>
   <string name="battery_style_big_circle">Большой круг</string>
@@ -394,7 +406,4 @@
   <string name="battery_style_category_title">Заряд батареи</string>
   <string name="incall_notifications_vibrate">Менее надоедливые уведомления во время вызова</string>
   <string name="incall_notifications_vibrate_summary">Вибрация вместо звукового сигнала для уведомлений во время вызова</string>
-  <string name="screenshot_edit_app">Screenshot editor</string>
-  <string name="screenshot_edit_app_summary">Select which image editor to use to edit screenshots</string>
-  <string name="screenshot_edit_app_no_editor">No image editor available</string>
 </resources>
