@@ -1,9 +1,8 @@
 files:
-  - source: /res/values/*
+  - source: /res/values/*.*
     ignore:
-      - dimens
+      - '*dimens*'
       - '*attr*'
-      - color
-      - config
+      - '*color*'
+      - '*config*'
     translation: /res/values-%two_letters_code%/%original_file_name%
-    translate_attributes: '0'
