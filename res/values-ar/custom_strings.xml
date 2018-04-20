@@ -15,6 +15,21 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Main abc pref screens -->
+  <string name="abc_settings_title">Ajustes adicionales ROM</string>
+  <string name="abc_interface">Interfaz</string>
+  <string name="lockscreen_abc_settings_title">Pant. bloqueo y seguridad</string>
+  <string name="notification_drawer_settings_title">Notificaciones y Ajustes Rápidos</string>
+  <string name="statusbar_settings_title">Barra de estado</string>
+  <string name="abc_sys">Misc</string>
+  <string name="power_settings_title">Botón de encendido</string>
+  <string name="volumerocker_settings_title">Volumen y media</string>
+  <string name="screen_settings_title">Pantalla</string>
+  <string name="other_settings_title">Otros</string>
+  <string name="abc_leds">Luz de Notificación</string>
+  <string name="abc_battery_light_settings">Luz de carga de batería</string>
+  <string name="abc_notification_light_settings">Luz de notificación</string>
+  <string name="recent_settings_title">Aplicaciones recientes</string>
   <!-- Color Picker -->
   <string name="dialog_color_picker">Selector de color</string>
   <string name="press_color_to_apply">Presiona sobre el color para aplicar</string>
@@ -100,6 +115,7 @@
   <string name="qs_columns_landscape_title">Títulos de columnas en modo paisaje</string>
   <string name="qs_tile_title_visibility_title">Mostrar títulos de mosaicos</string>
   <!-- Statusbar net monitor -->
+  <string name="net_monitor_category_title">Monitor de red</string>
   <string name="network_traffic_state_title">Mostrar el monitor de red en la barra de estado</string>
   <string name="network_traffic_autohide_threshold_title">Monitor de red se oculta con un limite(KB/s)</string>
   <!-- Power plug events -->
@@ -109,7 +125,7 @@
   <string name="vibration_on_charge_state_changed_summary">Vibrar al conectar y desconectar fuente de poder</string>
   <!-- Headset ringtone audio focus -->
   <string name="ringtone_focus_mode_title">Donde se reproducirán los tonos</string>
-  <string name="ringtone_focus_mode_dynamic">Desde los audífonos si están conectados y reproduciendo</string>
+  <string name="ringtone_focus_mode_dynamic">"Desde los audífonos si están conectados y reproduciendo"</string>
   <string name="ringtone_focus_mode_stock">"Desde el altavoz (defecto AOSP)"</string>
   <!-- Power menu on secure lockscreen -->
   <string name="lockscreen_power_menu_disabled_title">No menu de encendido si esta bloqueado</string>
@@ -241,7 +257,7 @@
   <string name="fling_longpress_title">Demora en presión larga</string>
   <string name="fling_longpress_summary">Incrementa o disminuye el tiempo que toma la acción de presión larga</string>
   <string name="fling_keyboard_cursors_title">Acción de teclas dinámicas de cursor</string>
-  <string name="fling_keyboard_cursors_summary">Double tap left and right actions becomes left and right keyboard cursor actions if keyboard is open</string>
+  <string name="fling_keyboard_cursors_move_summary">Cuando se muestra el teclado, la presión larga de derecha o izquierda mueve el cursor de texto a la derecha o izquierda.\nMantener presionado para mover el cursor, un toque simple para volver al inicio.</string>
   <string name="fling_logo_opacity_title">Opacidad logo Fling</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_summary">Pulse no funciona con algunas fuentes de audio cuando se escucha desde el altavoz</string>
