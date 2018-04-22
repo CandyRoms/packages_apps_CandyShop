@@ -18,10 +18,7 @@
   <!-- Color Picker -->
   <string name="dialog_color_picker">Selector de color</string>
   <string name="press_color_to_apply">Presiona sobre el color para aplicar</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
   <string name="hex">Hexa:</string>
-  <string name="hex_hint">#ff000000</string>
   <string name="set">Fijar</string>
   <string name="color_default">Defecto</string>
   <string name="double_tap_sleep_lockscreen">Doble toque para bloquear equipo</string>
@@ -175,7 +172,6 @@
   <string name="navbar_general_title">Avanzado</string>
   <string name="navigation_bar_left_title">Modo mano-izquierda</string>
   <string name="navigation_bar_left_summary">Ubica la barra de navegación en el lado izquierdo con la pantalla en modo paisaje</string>
-  <string name="smartbar_interface">SmartBar</string>
   <string name="icon_pack_picker_dialog_title">Paquete de iconos</string>
   <string name="image_exceeds_max_allowed_size">La imagen no puede exceder los 512x512</string>
   <string name="invalid_icon_from_uri">Incapaz de cargar la imagen desde el proveedor de contenidos</string>
@@ -183,7 +179,6 @@
   <string name="select_custom_app_title">Selecciona aplic. personalizada</string>
   <string name="select_custom_activity_title">Selecciona actividad personalizada</string>
   <string name="profile_applist_title">Aplicación</string>
-  <string name="default_string">Stock</string>
   <!-- Actions dialog and default task values set in ActionPreference xml-->
   <string name="choose_action_title">Escoge la acción</string>
   <string name="action_entry_default_action">Ajustes por defecto</string>
@@ -192,7 +187,6 @@
   <!-- Fling -->
   <string name="fling_settings">Ajustes de Fling</string>
   <string name="fling_settings_summary">Una barra de navegación única y completamente personal forma de manejar basada en gestos</string>
-  <string name="fling_interface">Fling</string>
   <string name="fling_enable_title">Activar Fling</string>
   <string name="fling_back_home_policy">Atrás y Inicio es necesito para ajustar todo el tiempo. Para cambiar asignación de Atrás y Inicio, ajusta la asignación deseada primero .\n\nAdemas, ajusta la acción de toque doble con su duración con un simple toque.</string>
   <string name="fling_split_bar_policy">Cuando solo están asignadas las acciones de derecha y izquierda, la acción se aplica a la barra completa.</string>
@@ -241,11 +235,9 @@
   <string name="fling_longpress_title">Demora en presión larga</string>
   <string name="fling_longpress_summary">Incrementa o disminuye el tiempo que toma la acción de presión larga</string>
   <string name="fling_keyboard_cursors_title">Acción de teclas dinámicas de cursor</string>
-  <string name="fling_keyboard_cursors_summary">Double tap left and right actions becomes left and right keyboard cursor actions if keyboard is open</string>
   <string name="fling_logo_opacity_title">Opacidad logo Fling</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_summary">Pulse no funciona con algunas fuentes de audio cuando se escucha desde el altavoz</string>
-  <string name="pulse_settings">Pulse</string>
   <string name="pulse_settings_summary">Barra de navegación gráfica de ecualización</string>
   <string name="fling_show_pulse_title">Permitir Pulse</string>
   <string name="fling_show_pulse_summary">Ecualizador grafito en la barra de navegación</string>
@@ -279,7 +271,6 @@
   <string name="land_hor_title">Altura en paisaje</string>
   <string name="positive_done">Hecho</string>
   <!-- SmartBar -->
-  <string name="smartbar_category">Smartbar</string>
   <string name="smartbar_settings_title">Ajustes Smartbar</string>
   <string name="smartbar_settings_summary">Completamente personalizada barra de navegación</string>
   <string name="smartbar_editor_title">Iniciar modo edición</string>
@@ -333,7 +324,6 @@
   <string name="ambient_ticker_footer">Esta característica permite mostrar información de la canción actual en la pantalla de bloqueo con o sin la pantalla ambiente activa.\n\nTu puedes seleccionar dos diseños, normal y mínimo. Mientras esta característica toma ventaja de la pantalla ambiente no depende de ella. Esta puede funcionar sin la pantalla ambiente activa (forzado) en opciones.\n\nLa vista normal incluye el reloj y fecha en pantalla de bloqueo.\n\nLa vista mínima incluye solo este teletipo en el centro de la pantalla.</string>
   <string name="force_ambient_for_media_title">Selecciona el diseño</string>
   <string name="force_ambient_for_media_off">Inactivo</string>
-  <string name="force_ambient_for_media_on">Normal</string>
   <string name="force_ambient_for_media_on_forced">Normal (forzado)</string>
   <string name="force_ambient_for_media_on_forced_clean">Minimal (forzado)</string>
   <!-- Less Notification sounds -->
@@ -353,7 +343,6 @@
   <string name="status_bar_clock_style_reset">Reiniciar color</string>
   <string name="status_bar_show_clock_title">Mostrar color de reloj y fecha</string>
   <string name="status_bar_clock_seconds_title">Mostrar segundos</string>
-  <string name="status_bar_am_pm_title">AM/PM</string>
   <string name="status_bar_am_pm_info">Reloj 24-horas activo</string>
   <string name="enable_clock_weekday">Día de la semana</string>
   <string name="enable_clock_weekday_summary">Una abreviación del día de la semana antes de la hora</string>
@@ -372,7 +361,6 @@
   <string name="clock_date_display_none">No\ mostrar</string>
   <string name="clock_date_display_small">Tamaño pequeño</string>
   <string name="clock_date_display_normal">Tamaño normal</string>
-  <string name="clock_date_style_normal">Normal</string>
   <string name="clock_date_style_lowercase">Minúscula</string>
   <string name="clock_date_style_uppercase">Mayúscula</string>
   <string name="clock_date_format_custom">Formato personalizado java</string>
