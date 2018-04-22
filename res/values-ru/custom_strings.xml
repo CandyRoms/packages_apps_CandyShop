@@ -18,10 +18,6 @@
   <!-- Color Picker -->
   <string name="dialog_color_picker">Выбор цвета</string>
   <string name="press_color_to_apply">Нажмите на цвет, чтобы применить</string>
-  <string name="arrow_right">→</string>
-  <string name="arrow_down">↓</string>
-  <string name="hex">Hex:</string>
-  <string name="hex_hint">#ff000000</string>
   <string name="set">Выбрать</string>
   <string name="color_default">По умолчанию</string>
   <string name="double_tap_sleep_lockscreen">Двойное нажатие по экрану блокировки для сна</string>
@@ -157,7 +153,6 @@
   <string name="slim_blacklist_apps_summary">Приложения не будут отображаться в панели</string>
   <string name="slim_blacklist_add_apps_title">Добавить приложение</string>
   <string name="slim_blacklist_add_apps_summary">Нажмите здесь чтобы добавить, нажмите по добавленному приложению чтобы убрать</string>
-  <string name="slim_recents_hints_footer">To clear all apps, pinch-in with two fingers on the panel. To block an app from being cleared, long press on its icon to star it.\n\nFor additional recents features such as multiwindow or to kill an app, long press or drag an app card in the panel.</string>
   <!-- Navigation -->
   <string name="buttons_title">Кнопки</string>
   <string name="buttons_summary">Настройки аппаратных кнопок и/или кнопок громкости</string>
@@ -175,7 +170,6 @@
   <string name="navbar_general_title">Дополнительно</string>
   <string name="navigation_bar_left_title">Режим левши</string>
   <string name="navigation_bar_left_summary">Отображать панель навигации слева в альбомной ориентации экрана</string>
-  <string name="smartbar_interface">SmartBar</string>
   <string name="icon_pack_picker_dialog_title">Наборы иконок</string>
   <string name="image_exceeds_max_allowed_size">Изображение не должно превышать размер 512x512</string>
   <string name="invalid_icon_from_uri">Не удается загрузить изображения от поставщика изображений</string>
@@ -192,7 +186,6 @@
   <!-- Fling -->
   <string name="fling_settings">Настройки Fling</string>
   <string name="fling_settings_summary">Уникальная настраиваемая панель навигации с жестами</string>
-  <string name="fling_interface">Fling</string>
   <string name="fling_enable_title">Включить Fling</string>
   <string name="fling_back_home_policy">«Назад» и «Домой» должны быть установлены всегда. Чтобы изменить назначение «Назад» или «Домой», сначала установите нужное назначение</string>
   <string name="fling_split_bar_policy">Когда назначено действие только справа или слева, оно выполняется на всей панели</string>
@@ -245,7 +238,6 @@
   <string name="fling_logo_opacity_title">Прозрачность логотипа Fling</string>
   <!-- Pulse navigation bar music visualizer -->
   <string name="pulse_help_policy_notice_summary">Pulse не работает с некоторыми проигрывателями при прослушивании через динамик телефона</string>
-  <string name="pulse_settings">Pulse</string>
   <string name="pulse_settings_summary">Аудио визуализация панели навигации</string>
   <string name="fling_show_pulse_title">Включить Pulse</string>
   <string name="fling_show_pulse_summary">Включить визуализацию аудио в панели навигации</string>
@@ -394,7 +386,4 @@
   <string name="battery_style_category_title">Заряд батареи</string>
   <string name="incall_notifications_vibrate">Менее надоедливые уведомления во время вызова</string>
   <string name="incall_notifications_vibrate_summary">Вибрация вместо звукового сигнала для уведомлений во время вызова</string>
-  <string name="screenshot_edit_app">Screenshot editor</string>
-  <string name="screenshot_edit_app_summary">Select which image editor to use to edit screenshots</string>
-  <string name="screenshot_edit_app_no_editor">No image editor available</string>
 </resources>
