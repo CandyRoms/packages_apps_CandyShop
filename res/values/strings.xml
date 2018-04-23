@@ -875,4 +875,6 @@
     <string name="face_auto_unlock_title">Face auto unlock</string>
     <string name="face_auto_unlock_summary">Dismiss lockscreen after face unlocking</string>
 
+    <!-- Screenshot sound -->
+    <string name="screenshot_shutter_sound_title">Screenshot shutter sound</string>
 </resources>
