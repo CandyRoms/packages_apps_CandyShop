@@ -26,26 +26,31 @@
 
         <Preference
             android:key="status_bar_clock"
-            android:fragment="org.candy.candyshop.fragments.StatusBarClockSettings"
-            android:title="@string/status_bar_clock_title" />
+            android:title="@string/status_bar_clock_title"
+            android:summary="@string/clock_preference_summary"
+            android:fragment="org.candy.candyshop.fragments.StatusBarClockSettings" />
 
         <Preference
             android:key="status_bar_battery_style"
             android:title="@string/battery_title"
+            android:summary="@string/battery_preference_summary"
             android:fragment="org.candy.candyshop.fragments.StatusbarBatteryStyle" />
 
         <Preference
             android:key="network_traffic"
             android:title="@string/network_traffic_title"
+            android:summary="@string/net_traffic_preference_summary"
             android:fragment="org.candy.candyshop.fragments.NetworkTraffic" />
 
         <Preference
             android:key="quicksettings"
             android:title="@string/quicksettings_title"
+            android:summary="@string/qs_preference_summary"
             android:fragment="org.candy.candyshop.fragments.QuickSettings" />
 
         <Preference
-            android:title="@string/statusbar_items_title" >
+            android:title="@string/statusbar_items_title"
+            android:summary="@string/statusbar_preference_summary" >
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.tuner.StatusbarItemsActivity" />

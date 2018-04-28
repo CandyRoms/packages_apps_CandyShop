@@ -27,17 +27,20 @@
         <Preference
             android:key="button"
             android:title="@string/button_title"
+            android:summary="@string/buttons_preference_summary"
             android:fragment="org.candy.candyshop.fragments.Button" />
 
         <Preference
             android:key="torch"
             android:title="@string/torch_title"
+            android:summary="@string/power_button_preference_summary"
             android:fragment="org.candy.candyshop.fragments.Torch" />
 
         <Preference
             android:key="powermenu"
-            android:fragment="org.candy.candyshop.fragments.PowerMenu"
-            android:title="@string/powermenu_title" />
+            android:title="@string/powermenu_title"
+            android:summary="@string/powermenu_preference_summary"
+            android:fragment="org.candy.candyshop.fragments.PowerMenu" />
 
     </PreferenceCategory>
 
@@ -47,8 +50,9 @@
 
         <Preference
             android:key="leds"
-            android:fragment="org.candy.candyshop.fragments.LedSettings"
-            android:title="@string/leds_title" />
+            android:title="@string/leds_title"
+            android:summary="@string/leds_preference_summary"
+            android:fragment="org.candy.candyshop.fragments.LedSettings" />
 
         <ListPreference
             android:key="less_notification_sounds"

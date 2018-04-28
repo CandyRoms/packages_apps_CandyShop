@@ -26,9 +26,9 @@
 
         <Preference
             android:key="force_ambient_for_media_pref"
-            android:fragment="org.candy.candyshop.AmbientTicker"
             android:title="@string/force_ambient_for_media_pref_title"
-            android:summary="@string/force_ambient_for_media_pref_summary"/>
+            android:summary="@string/force_ambient_for_media_pref_summary"
+            android:fragment="org.candy.candyshop.AmbientTicker" />
 
         <org.candy.candyshop.preference.SystemSettingSwitchPreference
             android:key="lockscreen_media_metadata"
@@ -60,7 +60,8 @@
         android:defaultValue="false" />
 
         <Preference
-           android:title="@string/lockscreen_tuner_title" >
+           android:title="@string/lockscreen_tuner_title"
+           android:summary="@string/ls_shortcuts_preference_summary" >
                <intent android:action="android.intent.action.MAIN"
                     android:targetPackage="com.android.systemui"
                     android:targetClass="com.android.systemui.tuner.LockscreenActivity" />

@@ -42,7 +42,7 @@
     <string name="headset_title">Headset</string>
     <string name="button_title">Volume buttons</string>
     <string name="quicksettings_title">Quick settings</string>
-    <string name="torch_title">Power button torch control</string>
+    <string name="torch_title">Power button</string>
     <string name="battery_title">Battery settings</string>
     <string name="leds_title">Lights</string>
     <string name="network_traffic_title">Network traffic</string>
@@ -56,6 +56,21 @@
     <string name="various_navigation_title">Various</string>
     <string name="recent_settings_title">Recents</string>
     <string name="status_bar_clock_title">Clock options</string>
+
+    <!-- Fragment summaries -->
+    <string name="headset_preference_summary">Headset connect options</string>
+    <string name="buttons_preference_summary">Volume key behavior options</string>
+    <string name="power_button_preference_summary">Power button torch control</string>
+    <string name="powermenu_preference_summary">Configure power menu options</string>
+    <string name="leds_preference_summary">Battery and notification LED options</string>
+    <string name="ls_shortcuts_preference_summary">Lockscreen bottom shorcut options</string>
+    <string name="clock_preference_summary">Time and date display options</string>
+    <string name="battery_preference_summary">Change icon and percentage display</string>
+    <string name="net_traffic_preference_summary">Statusbar network traffic options</string>
+    <string name="qs_preference_summary">Tiles, quick pulldown, brightness, transparency options</string>
+    <string name="statusbar_preference_summary">Statusbar icon display options</string>
+    <string name="recents_preference_summary">AOSP recents and SlimRecents options</string>
+    <string name="ga_preference_summary">On-screen gesture launcher options</string>
 
     <!-- Power Menu -->
     <string name="powermenu_reboot_title">Reboot</string>
@@ -609,7 +624,7 @@
     <!-- Enable keys backlight-->
     <string name="button_brightness_title">Backlight</string>
 
-    <!-- Enable keys backlight-->
+    <!-- Enable keys backlight switch -->
     <string name="button_brightness_sw_title">Enable backlight</string>
 
     <!-- Hardware keys -->
