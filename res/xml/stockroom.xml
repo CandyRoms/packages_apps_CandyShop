@@ -48,6 +48,13 @@
             android:summary="@string/wakelock_blocker_summary"
             android:fragment="org.candy.candyshop.fragments.WakeLockBlocker"/>
 
+        <Preference
+            android:key="chooser_activity_blacklist"
+            android:fragment="org.candy.candyshop.fragments.ChooserActivityBlacklist"
+            android:title="@string/chooser_activity_blacklist_title"
+            android:summary="@string/chooser_activity_blacklist_summary"
+            android:persistent="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
