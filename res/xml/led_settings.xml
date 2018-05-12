@@ -19,14 +19,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <Preference
-            android:key="charging_light"
-            android:fragment="org.candy.candyshop.fragments.batterylight.BatteryLightSettings"
-            android:title="@string/battery_light_settings" />
+    <PreferenceScreen
+        android:key="notification_light"
+        android:title="@string/notification_light_title"
+        android:fragment="org.candy.candyshop.fragments.batterylight.NotificationLightSettings" />
 
     <Preference
-            android:key="notification_light"
-            android:fragment="com.android.settings.applications.NotificationApps"
-            android:title="@string/notification_light_settings" />
+        android:key="charging_light"
+        android:fragment="org.candy.candyshop.fragments.batterylight.BatteryLightSettings"
+        android:title="@string/battery_light_settings" />
 
 </PreferenceScreen>
