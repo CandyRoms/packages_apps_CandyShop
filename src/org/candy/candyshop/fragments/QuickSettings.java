@@ -95,6 +95,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     public void onResume() {
         super.onResume();
     }
+
     public boolean onPreferenceChange(Preference preference, Object newValue) {
 	ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mQsPanelAlpha) {
@@ -155,4 +156,11 @@ public class QuickSettings extends SettingsPreferenceFragment implements
             }
         }
     }
+
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+        Settings.System.putIntForUser(resolver,
+                Settings.System.QS_QUICKBAR_SCROLL_ENABLED, 0, UserHandle.USER_CURRENT);
+    }
 }
+

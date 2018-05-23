@@ -44,6 +44,13 @@
         android:defaultValue="true" />
 
     <org.candy.candyshop.preference.SystemSettingSwitchPreference
+        android:key="qs_quickbar_scroll_enabled"
+        android:icon="@drawable/ic_gesture_swipe_left"
+        android:title="@string/qqs_scroll_title"
+        android:summary="@string/qqs_scroll_summary"
+        android:defaultValue="false"/>
+
+    <org.candy.candyshop.preference.SystemSettingSwitchPreference
         android:key="qs_footer_warnings"
         android:title="@string/qs_footer_warnings_title"
         android:summary="@string/qs_footer_warnings_summary"
@@ -81,4 +88,5 @@
             android:entries="@array/qs_tile_animation_interpolator_entries"
             android:entryValues="@array/qs_tile_animation_interpolator_values"
             android:persistent="false" />
+
 </PreferenceScreen>
