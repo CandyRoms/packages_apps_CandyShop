@@ -66,12 +66,11 @@
             android:entries="@array/less_notification_sounds_entries"
             android:entryValues="@array/less_notification_sounds_values" />
 
-        <ListPreference
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
             android:key="notification_sound_vib_screen_on"
             android:title="@string/notification_sound_vib_screen_on_title"
-            android:entries="@array/notification_sound_vib_screen_on_entries"
-            android:entryValues="@array/notification_sound_vib_screen_on_values"
-            android:summary="%s" />
+            android:summary="@string/notification_sound_vib_screen_on_summary"
+            android:defaultValue="true" />
 
         <org.candy.candyshop.preference.SystemSettingSwitchPreference
             android:key="wake_when_plugged_or_unplugged"

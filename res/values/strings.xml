@@ -698,7 +698,7 @@
     <string name="gesture_anywhere_64">64px</string>
     <string name="gesture_anywhere_68">68px</string>
 
-    <!-- Less Notification sounds -->
+    <!-- Less notification sounds -->
     <string name="less_notification_sounds_title">Smart notification sounds</string>
     <string name="less_notification_sounds_summary">Play the notification sound of each app only once per set time period</string>
     <string name="less_notification_sounds_default">App default</string>
