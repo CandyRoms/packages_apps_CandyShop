@@ -72,6 +72,12 @@
             android:summary="@string/net_traffic_preference_summary"
             android:fragment="org.candy.candyshop.fragments.NetworkTraffic" />
 
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference 
+            android:key="status_bar_ime_switcher" 
+            android:title="@string/ime_switcher_notify" 
+            android:summary="@string/ime_switcher_notify_summary" 
+            android:defaultValue="true" /> 
+
         <Preference
             android:title="@string/status_bar_tuner_title"
             android:summary="@string/status_bar_tuner_summary">
