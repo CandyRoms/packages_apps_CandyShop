@@ -562,4 +562,7 @@
     <string name="volume_keys_control_ring_tone_title">Control ring volume</string>
     <string name="volume_keys_control_ring_tone_summary">Keys control media slider by default. Enable to switch to ring tone slider.</string>
 
+    <!-- In-call vibration options -->
+    <string name="incall_notifications_vibrate">Vibrate for Notifications</string>
+
 </resources>

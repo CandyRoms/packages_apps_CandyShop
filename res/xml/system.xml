@@ -63,9 +63,14 @@
             android:summary="@string/notification_sound_vib_screen_on_summary"
             android:defaultValue="true" />
 
-        <org.candy.candyshop.preference.SystemSettingSwitchPreference 
-            android:key="force_expanded_notifications" 
-            android:title="@string/force_expanded_notifications_title" 
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="incall_notifications_vibrate"
+            android:title="@string/incall_notifications_vibrate"
+            android:defaultValue="false" />
+
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="force_expanded_notifications"
+            android:title="@string/force_expanded_notifications_title"
             android:summary="@string/force_expanded_notifications_summary"
             android:defaultValue="false" />
 
