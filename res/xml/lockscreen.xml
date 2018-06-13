@@ -65,17 +65,23 @@
             android:summary="@string/fp_unlock_keystore_summary"
             android:defaultValue="false" />
 
-          <org.candy.candyshop.preference.SecureSettingSwitchPreference
-        android:key="lockscreen_qs_disabled"
-        android:title="@string/lockscreen_qs_disabled_title"
-        android:summary="@string/lockscreen_qs_disabled_summary"
-        android:defaultValue="false" />
+        <org.candy.candyshop.preference.SecureSettingSwitchPreference
+            android:key="lockscreen_qs_disabled"
+            android:title="@string/lockscreen_qs_disabled_title"
+            android:summary="@string/lockscreen_qs_disabled_summary"
+            android:defaultValue="false" />
 
-          <org.candy.candyshop.preference.SecureSettingSwitchPreference
-        android:key="lockscreen_visualizer"
-        android:title="@string/lockscreen_visualizer_title"
-        android:summary="@string/lockscreen_visualizer_summary"
-        android:defaultValue="false"/>
+        <org.candy.candyshop.preference.SecureSettingSwitchPreference
+            android:key="lockscreen_visualizer"
+            android:title="@string/lockscreen_visualizer_title"
+            android:summary="@string/lockscreen_visualizer_summary"
+            android:defaultValue="false"/>
+
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="hide_lockscreen_icon"
+            android:title="@string/hide_lockscreen_icon_title"
+            android:summary="@string/hide_lockscreen_icon_summary"
+            android:defaultValue="false" />
 
         <Preference
            android:title="@string/lockscreen_tuner_title"
