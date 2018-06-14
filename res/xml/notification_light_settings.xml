@@ -42,7 +42,8 @@
         <org.candy.candyshop.preference.SystemSettingSwitchPreference
             android:key="notification_light_screen_on_enable"
             android:title="@string/notification_light_screen_on"
-            android:dependency="notification_light_pulse" />
+            android:dependency="notification_light_pulse"
+            android:defaultValue="true" />
 
         <org.candy.candyshop.preference.SystemSettingSwitchPreference
             android:key="allow_lights"
@@ -54,7 +55,8 @@
             android:key="notification_light_pulse_custom_enable"
             android:title="@string/notification_light_use_custom"
             android:summary="@string/notification_light_use_custom_summary"
-            android:dependency="notification_light_pulse" />
+            android:dependency="notification_light_pulse"
+            android:defaultValue="false" />
 
     </PreferenceCategory>
 
