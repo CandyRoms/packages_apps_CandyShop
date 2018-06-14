@@ -36,6 +36,12 @@
             android:summary="@string/media_art_summary"
             android:defaultValue="false" />
 
+        <org.candy.candyshop.preference.SecureSettingSwitchPreference
+            android:key="lockscreen_visualizer"
+            android:title="@string/lockscreen_visualizer_title"
+            android:summary="@string/lockscreen_visualizer_summary"
+            android:defaultValue="false"/>
+
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -50,8 +56,8 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="lockscreen_other_category"
-        android:title="@string/lockscreen_other_category_title" >
+        android:key="lockscreen_security_category"
+        android:title="@string/lockscreen_security_category_title" >
 
         <org.candy.candyshop.preference.SecureSettingSwitchPreference
             android:key="face_auto_unlock"
@@ -71,51 +77,17 @@
             android:summary="@string/lockscreen_qs_disabled_summary"
             android:defaultValue="false" />
 
-        <org.candy.candyshop.preference.SecureSettingSwitchPreference
-            android:key="lockscreen_visualizer"
-            android:title="@string/lockscreen_visualizer_title"
-            android:summary="@string/lockscreen_visualizer_summary"
-            android:defaultValue="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="lockscreen_icons_category"
+        android:title="@string/lockscreen_icons_category_title" >
 
         <org.candy.candyshop.preference.SystemSettingSwitchPreference
             android:key="hide_lockscreen_icon"
             android:title="@string/hide_lockscreen_icon_title"
             android:summary="@string/hide_lockscreen_icon_summary"
             android:defaultValue="false" />
-
-    <org.candy.candyshop.preference.SystemSettingSwitchPreference
-        android:key="hide_lockscreen_clock"
-        android:title="@string/hide_lockscreen_clock_title"
-        android:summary="@string/hide_lockscreen_clock_summary"
-        android:defaultValue="true" />
-
-    <org.candy.candyshop.preference.SystemSettingListPreference
-        android:key="lockscreen_clock_selection"
-        android:title="@string/lockscreen_clock_selection_title"
-        android:entries="@array/lockscreen_clock_selection_entries"
-        android:entryValues="@array/lockscreen_clock_selection_values"
-        android:defaultValue="0"
-        android:dependency="hide_lockscreen_clock" />
-
-    <org.candy.candyshop.preference.SystemSettingSwitchPreference
-        android:key="hide_lockscreen_date"
-        android:title="@string/hide_lockscreen_date_title"
-        android:summary="@string/hide_lockscreen_date_summary"
-        android:defaultValue="true" />
-
-    <org.candy.candyshop.preference.SystemSettingListPreference
-        android:key="lockscreen_date_selection"
-        android:title="@string/lockscreen_date_selection_title"
-        android:entries="@array/lockscreen_date_selection_entries"
-        android:entryValues="@array/lockscreen_date_selection_values"
-        android:defaultValue="0"
-        android:dependency="hide_lockscreen_date" />
-
-    <org.candy.candyshop.preference.SystemSettingSwitchPreference
-        android:key="hide_lockscreen_alarm"
-        android:title="@string/hide_lockscreen_alarm_title"
-        android:summary="@string/hide_lockscreen_alarm_summary"
-        android:defaultValue="true" />
 
         <Preference
            android:title="@string/lockscreen_tuner_title"
@@ -124,6 +96,46 @@
                     android:targetPackage="com.android.systemui"
                     android:targetClass="com.android.systemui.tuner.LockscreenActivity" />
         </Preference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="lockscreen_clock_category"
+        android:title="@string/lockscreen_clock_category_title" >
+
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="hide_lockscreen_clock"
+            android:title="@string/hide_lockscreen_clock_title"
+            android:summary="@string/hide_lockscreen_clock_summary"
+            android:defaultValue="true" />
+
+        <org.candy.candyshop.preference.SystemSettingListPreference
+            android:key="lockscreen_clock_selection"
+            android:title="@string/lockscreen_clock_selection_title"
+            android:entries="@array/lockscreen_clock_selection_entries"
+            android:entryValues="@array/lockscreen_clock_selection_values"
+            android:defaultValue="0"
+            android:dependency="hide_lockscreen_clock" />
+
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="hide_lockscreen_date"
+            android:title="@string/hide_lockscreen_date_title"
+            android:summary="@string/hide_lockscreen_date_summary"
+            android:defaultValue="true" />
+
+        <org.candy.candyshop.preference.SystemSettingListPreference
+            android:key="lockscreen_date_selection"
+            android:title="@string/lockscreen_date_selection_title"
+            android:entries="@array/lockscreen_date_selection_entries"
+            android:entryValues="@array/lockscreen_date_selection_values"
+            android:defaultValue="0"
+            android:dependency="hide_lockscreen_date" />
+
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="hide_lockscreen_alarm"
+            android:title="@string/hide_lockscreen_alarm_title"
+            android:summary="@string/hide_lockscreen_alarm_summary"
+            android:defaultValue="true" />
 
     </PreferenceCategory>
 

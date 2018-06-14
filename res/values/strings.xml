@@ -32,6 +32,9 @@
     <string name="button_category_title">Buttons</string>
     <string name="media_options_category_title">Media options</string>
     <string name="sleep_controls_category_title">Sleep controls</string>
+    <string name="lockscreen_security_category_title">Security options</string>
+    <string name="lockscreen_icons_category_title">Lockscreen bottom shortcuts</string>
+    <string name="lockscreen_clock_category_title">Clock and date options</string>
     <string name="lockscreen_other_category_title">Other</string>
     <string name="statusbar_options_category_title">Statusbar options</string>
     <string name="multitasking_category_title">Multi-tasking</string>
