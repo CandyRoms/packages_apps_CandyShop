@@ -264,9 +264,9 @@
 
    <!-- VoLTE Icon Type -->
     <string-array name="volte_icon_type_entries" translatable="false">
-        <item>@string/volte_icon_emui</item>    
-	    <item>@string/volte_icon_miui</item>    
-	    <item>@string/volte_icon_hd2</item>    
+        <item>@string/volte_icon_emui</item>
+	    <item>@string/volte_icon_miui</item>
+	    <item>@string/volte_icon_hd2</item>
         <item>@string/volte_icon_asus</item>
         <item>@string/volte_icon_hd</item>
         <item>@string/volte_icon_oos</item>
@@ -276,9 +276,9 @@
 
     <string-array name="volte_icon_type_values" translatable="false">
         <item>7</item>
-	    <item>6</item>    
-	    <item>5</item>    
-        <item>4</item> 
+	    <item>6</item>
+	    <item>5</item>
+        <item>4</item>
         <item>3</item>
         <item>2</item>
         <item>1</item>
@@ -351,5 +351,18 @@
         <item>4</item>
     </string-array>
 
-</resources>
+    <!-- Blink flashlight for incoming calls -->
+    <string-array name="flashlight_on_call_entries">
+        <item>@string/flashlight_on_call_disabled</item>
+        <item>@string/flashlight_on_call_ringer</item>
+        <item>@string/flashlight_on_call_silent</item>
+        <item>@string/flashlight_on_call_always</item>
+    </string-array>
 
+    <string-array name="flashlight_on_call_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>
