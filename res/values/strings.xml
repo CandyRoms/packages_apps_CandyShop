@@ -74,6 +74,7 @@
     <string name="statusbar_preference_summary">Statusbar icon display options</string>
     <string name="recents_preference_summary">AOSP recents and SlimRecents options</string>
     <string name="ga_preference_summary">On-screen gesture launcher options</string>
+    <string name="custom_carrier_label_preference_summary">Statusbar carrier text customization</string>
 
     <!-- Power Menu -->
     <string name="powermenu_reboot_title">Reboot</string>

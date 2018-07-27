@@ -56,6 +56,12 @@
                 android:targetClass="com.android.systemui.tuner.StatusbarItemsActivity" />
         </Preference>
 
+        <Preference
+            android:key="custom_carrier_label"
+            android:title="@string/custom_carrier_label_title"
+            android:summary="@string/custom_carrier_label_preference_summary"
+            android:fragment="org.candy.candyshop.fragments.CarrierLabel" />
+
         <org.candy.candyshop.preference.SystemSettingSwitchPreference
             android:key="double_tap_sleep_gesture"
             android:title="@string/double_tap_sleep_gesture_title"
