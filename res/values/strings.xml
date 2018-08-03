@@ -750,6 +750,7 @@
     <!-- Statusbar Clock options -->
 
     <!-- Status bar clock options -->
+    <string name="clock_footer">Note: Due to Android Oreo, there can be issues with center clock and ticker/notification icons.  Proceed at your own risk. 🍬</string>
     <string name="status_bar_clock">Clock &amp; Date</string>
     <string name="status_bar_clock_summary">Configure statusbar clock and date appearance</string>
     <string name="clock_title_enable">Alignment</string>
