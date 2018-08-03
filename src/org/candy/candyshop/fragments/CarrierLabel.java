@@ -43,7 +43,6 @@ import java.util.regex.Pattern;
 
 import java.util.Locale;
 import android.text.InputFilter;
-import android.text.Spannable;
 import android.text.TextUtils;
 import android.text.Spannable;
 import android.view.View;
