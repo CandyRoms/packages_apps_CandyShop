@@ -20,6 +20,7 @@
   <!-- CandyShop menu title -->
   <!-- Category titles -->
   <!-- Fragments -->
+  <!-- Fragment summaries -->
   <!-- Power Menu -->
   <!-- System theme -->
   <!-- Color Picker -->
@@ -36,6 +37,7 @@
   <!-- QuickSettings -->
   <!-- QS rows and columns -->
   <!-- Battery light -->
+  <!-- Statusbar logo -->
   <!-- Statusbar net monitor -->
   <!-- Power menu on secure lockscreen -->
   <!-- Power plug events -->
@@ -47,6 +49,7 @@
   <!-- Heads up -->
   <!-- Status bar ticker -->
   <!-- Statusbar Tuner -->
+  <!-- QS Headers -->
   <!-- Power notification controls -->
   <!-- Lockscreen icons -->
   <!-- Navbar tuner -->
@@ -91,9 +94,9 @@
   <!-- Incall Home button behavior-->
   <!-- Buttons backlight timeout -->
   <!-- Enable keys backlight-->
-  <!-- Enable keys backlight-->
+  <!-- Enable keys backlight switch -->
   <!-- Hardware keys -->
-  <!-- Less Notification sounds -->
+  <!-- Less notification sounds -->
   <!-- Statusbar Clock options -->
   <!-- Status bar clock options -->
   <!-- Battery Styles -->
@@ -101,7 +104,6 @@
   <!-- ANBI -->
   <!-- Recents panel settings -->
   <!-- Immersive Recents -->
-  <!-- Pocket judge -->
   <!-- Notification light dialogs -->
   <!-- Values for the notification light pulse spinners -->
   <!-- Lights settings screen, notification light settings -->
@@ -112,4 +114,13 @@
   <!-- System default animation -->
   <!-- Toggle for face auto unlock -->
   <!-- Screenshot sound -->
+  <!-- Smart Pixels -->
+  <!-- Disable QS on secure Lockscreen -->
+  <!-- Lock screen visualizer -->
+  <!-- Fingerprint unlock keystore -->
+  <!-- Notification guts kill app button -->
+  <!-- Tiles animation/interpolator style  -->
+  <!-- Expanded desktop -->
+  <!-- Status bar brightness slider -->
+  <!-- Quick QS scroller -->
 </resources>
