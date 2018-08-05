@@ -27,12 +27,14 @@
         <Preference
             android:key="recent_settings"
             android:title="@string/recent_settings_title"
+            android:summary="@string/recents_preference_summary"
             android:fragment="org.candy.candyshop.fragments.RecentsSettings" />
 
         <Preference
            android:key="gesture_anywhere"
-           android:fragment="org.candy.candyshop.gestureanywhere.GestureAnywhereSettings"
-           android:title="@string/gesture_anywhere_title" />
+           android:title="@string/gesture_anywhere_title"
+            android:summary="@string/ga_preference_summary"
+            android:fragment="org.candy.candyshop.gestureanywhere.GestureAnywhereSettings" />
 
         <Preference
             android:key="alarm_blocker"
@@ -44,8 +46,15 @@
             android:key="wakelock_blocker"
             android:title="@string/wakelock_blocker_title"
             android:summary="@string/wakelock_blocker_summary"
-            android:fragment="org.candy.candyshop.fragments.WakeLockBlocker"/>        
-    
+            android:fragment="org.candy.candyshop.fragments.WakeLockBlocker"/>
+
+        <Preference
+            android:key="chooser_activity_blacklist"
+            android:fragment="org.candy.candyshop.fragments.ChooserActivityBlacklist"
+            android:title="@string/chooser_activity_blacklist_title"
+            android:summary="@string/chooser_activity_blacklist_summary"
+            android:persistent="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -74,15 +83,10 @@
         android:key="miscellaneous_category"
         android:title="@string/miscellaneous_category_title" >
 
-        <org.candy.candyshop.preference.SystemSettingSwitchPreference	
-            android:key="pocket_judge"
-            android:title="@string/pocket_judge_title"
-            android:summary="@string/pocket_judge_summary"
-            android:defaultValue="false" />
-
         <Preference
             android:key="headset"
             android:title="@string/headset_title"
+            android:summary="@string/headset_preference_summary"
             android:fragment="org.candy.candyshop.fragments.Headset" />
 
         <org.candy.candyshop.preference.GlobalSettingSwitchPreference
@@ -91,6 +95,11 @@
             android:summary="@string/system_default_animation_summary"
             android:defaultValue="false" />
 
-       </PreferenceCategory>
+        <Preference
+            android:key="expanded_desktop_category"
+            android:title="@string/expanded_desktop_title"
+            android:fragment="org.candy.candyshop.fragments.ExpandedDesktop"/>
+
+    </PreferenceCategory>
 
 </PreferenceScreen>

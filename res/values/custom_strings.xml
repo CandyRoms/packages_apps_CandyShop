@@ -72,6 +72,11 @@
     <string name="battery_light_medium_color">Medium battery</string>
     <string name="battery_light_full_color">Almost full battery</string>
     <string name="battery_light_reallyfull_color">Full battery (100)</string>
+    <string name="fast_color_cat_title">Fast charging</string>
+    <string name="fast_charging_led_enabled_title">Enable fast charging color</string>
+    <string name="fast_charging_led_enabled_summary">When fast charging, use different color till 90% charged</string>
+    <string name="fast_charging_light_color_title">Color</string>
+    <string name="fast_charging_light_color_summary"></string>
 
     <!-- QS footer warnings -->
     <string name="qs_footer_warnings_title">QS footer warnings</string>
@@ -443,4 +448,21 @@
     <string name="screenshot_edit_app">Screenshot editor</string>
     <string name="screenshot_edit_app_summary">Select which image editor to use to edit screenshots</string>
     <string name="screenshot_edit_app_no_editor">No image editor available</string>
+
+    <!-- Hide lockscreen status bar, clock, date, alarm -->
+    <string name="hide_lockscreen_icon_title">Hide lock screen icon</string>
+    <string name="hide_lockscreen_icon_summary">Change the lock screen icon visibility</string>
+
+    <!-- Carrier Label -->
+    <string name="carrier_category">Carrier label</string>
+    <string name="carrier_options">Select display locations</string>
+    <string name="custom_carrier_label_title">Custom carrier label</string>
+    <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
+    <string name="custom_carrier_label_notset">Custom label currently not set</string>
+    <string name="show_carrier_title">Is displayed on</string>
+    <string name="show_carrier_disabled">Nowhere</string>
+    <string name="show_carrier_keyguard">Lockscreen only</string>
+    <string name="show_carrier_statusbar">Statusbar only</string>
+    <string name="show_carrier_enabled">Lockscreen &amp; statusbar</string>
+
 </resources>

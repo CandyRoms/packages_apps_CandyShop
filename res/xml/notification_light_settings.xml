@@ -24,7 +24,8 @@
         <org.candy.candyshop.preference.SystemSettingSwitchPreference
             android:key="notification_light_pulse"
             android:title="@string/notification_light_title"
-            android:summary="@string/notification_light_title_summary" />
+            android:summary="@string/notification_light_title_summary"
+            android:defaultValue="true" />
 
         <org.candy.candyshop.fragments.batterylight.NotificationLightPreference
             android:key="default"
@@ -41,7 +42,8 @@
         <org.candy.candyshop.preference.SystemSettingSwitchPreference
             android:key="notification_light_screen_on_enable"
             android:title="@string/notification_light_screen_on"
-            android:dependency="notification_light_pulse" />
+            android:dependency="notification_light_pulse"
+            android:defaultValue="true" />
 
         <org.candy.candyshop.preference.SystemSettingSwitchPreference
             android:key="allow_lights"
@@ -53,7 +55,8 @@
             android:key="notification_light_pulse_custom_enable"
             android:title="@string/notification_light_use_custom"
             android:summary="@string/notification_light_use_custom_summary"
-            android:dependency="notification_light_pulse" />
+            android:dependency="notification_light_pulse"
+            android:defaultValue="false" />
 
     </PreferenceCategory>
 
@@ -77,8 +80,14 @@
 
     <PreferenceCategory
         android:key="applications_list"
-        android:title="@string/notification_light_applist_title"
-        android:dependency="notification_light_pulse_custom_enable" >
+        android:title="@string/notification_light_applist_title" >
+
+        <Preference
+            android:key="notification_light"
+            android:fragment="com.android.settings.applications.NotificationApps"
+            android:title="@string/notification_light_settings"
+            android:dependency="notification_light_pulse_custom_enable" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>

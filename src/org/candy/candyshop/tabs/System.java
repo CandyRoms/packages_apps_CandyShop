@@ -53,16 +53,8 @@ public class System extends SettingsPreferenceFragment implements
         mAnnoyingNotification.setOnPreferenceChangeListener(this);
         int threshold = Settings.System.getIntForUser(getContentResolver(),
                 Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD,
-                30000, UserHandle.USER_CURRENT);
+                0, UserHandle.USER_CURRENT);
         mAnnoyingNotification.setValue(String.valueOf(threshold));
-
-        mNoisyNotification = (ListPreference) findPreference("notification_sound_vib_screen_on");
-        mNoisyNotification.setOnPreferenceChangeListener(this);
-        int mode = Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.NOTIFICATION_SOUND_VIB_SCREEN_ON,
-                1, UserHandle.USER_CURRENT);
-        mNoisyNotification.setValue(String.valueOf(mode));
-        mNoisyNotification.setSummary(mNoisyNotification.getEntry());
     }
 
     @Override
@@ -81,19 +73,10 @@ public class System extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        final String key = preference.getKey();
         if (preference.equals(mAnnoyingNotification)) {
             int mode = Integer.parseInt(((String) newValue).toString());
             Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD, mode, UserHandle.USER_CURRENT);
-            return true;
-        } else if (preference.equals(mNoisyNotification)) {
-            int mode = Integer.parseInt(((String) newValue).toString());
-            Settings.System.putIntForUser(getContentResolver(),
-                    Settings.System.NOTIFICATION_SOUND_VIB_SCREEN_ON, mode, UserHandle.USER_CURRENT);
-            int index = mNoisyNotification.findIndexOfValue((String) newValue);
-            mNoisyNotification.setSummary(
-                    mNoisyNotification.getEntries()[index]);
             return true;
         }
         return false;

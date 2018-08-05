@@ -72,6 +72,8 @@ public class StatusBarClockSettings extends SettingsPreferenceFragment implement
 
         addPreferencesFromResource(R.xml.status_bar_clock_settings);
 
+        mFooterPreferenceMixin.createFooterPreference().setTitle(R.string.clock_footer);
+
         ContentResolver resolver = getActivity().getContentResolver();
 
         mStatusBarClock = (SwitchPreference) findPreference(STATUS_BAR_SHOW_CLOCK);

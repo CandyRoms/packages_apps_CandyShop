@@ -1,9 +1,6 @@
 files:
-  - source: /res/values/
-    ignore:
-      - '*dimens*'
-      - '*attrs*'
-      - '*config*'
-      - '*array*'
-      - '*colors*'
-translation: /res/values-%two_letters_code%/%original_file_name%
+  - source: /res/values*/strings.xml
+    translation: /res/values-%two_letters_code%/%original_file_name%
+    content_segmentation: '0'
+    translatable_elements:
+      - strings.xml

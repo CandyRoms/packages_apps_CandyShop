@@ -66,4 +66,23 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="fast_color_cat"
+        android:title="@string/fast_color_cat_title"
+        android:dependency="battery_light_enabled" >
+
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="fast_charging_led_enabled"
+            android:title="@string/fast_charging_led_enabled_title"
+            android:summary="@string/fast_charging_led_enabled_summary" />
+
+        <org.candy.candyshop.fragments.batterylight.BatteryLightPreference
+            android:key="fast_color"
+            android:title="@string/fast_charging_light_color_title"
+            android:summary="@string/fast_charging_light_color_summary"
+            android:persistent="false"
+            android:dependency="fast_charging_led_enabled" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
