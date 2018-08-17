@@ -22,14 +22,24 @@
         android:title="@string/candyshop_category"
         android:layout="@layout/tab" >
 
-    <!--<PreferenceCategory
+    <PreferenceCategory
         android:title="@string/navbar_category_title" >
 
-    </PreferenceCategory>-->
+        <Preference
+            android:title="@string/navbar_tuner_title"
+            android:summary="@string/navbar_tuner_summary">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.NavBarTunerActivity" />
+        </Preference>
+
+    </PreferenceCategory>
 
     <!--<PreferenceCategory
         android:title="@string/hwkeys_category_title" >
 
     </PreferenceCategory>-->
+
+
 
 </PreferenceScreen>
