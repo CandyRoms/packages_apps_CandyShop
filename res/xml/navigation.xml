@@ -38,6 +38,12 @@
                 android:targetClass="com.android.systemui.tuner.NavBarTunerActivity" />
         </Preference>
 
+        <Preference
+            android:key="gesture_settings"
+            android:icon="@drawable/ic_settings_gestures_candy"
+            android:title="@string/gesture_settings_title"
+            android:fragment="org.candy.candyshop.fragments.GestureSettings" />
+
     </PreferenceCategory>
 
     <!--<PreferenceCategory
