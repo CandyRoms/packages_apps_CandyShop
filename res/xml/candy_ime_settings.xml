@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
  <!-- Copyright (C) 2018 Havoc-OS
 
       Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,13 +18,13 @@
      android:title="@string/ime_title"
      xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <org.candy.candyshop.preference.SystemSettingSwitchPreference 
-        android:key="status_bar_ime_switcher" 
-        android:title="@string/ime_switcher_notify" 
-        android:summary="@string/ime_switcher_notify_summary" 
-        android:defaultValue="true" /> 
+    <org.candy.candyshop.preference.SystemSettingSwitchPreference
+        android:key="status_bar_ime_switcher"
+        android:title="@string/ime_switcher_notify"
+        android:summary="@string/ime_switcher_notify_summary"
+        android:defaultValue="true" />
 
-      <SwitchPreference
+    <SwitchPreference
         android:key="keyboard_rotation_toggle"
         android:title="@string/keyboard_rotation_toggle_title"
         android:summary="@string/keyboard_rotation_toggle_summary"

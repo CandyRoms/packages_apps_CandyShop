@@ -84,7 +84,7 @@ public class IME extends SettingsPreferenceFragment
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.candh_imesettings);
+        addPreferencesFromResource(R.xml.candy_ime_settings);
         mDisableFullscreenKeyboard =
             (SwitchPreference) findPreference(PREF_DISABLE_FULLSCREEN_KEYBOARD);
         mDisableFullscreenKeyboard.setChecked(Settings.System.getInt(getContentResolver(),
