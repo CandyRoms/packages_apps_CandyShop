@@ -90,7 +90,7 @@
             android:title="@string/flashlight_on_call_title"
             android:entries="@array/flashlight_on_call_entries"
             android:entryValues="@array/flashlight_on_call_values" />
-        
+
         <Preference
             android:key="incall_notification_options"
             android:title="@string/incall_vibration_options_title"
@@ -131,5 +131,16 @@
            android:entryValues="@array/power_menu_animations_values"
            android:summary="@string/power_menu_animation_summary"
            android:persistent="false" />
+
+    <PreferenceCategory
+        android:id="@+id/Wakelocks_category"
+        android:key="Wakelocks_category"
+        android:title="@string/wakelocks_title" />
+
+        <Preference 
+        android:key="wakelock_blocker" 
+        android:fragment="org.candy.candyshop.fragments.WakeLockBlocker" 
+        android:title="@string/wakelock_blocker_title" 
+        android:summary="@string/wakelock_blocker_summary" />
 
 </PreferenceScreen>

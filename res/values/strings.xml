@@ -70,6 +70,7 @@
     <string name="animations_title">Animations</string>
     <string name="power_button_gestures_title">Power button gestures</string>
     <string name="power_button_reboot_menu_title">Power button reboot menu</string>
+    <string name="wakelocks_title">wakelocks</string> 
 
     <!-- Fragments -->
     <string name="headset_title">Headset</string>
@@ -766,5 +767,18 @@
     <string name="hide_apps_from_recents_summary">Prevent apps from appearing in recents</string>
     <string name="hide_from_recents_add_app">Add app</string>
     <string name="title_activity_carbon_recents_settings">Recents</string>
+
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app if they are not in foreground</string>
+
+     <!-- Wakelock blocker --> 
+    <string name="wakelock_blocker_title">Wakelock Blocker</string> 
+    <string name="wakelock_blocker_summary">Block system wakelocks</string> 
+    <string name="wakelock_blocker_save">Save</string> 
+    <string name="wakelock_list_header">Available wakelocks</string> 
+    <string name="wakelock_blocker_reload">Reload</string> 
+    <string name="wakelock_blocker_warning_title">Proceed with caution</string> 
+    <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss</string> 
 
 </resources>
