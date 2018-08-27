@@ -84,4 +84,18 @@
             android:summary="@string/incall_vibration_options_summary"
             android:fragment="org.candy.candyshop.fragments.DialerSettings" />
 
+    <PreferenceCategory
+        android:id="@+id/animations_category"
+        android:key="animations_category"
+        android:title="@string/animations_title"
+        android:icon="@drawable/ic_settings_animations" >
+
+        <Preference
+            android:key="system_animation"
+            android:title="@string/system_animation_title"
+            android:summary="@string/system_animation_summary"
+            android:fragment="org.candy.candyshop.fragments.SystemAnimationControls" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
