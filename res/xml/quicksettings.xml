@@ -33,7 +33,6 @@
         android:title="@string/qs_tile_title_visibility_title"
         android:defaultValue="true" />
 
-
     <PreferenceCategory
         android:key="qs_columns_rows_category"
         android:title="@string/qs_columns_rows_category_title" >
@@ -70,5 +69,25 @@
             android:defaultValue="5"
             settings:units="" />
         </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:key="qs_brightness_category"
+        android:title="@string/qs_brightness_category_title" >
+
+        <org.candy.candyshop.preference.SecureSettingSwitchPreference
+            android:key="qs_show_brightness"
+            android:title="@string/qs_show_brightness_title"
+            android:summary="@string/qs_show_brightness_summary"
+            android:defaultValue="true" />
+
+        <org.candy.candyshop.preference.SecureSettingSwitchPreference
+            android:key="qs_brightness_position_bottom"
+            android:title="@string/qs_brightness_position_bottom_title"
+            android:summary="@string/qs_brightness_position_bottom_summary"
+            android:defaultValue="false"
+            android:dependency="qs_show_brightness" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
