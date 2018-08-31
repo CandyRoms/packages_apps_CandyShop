@@ -26,6 +26,19 @@
         android:key="statusbar_options_category"
         android:title="@string/statusbar_options_category_title" >
 
+     <org.candy.candyshop.preference.SecureSettingSwitchPreference
+        android:key="qs_show_brightness"
+        android:title="@string/qs_show_brightness_title"
+        android:summary="@string/qs_show_brightness_summary"
+        android:defaultValue="true" />
+
+     <org.candy.candyshop.preference.SecureSettingSwitchPreference
+        android:key="qs_brightness_position_bottom"
+        android:title="@string/qs_brightness_position_bottom_title"
+        android:summary="@string/qs_brightness_position_bottom_summary"
+        android:defaultValue="false"
+        android:dependency="qs_show_brightness" />
+
         <Preference
             android:key="clock_settings"
             android:title="@string/status_bar_clock"
