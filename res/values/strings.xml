@@ -105,4 +105,12 @@
     <string name="network_traffic_hidearrow_summary">Hide the network traffic indicator arrows</string>
     <string name="nettraf_font_size">Single Net Font size</string>
 
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_options_title">In-call notifications</string>
+    <string name="incall_vibration_options_summary">In-call vibration options</string>
+    <string name="incall_vibration_category">In-call notifications</string>
+    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
+    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
+    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+
 </resources>

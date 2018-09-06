@@ -38,4 +38,16 @@
         android:title="@string/notifications_category_title" >
 
     </PreferenceCategory>-->
+
+    <PreferenceCategory
+        android:key="incall_vib_options"
+        android:title="@string/incall_vibration_category" >
+
+        <Preference
+            android:key="incall_notification_options"
+            android:title="@string/incall_vibration_options_title"
+            android:summary="@string/incall_vibration_options_summary"
+            android:fragment="org.candy.candyshop.fragments.DialerSettings" />
+
+    </PreferenceCategory>
 </PreferenceScreen>
