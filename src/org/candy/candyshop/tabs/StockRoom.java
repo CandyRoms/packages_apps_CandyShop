@@ -34,15 +34,15 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.Utils;
 
-public class QuickSettings extends SettingsPreferenceFragment implements
+public class StockRoom extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-    private static final String TAG = "QuickSettings";
+    private static final String TAG = "StockRoom";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.quicksettings);
+        addPreferencesFromResource(R.xml.candyshop);
 
         ContentResolver resolver = getActivity().getContentResolver();
     }
