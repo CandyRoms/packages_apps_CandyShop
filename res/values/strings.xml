@@ -20,9 +20,9 @@
     <string name="system_category">System</string>
     <string name="quicksettings_category">QuickSettings</string>
     <string name="lockscreen_category">Lockscreen</string>
-    <string name="statusbar_category">Status Bar</string>
+    <string name="statusbar_category">Statusbar</string>
     <string name="navigation_category">Navigation</string>
-    <string name="multitasking_category">Multi-Tasking</string>
+    <string name="stockroom_category">StockRoom</string>
 
     <string name="candyshop_summary_title">Have some Candy, on us!</string>
 
