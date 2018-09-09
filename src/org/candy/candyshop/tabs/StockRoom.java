@@ -42,7 +42,7 @@ public class StockRoom extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.candyshop);
+        addPreferencesFromResource(R.xml.stockroom);
 
         ContentResolver resolver = getActivity().getContentResolver();
     }
