@@ -219,6 +219,10 @@
     <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
     <string name="clock_date_string_edittext_summary">Enter string</string>
 
+    <!-- Old Style Mobile -->
+    <string name="use_old_mobiletype_title">Use old mobile signal</string>
+    <string name="use_old_mobiletype_summary">Use the mobile icons from oreo and before\nSystemUI will restart</string>
+
     <!-- System theme -->
     <string name="theme_category_title">System Sweetener</string>
     <string name="systemui_theme_style_title">Background color</string>
