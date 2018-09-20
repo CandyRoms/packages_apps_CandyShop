@@ -25,7 +25,13 @@
     android:fitsSystemWindows="true"
     android:background="@android:color/transparent"><!--important-->
 
-    <!-- candyshop_bg2.png --> 
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <!-- candyshop_bg2.png -->
     <ImageView
         android:id="@+id/bkgnd"
         android:layout_width="match_parent"
@@ -34,17 +40,20 @@
         android:src="@drawable/candyshop_bg2"
         android:alpha="0.0875" />
 
-    <org.candy.candyshop.PagerSlidingTabStrip
-        android:id="@+id/tabs"
-        android:layout_width="match_parent"
-        android:layout_height="48dp" />
-
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"      
-        android:layout_weight="1"
-        android:layout_marginTop="48dp"
-        tools:context=".CandyShop"/>
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navigation"/>
+
+    <org.candy.candyshop.navigation.BottomNavigationViewCustom
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@drawable/icon_selector"
+        app:itemTextColor="@drawable/icon_selector"
+        app:menu="@menu/main" />
 
 </RelativeLayout >

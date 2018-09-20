@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
+      Copyright (C) 2018 CandyRoms
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -17,7 +18,19 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/system_category"
-    android:layout="@layout/tab" >
+        android:key="system"
+        android:title="@string/candyshop_category"
+        android:layout="@layout/tab" >
 
+    <!--<PreferenceCategory
+        android:key="buttons_category"
+        android:title="@string/button_category_title" >
+
+    </PreferenceCategory>-->
+
+    <!--<PreferenceCategory
+        android:key="notifications_category"
+        android:title="@string/notifications_category_title" >
+
+    </PreferenceCategory>-->
 </PreferenceScreen>

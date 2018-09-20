@@ -15,8 +15,10 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 
-<resources>
+<resources xmlns:tools="schemas.android.com/tools">
 
     <dimen name="header_icon_width">28dp</dimen>
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">12sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">12sp</dimen>
 
 </resources>

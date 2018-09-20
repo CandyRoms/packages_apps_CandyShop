@@ -25,4 +25,8 @@
     <color name="theme_accent">#ffC0C0C0</color>
     <color name="action_picker_fab_background">@color/theme_accent</color>
 
+    <!-- Bottom navigation -->
+    <color name="BottomBarBackgroundColor">@android:color/white</color>
+    <color name="bottom_nav_text_icon_active">@android:color/black</color>
+    <color name="bottom_nav_text_icon_inactive">@*android:color/hint_foreground_light</color>
 </resources>

@@ -60,4 +60,24 @@
         <attr name="defaultColorValue" format="integer" />
     </declare-styleable>
 
+    <declare-styleable name="CircularImageView">
+        <attr name="civ_border" format="boolean"/>
+        <attr name="civ_border_width" format="dimension"/>
+        <attr name="civ_border_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="RowLayout">
+        <attr name="android:verticalSpacing" />
+        <attr name="android:horizontalSpacing" />
+    </declare-styleable>
+
+    <declare-styleable name="BottomNavigationView">
+        <!-- The menu resource to inflate and populate items from. -->
+        <attr name="menu"/>
+        <attr name="itemIconTint"/>
+        <attr name="itemTextColor"/>
+        <attr name="itemBackground"/>
+        <attr name="elevation"/>
+    </declare-styleable>
+
 </resources>
