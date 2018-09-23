@@ -22,11 +22,22 @@
         android:title="@string/candyshop_category"
         android:layout="@layout/tab" >
 
-    <!--<PreferenceCategory
+    <PreferenceCategory
         android:key="statusbar_options_category"
         android:title="@string/statusbar_options_category_title" >
 
-    </PreferenceCategory>-->
+    <org.candy.candyshop.preference.SystemSettingSwitchPreference
+        android:key="network_traffic_state"
+        android:title="@string/network_traffic_state_title"
+        android:defaultValue="true" />
+     <org.candy.candyshop.preference.CustomSeekBarPreference
+        android:key="network_traffic_autohide_threshold"
+        android:title="@string/network_traffic_autohide_threshold_title"
+        android:max="10"
+        settings:min="0"
+        settings:units="" />
+
+    </PreferenceCategory>
 
     <!--<PreferenceCategory
         android:key="statusbar_notifications"
