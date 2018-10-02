@@ -33,6 +33,11 @@
             android:fragment="org.candy.candyshop.fragments.ClockDateSettings" />
 
         <Preference
+            android:key="qs_rows_columns"
+            android:fragment="org.candy.candyshop.fragments.QsRowsColumns"
+            android:title="@string/qs_rows_columns_title"/>
+
+        <Preference
             android:key="battery_settings"
             android:title="@string/battery_style_category_title"
             android:fragment="org.candy.candyshop.fragments.BatterySettings" />
