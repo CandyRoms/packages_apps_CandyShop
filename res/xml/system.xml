@@ -19,14 +19,20 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:key="system"
-        android:title="@string/candyshop_category"
+        android:title="@string/system_category"
         android:layout="@layout/tab" >
 
-    <!--<PreferenceCategory
+    <PreferenceCategory
         android:key="buttons_category"
         android:title="@string/button_category_title" >
 
-    </PreferenceCategory>-->
+        <Preference
+            android:key="button"
+            android:title="@string/button_title"
+            android:summary="@string/buttons_preference_summary"
+            android:fragment="org.candy.candyshop.fragments.Button" />
+
+    </PreferenceCategory>
 
     <!--<PreferenceCategory
         android:key="notifications_category"

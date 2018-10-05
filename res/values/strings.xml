@@ -53,6 +53,52 @@
     <string name="screen_capture_options_category_title">Screen capture options</string>
     <string name="miscellaneous_category_title">Miscellaneous</string>
 
+    <!-- Fragments -->
+    <string name="headset_title">Headset</string>
+    <string name="button_title">Volume buttons</string>
+    <string name="quicksettings_title">Quick settings</string>
+    <string name="torch_title">Power button</string>
+    <string name="battery_title">Battery settings</string>
+    <string name="leds_title">Lights</string>
+    <string name="network_traffic_title">Network traffic</string>
+    <string name="notification_light_settings">Notifications light</string>
+    <string name="powermenu_title">Power menu</string>
+    <string name="navbar_title">Navbar</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="various_system_title">Various</string>
+    <string name="various_lockscreen_title">Various</string>
+    <string name="various_statusbar_title">Various</string>
+    <string name="various_navigation_title">Various</string>
+    <string name="recent_settings_title">Recents</string>
+    <string name="status_bar_clock_title">Clock options</string>
+
+    <!-- Fragment summaries -->
+    <string name="headset_preference_summary">Headset connect options</string>
+    <string name="buttons_preference_summary">Volume key behavior options</string>
+    <string name="power_button_preference_summary">Power button torch control</string>
+    <string name="powermenu_preference_summary">Configure power menu options</string>
+    <string name="leds_preference_summary">Battery and notification LED options</string>
+    <string name="ls_shortcuts_preference_summary">Lockscreen bottom shorcut options</string>
+    <string name="clock_preference_summary">Time and date display options</string>
+    <string name="battery_preference_summary">Change icon and percentage display</string>
+    <string name="net_traffic_preference_summary">Statusbar network traffic options</string>
+    <string name="qs_preference_summary">Tiles, quick pulldown, brightness, transparency options</string>
+    <string name="statusbar_preference_summary">Statusbar icon display options</string>
+    <string name="recents_preference_summary">AOSP recents and SlimRecents options</string>
+    <string name="ga_preference_summary">On-screen gesture launcher options</string>
+    <string name="custom_carrier_label_preference_summary">Statusbar carrier text customization</string>
+
+    <!-- Buttons -->
+    <string name="volbtn_down_zen_title">Volume down for do not disturb</string>
+    <string name="volbtn_down_zen_summary">Allow volume down to enter do not disturb mode</string>
+    <string name="volbtn_up_zen_title">Volume up in do not disturb</string>
+    <string name="volbtn_up_zen_summary">Allow volume up to exit do not disturb mode</string>
+    <string name="swap_volume_buttons">Swap volume buttons rotation based</string>
+    <string name="volume_keys_control_media_stream_title">Volume keys control media volume</string>
+    <string name="volume_keys_control_media_stream_summary">Volume panel will show media volume slider by default</string>
+    <string name="volume_rocker_music_controls_title">Playback control</string>
+    <string name="volume_rocker_music_controls_summary">When the screen is off, long-pressing the volume keys will seek music tracks</string>
+
     <!-- QuickSettings -->
     <!-- Quick Settings brightness icon -->
     <string name="brightness_icon_title">Brightness slider icon</string>
