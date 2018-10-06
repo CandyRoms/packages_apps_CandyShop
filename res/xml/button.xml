@@ -18,8 +18,9 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-        android:key="button"
-        android:title="@string/button_category_title">
+        android:key="button_settings"
+        android:title="@string/button_category_title"
+        android:summary="@string/buttons_preference_summary" >
 
     <org.candy.candyshop.preference.SecureSettingSwitchPreference
         android:key="sysui_volume_up_silent"
