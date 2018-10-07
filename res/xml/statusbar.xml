@@ -27,6 +27,12 @@
         android:title="@string/statusbar_options_category_title" >
 
         <Preference
+            android:key="clock_settings"
+            android:title="@string/status_bar_clock"
+            android:summary="@string/status_bar_clock_summary"
+            android:fragment="org.candy.candyshop.fragments.ClockDateSettings" />
+
+        <Preference
             android:key="battery_settings"
             android:title="@string/battery_style_category_title"
             android:fragment="org.candy.candyshop.fragments.BatterySettings" />
@@ -43,6 +49,7 @@
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.tuner.StatusBarIconsTunerActivity" />
+
         </Preference>
 
     </PreferenceCategory>
