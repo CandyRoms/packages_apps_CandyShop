@@ -26,12 +26,24 @@
         android:layout="@layout/tab_header_preference_category"
         android:title="@string/statusbar_aisle_header" />
 
-    <!--<PreferenceCategory
+    <PreferenceCategory
         android:id="@+id/statusbar_options_category"
         android:key="statusbar_options_category"
         android:title="@string/statusbar_options_category_title" >
 
-    </PreferenceCategory>-->
+        <Preference
+            android:key="clock_settings"
+            android:title="@string/status_bar_clock"
+            android:summary="@string/status_bar_clock_summary"
+            android:fragment="org.candy.candyshop.fragments.ClockDateSettings" />
+
+        <Preference
+            android:key="network_traffic"
+         android:title="@string/traffic_title"
+         android:summary="@string/traffic_summary"
+         android:fragment="org.candy.candyshop.fragments.NetworkTraffic" />
+
+        </PreferenceCategory>
 
     <PreferenceCategory
         android:key="statusbar_notifications"
