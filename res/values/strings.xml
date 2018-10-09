@@ -81,6 +81,7 @@
     <string name="various_navigation_title">Various</string>
     <string name="recent_settings_title">Recents</string>
     <string name="status_bar_clock_title">Clock options</string>
+    <string name="navigationbar_settings_title">Navigation Bar</string>
 
     <!-- Fragment summaries -->
     <string name="headset_preference_summary">Headset connect options</string>

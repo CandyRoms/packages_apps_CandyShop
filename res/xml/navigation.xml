@@ -65,11 +65,13 @@
 
     </PreferenceCategory>
 
-    <!--<PreferenceCategory
+    <PreferenceCategory
         android:title="@string/hwkeys_category_title" >
 
-    </PreferenceCategory>-->
+        <PreferenceScreen
+		    android:fragment="com.android.settings.smartnav.NavigationBarSettings"
+		    android:key="navigationbar_settings"
+		    android:title="@string/navigationbar_settings_title"/>
 
-
-
+    </PreferenceCategory>
 </PreferenceScreen>
