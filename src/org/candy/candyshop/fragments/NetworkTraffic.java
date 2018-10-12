@@ -12,9 +12,9 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
- package corg.candy.candyshop.fragments;
- import android.content.Context;
+*/
+package corg.candy.candyshop.fragments;
+import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -25,42 +25,54 @@ import android.support.v7.preference.ListPreference;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.provider.SearchIndexableResource;
 import android.provider.Settings;
- import com.android.settings.R;
+import com.android.settings.R;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
- import org.candy.candyshop.preference.CustomSeekBarPreference;
+import org.candy.candyshop.preference.CustomSeekBarPreference;
 import org.candy.candyshop.preference.SystemSettingSwitchPreference;
- public class NetworkTraffic extends SettingsPreferenceFragment implements
-        OnPreferenceChangeListener {
-     private CustomSeekBarPreference mThreshold;
+
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class NetworkTraffic extends SettingsPreferenceFragment implements
+        OnPreferenceChangeListener, Indexable {
+    private CustomSeekBarPreference mThreshold;
     private SystemSettingSwitchPreference mNetMonitor;
-     @Override
+
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-         addPreferencesFromResource(R.xml.statusbar);
-         final ContentResolver resolver = getActivity().getContentResolver();
-         boolean isNetMonitorEnabled = Settings.System.getIntForUser(resolver,
+        addPreferencesFromResource(R.xml.statusbar);
+        final ContentResolver resolver = getActivity().getContentResolver();
+        boolean isNetMonitorEnabled = Settings.System.getIntForUser(resolver,
                 Settings.System.NETWORK_TRAFFIC_STATE, 1, UserHandle.USER_CURRENT) == 1;
         mNetMonitor = (SystemSettingSwitchPreference) findPreference("network_traffic_state");
         mNetMonitor.setChecked(isNetMonitorEnabled);
         mNetMonitor.setOnPreferenceChangeListener(this);
-         int value = Settings.System.getIntForUser(resolver,
+        int value = Settings.System.getIntForUser(resolver,
                 Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD, 1, UserHandle.USER_CURRENT);
         mThreshold = (CustomSeekBarPreference) findPreference("network_traffic_autohide_threshold");
         mThreshold.setValue(value);
         mThreshold.setOnPreferenceChangeListener(this);
         mThreshold.setEnabled(isNetMonitorEnabled);
      }
-     @Override
+
+    @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.CANDYSHOP;
     }
-     @Override
+
+    @Override
     public void onResume() {
         super.onResume();
     }
+
      public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mNetMonitor) {
             boolean value = (Boolean) newValue;
@@ -79,4 +91,26 @@ import org.candy.candyshop.preference.SystemSettingSwitchPreference;
         }
         return false;
     }
+
+    public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+                @Override
+                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                        boolean enabled) {
+                    ArrayList<SearchIndexableResource> result =
+                            new ArrayList<SearchIndexableResource>();
+
+                    SearchIndexableResource sir = new SearchIndexableResource(context);
+                    sir.xmlResId = R.xml.statusbar;
+                    result.add(sir);
+
+                    return result;
+                }
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    ArrayList<String> result = new ArrayList<String>();
+                    return result;
+                }
+            };
 }
