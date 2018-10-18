@@ -28,20 +28,25 @@ import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v14.preference.PreferenceFragment;
+import android.util.Log;
 
-import com.android.settings.R;
-import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.Utils;
-
+import com.android.settings.R;
+import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
 
 public class StatusBar extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
+
     private static final String MISC_CATEGORY = "statusbar_category";
     private static final String TAG = "StatusBar";
 
@@ -92,5 +97,4 @@ public class StatusBar extends SettingsPreferenceFragment implements
                     return result;
                 }
             };
-
 }

@@ -26,22 +26,16 @@
         android:key="statusbar_options_category"
         android:title="@string/statusbar_options_category_title" >
 
-        <org.candy.candyshop.preference.SystemSettingSwitchPreference
-            android:key="network_traffic_state"
-            android:title="@string/network_traffic_state_title"
-            android:defaultValue="true" />
-
-         <org.candy.candyshop.preference.CustomSeekBarPreference
-            android:key="network_traffic_autohide_threshold"
-            android:title="@string/network_traffic_autohide_threshold_title"
-            android:max="10"
-            settings:min="0"
-            settings:units="" />
-
         <Preference
             android:key="battery_settings"
             android:title="@string/battery_style_category_title"
             android:fragment="org.candy.candyshop.fragments.BatterySettings" />
+
+        <Preference
+            android:key="network_traffic"
+            android:title="@string/network_traffic_title"
+            android:summary="@string/net_traffic_preference_summary"
+            android:fragment="org.candy.candyshop.fragments.NetworkTraffic" />
 
         <Preference
             android:title="@string/status_bar_tuner_title"

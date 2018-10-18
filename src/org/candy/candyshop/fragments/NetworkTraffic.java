@@ -13,7 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
 */
-package corg.candy.candyshop.fragments;
+package org.candy.candyshop.fragments;
+
 import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
@@ -27,29 +28,43 @@ import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
-import com.android.settings.R;
-import com.android.internal.logging.nano.MetricsProto;
-import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.Utils;
-import org.candy.candyshop.preference.CustomSeekBarPreference;
-import org.candy.candyshop.preference.SystemSettingSwitchPreference;
+import android.util.Log;
+import android.view.View;
 
+import com.android.internal.logging.nano.MetricsProto;
+import com.android.settings.Utils;
+import com.android.settings.R;
+import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+
+import org.candy.candyshop.preference.CustomSeekBarPreference;
+import org.candy.candyshop.preference.SystemSettingSwitchPreference;
 
 public class NetworkTraffic extends SettingsPreferenceFragment implements
-        OnPreferenceChangeListener, Indexable {
+        Preference.OnPreferenceChangeListener, Indexable {
+
+    private static final String MISC_CATEGORY = "network_traffic_category";
+    private static final String TAG = "NetworkTraffic";
+
     private CustomSeekBarPreference mThreshold;
     private SystemSettingSwitchPreference mNetMonitor;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.statusbar);
+
+        addPreferencesFromResource(R.xml.network_traffic);
+
         final ContentResolver resolver = getActivity().getContentResolver();
+
         boolean isNetMonitorEnabled = Settings.System.getIntForUser(resolver,
                 Settings.System.NETWORK_TRAFFIC_STATE, 1, UserHandle.USER_CURRENT) == 1;
         mNetMonitor = (SystemSettingSwitchPreference) findPreference("network_traffic_state");
@@ -101,7 +116,7 @@ public class NetworkTraffic extends SettingsPreferenceFragment implements
                             new ArrayList<SearchIndexableResource>();
 
                     SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.statusbar;
+                    sir.xmlResId = R.xml.network_traffic;
                     result.add(sir);
 
                     return result;

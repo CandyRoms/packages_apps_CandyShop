@@ -16,6 +16,7 @@
 
 package org.candy.candyshop;
 
+import android.app.Activity;
 import android.content.Context;
 import android.app.DialogFragment;
 import android.app.Fragment;
@@ -23,9 +24,7 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.provider.SearchIndexableResource;
 import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
@@ -39,6 +38,17 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
+import android.provider.SearchIndexableResource;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+
 import org.candy.candyshop.navigation.BottomNavigationViewCustom;
 import org.candy.candyshop.tabs.System;
 import org.candy.candyshop.tabs.Lockscreen;
@@ -47,7 +57,7 @@ import org.candy.candyshop.tabs.Navigation;
 import org.candy.candyshop.tabs.StockRoom;
 
 
-public class CandyShop extends SettingsPreferenceFragment {
+public class CandyShop extends SettingsPreferenceFragment implements Indexable {
 
     private static final String TAG = "CandyShop";
 
@@ -195,4 +205,26 @@ public class CandyShop extends SettingsPreferenceFragment {
         ft.addToBackStack(null);
         dialog.show(ft, "dialog");
     }
+
+    public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+                @Override
+                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                        boolean enabled) {
+                    ArrayList<SearchIndexableResource> result =
+                            new ArrayList<SearchIndexableResource>();
+
+                    SearchIndexableResource sir = new SearchIndexableResource(context);
+                    sir.xmlResId = R.id.pager;
+                    result.add(sir);
+
+                    return result;
+                }
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    ArrayList<String> result = new ArrayList<String>();
+                    return result;
+                }
+            };
 }
