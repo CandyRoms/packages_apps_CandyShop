@@ -51,6 +51,12 @@
          android:summary="@string/traffic_summary"
          android:fragment="org.candy.candyshop.fragments.NetworkTraffic" />
 
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+         android:key="volte_icon"
+         android:title="@string/volte_icon_title"
+         android:summary="@string/volte_icon_summary"
+         android:defaultValue="true"/>
+
     <PreferenceCategory
         android:key="statusbar_gestures"
         android:title="@string/gestures_title">

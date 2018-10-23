@@ -145,4 +145,8 @@
     <string name="force_expanded_notifications_title">Force expanded notifications</string>
     <string name="force_expanded_notifications_summary">Force apps that support expanded notifications</string>
 
+    <!-- Show VoLTE icon on statusbar -->
+    <string name="volte_icon_title">VoLTE icon</string>
+    <string name="volte_icon_summary">Display VoLTE icon</string>
+
 </resources>
