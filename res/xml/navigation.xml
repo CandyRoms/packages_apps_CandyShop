@@ -42,7 +42,8 @@
             android:key="pixel_nav_animation"
             android:title="@string/pixel_navbar_anim_title"
             android:summary="@string/pixel_navbar_anim_summary"
-            android:dependency="navigation_bar_enabled" />
+            android:dependency="navigation_bar_enabled"
+            android:defaultValue="false"  />
 
         <Preference
             android:key="gesture_settings"
