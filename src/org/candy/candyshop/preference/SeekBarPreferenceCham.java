@@ -30,7 +30,7 @@ public class SeekBarPreferenceCham extends Preference implements SeekBar.OnSeekB
     private final String TAG = getClass().getName();
 
     private static final String ANDROIDNS = "http://schemas.android.com/apk/res/android";
-    private static final String HAVOCSETTINGSNS = "http://schemas.android.com/apk/res-auto";
+    private static final String CANDYSHOP = "http://schemas.android.com/apk/res-auto";
     private static final int DEFAULT_VALUE = 50;
 
     private int mMaxValue      = 100;
@@ -81,8 +81,8 @@ public class SeekBarPreferenceCham extends Preference implements SeekBar.OnSeekB
         if (mDefaultValue < mMinValue || mDefaultValue > mMaxValue) {
             throw new IllegalArgumentException("Default value is out of range!");
         }
-        mUnitsLeft = getAttributeStringValue(attrs, HAVOCSETTINGSNS, "unitsLeft", "");
-        mUnitsRight = getAttributeStringValue(attrs, HAVOCSETTINGSNS, "unitsRight", "");
+        mUnitsLeft = getAttributeStringValue(attrs, CANDYSHOP, "unitsLeft", "");
+        mUnitsRight = getAttributeStringValue(attrs, CANDYSHOP, "unitsRight", "");
         Integer idR = a.getResourceId(R.styleable.SeekBarPreference_unitsRight, 0);
         if (idR > 0) {
             mUnitsRight = context.getResources().getString(idR);
@@ -92,7 +92,7 @@ public class SeekBarPreferenceCham extends Preference implements SeekBar.OnSeekB
             mUnitsLeft = context.getResources().getString(idL);
         }
         try {
-            String newInterval = attrs.getAttributeValue(HAVOCSETTINGSNS, "interval");
+            String newInterval = attrs.getAttributeValue(CANDYSHOP, "interval");
             if(newInterval != null)
                 mInterval = Integer.parseInt(newInterval);
         }
@@ -257,17 +257,17 @@ public class SeekBarPreferenceCham extends Preference implements SeekBar.OnSeekB
     }
 
     @Override
-    public void onStartTrackingTouch(SeekBar seekBar) { 
-        mTrackingTouch = true; 
-    } 
- 
-    @Override 
-    public void onStopTrackingTouch(SeekBar seekBar) { 
-        notifyChanged(); 
-        mTrackingTouch = false; 
-    } 
- 
-    @Override 
+    public void onStartTrackingTouch(SeekBar seekBar) {
+        mTrackingTouch = true;
+    }
+
+    @Override
+    public void onStopTrackingTouch(SeekBar seekBar) {
+        notifyChanged();
+        mTrackingTouch = false;
+    }
+
+    @Override
     protected Object onGetDefaultValue(TypedArray ta, int index){
         int defaultValue = ta.getInt(index, DEFAULT_VALUE);
         return defaultValue;

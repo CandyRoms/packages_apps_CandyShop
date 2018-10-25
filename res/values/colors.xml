@@ -43,4 +43,7 @@
     <color name="qs_tile_icon_active">#FFFFFFFF</color>
     <color name="qs_tile_icon_inactive">#FF656565</color>
 
+    <!-- Gesture Anywhere -->
+    <color name="ga_gesture_color">@*android:color/accent_material_dark</color>
+
 </resources>

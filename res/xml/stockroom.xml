@@ -25,11 +25,17 @@
         android:layout="@layout/tab_header_preference_category"
         android:title="@string/stockroom_aisle_header" />
 
-    <!--<PreferenceCategory
+    <PreferenceCategory
         android:key="multi_tasking_category"
         android:title="@string/multitasking_category_title" >
 
-    </PreferenceCategory>-->
+     <Preference
+            android:key="gesture_anywhere"
+            android:fragment="org.candy.candyshop.fragments.GestureAnywhereSettings"
+            android:title="@string/gesture_anywhere_title"
+            android:summary="@string/gesture_anywhere_summary" />
+
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:id="@+id/screen_capture_category"
