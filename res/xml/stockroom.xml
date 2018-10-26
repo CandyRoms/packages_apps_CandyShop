@@ -39,10 +39,15 @@
 
     </PreferenceCategory>
 
-    <!--<PreferenceCategory
+    <PreferenceCategory
         android:key="miscellaneous_category"
         android:title="@string/miscellaneous_category_title" >
 
-    </PreferenceCategory>-->
+        <com.android.settings.applications.LayoutPreference
+            android:key="changelog"
+            android:fragment="org.candy.candyshop.fragments.Changelog"
+            android:layout="@layout/changelog" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
