@@ -26,12 +26,15 @@
     <color name="action_picker_fab_background">@color/theme_accent</color>
 
     <!-- Bottom navigation -->
-    <color name="BottomBarBackgroundColor">@android:color/white</color>
-    <color name="bottom_nav_text_icon_active">@android:color/black</color>
+    <color name="BottomBarBackgroundColor">@*android:color/primary_device_default_dark</color>
+    <color name="bottom_nav_text_icon_active">@*android:color/accent_device_default_light</color>
     <color name="bottom_nav_text_icon_inactive">@*android:color/hint_foreground_light</color>
 
     <!-- Accent picker -->
     <color name="accent_picker_white_accent">@android:color/white</color>
     <color name="accent_picker_dark_accent">@android:color/black</color>
+
+    <!-- Changelog -->
+    <color name="preference_background_color">@*android:color/accent_device_default_light</color>
 
 </resources>
