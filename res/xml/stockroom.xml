@@ -18,7 +18,7 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:key="stockroom"
-        android:title="@string/candyshop_category"
+        android:title="@string/"
         android:layout="@layout/tab" >
 
     <!--<PreferenceCategory
@@ -43,10 +43,15 @@
         android:key="miscellaneous_category"
         android:title="@string/miscellaneous_category_title" >
 
-        <com.android.settings.applications.LayoutPreference
+        <!--<com.android.settings.applications.LayoutPreference
             android:key="changelog"
             android:fragment="org.candy.candyshop.fragments.Changelog"
-            android:layout="@layout/changelog" />
+            android:layout="@layout/changelog" />-->
+
+        <Preference
+            android:key="changelog"
+            android:title="@string/changelog_title"
+            android:fragment="org.candy.candyshop.fragments.Changelog" />
 
     </PreferenceCategory>
 
