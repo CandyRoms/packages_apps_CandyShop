@@ -39,4 +39,10 @@
         android:title="@string/swap_volume_buttons"
         android:defaultValue="true" />
 
+    <org.candy.candyshop.preference.SystemSettingSwitchPreference
+        android:key="volume_rocker_wake"
+        android:summary="@string/volume_rocker_wake_summary"
+        android:title="@string/volume_rocker_wake_title" 
+        android:defaultValue="false" />
+
 </PreferenceScreen>
