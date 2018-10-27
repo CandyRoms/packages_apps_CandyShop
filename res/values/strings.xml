@@ -44,7 +44,7 @@
     <string name="lockscreen_icons_category_title">Lockscreen bottom shortcuts</string>
     <string name="lockscreen_clock_category_title">Clock and date options</string>
     <string name="lockscreen_other_category_title">Other</string>
-    <string name="notifications_category_title">Annoying notifications protection</string>
+    <string name="notifications_category_title">System notifications</string>
     <string name="qs_cat_title">Quick settings panel</string>
     <string name="statusbar_options_category_title">Statusbar options</string>
     <string name="statusbar_notifications">Statusbar notifications</string>
@@ -52,20 +52,5 @@
     <string name="multitasking_category_title">Multi-tasking</string>
     <string name="screen_capture_options_category_title">Screen capture options</string>
     <string name="miscellaneous_category_title">Miscellaneous</string>
-
-    <!-- QuickSettings -->
-    <!-- Quick Settings brightness icon -->
-    <string name="brightness_icon_title">Brightness slider icon</string>
-    <string name="brightness_icon_summary">Show a brightness icon to the right of the brightness slider to toggle auto-brightness</string>
-
-    <!-- Color Picker -->
-    <string name="dialog_color_picker">Color Picker</string>
-    <string name="press_color_to_apply">Press on color below to apply</string>
-    <string name="arrow_right">→</string>
-    <string name="arrow_down">↓</string>
-    <string name="hex">Hex:</string>
-    <string name="hex_hint">#ff000000</string>
-    <string name="set">Set</string>
-    <string name="color_default">Default</string>
 
 </resources>

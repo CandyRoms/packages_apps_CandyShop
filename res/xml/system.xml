@@ -19,7 +19,7 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:key="system"
-        android:title="@string/candyshop_category"
+        android:title="@string/system_category"
         android:layout="@layout/tab" >
 
     <!--<PreferenceCategory
