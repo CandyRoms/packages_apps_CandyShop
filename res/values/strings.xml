@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
+      Copyright (C) 2018 CandyRoms
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -212,6 +213,11 @@
     <string name="theme_accent_picker_default">Default color</string>
     <string name="accent_picker_material_colors">Material colors</string>
     <string name="accent_picker_custom_colors">User colors</string>
+
+    <!-- AboutCandy-->
+    <string name="dialog_about_candy_title">About CandyRoms</string>
+    <string name="candy_links_title">Useful Links</string>
+    <string name="candy_team_title">The Candy Team</string>
 
     <!-- Changelog -->
     <string name="changelog_title">Changelog</string>

@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2014-2016 The Dirty Unicorns Project
+ * Copyright (C) 2018 CandyRoms
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -57,7 +58,7 @@ import org.candy.candyshop.tabs.Navigation;
 import org.candy.candyshop.tabs.StockRoom;
 
 
-public class CandyShop extends SettingsPreferenceFragment implements Indexable {
+public class CandyShop extends SettingsPreferenceFragment {
 
     private static final String TAG = "CandyShop";
 
@@ -73,7 +74,7 @@ public class CandyShop extends SettingsPreferenceFragment implements Indexable {
 
         View view = inflater.inflate(R.layout.candyshop, container, false);
 
-        final BottomNavigationViewCustom navigation = view.findViewById(R.id.navigation);
+        final BottomNavigationViewCustom navigation = view.findViewById(R.id.bottom_nav);
 
         final ViewPager viewPager = view.findViewById(R.id.pager);
 
@@ -164,11 +165,11 @@ public class CandyShop extends SettingsPreferenceFragment implements Indexable {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                getString(R.string.system_category),
-                getString(R.string.lockscreen_category),
-                getString(R.string.statusbar_category),
-                getString(R.string.navigation_category),
-                getString(R.string.stockroom_category)};
+                getString(R.string.system_bottom_nav_title),
+                getString(R.string.lockscreen_bottom_nav_title),
+                getString(R.string.statusbar_bottom_nav_title),
+                getString(R.string.navigation_bottom_nav_title),
+                getString(R.string.stockroom_bottom_nav_title)};
 
         return titleString;
     }
@@ -180,17 +181,16 @@ public class CandyShop extends SettingsPreferenceFragment implements Indexable {
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        //menu.add(0, 0, 0, R.string.dialog_team_title);
+        menu.add(0, 0, 0, R.string.dialog_about_candy_title);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case 0:
-                //final TeamFragment dialog = new TeamFragment();
-                //showDialog(this, dialog);
-                //return true;
-                return false;
+                final AboutCandy dialog = new AboutCandy();
+                showDialog(this, dialog);
+                return true;
             default:
                 return false;
         }
@@ -206,25 +206,4 @@ public class CandyShop extends SettingsPreferenceFragment implements Indexable {
         dialog.show(ft, "dialog");
     }
 
-    public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider() {
-                @Override
-                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
-                        boolean enabled) {
-                    ArrayList<SearchIndexableResource> result =
-                            new ArrayList<SearchIndexableResource>();
-
-                    SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.id.pager;
-                    result.add(sir);
-
-                    return result;
-                }
-
-                @Override
-                public List<String> getNonIndexableKeys(Context context) {
-                    ArrayList<String> result = new ArrayList<String>();
-                    return result;
-                }
-            };
 }
