@@ -18,7 +18,7 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:key="lockscreen"
-        android:title="@string/candyshop_category"
+        android:title="@string/lockscreen_category"
         android:layout="@layout/tab" >
 
     <!--<PreferenceCategory

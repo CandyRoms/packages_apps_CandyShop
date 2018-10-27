@@ -45,7 +45,7 @@
     <string name="lockscreen_icons_category_title">Lockscreen bottom shortcuts</string>
     <string name="lockscreen_clock_category_title">Clock and date options</string>
     <string name="lockscreen_other_category_title">Other</string>
-    <string name="notifications_category_title">Annoying notifications protection</string>
+    <string name="notifications_category_title">System notifications</string>
     <string name="qs_cat_title">Quick settings panel</string>
     <string name="battery_style_category_title">Battery icon</string>
     <string name="statusbar_options_category_title">Statusbar options</string>
@@ -202,16 +202,16 @@
     <string name="systemui_theme_style_light">White Chocolate</string>
     <string name="systemui_theme_style_dark">Dark Chocolate</string>
     <string name="systemui_theme_style_blackaf">Black Licorice</string>
-    <string name="applying_theme_toast">Applying sweetener, please wait...</string>
+    <string name="applying_theme_toast">Applying sweetness, please wait...</string>
     <string name="theme_applied_toast">Sweetness applied!</string>
     <string name="disable_themes_installed_title">Candy sweeteners are unavailable to avoid conflicts with Substratum. Uninstall it if you wish to use the built-in Candy sweeteners instead.</string>
     <string name="disable_accents_installed_title">Flavor picker is unavailable to avoid conflicts with Substratum. Uninstall it if you wish to use the Candy flavor picker.</string>
-    <string name="accent_picker_dialog_title">Select a Candy flavor</string>
-    <string name="theme_accent_picker_title">Flavor</string>
-    <string name="theme_accent_picker_summary">Select Candy flavor</string>
-    <string name="theme_accent_picker_default">Default flavor</string>
-    <string name="accent_picker_material_colors">Material flavors</string>
-    <string name="accent_picker_custom_colors">User flavors</string>
+    <string name="accent_picker_dialog_title">Select a Candy accent color</string>
+    <string name="theme_accent_picker_title">Color</string>
+    <string name="theme_accent_picker_summary">Select Candy color</string>
+    <string name="theme_accent_picker_default">Default color</string>
+    <string name="accent_picker_material_colors">Material colors</string>
+    <string name="accent_picker_custom_colors">User colors</string>
 
     <!-- Changelog -->
     <string name="changelog_title">Changelog</string>
