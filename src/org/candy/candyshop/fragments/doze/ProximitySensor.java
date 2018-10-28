@@ -108,15 +108,21 @@ public class ProximitySensor implements SensorEventListener {
     protected void enable() {
         if (DEBUG) Log.d(TAG, "Enabling");
         submit(() -> {
-            mSensorManager.registerListener(this, mSensorProximity,
-                    SensorManager.SENSOR_DELAY_NORMAL);
+            if (Utils.handwaveGestureEnabled(mContext) ||
+                    Utils.pocketGestureEnabled(mContext)) {
+                mSensorManager.registerListener(this, mSensorProximity,
+                        SensorManager.SENSOR_DELAY_NORMAL);
+            }
         });
     }
 
     protected void disable() {
         if (DEBUG) Log.d(TAG, "Disabling");
         submit(() -> {
-            mSensorManager.unregisterListener(this, mSensorProximity);
+            if (Utils.handwaveGestureEnabled(mContext) ||
+                    Utils.pocketGestureEnabled(mContext)) {
+                mSensorManager.unregisterListener(this, mSensorProximity);
+            }
         });
     }
 }
