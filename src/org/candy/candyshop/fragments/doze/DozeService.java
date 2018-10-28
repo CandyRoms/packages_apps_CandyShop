@@ -98,33 +98,11 @@ public class DozeService extends Service {
 
     private void onDisplayOn() {
         if (DEBUG) Log.d(TAG, "Display on");
-
-        /*if (mTiltSensorAvailable && Utils.tiltEnabled(this)) {
-            mTiltSensor.disable();
-        }
-        if (mPickupSensorAvailable && Utils.pickUpEnabled(this)) {
-            mPickupSensor.disable();
-        }
-        if (mProximitySensorAvailable && (Utils.handwaveGestureEnabled(this) ||
-                Utils.pocketGestureEnabled(this))) {*/
-
-            mProximitySensor.disable();
-        //}
+        mProximitySensor.disable();
     }
 
     private void onDisplayOff() {
         if (DEBUG) Log.d(TAG, "Display off");
-
-        /*if (mTiltSensorAvailable && Utils.tiltEnabled(this)) {
-            mTiltSensor.enable();
-        }
-        if (mPickupSensorAvailable && Utils.pickUpEnabled(this)) {
-            mPickupSensor.enable();
-        }
-        if (mProximitySensorAvailable && (Utils.handwaveGestureEnabled(this) ||
-                Utils.pocketGestureEnabled(this))) {*/
-
-            mProximitySensor.enable();
-        //}
+        mProximitySensor.enable();
     }
 }

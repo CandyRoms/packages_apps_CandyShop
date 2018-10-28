@@ -50,6 +50,9 @@ public class ProximitySensor implements SensorEventListener {
     private boolean mSawNear = false;
     private long mInPocketTime = 0;
 
+    private boolean mHandwaveGestureEnabled;
+    private boolean mPocketGestureEnabled;
+
     public ProximitySensor(Context context) {
         mContext = context;
         final boolean wakeup = context.getResources().getBoolean(
@@ -90,11 +93,11 @@ public class ProximitySensor implements SensorEventListener {
     private boolean shouldPulse(long timestamp) {
         long delta = timestamp - mInPocketTime;
 
-        if (Utils.handwaveGestureEnabled(mContext) && Utils.pocketGestureEnabled(mContext)) {
+        if (mHandwaveGestureEnabled && mPocketGestureEnabled) {
             return true;
-        } else if (Utils.handwaveGestureEnabled(mContext)) {
-            return delta < HANDWAVE_MAX_DELTA_NS;
-        } else if (Utils.pocketGestureEnabled(mContext)) {
+        } else if (mHandwaveGestureEnabled && !mPocketGestureEnabled) {
+            return delta < POCKET_MIN_DELTA_NS;
+        } else if (!mHandwaveGestureEnabled && mPocketGestureEnabled) {
             return delta >= POCKET_MIN_DELTA_NS;
         }
         return false;
@@ -105,22 +108,26 @@ public class ProximitySensor implements SensorEventListener {
         /* Empty */
     }
 
+    // Switching screen OFF - we enable the sensor
     protected void enable() {
         if (DEBUG) Log.d(TAG, "Enabling");
         submit(() -> {
-            if (Utils.handwaveGestureEnabled(mContext) ||
-                    Utils.pocketGestureEnabled(mContext)) {
+            // We save user settings so at next screen ON call (enable())
+            // we don't need to read them again from the Settings provider
+            mHandwaveGestureEnabled = Utils.handwaveGestureEnabled(mContext);
+            mPocketGestureEnabled = Utils.pocketGestureEnabled(mContext);
+            if (mHandwaveGestureEnabled || mPocketGestureEnabled) {
                 mSensorManager.registerListener(this, mSensorProximity,
                         SensorManager.SENSOR_DELAY_NORMAL);
             }
         });
     }
 
+    // Switching screen ON - we disable the sensor
     protected void disable() {
         if (DEBUG) Log.d(TAG, "Disabling");
         submit(() -> {
-            if (Utils.handwaveGestureEnabled(mContext) ||
-                    Utils.pocketGestureEnabled(mContext)) {
+            if (mHandwaveGestureEnabled || mPocketGestureEnabled) {
                 mSensorManager.unregisterListener(this, mSensorProximity);
             }
         });

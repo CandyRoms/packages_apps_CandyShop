@@ -90,17 +90,13 @@ public class TiltSensor implements SensorEventListener {
 
     protected void enable() {
         if (DEBUG) Log.d(TAG, "Enabling");
-        submit(() -> {
             mSensorManager.registerListener(this, mSensorTilt,
-                    SensorManager.SENSOR_DELAY_NORMAL, BATCH_LATENCY_IN_MS * 1000);
+                SensorManager.SENSOR_DELAY_NORMAL, BATCH_LATENCY_IN_MS * 1000);
             mEntryTimestamp = SystemClock.elapsedRealtime();
-        });
     }
 
     protected void disable() {
         if (DEBUG) Log.d(TAG, "Disabling");
-        submit(() -> {
             mSensorManager.unregisterListener(this, mSensorTilt);
-        });
     }
 }

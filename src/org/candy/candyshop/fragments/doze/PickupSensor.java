@@ -129,17 +129,13 @@ public class PickupSensor implements SensorEventListener {
 
     protected void enable() {
         if (DEBUG) Log.d(TAG, "Enabling");
-        submit(() -> {
             mSensorManager.registerListener(this, mSensorPickup,
-                    SensorManager.SENSOR_STATUS_ACCURACY_HIGH);
+                SensorManager.SENSOR_DELAY_NORMAL, BATCH_LATENCY_IN_MS * 1000);
             mEntryTimestamp = SystemClock.elapsedRealtime();
-        });
     }
 
     protected void disable() {
         if (DEBUG) Log.d(TAG, "Disabling");
-        submit(() -> {
             mSensorManager.unregisterListener(this, mSensorPickup);
-        });
     }
 }
