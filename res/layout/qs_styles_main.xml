@@ -41,10 +41,13 @@
                 android:columnOrderPreserved="true">
 
                 <include layout="@layout/qs_styles_square" />
-                <include layout="@layout/qs_styles_roundedsquare" />
                 <include layout="@layout/qs_styles_squircle" />
+                <include layout="@layout/qs_styles_squircle_trim" />
                 <include layout="@layout/qs_styles_teardrop" />
                 <include layout="@layout/qs_styles_hexagon" />
+                <include layout="@layout/qs_styles_hexicon" />
+                <include layout="@layout/qs_styles_circle_trim" />
+                <include layout="@layout/qs_styles_dual_toned" />
 
             </GridLayout>
         </HorizontalScrollView>

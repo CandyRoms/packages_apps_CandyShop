@@ -134,6 +134,7 @@
     <string name="qs_auto_brightness_right_summary">Show the icon on right of the brightness slider</string>
     <string name="qs_show_brightness_buttons_title">Brightness control buttons</string>
     <string name="qs_show_brightness_buttons_summary">Show buttons beside the brightness slider to adjust brightness</string>
+    <string name="qs_styles_dialog_title">Select a QS tile style</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
@@ -236,7 +237,6 @@
     <string name="theme_accent_picker_default">Reset to default</string>
     <string name="accent_picker_material_colors">Material colors</string>
     <string name="accent_picker_custom_colors">User colors</string>
-    <string name="qs_styles_dialog_title">Select a QS tile style</string>
 
     <!-- AboutCandy-->
     <string name="dialog_about_candy_title">About CandyRoms</string>

@@ -31,4 +31,5 @@
 
     <!-- Recents icon pack support -->
     <dimen name="alert_dialog_padding_material">20dp</dimen>
+
 </resources>

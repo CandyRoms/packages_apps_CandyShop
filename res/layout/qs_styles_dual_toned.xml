@@ -16,7 +16,7 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/QsTileStyleRoundedSquare"
+    android:id="@+id/QsTileStyleDualToned"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -29,7 +29,7 @@
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:padding="10dp"
-            android:src="@drawable/qs_styles_shape_roundedsquare"
+            android:src="@drawable/qs_styles_shape_dual_toned"
             android:tint="@color/qs_tile_background_active"
             tools:ignore="ContentDescription" />
 
@@ -51,7 +51,7 @@
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:padding="10dp"
-            android:src="@drawable/qs_styles_shape_roundedsquare"
+            android:src="@drawable/qs_styles_shape_dual_toned"
             android:tint="@color/qs_tile_background_inactive"
             tools:ignore="ContentDescription" />
 
@@ -73,7 +73,7 @@
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:padding="10dp"
-            android:src="@drawable/qs_styles_shape_roundedsquare"
+            android:src="@drawable/qs_styles_shape_dual_toned"
             android:tint="@color/qs_tile_background_active"
             tools:ignore="ContentDescription" />
 
@@ -95,7 +95,7 @@
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:padding="10dp"
-            android:src="@drawable/qs_styles_shape_roundedsquare"
+            android:src="@drawable/qs_styles_shape_dual_toned"
             android:tint="@color/qs_tile_background_inactive"
             tools:ignore="ContentDescription" />
 
@@ -117,7 +117,7 @@
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:padding="10dp"
-            android:src="@drawable/qs_styles_shape_roundedsquare"
+            android:src="@drawable/qs_styles_shape_dual_toned"
             android:tint="@color/qs_tile_background_active"
             tools:ignore="ContentDescription" />
 
