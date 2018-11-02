@@ -39,10 +39,6 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import android.provider.SearchIndexableResource;
-import com.android.settings.search.BaseSearchIndexProvider;
-import com.android.settings.search.Indexable;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
