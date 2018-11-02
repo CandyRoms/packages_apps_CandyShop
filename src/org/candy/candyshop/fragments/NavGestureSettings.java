@@ -39,8 +39,8 @@ import com.android.settings.SettingsPreferenceFragment;
 import java.util.List;
 import java.util.Arrays;
 
-public class GestureSettings extends SettingsPreferenceFragment implements Indexable {
-    private static final String TAG = "GestureSettings";
+public class NavGestureSettings extends SettingsPreferenceFragment implements Indexable {
+    private static final String TAG = "NavGestureSettings";
 
     @Override
     public int getMetricsCategory() {
@@ -49,7 +49,7 @@ public class GestureSettings extends SettingsPreferenceFragment implements Index
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.gesture_settings);
+        addPreferencesFromResource(R.xml.nav_gesture_settings);
         mFooterPreferenceMixin.createFooterPreference().setTitle(R.string.gesture_settings_info);
     }
 
@@ -61,16 +61,26 @@ public class GestureSettings extends SettingsPreferenceFragment implements Index
     /**
      * For Search.
      */
-    public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-        new BaseSearchIndexProvider() {
+    public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+                @Override
+                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                        boolean enabled) {
+                    ArrayList<SearchIndexableResource> result =
+                            new ArrayList<SearchIndexableResource>();
 
-            @Override
-            public List<SearchIndexableResource> getXmlResourcesToIndex(
-                    Context context, boolean enabled) {
-                final SearchIndexableResource sir = new SearchIndexableResource(context);
-                sir.xmlResId = R.xml.gesture_settings;
-                return Arrays.asList(sir);
-            }
-	};
+                    SearchIndexableResource sir = new SearchIndexableResource(context);
+                    sir.xmlResId = R.xml.nav_gesture_settings;
+                    result.add(sir);
+
+                    return result;
+                }
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    ArrayList<String> result = new ArrayList<String>();
+                    return result;
+                }
+            };
 }
 

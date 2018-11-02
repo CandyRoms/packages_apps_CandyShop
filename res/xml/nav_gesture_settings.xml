@@ -15,7 +15,7 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-        android:key="gesture_settings"
+        android:key="nav_gesture_settings"
         android:title="@string/gesture_settings_title" >
 
         <org.candy.candyshop.preference.SystemSettingSwitchPreference
