@@ -19,10 +19,15 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:key="navigation"
-        android:title="@string/navigation_category"
         android:layout="@layout/tab" >
 
+    <PreferenceCategory
+        android:id="@+id/navigation_tab_header"
+        android:layout="@layout/tab_header_preference_category"
+        android:title="@string/navigation_aisle_header" />
+
     <!--<PreferenceCategory
+        android:id="@+id/navbar_category_title"
         android:title="@string/navbar_category_title" >
 
     </PreferenceCategory>-->

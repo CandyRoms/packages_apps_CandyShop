@@ -19,10 +19,15 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:key="statusbar"
-        android:title="@string/statusbar_category"
         android:layout="@layout/tab" >
 
+    <PreferenceCategory
+        android:id="@+id/statusbar_tab_header"
+        android:layout="@layout/tab_header_preference_category"
+        android:title="@string/statusbar_aisle_header" />
+
     <!--<PreferenceCategory
+        android:id="@+id/statusbar_options_category"
         android:key="statusbar_options_category"
         android:title="@string/statusbar_options_category_title" >
 

@@ -25,6 +25,9 @@ import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v14.preference.PreferenceFragment;
+import android.util.Log;
+import android.view.View;
+import android.view.ViewGroup;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;

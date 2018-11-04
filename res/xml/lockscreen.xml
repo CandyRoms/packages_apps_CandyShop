@@ -18,8 +18,12 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:key="lockscreen"
-        android:title="@string/lockscreen_category"
         android:layout="@layout/tab" >
+
+    <PreferenceCategory
+        android:id="@+id/lockscreen_tab_header"
+        android:layout="@layout/tab_header_preference_category"
+        android:title="@string/lockscreen_aisle_header" />
 
     <!--<PreferenceCategory
         android:key="media_options_category"
@@ -33,6 +37,7 @@
     </PreferenceCategory>-->
 
     <!--<PreferenceCategory
+        android:id="@+id/lockscreen_security_category"
         android:key="lockscreen_security_category"
         android:title="@string/lockscreen_security_category_title" >
 

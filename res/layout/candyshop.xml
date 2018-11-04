@@ -23,18 +23,13 @@
     android:layout_height="match_parent"
     android:background="@android:color/transparent"><!--important-->
 
-<!--
-    android:orientation="vertical"
-    android:fitsSystemWindows="true"
--->
-
     <FrameLayout
         android:id="@+id/fragmentContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </FrameLayout>
 
-    <!-- candyshop_bg2.png -->
+    <!-- candyshop_bg2, needs top RelativeLayout bg transparent -->
     <ImageView
         android:id="@+id/bkgnd"
         android:layout_width="match_parent"
@@ -45,9 +40,10 @@
 
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"
+        android:title="@string/candyshop_category"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/navigation"/>
+        android:layout_above="@+id/bottom_nav"/>
 
     <org.candy.candyshop.navigation.BottomNavigationViewCustom
         android:id="@+id/bottom_nav"
