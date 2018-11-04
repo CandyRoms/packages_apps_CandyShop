@@ -27,6 +27,8 @@ import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v14.preference.PreferenceFragment;
 import android.util.Log;
+import android.view.View;
+import android.view.ViewGroup;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.Utils;
@@ -54,6 +56,7 @@ public class StockRoom extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.stockroom);
+
     }
 
     @Override

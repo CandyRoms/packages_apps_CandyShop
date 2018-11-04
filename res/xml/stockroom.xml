@@ -18,8 +18,12 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:key="stockroom"
-        android:title="@string/stockroom_category"
         android:layout="@layout/tab" >
+
+    <PreferenceCategory
+        android:id="@+id/stockroom_tab_header"
+        android:layout="@layout/tab_header_preference_category"
+        android:title="@string/stockroom_aisle_header" />
 
     <!--<PreferenceCategory
         android:key="multi_tasking_category"
@@ -28,6 +32,7 @@
     </PreferenceCategory>-->
 
     <PreferenceCategory
+        android:id="@+id/screen_capture_category"
         android:key="screen_capture_category"
         android:title="@string/screen_capture_options_category_title" >
 

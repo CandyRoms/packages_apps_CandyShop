@@ -46,7 +46,7 @@ import java.util.List;
 import com.android.settings.Utils;
 
 public class Torch extends SettingsPreferenceFragment implements
-        OnPreferenceChangeListener {
+        OnPreferenceChangeListener, Indexable {
 
     private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
 

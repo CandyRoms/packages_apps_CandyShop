@@ -16,6 +16,7 @@
 package org.candy.candyshop.fragments;
 
 import android.content.ContentResolver;
+import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
@@ -38,7 +39,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class QsRowsColumns extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+        Preference.OnPreferenceChangeListener, Indexable {
 
     private CustomSeekBarPreference mQsRowsPort;
     private CustomSeekBarPreference mQsRowsLand;

@@ -38,6 +38,7 @@ import com.android.settings.SettingsPreferenceFragment;
 
 import java.util.List;
 import java.util.Arrays;
+import java.util.ArrayList;
 
 public class NavGestureSettings extends SettingsPreferenceFragment implements Indexable {
     private static final String TAG = "NavGestureSettings";

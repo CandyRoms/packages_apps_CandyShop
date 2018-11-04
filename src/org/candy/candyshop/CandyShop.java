@@ -18,7 +18,6 @@
 package org.candy.candyshop;
 
 import android.app.Activity;
-import android.content.Context;
 import android.app.DialogFragment;
 import android.app.Fragment;
 import android.app.FragmentManager;
@@ -39,13 +38,7 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-
+import org.candy.candyshop.fragments.AboutCandy;
 import org.candy.candyshop.navigation.BottomNavigationViewCustom;
 import org.candy.candyshop.tabs.System;
 import org.candy.candyshop.tabs.Lockscreen;
@@ -53,17 +46,9 @@ import org.candy.candyshop.tabs.StatusBar;
 import org.candy.candyshop.tabs.Navigation;
 import org.candy.candyshop.tabs.StockRoom;
 
-
 public class CandyShop extends SettingsPreferenceFragment {
 
-    private static final String TAG = "CandyShop";
-
-    public CandyShop() {
-    }
-
     MenuItem menuitem;
-
-    PagerAdapter mPagerAdapter;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -71,17 +56,16 @@ public class CandyShop extends SettingsPreferenceFragment {
         View view = inflater.inflate(R.layout.candyshop, container, false);
 
         final BottomNavigationViewCustom navigation = view.findViewById(R.id.bottom_nav);
-
-        final ViewPager viewPager = view.findViewById(R.id.pager);
-
         navigation.setBackground(new ColorDrawable(getResources().getColor(R.color.BottomBarBackgroundColor)));
 
-        mPagerAdapter = new PagerAdapter(getFragmentManager());
+        final ViewPager viewPager = view.findViewById(R.id.pager);
+        PagerAdapter mPagerAdapter = new PagerAdapter(getFragmentManager());
         viewPager.setAdapter(mPagerAdapter);
 
         navigation.setOnNavigationItemSelectedListener(new BottomNavigationViewCustom.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
                 switch (item.getItemId()) {
                     case R.id.system:
                         viewPager.setCurrentItem(0);
@@ -130,6 +114,7 @@ public class CandyShop extends SettingsPreferenceFragment {
     }
 
     class PagerAdapter extends FragmentPagerAdapter {
+
         String titles[] = getTitles();
         private Fragment frags[] = new Fragment[titles.length];
 
@@ -161,11 +146,11 @@ public class CandyShop extends SettingsPreferenceFragment {
     private String[] getTitles() {
         String titleString[];
         titleString = new String[]{
-                getString(R.string.system_bottom_nav_title),
-                getString(R.string.lockscreen_bottom_nav_title),
-                getString(R.string.statusbar_bottom_nav_title),
-                getString(R.string.navigation_bottom_nav_title),
-                getString(R.string.stockroom_bottom_nav_title)};
+                getString(R.string.system_category),
+                getString(R.string.lockscreen_category),
+                getString(R.string.statusbar_category),
+                getString(R.string.navigation_category),
+                getString(R.string.stockroom_category)};
 
         return titleString;
     }

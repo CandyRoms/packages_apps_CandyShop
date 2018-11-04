@@ -40,6 +40,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
 import java.util.List;
+import java.util.Arrays;
 import java.util.ArrayList;
 
 public class Button extends SettingsPreferenceFragment implements

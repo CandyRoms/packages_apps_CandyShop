@@ -34,6 +34,13 @@
     <string name="navigation_bottom_nav_title">Navigation</string>
     <string name="stockroom_bottom_nav_title">StockRoom</string>
 
+    <!-- CandyShop Aisles tab header text -->
+    <string name="system_aisle_header">System - Aisle 1</string>
+    <string name="lockscreen_aisle_header">Lockscreen - Aisle 2</string>
+    <string name="statusbar_aisle_header">Statusbar - Aisle 3</string>
+    <string name="navigation_aisle_header">Navigation - Aisle 4</string>
+    <string name="stockroom_aisle_header">The StockRoom</string>
+
     <string name="candyshop_summary_title">Have some Candy, on us!</string>
 
     <!-- Category titles -->
