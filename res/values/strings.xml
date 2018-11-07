@@ -282,4 +282,7 @@
     <string name="screenshot_shutter_sound_title">Screenshot shutter sound</string>
     <string name="screenshot_shutter_sound_summary">Disable screen shot sounds</string>
 
+    <!--Double Tap to Sleep Lockscreen-->
+    <string name="double_tap_sleep_lockscreen">Double tap to sleep on lockscreen</string>
+
 </resources>
