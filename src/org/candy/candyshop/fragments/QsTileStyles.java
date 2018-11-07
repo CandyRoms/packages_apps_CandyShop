@@ -91,6 +91,9 @@ public class QsTileStyles extends InstrumentedDialogFragment implements OnClickL
 
         LinearLayout teardrop = mView.findViewById(R.id.QsTileStyleTearDrop);
         setLayout("4", teardrop);
+
+        LinearLayout hexagon = mView.findViewById(R.id.QsTileStyleHexagon);
+        setLayout("5", hexagon);
     }
 
     @Override
@@ -139,6 +142,7 @@ public class QsTileStyles extends InstrumentedDialogFragment implements OnClickL
         LinearLayout roundedsquare = mView.findViewById(R.id.QsTileStyleRoundedSquare);
         LinearLayout squircle = mView.findViewById(R.id.QsTileStyleSquircle);
         LinearLayout teardrop = mView.findViewById(R.id.QsTileStyleTearDrop);
+        LinearLayout hexagon = mView.findViewById(R.id.QsTileStyleHexagon);
 
         TypedValue typedValue = new TypedValue();
         res.getValue(R.dimen.qs_styles_layout_opacity, typedValue, true);
@@ -149,26 +153,37 @@ public class QsTileStyles extends InstrumentedDialogFragment implements OnClickL
             roundedsquare.setAlpha(mLayoutOpacity);
             squircle.setAlpha(mLayoutOpacity);
             teardrop.setAlpha(mLayoutOpacity);
+            hexagon.setAlpha(mLayoutOpacity);
         } else if (ThemeAccentUtils.isUsingQsTileStyles(mOverlayManager, mCurrentUserId, 2 )) {
             square.setAlpha(mLayoutOpacity);
             roundedsquare.setAlpha((float) 1.0);
             squircle.setAlpha(mLayoutOpacity);
             teardrop.setAlpha(mLayoutOpacity);
+            hexagon.setAlpha(mLayoutOpacity);
         } else if (ThemeAccentUtils.isUsingQsTileStyles(mOverlayManager, mCurrentUserId, 3 )) {
             square.setAlpha(mLayoutOpacity);
             roundedsquare.setAlpha(mLayoutOpacity);
             squircle.setAlpha((float) 1.0);
             teardrop.setAlpha(mLayoutOpacity);
+            hexagon.setAlpha(mLayoutOpacity);
         } else if (ThemeAccentUtils.isUsingQsTileStyles(mOverlayManager, mCurrentUserId, 4 )) {
             square.setAlpha(mLayoutOpacity);
             roundedsquare.setAlpha(mLayoutOpacity);
             squircle.setAlpha(mLayoutOpacity);
             teardrop.setAlpha((float) 1.0);
+            hexagon.setAlpha(mLayoutOpacity);
+        } else if (ThemeAccentUtils.isUsingQsTileStyles(mOverlayManager, mCurrentUserId, 5 )) {
+            square.setAlpha(mLayoutOpacity);
+            roundedsquare.setAlpha(mLayoutOpacity);
+            squircle.setAlpha(mLayoutOpacity);
+            teardrop.setAlpha(mLayoutOpacity);
+            hexagon.setAlpha((float) 1.0);
         } else {
             square.setAlpha((float) 1.0);
             roundedsquare.setAlpha((float) 1.0);
             squircle.setAlpha((float) 1.0);
             teardrop.setAlpha((float) 1.0);
+            hexagon.setAlpha((float) 1.0);
         }
     }
 }
