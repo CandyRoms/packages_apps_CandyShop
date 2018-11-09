@@ -288,4 +288,9 @@
     <!--Quick pulldown-->
     <string name="status_bar_quick_qs_pulldown">Quick Pulldown</string>
     <string name="status_bar_quick_qs_pulldown_summary">Pulldown statusbar from right side to show QS panel</string>
+
+    <!-- Onehand UI mode -->
+    <string name="one_hand_mode_title">One-handed Mode</string>
+    <string name="one_hand_mode_summary">Allow swiping across right or left on navbar to enable</string>
+
 </resources>
