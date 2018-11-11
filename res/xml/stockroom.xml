@@ -29,11 +29,16 @@
         android:key="multi_tasking_category"
         android:title="@string/multitasking_category_title" >
 
+    <Preference
+        android:key="recent_settings"
+        android:fragment="org.candy.candyshop.fragments.RecentsSettings"
+        android:title="@string/recent_settings_title"/>
+
      <Preference
-            android:key="gesture_anywhere"
-            android:fragment="org.candy.candyshop.fragments.GestureAnywhereSettings"
-            android:title="@string/gesture_anywhere_title"
-            android:summary="@string/gesture_anywhere_summary" />
+        android:key="gesture_anywhere"
+        android:fragment="org.candy.candyshop.fragments.GestureAnywhereSettings"
+        android:title="@string/gesture_anywhere_title"
+        android:summary="@string/gesture_anywhere_summary" />
 
     </PreferenceCategory>
 
