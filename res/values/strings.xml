@@ -152,12 +152,6 @@
     <string name="three_finger_gesture">Three finger gesture</string>
     <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
 
-    <!-- Toggle Navbar -->
-    <string name="navigation_bar_enabled">Enable the Navbar</string>
-    <string name="navigation_bar_enabled_title">Enable the on-screen Navbar</string>
-    <string name="navbar_buttons_title">Navbar buttons</string>
-    <string name="navbar_buttons_summary">Navbar layout and custom buttons</string>
-
     <!-- Lockscreen tuner -->
     <string name="lock_screen_shortcuts_title">Lock screen shortcuts</string>
     <string name="lock_screen_shortcuts_summary">Manage lock screen bottom shortcuts</string>
