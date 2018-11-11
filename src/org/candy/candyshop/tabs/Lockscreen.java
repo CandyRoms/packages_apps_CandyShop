@@ -27,6 +27,7 @@ import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v14.preference.PreferenceFragment;
+import android.support.v14.preference.SwitchPreference;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -51,11 +52,19 @@ public class Lockscreen extends SettingsPreferenceFragment implements
     private static final String MISC_CATEGORY = "lockscreen_category";
     private static final String TAG = "Lockscreen";
 
+    SwitchPreference mLockscreenVisualizer;
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.lockscreen);
+
+        mLockscreenVisualizer = (SwitchPreference) findPreference("lockscreen_visualizer");
+        mLockscreenVisualizer.setChecked(Settings.Secure.getInt(getContentResolver(),
+                Settings.Secure.LOCKSCREEN_VISUALIZER_ENABLED, 0) == 1);
+        mLockscreenVisualizer.setOnPreferenceChangeListener(this);
 
     }
 
@@ -70,8 +79,14 @@ public class Lockscreen extends SettingsPreferenceFragment implements
     }
 
 
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
         final String key = preference.getKey();
+        if (preference.equals(mLockscreenVisualizer)) {
+            boolean enabled = ((Boolean) newValue).booleanValue();
+            Settings.Secure.putInt(getContentResolver(),
+                    Settings.Secure.LOCKSCREEN_VISUALIZER_ENABLED, enabled ? 1 : 0);
+            return true;
+        }
         return false;
     }
 

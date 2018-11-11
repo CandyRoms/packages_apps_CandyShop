@@ -70,6 +70,11 @@
             android:title="@string/double_tap_sleep_lockscreen"
             android:defaultValue="true" />
 
+        <SwitchPreference
+                android:key="lockscreen_visualizer"
+                android:title="@string/lockscreen_visualizer_title"
+                android:summary="@string/lockscreen_visualizer_summary" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

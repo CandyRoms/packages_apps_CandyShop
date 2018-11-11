@@ -288,4 +288,8 @@
     <string name="one_hand_mode_title">One-handed Mode</string>
     <string name="one_hand_mode_summary">Allow swiping across right or left on navbar to enable</string>
 
+    <!-- Lockscreen visualizer -->
+    <string name="lockscreen_visualizer_title">Music visualizer</string> 
+    <string name="lockscreen_visualizer_summary">Toggles visualizer display on lockscreen</string>
+
 </resources>
