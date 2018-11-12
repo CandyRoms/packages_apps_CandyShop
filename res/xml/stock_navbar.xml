@@ -23,25 +23,35 @@
         android:layout="@layout/tab" >
 
     <PreferenceCategory
-        android:id="@+id/navigation_tab_header"
-        android:layout="@layout/tab_header_preference_category"
-        android:title="@string/navigation_aisle_header" />
-
-    <PreferenceCategory
         android:id="@+id/navbar_category_title"
         android:title="@string/navbar_category_title" >
 
-        <PreferenceScreen
-		    android:key="navigationbar_settings"
-		    android:title="@string/navigationbar_settings_title"
-		    android:fragment="com.android.settings.smartnav.NavigationBarSettings" />
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="pixel_nav_animation"
+            android:title="@string/pixel_navbar_anim_title"
+            android:summary="@string/pixel_navbar_anim_summary"
+            android:defaultValue="false"  />
+
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="one_hand_mode_enabled"
+            android:title="@string/one_hand_mode_title"
+            android:summary="@string/one_hand_mode_summary"
+            android:defaultValue="false" />
+
+        <Preference
+            android:title="@string/navbar_tuner_title"
+            android:summary="@string/navbar_tuner_summary" >
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.NavBarTunerActivity" />
+        </Preference>
+
+        <Preference
+            android:key="gesture_settings"
+            android:icon="@drawable/ic_settings_gestures_candy"
+            android:title="@string/gesture_settings_title"
+            android:fragment="org.candy.candyshop.fragments.NavGestureSettings" />
 
     </PreferenceCategory>
 
-    <PreferenceCategory
-        android:title="@string/hwkeys_category_title" >
-
-
-
-    </PreferenceCategory>
 </PreferenceScreen>
