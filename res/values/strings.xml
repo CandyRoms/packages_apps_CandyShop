@@ -88,7 +88,7 @@
     <string name="power_button_preference_summary">Power button torch control</string>
     <string name="powermenu_preference_summary">Configure power menu options</string>
     <string name="leds_preference_summary">Battery and notification LED options</string>
-    <string name="ls_shortcuts_preference_summary">Lockscreen bottom shorcut options</string>
+    <string name="ls_shortcuts_preference_summary">Lockscreen bottom shortcut options</string>
     <string name="clock_preference_summary">Time and date display options</string>
     <string name="battery_preference_summary">Change icon and percentage display</string>
     <string name="net_traffic_preference_summary">Statusbar network traffic options</string>
