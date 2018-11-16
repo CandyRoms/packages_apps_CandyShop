@@ -37,6 +37,7 @@
     <org.candy.candyshop.preference.SystemSettingSwitchPreference
         android:key="swap_volume_buttons"
         android:title="@string/swap_volume_buttons"
+        android:summary="@string/volume_keys_swap_summary"
         android:defaultValue="true" />
 
     <org.candy.candyshop.preference.SystemSettingSwitchPreference
