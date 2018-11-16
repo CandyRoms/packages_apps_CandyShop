@@ -42,6 +42,5 @@
         android:title="@string/hwkeys_category_title" >
 
 
-
     </PreferenceCategory>
 </PreferenceScreen>
