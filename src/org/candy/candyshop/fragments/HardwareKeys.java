@@ -35,12 +35,13 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
 import com.android.internal.logging.nano.MetricsProto;
-//import com.android.internal.utils.ActionConstants;
 import com.android.internal.util.hwkeys.ActionConstants;
 import com.android.internal.utils.ActionUtils;
 
 import org.candy.candyshop.fragments.ActionFragment;
 import org.candy.candyshop.preference.CustomSeekBarPreference;
+import org.candy.candyshop.preference.SystemSettingSwitchPreference;
+
 
 public class HardwareKeys extends ActionFragment implements OnPreferenceChangeListener {
 
@@ -49,6 +50,7 @@ public class HardwareKeys extends ActionFragment implements OnPreferenceChangeLi
     private static final String KEY_BUTTON_BRIGHTNESS_SW = "button_brightness_sw";
     private static final String KEY_BACKLIGHT_TIMEOUT = "backlight_timeout";
     private static final String HWKEY_DISABLE = "hardware_keys_disable";
+    private static final String KEY_BUTTON_SWAP_KEYS = "swap_navigation_keys";
 
     // category keys
     private static final String CATEGORY_HWKEY = "hardware_keys";

@@ -34,6 +34,7 @@
         <PreferenceScreen
 		    android:key="navigationbar_settings"
 		    android:title="@string/navigationbar_settings_title"
+            android:summary="@string/navigationbar_settings_summary"
 		    android:fragment="com.android.settings.smartnav.NavigationBarSettings" />
 
     </PreferenceCategory>
@@ -41,6 +42,11 @@
     <PreferenceCategory
         android:title="@string/hwkeys_category_title" >
 
+        <PreferenceScreen
+		    android:key="hardware_keys_settings"
+		    android:title="@string/hwkeys_options_title"
+            android:summary="@string/hwkeys_options_summary"
+		    android:fragment="org.candy.candyshop.fragments.HardwareKeys" />
 
     </PreferenceCategory>
 </PreferenceScreen>
