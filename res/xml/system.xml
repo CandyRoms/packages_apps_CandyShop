@@ -41,7 +41,17 @@
             android:key="torch"
             android:title="@string/torch_title"
             android:fragment="org.candy.candyshop.fragments.Torch" />
+    </PreferenceCategory>
 
+    <PreferenceCategory
+        android:id="@+id/ime_category"
+        android:key="keyboard_ime_category"
+        android:title="@string/keyboard_ime_title" >
+
+        <Preference
+            android:key="ime"
+            android:title="@string/keyboard_ime_summary"
+            android:fragment="org.candy.candyshop.fragments.IME" />
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -59,7 +69,6 @@
             android:title="@string/notification_sound_vib_screen_on_title"
             android:summary="@string/notification_sound_vib_screen_on_summary"
             android:defaultValue="true" />
-
     </PreferenceCategory>
 
 </PreferenceScreen>

@@ -63,7 +63,7 @@
     <string name="multitasking_category_title">Multi-tasking</string>
     <string name="screen_capture_options_category_title">Screen capture options</string>
     <string name="miscellaneous_category_title">Miscellaneous</string>
-    <string name="ime_title">IME Settings</string>
+    <string name="ime_title">Keyboard and IME Settings</string>
 
     <!-- Fragments -->
     <string name="headset_title">Headset</string>
@@ -315,7 +315,7 @@
     <string name="show_enter_key_title">Show enter key</string>
     <string name="show_enter_key_summary">Force keyboard to show enter instead of emoticon key</string>
     <string name="keyboard_ime_title">IME Settings</string>
-    <string name="keyboard_ime_summury">Advanced IME Settings</string>
+    <string name="keyboard_ime_summary">Advanced IME Settings</string>
     <string name="ime_switcher_notify">Selector notification</string>
     <string name="ime_switcher_notify_summary">Display input method selector notification</string>
 
