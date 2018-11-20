@@ -54,11 +54,49 @@ public class Navigation extends SettingsPreferenceFragment implements
 
     private static final String MISC_CATEGORY = "navigation_category";
     private static final String TAG = "Navigation";
+    private static final String HW_KEYS_AVAILABLE = "hw_keys_available";
+
+    // Masks for checking presence of hardware keys.
+    // Must match values in frameworks/base/core/res/res/values/config.xml
+    // Masks for checking presence of hardware keys.
+    // Must match values in frameworks/base/core/res/res/values/config.xml
+    public static final int KEY_MASK_HOME = 0x01;
+    public static final int KEY_MASK_BACK = 0x02;
+    public static final int KEY_MASK_MENU = 0x04;
+    public static final int KEY_MASK_ASSIST = 0x08;
+    public static final int KEY_MASK_APP_SWITCH = 0x10;
+    public static final int KEY_MASK_CAMERA = 0x20;
+    public static final int KEY_MASK_VOLUME = 0x40;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void onCreate(Bundle icicle) {
+        super.onCreate(icicle);
         addPreferencesFromResource(R.xml.navigation);
+
+        final Resources res = getResources();
+        final ContentResolver resolver = getActivity().getContentResolver();
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        // bits for hardware keys present on device
+        final int deviceKeys = getResources().getInteger(
+                com.android.internal.R.integer.config_deviceHardwareKeys);
+
+        // read bits for present hardware keys
+        final boolean hasHomeKey = (deviceKeys & KEY_MASK_HOME) != 0;
+        final boolean hasBackKey = (deviceKeys & KEY_MASK_BACK) != 0;
+        final boolean hasMenuKey = (deviceKeys & KEY_MASK_MENU) != 0;
+        final boolean hasAssistKey = (deviceKeys & KEY_MASK_ASSIST) != 0;
+        final boolean hasAppSwitchKey = (deviceKeys & KEY_MASK_APP_SWITCH) != 0;
+
+        // load categories and init/remove preferences based on device
+        // configuration
+        final PreferenceCategory hwKeysAvailble =
+                (PreferenceCategory) prefScreen.findPreference(HW_KEYS_AVAILABLE);
+        // back key
+        if (deviceKeys == 0 || (!hasHomeKey && !hasBackKey && !hasMenuKey
+                && !hasAssistKey && !hasAppSwitchKey)) {
+            prefScreen.removePreference(hwKeysAvailble);
+        }
     }
 
     @Override

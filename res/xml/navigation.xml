@@ -40,6 +40,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="hw_keys_available"
         android:title="@string/hwkeys_category_title" >
 
         <PreferenceScreen
