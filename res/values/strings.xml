@@ -219,7 +219,7 @@
     <string name="accent_picker_dialog_title">Select a Candy accent color</string>
     <string name="theme_accent_picker_title">Color</string>
     <string name="theme_accent_picker_summary">Select Candy color</string>
-    <string name="theme_accent_picker_default">Default color</string>
+    <string name="theme_accent_picker_default">Reset to default</string>
     <string name="accent_picker_material_colors">Material colors</string>
     <string name="accent_picker_custom_colors">User colors</string>
     <string name="qs_styles_dialog_title">Select a QS tile style</string>
