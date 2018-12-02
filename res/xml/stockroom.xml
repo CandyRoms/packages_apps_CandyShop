@@ -66,6 +66,12 @@
         android:key="miscellaneous_category"
         android:title="@string/miscellaneous_category_title" >
 
+        <SwitchPreference
+            android:key="show_cpu_info"
+            android:icon="@drawable/ic_info"
+            android:title="@string/show_cpu_info"
+            android:summary="@string/show_cpu_info_summary" />
+
         <Preference
             android:key="changelog"
             android:title="@string/changelog_title"

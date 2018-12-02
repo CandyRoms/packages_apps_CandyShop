@@ -16,13 +16,17 @@
 
 package org.candy.candyshop.tabs;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.ContentResolver;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.UserHandle;
 import android.provider.Settings;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
@@ -66,11 +70,13 @@ public class StockRoom extends SettingsPreferenceFragment implements
 
     private static final String MISC_CATEGORY = "stockroom_category";
     private static final String TAG = "StockRoom";
+    private static final String SHOW_CPU_INFO_KEY = "show_cpu_info";
 
     private static final int DIALOG_SCREENSHOT_EDIT_APP = 1;
 
     private Preference mScreenshotEditAppPref;
     private ScreenshotEditPackageListAdapter mPackageAdapter;
+    private SwitchPreference mShowCpuInfo;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -83,6 +89,11 @@ public class StockRoom extends SettingsPreferenceFragment implements
         mPackageAdapter = new ScreenshotEditPackageListAdapter(getActivity());
         mScreenshotEditAppPref = findPreference("screenshot_edit_app");
         mScreenshotEditAppPref.setOnPreferenceClickListener(this);
+
+        mShowCpuInfo = (SwitchPreference) findPreference(SHOW_CPU_INFO_KEY);
+        mShowCpuInfo.setChecked(Settings.Global.getInt(resolver,
+                Settings.Global.SHOW_CPU_OVERLAY, 0) == 1);
+        mShowCpuInfo.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -138,9 +149,27 @@ public class StockRoom extends SettingsPreferenceFragment implements
         return true;
     }
 
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
+    private static void writeCpuInfoOptions(Context mContext, boolean value) {
+        Settings.Global.putInt(mContext.getContentResolver(),
+                Settings.Global.SHOW_CPU_OVERLAY, value ? 1 : 0);
+        Intent service = (new Intent())
+                .setClassName("com.android.systemui", "com.android.systemui.CPUInfoService");
+        if (value) {
+            mContext.startService(service);
+        } else {
+            mContext.stopService(service);
+        }
+    }
+
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
         final String key = preference.getKey();
-        return true;
+        ContentResolver resolver = getActivity().getContentResolver();
+        Context mContext = getActivity().getApplicationContext();
+        if (preference == mShowCpuInfo) {
+            writeCpuInfoOptions(mContext, (Boolean) newValue);
+            return true;
+        }
+        return false;
     }
 
     @Override
