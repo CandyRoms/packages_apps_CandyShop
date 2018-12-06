@@ -20,6 +20,7 @@ import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.support.v7.preference.ListPreference;
@@ -53,11 +54,18 @@ public class StatusBar extends SettingsPreferenceFragment implements
     private static final String MISC_CATEGORY = "statusbar_category";
     private static final String TAG = "StatusBar";
 
+    private static final String SHOW_LTE_FOURGEE = "show_lte_fourgee";
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.statusbar);
+
+        mShowLteFourGee = (SwitchPreference) findPreference(SHOW_LTE_FOURGEE);
+        mShowLteFourGee.setChecked((Settings.System.getInt(getContentResolver(),
+                Settings.System.SHOW_LTE_FOURGEE, 0) == 1));
+        mShowLteFourGee.setOnPreferenceChangeListener(this);
 
     }
 
@@ -77,6 +85,12 @@ public class StatusBar extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
+        if (preference == mShowLteFourGee) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.SHOW_LTE_FOURGEE, value ? 1 : 0);
+            return true;
+        }
         return false;
     }
 
