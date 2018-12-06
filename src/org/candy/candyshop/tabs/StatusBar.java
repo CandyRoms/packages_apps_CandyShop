@@ -56,7 +56,10 @@ public class StatusBar extends SettingsPreferenceFragment implements
     private static final String TAG = "StatusBar";
 
     private static final String SHOW_LTE_FOURGEE = "show_lte_fourgee";
+    private static final String KEY_STATUS_BAR_LOGO = "status_bar_logo";
+
     private SwitchPreference mShowLteFourGee;
+    private SwitchPreference mShowCandyLogo;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -69,6 +72,10 @@ public class StatusBar extends SettingsPreferenceFragment implements
                 Settings.System.SHOW_LTE_FOURGEE, 0) == 1));
         mShowLteFourGee.setOnPreferenceChangeListener(this);
 
+        mShowCandyLogo = (SwitchPreference) findPreference(KEY_STATUS_BAR_LOGO);
+        mShowCandyLogo.setChecked((Settings.System.getInt(getContentResolver(),
+             Settings.System.STATUS_BAR_LOGO, 0) == 1));
+        mShowCandyLogo.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -91,6 +98,11 @@ public class StatusBar extends SettingsPreferenceFragment implements
             boolean value = (Boolean) objValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.SHOW_LTE_FOURGEE, value ? 1 : 0);
+            return true;
+        } else if  (preference == mShowCandyLogo) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.STATUS_BAR_LOGO, value ? 1 : 0);
             return true;
         }
         return false;

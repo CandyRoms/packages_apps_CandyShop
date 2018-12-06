@@ -486,6 +486,10 @@
     <string name="show_carrier_enabled">Both</string>
     <string name="carrier_label_warning_text">Be advised that the custom carrier label is not available in the extended statusbar area, also known as the quick settings area. Also using emojis as your carrier label might cause some visibility issues on lighter backgrounds.</string>
 
+    <!-- Candy logo -->
+    <string name="candy_logo_title">Candy logo</string>
+    <string name="candy_logo_summary">Let everyone know that you\'re using Candy when they see your screen</string>
+
     <!-- Tiles animation/interpolator style  -->
     <string name="qs_animation_options_title">QS tile animations</string>
     <string name="qs_tile_animation_style_title">Animation style</string>
