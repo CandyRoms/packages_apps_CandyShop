@@ -449,4 +449,8 @@
     <!-- CPU Info -->
     <string name="show_cpu_info">Show CPU info</string>
     <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+
+    <!-- Navbar Settings -->
+    <string name="enable_navigation_bar_title">Enable navigation bar</string>
+    <string name="enable_navigation_bar_summary">Option to enable or disable the navigation bar</string>
 </resources>

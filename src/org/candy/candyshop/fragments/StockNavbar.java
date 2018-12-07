@@ -20,6 +20,7 @@ import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
@@ -54,11 +55,25 @@ public class StockNavbar extends SettingsPreferenceFragment implements
 
     private static final String MISC_CATEGORY = "navigation_category";
     private static final String TAG = "Navigation";
+    private static final String NAVBAR_VISIBILITY = "navbar_visibility";
+
+    private SwitchPreference mNavbarVisibility;
+
+    private boolean mIsNavSwitchingMode = false;
+    private Handler mHandler;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.stock_navbar);
+
+        mNavbarVisibility = (SwitchPreference) findPreference(NAVBAR_VISIBILITY);
+        boolean showing = Settings.Secure.getInt(getContentResolver(),
+                Settings.Secure.NAVIGATION_BAR_VISIBLE,
+                ActionUtils.hasNavbarByDefault(getActivity()) ? 1 : 0) != 0;
+        updateBarVisibleAndUpdatePrefs(showing);
+        mNavbarVisibility.setOnPreferenceChangeListener(this);
+        mHandler = new Handler();
     }
 
     @Override
@@ -73,10 +88,29 @@ public class StockNavbar extends SettingsPreferenceFragment implements
 
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        final String key = preference.getKey();
+        if (preference.equals(mNavbarVisibility)) {
+            if (mIsNavSwitchingMode) {
+                return false;
+            }
+            mIsNavSwitchingMode = true;
+            boolean showing = ((Boolean)objValue);
+            Settings.Secure.putInt(getContentResolver(), Settings.Secure.NAVIGATION_BAR_VISIBLE,
+                    showing ? 1 : 0);
+            updateBarVisibleAndUpdatePrefs(showing);
+            mHandler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    mIsNavSwitchingMode = false;
+                }
+            }, 1500);
+            return true;
+        }
         return false;
     }
 
+    private void updateBarVisibleAndUpdatePrefs(boolean showing) {
+        mNavbarVisibility.setChecked(showing);
+    }
 
     @Override
     public int getMetricsCategory() {

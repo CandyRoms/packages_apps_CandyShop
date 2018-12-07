@@ -18,4 +18,33 @@
         android:key="nav_gesture_settings"
         android:title="@string/gesture_settings_title" >
 
+    <com.android.settings.widget.VideoPreference
+        android:key="gesture_swipe_up_video"
+        app:animation="@raw/gesture_swipe_up"
+        app:preview="@drawable/gesture_swipe_up" />
+
+    <org.candy.candyshop.preference.SystemSettingSwitchPreference
+        android:key="gesture_swipe_up"
+        android:title="@string/swipe_up_to_switch_apps_title"
+        android:summary="@string/swipe_up_to_switch_apps_summary"
+        app:keywords="@string/keywords_gesture"
+        app:controller="com.android.settings.gestures.SwipeUpPreferenceController"
+        app:allowDividerAbove="true" />
+
+    <org.candy.candyshop.preference.SystemSettingSwitchPreference
+        android:key="full_gesture_mode"
+        android:title="@string/full_gesture_mode_title"
+        android:summary="@string/full_gesture_mode_summary"
+        app:keywords="@string/keywords_gesture"
+        app:controller="com.android.settings.gestures.SwipeUpPreferenceController"
+        app:allowDividerAbove="true" />
+
+    <org.candy.candyshop.preference.SystemSettingSwitchPreference
+        android:key="full_gesture_mode_dt2s"
+        android:title="@string/full_gesture_mode_dt2s_title"
+        android:summary="@string/full_gesture_mode_dt2s_summary"
+        app:keywords="@string/keywords_gesture"
+        app:controller="com.android.settings.gestures.SwipeUpPreferenceController"
+        app:allowDividerAbove="true" />
+
 </PreferenceScreen>
