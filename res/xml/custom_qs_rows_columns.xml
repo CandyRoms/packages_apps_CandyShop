@@ -59,10 +59,10 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:id="@+id/qs_options_category_title"
+        android:id="@+id/qs_options_category"
         android:title="@string/qs_options_category_title" >
 
-        <org.candy.candyshop.preferenc.SecureSettingSwitchPreference
+        <org.candy.candyshop.preference.SecureSettingSwitchPreference
             android:key="quick_settings_vibrate"
             android:title="@string/quick_settings_vibrate_title"
             android:summary="@string/quick_settings_vibrate_summary"
