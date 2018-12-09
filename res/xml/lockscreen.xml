@@ -41,11 +41,16 @@
             android:defaultValue="false" />
     </PreferenceCategory>
 
-    <!--<PreferenceCategory
+    <PreferenceCategory
         android:key="sleep_controls_category"
         android:title="@string/sleep_controls_category_title" >
 
-    </PreferenceCategory>-->
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="double_tap_sleep_anywhere"
+            android:title="@string/double_tap_sleep_lockscreen"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:id="@+id/lockscreen_security_category"
@@ -75,17 +80,6 @@
            android:title="@string/lockscreen_qs_disabled_title"
            android:summary="@string/lockscreen_qs_disabled_summary"
            android:defaultValue="false" />
-
-        <org.candy.candyshop.preference.SystemSettingSwitchPreference
-            android:key="double_tap_sleep_anywhere"
-            android:title="@string/double_tap_sleep_lockscreen"
-            android:defaultValue="true" />
-
-        <SwitchPreference
-                android:key="lockscreen_visualizer"
-                android:title="@string/lockscreen_visualizer_title"
-                android:summary="@string/lockscreen_visualizer_summary" />
-
     </PreferenceCategory>
 
     <PreferenceCategory
