@@ -100,7 +100,7 @@
     <string name="recents_preference_summary">AOSP recents and SlimRecents options</string>
     <string name="ga_preference_summary">On-screen gesture launcher options</string>
     <string name="custom_carrier_label_preference_summary">Statusbar carrier text customization</string>
-    <string name="navigationbar_settings_summary">- Stock AOSP navbar\n- Gestures-based navbar\n- SmartBar*\n- Fling*\n\n* = Supports Pulse visualizations</string>
+    <string name="navigationbar_settings_summary">- NavBar\n- SmartBar\n- Fling</string>
     <string name="hwkeys_options_summary">NOTE: These are device-specific!\n- Hardware key remapping\n- Hardware buttons disable\n- Swap Recents and Back\n- Button backlight brightness\n- Button backlight timeout\n- Button backlight on key touch</string>
 
     <!-- Buttons -->
