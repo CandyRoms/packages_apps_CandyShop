@@ -69,7 +69,6 @@
             android:summary="@string/force_expanded_notifications_summary"
             android:defaultValue="false" />
 
-
     <PreferenceCategory
         android:key="incall_vib_options"
         android:title="@string/incall_vibration_category" />
