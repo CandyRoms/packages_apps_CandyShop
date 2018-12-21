@@ -43,16 +43,10 @@
             android:fragment="org.candy.candyshop.fragments.Torch" />
     </PreferenceCategory>
 
-    <PreferenceCategory
-        android:id="@+id/ime_category"
-        android:key="keyboard_ime_category"
-        android:title="@string/keyboard_ime_title" >
-
-        <Preference
-            android:key="ime"
-            android:title="@string/keyboard_ime_summary"
-            android:fragment="org.candy.candyshop.fragments.IME" />
-    </PreferenceCategory>
+    <Preference
+        android:key="ime"
+        android:title="@string/keyboard_ime_summary"
+        android:fragment="org.candy.candyshop.fragments.IME" />
 
     <PreferenceCategory
         android:key="notifications_category"
