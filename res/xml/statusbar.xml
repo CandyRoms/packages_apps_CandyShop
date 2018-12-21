@@ -53,6 +53,12 @@
             android:title="@string/battery_style_category_title"
             android:fragment="org.candy.candyshop.fragments.BatterySettings" />
 
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="bluetooth_qs_show_battery"
+            android:title="@string/bluetooth_battery_title"
+            android:summary="@string/bluetooth_battery_summary"
+            android:defaultValue="true"/>
+
         <Preference
             android:key="network_traffic"
             android:title="@string/network_traffic_title"
