@@ -17,40 +17,56 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <org.candy.candyshop.preference.CustomSeekBarPreference
-        android:key="qs_rows_portrait"
-        android:title="@string/qs_rows_portrait_title"
-        android:max="5"
-        settings:min="1"
-        settings:units="" />
+    <PreferenceCategory
+        android:id="@+id/qs_layout"
+        android:title="@string/qs_layout_category_title" >
 
-    <org.candy.candyshop.preference.CustomSeekBarPreference
-        android:key="qs_rows_landscape"
-        android:title="@string/qs_rows_landscape_title"
-        android:max="3"
-        settings:min="1"
-        settings:units="" />
+        <org.candy.candyshop.preference.CustomSeekBarPreference
+            android:key="qs_rows_portrait"
+            android:title="@string/qs_rows_portrait_title"
+            android:max="5"
+            settings:min="1"
+            settings:units="" />
 
-    <org.candy.candyshop.preference.CustomSeekBarPreference
-        android:key="qs_columns_portrait"
-        android:title="@string/qs_columns_portrait_title"
-        android:max="7"
-        settings:min="1"
-        settings:units="" />
+        <org.candy.candyshop.preference.CustomSeekBarPreference
+            android:key="qs_rows_landscape"
+            android:title="@string/qs_rows_landscape_title"
+            android:max="3"
+            settings:min="1"
+            settings:units="" />
 
-    <org.candy.candyshop.preference.CustomSeekBarPreference
-        android:key="qs_columns_landscape"
-        android:title="@string/qs_columns_landscape_title"
-        android:max="9"
-        settings:min="1"
-        settings:units="" />
+        <org.candy.candyshop.preference.CustomSeekBarPreference
+            android:key="qs_columns_portrait"
+            android:title="@string/qs_columns_portrait_title"
+            android:max="7"
+            settings:min="1"
+            settings:units="" />
 
-    <org.candy.candyshop.preference.CustomSeekBarPreference
-        android:key="sysui_qqs_count_key"
-        android:title="@string/qs_small_tiles_title"
-        android:max="8"
-        settings:min="3"
-        settings:units=""
-        android:persistent="false" />
+        <org.candy.candyshop.preference.CustomSeekBarPreference
+            android:key="qs_columns_landscape"
+            android:title="@string/qs_columns_landscape_title"
+            android:max="9"
+            settings:min="1"
+            settings:units="" />
+
+        <org.candy.candyshop.preference.CustomSeekBarPreference
+            android:key="sysui_qqs_count_key"
+            android:title="@string/qs_small_tiles_title"
+            android:max="8"
+            settings:min="3"
+            settings:units=""
+            android:persistent="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:id="@+id/qs_options_category_title"
+        android:title="@string/qs_options_category_title" >
+
+        <org.candy.candyshop.preferenc.SecureSettingSwitchPreference
+            android:key="quick_settings_vibrate"
+            android:title="@string/quick_settings_vibrate_title"
+            android:summary="@string/quick_settings_vibrate_summary"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
 
 </PreferenceScreen>
