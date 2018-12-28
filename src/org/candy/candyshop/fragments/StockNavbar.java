@@ -37,6 +37,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.android.internal.logging.nano.MetricsProto;
+import com.android.internal.util.hwkeys.ActionUtils;
+import com.android.internal.util.hwkeys.Config.ButtonConfig;
 import com.android.settings.Utils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -88,23 +90,6 @@ public class StockNavbar extends SettingsPreferenceFragment implements
 
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        if (preference.equals(mNavbarVisibility)) {
-            if (mIsNavSwitchingMode) {
-                return false;
-            }
-            mIsNavSwitchingMode = true;
-            boolean showing = ((Boolean)objValue);
-            Settings.Secure.putInt(getContentResolver(), Settings.Secure.NAVIGATION_BAR_VISIBLE,
-                    showing ? 1 : 0);
-            updateBarVisibleAndUpdatePrefs(showing);
-            mHandler.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    mIsNavSwitchingMode = false;
-                }
-            }, 1500);
-            return true;
-        }
         return false;
     }
 
