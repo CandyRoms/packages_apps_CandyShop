@@ -17,7 +17,8 @@
  -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:key="navigation"
         android:title="@string/candyshop_category"
         android:layout="@layout/tab" >
@@ -27,29 +28,29 @@
         android:title="@string/navbar_category_title" >
 
         <org.candy.candyshop.preference.SecureSettingSwitchPreference
-            android:key="navbar_visibility"
-            android:title="@string/enable_navigation_bar_title"
-            android:summary="@string/enable_navigation_bar_summary"
-            android:defaultValue="true" />
+            android:key="gesture_swipe_up"
+            android:title="@string/swipe_up_to_switch_apps_title"
+            android:summary="@string/swipe_up_to_switch_apps_summary"
+            app:keywords="@string/keywords_gesture"
+            app:controller="com.android.settings.gestures.SwipeUpPreferenceController"
+            app:allowDividerAbove="true"
+            android:defaultValue="false"  />
 
         <org.candy.candyshop.preference.SystemSettingSwitchPreference
             android:key="pixel_nav_animation"
             android:title="@string/pixel_navbar_anim_title"
             android:summary="@string/pixel_navbar_anim_summary"
-            android:dependency="navbar_visibility"
             android:defaultValue="false"  />
 
         <org.candy.candyshop.preference.SystemSettingSwitchPreference
             android:key="one_hand_mode_enabled"
             android:title="@string/one_hand_mode_title"
             android:summary="@string/one_hand_mode_summary"
-            android:dependency="navbar_visibility"
             android:defaultValue="false" />
 
         <Preference
             android:title="@string/navbar_tuner_title"
-            android:summary="@string/navbar_tuner_summary"
-            android:dependency="navbar_visibility" >
+            android:summary="@string/navbar_tuner_summary" >
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.tuner.NavBarTunerActivity" />

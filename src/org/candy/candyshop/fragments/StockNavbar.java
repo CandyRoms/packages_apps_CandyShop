@@ -52,14 +52,16 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
+import org.candy.candyshop.preference.SecureSettingSwitchPreference;
+
 public class StockNavbar extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
     private static final String MISC_CATEGORY = "navigation_category";
     private static final String TAG = "Navigation";
-    private static final String NAVBAR_VISIBILITY = "navbar_visibility";
+    private static final String GESTURE_SWIPE_UP = "gesture_swipe_up";
 
-    private SwitchPreference mNavbarVisibility;
+    private SecureSettingSwitchPreference mGestureSwipeUp;
 
     private boolean mIsNavSwitchingMode = false;
     private Handler mHandler;
@@ -69,12 +71,13 @@ public class StockNavbar extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.stock_navbar);
 
-        mNavbarVisibility = (SwitchPreference) findPreference(NAVBAR_VISIBILITY);
-        boolean showing = Settings.Secure.getInt(getContentResolver(),
-                Settings.Secure.NAVIGATION_BAR_VISIBLE,
+        mGestureSwipeUp = (SecureSettingSwitchPreference) findPreference(GESTURE_SWIPE_UP);
+        boolean hasSwipe = Settings.Secure.getInt(getContentResolver(),
+                Settings.Secure.SWIPE_UP_TO_SWITCH_APPS_ENABLED,
                 ActionUtils.hasNavbarByDefault(getActivity()) ? 1 : 0) != 0;
-        updateBarVisibleAndUpdatePrefs(showing);
-        mNavbarVisibility.setOnPreferenceChangeListener(this);
+        updateSwipeUpGestureNav(hasSwipe);
+        mGestureSwipeUp.setOnPreferenceChangeListener(this);
+
         mHandler = new Handler();
     }
 
@@ -90,11 +93,18 @@ public class StockNavbar extends SettingsPreferenceFragment implements
 
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
+        if (preference.equals(mGestureSwipeUp)) {
+            boolean swipeUpNavEnabled = ((Boolean)objValue);
+            Settings.Secure.putInt(getContentResolver(), Settings.Secure.SWIPE_UP_TO_SWITCH_APPS_ENABLED,
+                    swipeUpNavEnabled ? 1 : 0);
+            updateSwipeUpGestureNav(swipeUpNavEnabled);
+            return true;
+        }
         return false;
     }
 
-    private void updateBarVisibleAndUpdatePrefs(boolean showing) {
-        mNavbarVisibility.setChecked(showing);
+    private void updateSwipeUpGestureNav(boolean swipeUpNavEnabled) {
+        mGestureSwipeUp.setChecked(swipeUpNavEnabled);
     }
 
     @Override
