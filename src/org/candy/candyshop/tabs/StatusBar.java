@@ -30,6 +30,7 @@ import android.support.v7.preference.PreferenceGroup;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v14.preference.PreferenceFragment;
+import android.support.v14.preference.SwitchPreference;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -55,6 +56,7 @@ public class StatusBar extends SettingsPreferenceFragment implements
     private static final String TAG = "StatusBar";
 
     private static final String SHOW_LTE_FOURGEE = "show_lte_fourgee";
+    private SwitchPreference mShowLteFourGee;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
