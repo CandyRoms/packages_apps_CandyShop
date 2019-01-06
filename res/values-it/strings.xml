@@ -14,10 +14,9 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources>
     <!-- The Team -->
     <!-- Bottom navigation -->
-    <string name="bottom_nav_statusbar_title">Barra di stato</string>
     <!-- Footer warnings -->
     <!-- Categories -->
     <!-- System -->
@@ -25,52 +24,41 @@
     <!-- Statusbar -->
     <!-- Navigation -->
     <!-- Multitasking -->
-    <!-- SystemUI theme -->
+    <!-- Button brightness -->
     <!-- Power Menu -->
-    <string name="powermenu_lockscreen_title">Menu power sicuro</string>
+    <!-- SystemUI theme -->
     <!-- Color Picker -->
     <!-- Network Traffic -->
     <!-- Volume key controls media stream -->
-    <!-- Volume rocker music control -->
-    <!-- Volume key rotation -->
     <!-- Launch music player when headset is connected -->
-    <string name="headset_connect_player_disabled">Disattivato</string>
+    <!-- Carrier Label -->
     <!-- Quick Pulldown-->
-    <string name="quick_pulldown_title">Pulldown rapido</string>
-    <string name="quick_pulldown_off">Disattivato</string>
-    <string name="quick_pulldown_always">Tutte</string>
     <!-- Quick Settings brightness icon -->
     <!-- Option to show brightness bar in quick settings -->
     <!-- Quick settings -->
     <!-- Clear all recents -->
+    <!-- Hide Lockscreen clock, date, & alarm -->
     <!-- Fingerprint authentication vibration -->
+    <!-- Volume rocker music control -->
+    <!-- Volume key rotation -->
     <!-- Heads up -->
-    <string name="heads_up_blacklist_add_package_title">Aggiungi app</string>
-    <string name="heads_up_blacklist_title">Blacklist</string>
-    <string name="heads_up_blacklist_dialog_delete_title">Rimuovi</string>
-    <string name="heads_up_blacklist_dialog_delete_message">Rimuovere?</string>
     <!-- Status bar ticker -->
-    <string name="ticker_disabled">Disattivato</string>
     <!-- Notification light dialogs -->
     <!-- Values for the notification light pulse spinners -->
-    <string name="pulse_length_normal">Normale</string>
-    <string name="pulse_speed_normal">Normale</string>
     <!-- Lights settings screen, notification light settings -->
     <!-- Notification light settings -->
     <!-- Battery light settings  -->
-    <string name="battery_light_low_color_title">Batteria scarica</string>
-    <string name="battery_light_medium_color_title">Batteria media</string>
-    <string name="battery_light_full_color_title">Batteria quasi carica</string>
-    <string name="battery_light_really_full_color_title">Batteria completamente carica</string>
     <!-- Bottom shortcuts -->
     <!-- Toast icons -->
     <!-- Volume rocker wake -->
     <!-- DUI -->
-    <string name="navbar_interface_title">Interfaccia</string>
     <!-- Actions dialog and default task values set in ActionPreference xml-->
     <!-- Fling -->
     <!-- Pulse navigation bar music visualizer -->
     <!-- Pulse config -->
     <!-- Navbar height -->
     <!-- SmartBar -->
+    <!-- Hardware button navigation -->
+    <!-- Torch Power button gestures -->
+    <!-- Ambient music -->
 </resources>
