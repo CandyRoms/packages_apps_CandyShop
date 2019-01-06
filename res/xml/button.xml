@@ -94,4 +94,11 @@
             android:title="@string/audio_panel_view_bt_sco_title"
             android:defaultValue="false"/>
 
+    <!-- Volume keys control ringtone stream -->
+    <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="volume_keys_control_ring_tone"
+            android:title="@string/volume_keys_control_ring_tone_title"
+            android:summary="@string/volume_keys_control_ring_tone_summary"
+            android:defaultValue="false" />
+
 </PreferenceScreen>
