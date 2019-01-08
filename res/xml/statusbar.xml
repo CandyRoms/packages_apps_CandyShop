@@ -27,6 +27,17 @@
         android:title="@string/statusbar_aisle_header" />
 
     <PreferenceCategory
+        android:id="@+id/quicksettings_category"
+        android:key="qs_options"
+        android:title="@string/qs_cat_title" >
+
+        <Preference
+            android:key="qs_rows_columns"
+            android:title="@string/qs_rows_columns_title"
+            android:fragment="org.candy.candyshop.fragments.QsRowsColumns" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:id="@+id/statusbar_options_category"
         android:key="statusbar_options_category"
         android:title="@string/statusbar_options_category_title" >
