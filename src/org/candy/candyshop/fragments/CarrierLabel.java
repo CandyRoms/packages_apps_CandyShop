@@ -42,7 +42,7 @@ import com.android.internal.logging.nano.MetricsProto;
 public class CarrierLabel extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
     private static final String KEY_CUSTOM_CARRIER_LABEL = "custom_carrier_label";
-    private static final String KEY_STATUS_BAR_CARRIER = "status_bar_carrier";
+    private static final String KEY_STATUS_BAR_SHOW_CARRIER  = "status_bar_show_carrier";
 
     private Preference mCustomCarrierLabel;
     private String mCustomCarrierLabelText;
@@ -57,9 +57,9 @@ public class CarrierLabel extends SettingsPreferenceFragment implements Preferen
 
         mFooterPreferenceMixin.createFooterPreference().setTitle(R.string.carrier_label_warning_text);
 
-        mShowCarrierLabel = (ListPreference) findPreference(KEY_STATUS_BAR_CARRIER);
+        mShowCarrierLabel = (ListPreference) findPreference(KEY_STATUS_BAR_SHOW_CARRIER );
         int showCarrierLabel = Settings.System.getInt(resolver,
-                Settings.System.STATUS_BAR_CARRIER, 1);
+                Settings.System.STATUS_BAR_SHOW_CARRIER , 1);
         mShowCarrierLabel.setValue(String.valueOf(showCarrierLabel));
         mShowCarrierLabel.setSummary(mShowCarrierLabel.getEntry());
         mShowCarrierLabel.setOnPreferenceChangeListener(this);
@@ -75,7 +75,7 @@ public class CarrierLabel extends SettingsPreferenceFragment implements Preferen
             int showCarrierLabel = Integer.valueOf((String) newValue);
             int index = mShowCarrierLabel.findIndexOfValue((String) newValue);
             Settings.System.putInt(resolver, Settings.System.
-                    STATUS_BAR_CARRIER, showCarrierLabel);
+                    STATUS_BAR_SHOW_CARRIER , showCarrierLabel);
             mShowCarrierLabel.setSummary(mShowCarrierLabel.getEntries()[index]);
             return true;
         }
