@@ -242,9 +242,9 @@
     </string-array>
 
     <string-array name="qs_tile_animation_duration_values" translatable="false">
-        <item>2500</item>
-        <item>2000</item>
         <item>1500</item>
+        <item>1000</item>
+        <item>500</item>
     </string-array>
 
     <!-- Tiles animation interpolator -->
