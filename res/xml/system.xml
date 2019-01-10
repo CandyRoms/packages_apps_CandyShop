@@ -51,11 +51,11 @@
         android:key="notifications_category"
         android:title="@string/notifications_category_title" />
 
-        <ListPreference
-            android:key="force_ambient_for_media"
-            android:title="@string/force_ambient_for_media_title"
-            android:entries="@array/force_ambient_for_media_entries"
-            android:entryValues="@array/force_ambient_for_media_values" />
+        <Preference
+            android:key="force_ambient_for_media_pref"
+            android:title="@string/force_ambient_for_media_pref_title"
+            android:summary="@string/force_ambient_for_media_pref_summary"
+            android:fragment="org.candy.candyshop.fragments.AmbientTicker" />
 
         <org.candy.candyshop.preference.SystemSettingSwitchPreference
             android:key="toast_icon"
