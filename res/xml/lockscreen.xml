@@ -94,6 +94,18 @@
                 android:targetClass="com.android.systemui.tuner.LockscreenTunerActivity" />
         </Preference>
 
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="lockscreen_clock"
+            android:title="@string/lockscreen_clock_title"
+            android:summary="@string/lockscreen_clock_summary"
+            android:defaultValue="true" />
+
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="lockscreen_info"
+            android:title="@string/lockscreen_info_title"
+            android:summary="@string/lockscreen_info_summary"
+            android:defaultValue="true" />
+
     </PreferenceCategory>
 
     <!--<PreferenceCategory
