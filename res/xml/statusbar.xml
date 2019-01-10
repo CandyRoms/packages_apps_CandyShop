@@ -27,20 +27,19 @@
         android:title="@string/statusbar_aisle_header" />
 
     <PreferenceCategory
-        android:id="@+id/quicksettings_category"
-        android:key="qs_options"
-        android:title="@string/qs_cat_title" >
+        android:id="@+id/qs_category"
+        android:key="quick_settings_category"
+        android:title="@string/qs_cat_title" />
 
         <Preference
-            android:key="quick_settings"
+            android:key="quicksettings"
             android:title="@string/qs_rows_columns_title"
             android:fragment="org.candy.candyshop.fragments.QuickSettings" />
-    </PreferenceCategory>
 
     <PreferenceCategory
         android:id="@+id/statusbar_options_category"
         android:key="statusbar_options_category"
-        android:title="@string/statusbar_options_category_title" >
+        android:title="@string/statusbar_options_category_title" />
 
         <Preference
             android:key="clock_settings"
@@ -90,8 +89,6 @@
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.tuner.StatusBarIconsTunerActivity" />
         </Preference>
-
-    </PreferenceCategory>
 
     <!-- <PreferenceCategory
         android:key="statusbar_notifications"
