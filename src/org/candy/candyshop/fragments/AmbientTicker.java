@@ -22,7 +22,6 @@ import android.os.UserHandle;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.provider.Settings;
-import android.support.v7.preference.Preference;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
@@ -31,8 +30,6 @@ import com.android.settings.SettingsPreferenceFragment;
 public class AmbientTicker extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
-    private ListPreference mAmbientTicker;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,13 +37,6 @@ public class AmbientTicker extends SettingsPreferenceFragment implements
         final ContentResolver resolver = getActivity().getContentResolver();
 
         mFooterPreferenceMixin.createFooterPreference().setTitle(R.string.ambient_ticker_footer);
-
-        mAmbientTicker = (ListPreference) findPreference("force_ambient_for_media");
-        int mode = Settings.System.getIntForUser(resolver,
-                Settings.System.FORCE_AMBIENT_FOR_MEDIA, 2, UserHandle.USER_CURRENT);
-        mAmbientTicker.setValue(Integer.toString(mode));
-        mAmbientTicker.setSummary(mAmbientTicker.getEntry());
-        mAmbientTicker.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -56,15 +46,6 @@ public class AmbientTicker extends SettingsPreferenceFragment implements
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         final ContentResolver resolver = getActivity().getContentResolver();
-        if (preference == mAmbientTicker) {
-            int mode = Integer.valueOf((String) newValue);
-            int index = mAmbientTicker.findIndexOfValue((String) newValue);
-            mAmbientTicker.setSummary(
-                    mAmbientTicker.getEntries()[index]);
-            Settings.System.putIntForUser(resolver, Settings.System.FORCE_AMBIENT_FOR_MEDIA,
-                    mode, UserHandle.USER_CURRENT);
-            return true;
-        }
         return false;
     }
 }
