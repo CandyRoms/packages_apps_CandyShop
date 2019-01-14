@@ -48,6 +48,22 @@
             android:summary="@string/one_hand_mode_summary"
             android:defaultValue="false" />
 
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="full_gesture_mode"
+            android:title="@string/full_gesture_mode_title"
+            android:summary="@string/full_gesture_mode_summary"
+            app:keywords="@string/keywords_gesture"
+            app:controller="com.android.settings.gestures.SwipeUpPreferenceController"
+            app:allowDividerAbove="true" />
+
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="full_gesture_mode_dt2s"
+            android:title="@string/full_gesture_mode_dt2s_title"
+            android:summary="@string/full_gesture_mode_dt2s_summary"
+            app:keywords="@string/keywords_gesture"
+            app:controller="com.android.settings.gestures.SwipeUpPreferenceController"
+            app:allowDividerAbove="true" />
+
         <Preference
             android:title="@string/navbar_tuner_title"
             android:summary="@string/navbar_tuner_summary" >

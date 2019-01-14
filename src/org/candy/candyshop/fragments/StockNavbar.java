@@ -53,6 +53,7 @@ import java.util.Locale;
 import java.util.Map;
 
 import org.candy.candyshop.preference.SecureSettingSwitchPreference;
+import org.candy.candyshop.preference.SystemSettingSwitchPreference;
 
 public class StockNavbar extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
@@ -60,8 +61,12 @@ public class StockNavbar extends SettingsPreferenceFragment implements
     private static final String MISC_CATEGORY = "navigation_category";
     private static final String TAG = "Navigation";
     private static final String GESTURE_SWIPE_UP = "gesture_swipe_up";
+    private static final String FULL_GESTURE_MODE = "full_gesture_mode";
+    private static final String FULL_GESTURE_MODE_DT2S = "full_gesture_mode_dt2s";
 
     private SecureSettingSwitchPreference mGestureSwipeUp;
+    private SystemSettingSwitchPreference mFullGestureMode;
+    private SystemSettingSwitchPreference mFullGestureModeDt2s;
 
     private boolean mIsNavSwitchingMode = false;
     private Handler mHandler;
@@ -77,6 +82,20 @@ public class StockNavbar extends SettingsPreferenceFragment implements
                 ActionUtils.hasNavbarByDefault(getActivity()) ? 1 : 0) != 0;
         updateSwipeUpGestureNav(hasSwipe);
         mGestureSwipeUp.setOnPreferenceChangeListener(this);
+
+        mFullGestureMode = (SystemSettingSwitchPreference) findPreference(FULL_GESTURE_MODE);
+        boolean fullGestureMode = Settings.System.getInt(getContentResolver(),
+                Settings.System.FULL_GESTURE_NAVBAR,
+                ActionUtils.hasNavbarByDefault(getActivity()) ? 1 : 0) != 0;
+        updateSwipeUpGestureNav(fullGestureMode);
+        mFullGestureMode.setOnPreferenceChangeListener(this);
+
+        mFullGestureModeDt2s = (SystemSettingSwitchPreference) findPreference(FULL_GESTURE_MODE_DT2S);
+        boolean fullGestureModeDt2s = Settings.System.getInt(getContentResolver(),
+                Settings.System.FULL_GESTURE_NAVBAR_DT2S,
+                ActionUtils.hasNavbarByDefault(getActivity()) ? 1 : 0) != 0;
+        updateSwipeUpGestureNav(fullGestureModeDt2s);
+        mFullGestureModeDt2s.setOnPreferenceChangeListener(this);
 
         mHandler = new Handler();
     }
@@ -99,12 +118,32 @@ public class StockNavbar extends SettingsPreferenceFragment implements
                     swipeUpNavEnabled ? 1 : 0);
             updateSwipeUpGestureNav(swipeUpNavEnabled);
             return true;
+        } else if (preference.equals(mFullGestureMode)) {
+            boolean fullGestureMode = ((Boolean)objValue);
+            Settings.System.putInt(getContentResolver(), Settings.System.FULL_GESTURE_NAVBAR,
+                    fullGestureMode ? 1 : 0);
+            updateFullGestureNav(fullGestureMode);
+            return true;
+        } else if (preference.equals(mFullGestureModeDt2s)) {
+            boolean fullGestureModeDt2s = ((Boolean)objValue);
+            Settings.System.putInt(getContentResolver(), Settings.System.FULL_GESTURE_NAVBAR_DT2S,
+                    fullGestureModeDt2s ? 1 : 0);
+            updateFullGestureNavD2ts(fullGestureModeDt2s);
+            return true;
         }
         return false;
     }
 
     private void updateSwipeUpGestureNav(boolean swipeUpNavEnabled) {
         mGestureSwipeUp.setChecked(swipeUpNavEnabled);
+    }
+
+    private void updateFullGestureNav(boolean fullGestureMode) {
+        mFullGestureMode.setChecked(fullGestureMode);
+    }
+
+    private void updateFullGestureNavD2ts(boolean fullGestureModeDt2s) {
+        mFullGestureModeDt2s.setChecked(fullGestureModeDt2s);
     }
 
     @Override
