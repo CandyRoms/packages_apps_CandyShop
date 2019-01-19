@@ -530,4 +530,13 @@
     <string name="lockscreen_clock_summary">Show the clock widget on the lockscreen</string>
     <string name="lockscreen_info_title">Items underneath the clock</string>
     <string name="lockscreen_info_summary">Show the date, weather, alarms and zen on the lockscreen</string>
+
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_options_title">In-call notifications</string>
+    <string name="incall_vibration_options_summary">In-call vibration options</string>
+    <string name="incall_vibration_category">In-call notifications</string>
+    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
+    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
+    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+
 </resources>
