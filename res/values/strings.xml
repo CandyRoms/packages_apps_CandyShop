@@ -51,7 +51,7 @@
     <string name="media_options_category_title">Media options</string>
     <string name="sleep_controls_category_title">Sleep controls</string>
     <string name="lockscreen_security_category_title">Security options</string>
-    <string name="lockscreen_icons_category_title">Lockscreen bottom shortcuts</string>
+    <string name="lockscreen_icons_category_title">Manage lockscreen items</string>
     <string name="lockscreen_clock_category_title">Clock and date options</string>
     <string name="lockscreen_other_category_title">Other</string>
     <string name="notifications_category_title">System notifications</string>
@@ -532,7 +532,7 @@
     <string name="lockscreen_info_summary">Show the date, weather, alarms and zen on the lockscreen</string>
 
     <!-- Incall vibrate options -->
-    <string name="incall_vibration_options_title">In-call notifications</string>
+    <string name="incall_vibration_options_title">In-call vibrations</string>
     <string name="incall_vibration_options_summary">In-call vibration options</string>
     <string name="incall_vibration_category">In-call notifications</string>
     <string name="incall_vibrate_connect_title">Vibrate on connect</string>
