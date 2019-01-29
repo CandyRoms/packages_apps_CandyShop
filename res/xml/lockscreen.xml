@@ -124,10 +124,17 @@
 
     </PreferenceCategory>
 
-    <!--<PreferenceCategory
+    <PreferenceCategory
         android:key="lockscreen_clock_category"
         android:title="@string/lockscreen_clock_category_title" >
 
-    </PreferenceCategory>-->
+        <org.candy.candyshop.preference.SystemSettingListPreference
+        android:key="lockscreen_clock_selection"
+        android:title="@string/lockscreen_clock_selection_title"
+        android:entries="@array/lockscreen_clock_selection_entries"
+        android:entryValues="@array/lockscreen_clock_selection_values"
+        android:defaultValue="0" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
