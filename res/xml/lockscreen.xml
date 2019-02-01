@@ -29,6 +29,12 @@
         android:key="media_options_category"
         android:title="@string/media_options_category_title" >
 
+        <Preference
+            android:key="force_ambient_for_media_pref"
+            android:title="@string/force_ambient_for_media_pref_title"
+            android:summary="@string/force_ambient_for_media_pref_summary"
+            android:fragment="org.candy.candyshop.fragments.AmbientTicker" />
+
         <SwitchPreference
             android:key="lockscreen_visualizer"
             android:title="@string/lockscreen_visualizer_title"
