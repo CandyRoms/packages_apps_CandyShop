@@ -120,7 +120,7 @@
            android:summary="@string/weather_unit_summary"
            android:entries="@array/weather_unit_entries"
            android:entryValues="@array/weather_unit_values"
-           android:defaultValue="0" />
+           android:defaultValue="1" />
 
     </PreferenceCategory>
 
