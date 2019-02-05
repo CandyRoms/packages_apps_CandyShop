@@ -22,33 +22,61 @@
         android:title="@string/button_category_title"
         android:summary="@string/buttons_preference_summary" >
 
-    <org.candy.candyshop.preference.SecureSettingSwitchPreference
-        android:key="sysui_volume_up_silent"
-        android:title="@string/volbtn_up_zen_title"
-        android:summary="@string/volbtn_up_zen_summary"
-        android:defaultValue="true"/>
+    <PreferenceCategory
+        android:title="@string/button_title" />
 
-    <org.candy.candyshop.preference.SecureSettingSwitchPreference
-        android:key="sysui_volume_down_silent"
-        android:title="@string/volbtn_down_zen_title"
-        android:summary="@string/volbtn_down_zen_summary"
-        android:defaultValue="true"/>
+        <org.candy.candyshop.preference.SecureSettingSwitchPreference
+            android:key="sysui_volume_up_silent"
+            android:title="@string/volbtn_up_zen_title"
+            android:summary="@string/volbtn_up_zen_summary"
+            android:defaultValue="true"/>
 
-    <org.candy.candyshop.preference.SystemSettingSwitchPreference
-        android:key="swap_volume_buttons"
-        android:title="@string/swap_volume_buttons"
-        android:summary="@string/volume_keys_swap_summary"
-        android:defaultValue="true" />
+        <org.candy.candyshop.preference.SecureSettingSwitchPreference
+            android:key="sysui_volume_down_silent"
+            android:title="@string/volbtn_down_zen_title"
+            android:summary="@string/volbtn_down_zen_summary"
+            android:defaultValue="true"/>
 
-    <org.candy.candyshop.preference.SystemSettingSwitchPreference
-        android:key="volume_rocker_wake"
-        android:summary="@string/volume_rocker_wake_summary"
-        android:title="@string/volume_rocker_wake_title" />
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="swap_volume_buttons"
+            android:title="@string/swap_volume_buttons"
+            android:summary="@string/volume_keys_swap_summary"
+            android:defaultValue="true" />
 
-    <org.candy.candyshop.preference.SystemSettingSwitchPreference
-        android:key="volume_button_music_control"
-        android:title="@string/volume_rocker_music_controls_title"
-        android:summary="@string/volume_rocker_music_controls_summary"
-        android:defaultValue="false" />
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="volume_rocker_wake"
+            android:summary="@string/volume_rocker_wake_summary"
+            android:title="@string/volume_rocker_wake_title" />
+
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="volume_button_music_control"
+            android:title="@string/volume_rocker_music_controls_title"
+            android:summary="@string/volume_rocker_music_controls_summary"
+            android:defaultValue="false" />
+
+    <PreferenceCategory
+        android:title="@string/audio_panel_view" />
+
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="audio_panel_view_position"
+            android:title="@string/volume_panel_on_left_title"
+            android:summary="@string/volume_panel_on_left_summary"
+            android:defaultValue="false" />
+
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference 
+            android:key="audio_panel_view_media"
+            android:title="@string/audio_panel_view_media_title"
+            android:defaultValue="true"
+            android:enabled="false"/>
+
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference 
+            android:key="audio_panel_view_ringer"
+            android:title="@string/audio_panel_view_ringer_title"
+            android:defaultValue="false"/>
+
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference 
+            android:key="audio_panel_view_notification"
+            android:title="@string/audio_panel_view_notification_title"
+            android:defaultValue="false"/>
 
 </PreferenceScreen>
