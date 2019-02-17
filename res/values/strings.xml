@@ -125,7 +125,11 @@
     <!-- QuickSettings -->
     <!-- Quick Settings brightness icon -->
     <string name="brightness_icon_title">Brightness slider icon</string>
-    <string name="brightness_icon_summary">Show a brightness icon to the right of the brightness slider to toggle auto-brightness</string>
+    <string name="brightness_icon_summary">Show an auto-brightness toggle button</string>
+    <string name="qs_auto_brightness_right_title">Auto brightness icon on right</string>
+    <string name="qs_auto_brightness_right_summary">Show the icon on right of the brightness slider</string>
+    <string name="qs_show_brightness_buttons_title">Brightness control buttons</string>
+    <string name="qs_show_brightness_buttons_summary">Show buttons beside the brightness slider to adjust brightness</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
