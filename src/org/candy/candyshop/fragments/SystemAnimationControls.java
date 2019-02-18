@@ -156,12 +156,6 @@ public class SystemAnimationControls extends SettingsPreferenceFragment implemen
         mWallpaperIntraClose.setEntries(mAnimationsStrings);
         mWallpaperIntraClose.setEntryValues(mAnimationsNum);
         mWallpaperIntraClose.setOnPreferenceChangeListener(this);
-
-        mTaskOpenBehind = (ListPreference) findPreference(TASK_OPEN_BEHIND);
-        mTaskOpenBehind.setSummary(getProperSummary(mTaskOpenBehind));
-        mTaskOpenBehind.setEntries(mAnimationsStrings);
-        mTaskOpenBehind.setEntryValues(mAnimationsNum);
-        mTaskOpenBehind.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -238,12 +232,6 @@ public class SystemAnimationControls extends SettingsPreferenceFragment implemen
                     Settings.System.ACTIVITY_ANIMATION_CONTROLS[9], val, UserHandle.USER_CURRENT);
             preference.setSummary(getProperSummary(preference));
             return true;
-        } else if (preference == mTaskOpenBehind) {
-            int val = Integer.parseInt((String) newValue);
-            Settings.System.putIntForUser(resolver,
-                    Settings.System.ACTIVITY_ANIMATION_CONTROLS[10], val, UserHandle.USER_CURRENT);
-            preference.setSummary(getProperSummary(preference));
-            return true;
         }
         return false;
     }
@@ -270,8 +258,6 @@ public class SystemAnimationControls extends SettingsPreferenceFragment implemen
             mString = Settings.System.ACTIVITY_ANIMATION_CONTROLS[8];
         } else if (preference == mWallpaperIntraClose) {
             mString = Settings.System.ACTIVITY_ANIMATION_CONTROLS[9];
-        } else if (preference == mTaskOpenBehind) {
-            mString = Settings.System.ACTIVITY_ANIMATION_CONTROLS[10];
         }
 
         int mNum = Settings.System.getIntForUser(getActivity().getContentResolver(),
@@ -305,8 +291,6 @@ public class SystemAnimationControls extends SettingsPreferenceFragment implemen
                 Settings.System.ACTIVITY_ANIMATION_CONTROLS[8], 0, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 Settings.System.ACTIVITY_ANIMATION_CONTROLS[9], 0, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.ACTIVITY_ANIMATION_CONTROLS[10], 0, UserHandle.USER_CURRENT);
     }
 
     @Override
