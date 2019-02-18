@@ -197,7 +197,6 @@
         <item>5</item>
     </string-array>
 
-<<<<<<< HEAD
     <!-- Carrier Label -->
     <string-array name="carrier_label_entries">
         <item>@string/show_carrier_disabled</item>
