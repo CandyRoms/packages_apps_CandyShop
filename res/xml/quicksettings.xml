@@ -98,6 +98,14 @@
             android:title="@string/battery_estimate_title"
             android:summary="@string/battery_estimate_summary" />
 
+        <!-- QS clock -->
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="show_qs_clock"
+            android:icon="@drawable/ic_clock"
+            android:title="@string/qs_clock_title"
+            android:summary="@string/qs_clock_summary"
+            android:defaultValue="true" />
+
         </PreferenceCategory>
 
         <PreferenceCategory
