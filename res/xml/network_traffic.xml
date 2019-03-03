@@ -33,6 +33,14 @@
         android:defaultValue="0"
         android:persistent="false" />
 
+    <org.candy.candyshop.preference.CustomSeekBarPreference
+        android:key="network_traffic_font_size"
+        android:title="@string/nettraf_font_size"
+        android:max="30"
+        settings:min="18"
+        settings:defaultValue="21"
+        settings:units="dp" />
+
     <org.candy.candyshop.preference.SystemSettingSwitchPreference
         android:key="network_traffic_hidearrow"
         android:title="@string/network_traffic_hidearrow"
