@@ -52,9 +52,6 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
-import org.candy.candyshop.preference.SecureSettingSwitchPreference;
-import org.candy.candyshop.preference.SystemSettingSwitchPreference;
-
 public class StockNavbar extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
@@ -64,9 +61,9 @@ public class StockNavbar extends SettingsPreferenceFragment implements
     private static final String FULL_GESTURE_MODE = "full_gesture_mode";
     private static final String FULL_GESTURE_MODE_DT2S = "full_gesture_mode_dt2s";
 
-    private SecureSettingSwitchPreference mGestureSwipeUp;
-    private SystemSettingSwitchPreference mFullGestureMode;
-    private SystemSettingSwitchPreference mFullGestureModeDt2s;
+    private SwitchPreference mGestureSwipeUp;
+    private SwitchPreference mFullGestureMode;
+    private SwitchPreference mFullGestureModeDt2s;
 
     private boolean mIsNavSwitchingMode = false;
     private Handler mHandler;
@@ -76,21 +73,21 @@ public class StockNavbar extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.stock_navbar);
 
-        mGestureSwipeUp = (SecureSettingSwitchPreference) findPreference(GESTURE_SWIPE_UP);
+        mGestureSwipeUp = (SwitchPreference) findPreference(GESTURE_SWIPE_UP);
         boolean hasSwipe = Settings.Secure.getInt(getContentResolver(),
                 Settings.Secure.SWIPE_UP_TO_SWITCH_APPS_ENABLED,
                 ActionUtils.hasNavbarByDefault(getActivity()) ? 1 : 0) != 0;
         updateSwipeUpGestureNav(hasSwipe);
         mGestureSwipeUp.setOnPreferenceChangeListener(this);
 
-        mFullGestureMode = (SystemSettingSwitchPreference) findPreference(FULL_GESTURE_MODE);
+        mFullGestureMode = (SwitchPreference) findPreference(FULL_GESTURE_MODE);
         boolean fullGestureMode = Settings.System.getInt(getContentResolver(),
                 Settings.System.FULL_GESTURE_NAVBAR,
                 ActionUtils.hasNavbarByDefault(getActivity()) ? 1 : 0) != 0;
         updateSwipeUpGestureNav(fullGestureMode);
         mFullGestureMode.setOnPreferenceChangeListener(this);
 
-        mFullGestureModeDt2s = (SystemSettingSwitchPreference) findPreference(FULL_GESTURE_MODE_DT2S);
+        mFullGestureModeDt2s = (SwitchPreference) findPreference(FULL_GESTURE_MODE_DT2S);
         boolean fullGestureModeDt2s = Settings.System.getInt(getContentResolver(),
                 Settings.System.FULL_GESTURE_NAVBAR_DT2S,
                 ActionUtils.hasNavbarByDefault(getActivity()) ? 1 : 0) != 0;
