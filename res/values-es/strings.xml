@@ -17,47 +17,118 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- The Team -->
     <!-- Bottom navigation -->
+    <string name="bottom_nav_statusbar_title">Barra de estado</string>
     <!-- Footer warnings -->
     <!-- Categories -->
     <!-- System -->
     <!-- Lockscreen -->
     <!-- Statusbar -->
     <!-- Navigation -->
+    <string name="buttons_title">Botones</string>
+    <string name="navigationbar_title">Barra de navegación</string>
     <!-- Multitasking -->
-    <!-- Button brightness -->
-    <!-- Power Menu -->
     <!-- SystemUI theme -->
+    <!-- Power Menu -->
+    <string name="powermenu_lockscreen_title">No menu de encendido si esta bloqueado</string>
     <!-- Color Picker -->
+    <string name="dialog_color_picker">Selector de color</string>
+    <string name="set">Fijar</string>
+    <string name="color_default">Defecto</string>
     <!-- Network Traffic -->
     <!-- Volume key controls media stream -->
     <!-- Volume rocker music control -->
     <!-- Volume key rotation -->
     <!-- Launch music player when headset is connected -->
-    <!-- Carrier Label -->
+    <string name="headset_connect_player_disabled">Inactivo</string>
     <!-- Quick Pulldown-->
+    <string name="quick_pulldown_title">Acceso a Ajustes Rápidos</string>
+    <string name="quick_pulldown_off">Inactivo</string>
+    <string name="quick_pulldown_always">Todas las previsualizaciones</string>
     <!-- Quick Settings brightness icon -->
     <!-- Option to show brightness bar in quick settings -->
     <!-- Quick settings -->
     <!-- Clear all recents -->
-    <!-- Hide Lockscreen clock, date, & alarm -->
     <!-- Fingerprint authentication vibration -->
     <!-- Heads up -->
+    <string name="heads_up_blacklist_add_package_title">Agregar aplic.</string>
+    <string name="heads_up_blacklist_title">Lista Negra</string>
+    <string name="heads_up_blacklist_dialog_delete_title">Borrar</string>
+    <string name="heads_up_blacklist_dialog_delete_message">Eliminar lo seleccionado?</string>
     <!-- Status bar ticker -->
+    <string name="ticker_disabled">Inactivo</string>
     <!-- Notification light dialogs -->
+    <string name="reset">Reiniciar</string>
+    <string name="advanced">Avanzado</string>
     <!-- Values for the notification light pulse spinners -->
+    <string name="pulse_length_normal">Normal</string>
+    <string name="pulse_speed_normal">Normal</string>
     <!-- Lights settings screen, notification light settings -->
+    <string name="notification_light_applist_title">Aplicación</string>
+    <string name="notification_light_default_value">Defecto</string>
     <!-- Notification light settings -->
     <!-- Battery light settings  -->
+    <string name="battery_light_low_color_title">Batería baja</string>
+    <string name="battery_light_medium_color_title">Batería media</string>
+    <string name="battery_light_full_color_title">Batería casi completa</string>
+    <string name="battery_light_really_full_color_title">Batería completa (100)</string>
     <!-- Bottom shortcuts -->
     <!-- Toast icons -->
     <!-- Volume rocker wake -->
     <!-- DUI -->
+    <string name="navbar_interface_title">Interfaz</string>
+    <string name="navbar_mode">Modo de navegación</string>
+    <string name="navbar_visibility">Habilitar barra de navegación</string>
+    <string name="navigationbar_settings_title">Barra de navegación</string>
+    <string name="navbar_general_title">Avanzado</string>
+    <string name="picker_activities">Actividades</string>
+    <string name="profile_applist_title">Aplicación</string>
     <!-- Actions dialog and default task values set in ActionPreference xml-->
+    <string name="choose_action_title">Escoge la acción</string>
+    <string name="action_entry_default_action">Ajustes por defecto</string>
     <!-- Fling -->
+    <string name="fling_settings">Ajustes de Fling</string>
+    <string name="fling_enable_title">Activar Fling</string>
+    <string name="fling_tap_actions">Gestos de toques</string>
+    <string name="fling_short_swipe_right">Deslizamiento corto a la derecha</string>
+    <string name="fling_short_swipe_left">Deslizamiento corto a la izquierda</string>
+    <string name="fling_right_up_swipe">Lado derecho deslizar arriba</string>
+    <string name="fling_left_up_swipe">Lado izquierdo deslizar arriba</string>
+    <string name="vertical_up_swipe_title">Vertical deslizar arriba</string>
+    <string name="vertical_down_swipe_title">Vertical deslizar abajo</string>
+    <string name="up_swipe_title">Deslizar arriba</string>
+    <string name="down_swipe_title">Deslizar abajo</string>
+    <string name="long_swipe_reset">Reiniciar</string>
+    <string name="fling_advanced">Avanzado</string>
+    <string name="fling_longpress_timeout_label_left">Menor demora</string>
+    <string name="fling_longpress_timeout_label_right">Mayor demora</string>
+    <string name="fling_logo_opacity_title">Opacidad logo Fling</string>
     <!-- Pulse navigation bar music visualizer -->
+    <string name="pulse_render_mode_fading_bars">Bloques cayendo</string>
+    <string name="pulse_render_mode_solid_lines">Lineas solidas</string>
+    <string name="fling_pulse_color">Color de Pulse</string>
+    <string name="pulse_advanced_category">Avanzado</string>
+    <string name="pulse_solid_units_count">Conteo de unidades sólidas</string>
+    <string name="pulse_solid_lines_count">Conteo de unidades sólidas</string>
+    <string name="pulse_solid_units_opacity">Opacidad de líneas sólidas</string>
+    <string name="pulse_solid_dimen_category">Ajustes de modo líneas sólidas</string>
     <!-- Pulse config -->
     <!-- Navbar height -->
+    <string name="positive_done">Hecho</string>
     <!-- SmartBar -->
-    <!-- Hardware button navigation -->
-    <!-- Torch Power button gestures -->
+    <string name="smartbar_settings_summary">Completamente personalizada barra de navegación</string>
+    <string name="smartbar_right">Derecha</string>
+    <string name="smartbar_left">Izquierda</string>
+    <string name="smartbar_button_animation_title">Animación de botones</string>
+    <string name="smartbar_button_animation_ripple">Ondas</string>
+    <string name="smartbar_button_animation_pixel">Pixel (todos los botones)</string>
+    <string name="smartbar_ime_action_arrows">Flechas de entrada</string>
+    <string name="smartbar_ime_action_switcher">Selector de teclado</string>
+    <string name="smartbar_backup_current_config_title">Guardar perfil</string>
+    <string name="smartbar_restore_config_title">Restaurar perfil</string>
+    <string name="smartbar_config_dialog_title">Perfiles Smartbar</string>
+    <string name="smartbar_config_backup_success_toast">Perfil Smartbar guardado con éxito</string>
+    <string name="smartbar_config_restore_success_toast">Perfil Smartbar restaurado con éxito</string>
+    <string name="smartbar_config_backup_error_toast">Error guardando perfil Smartbar</string>
+    <string name="smartbar_config_restore_error_toast">Error restaurando perfil Smartbar</string>
+    <string name="navbar_buttons_alpha_title">Transparencia de botones</string>
 </resources>
