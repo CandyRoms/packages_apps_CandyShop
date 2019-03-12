@@ -738,4 +738,27 @@
     <!--Double Tap to Sleep Statusbar-->
     <string name="double_tap_sleep_gesture_title">Double tap to sleep on status bar</string>
 
+     <!-- MultiTouch Gestures -->
+    <string name="multi_touch_gesture_preference_title">MultiTouch Gestures</string>
+    <string name="multi_touch_gestures_summary">Configure custom global gestures</string>
+    <string name="multi_touch_gestures_fingers_title">Number of ingers used for gesture</string>
+    <string name="multi_touch_gestures_right_title">Right gesture</string>
+    <string name="multi_touch_gestures_left_title">Left gesture</string>
+    <string name="multi_touch_gestures_up_title">Up gesture</string>
+    <string name="multi_touch_gestures_down_title">Down gesture</string>
+    <string name="multi_touch_gesture_disabled">Disabled</string>
+    <string name="multi_touch_gesture_back">Back</string>
+    <string name="multi_touch_gesture_home">Home</string>
+    <string name="multi_touch_gesture_recents">Recents</string>
+    <string name="multi_touch_gesture_power">Power</string>
+    <string name="multi_touch_gesture_volume_down">Volume down</string>
+    <string name="multi_touch_gesture_volume_up">Volume up</string>
+    <string name="multi_touch_gesture_volume_mute">Volume mute</string>
+    <string name="multi_touch_gesture_screenshot">Screenshot</string>
+    <string name="multi_touch_gesture_media_play_pause">Play/Pause media</string>
+    <string name="multi_touch_gesture_media_skip">Next media</string>
+    <string name="multi_touch_gesture_media_previous">Previous media</string>
+    <string name="multi_touch_gesture_customapp">Launch application</string>
+    <string name="multi_touch_gesture_launch">Launch</string>
+
 </resources>

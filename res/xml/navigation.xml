@@ -37,6 +37,12 @@
             android:summary="@string/navigationbar_settings_summary"
 		    android:fragment="com.android.settings.smartnav.NavigationBarSettings" />
 
+        <Preference
+        android:key="MultiTouchGestures"
+        android:title="@string/multi_touch_gesture_preference_title"
+        android:summary="@string/multi_touch_gestures_summary"
+        android:fragment="org.candy.candyshop.fragments.MultiTouchGesturesSettings" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
