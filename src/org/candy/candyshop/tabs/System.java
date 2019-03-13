@@ -71,9 +71,11 @@ public class System extends SettingsPreferenceFragment implements
 	private static final String TAG = "System";
     private static final String SCREEN_OFF_ANIMATION = "screen_off_animation";
     private static final String KEY_TOAST_ANIMATION = "toast_animation";
+    private static final String POWER_MENU_ANIMATIONS = "power_menu_animations";
 
     private ListPreference mScreenOffAnimation;
     private ListPreference mToastAnimation;
+    private ListPreference mPowerMenuAnimations;
 
     protected Context mContext;
 
@@ -115,6 +117,13 @@ public class System extends SettingsPreferenceFragment implements
         for (int i = 0; i < animqty; i++) {
             mAnimationsStrings[i] = AwesomeAnimationHelper.getProperName(getActivity().getApplicationContext(), mAnimations[i]);
             mAnimationsNum[i] = String.valueOf(mAnimations[i]);
+
+        mPowerMenuAnimations = (ListPreference) findPreference(POWER_MENU_ANIMATIONS);
+        mPowerMenuAnimations.setValue(String.valueOf(Settings.System.getInt(
+                getContentResolver(), Settings.System.POWER_MENU_ANIMATIONS, 0)));
+        mPowerMenuAnimations.setSummary(mPowerMenuAnimations.getEntry());
+        mPowerMenuAnimations.setOnPreferenceChangeListener(this);
+
         }
     }
 
@@ -138,11 +147,17 @@ public class System extends SettingsPreferenceFragment implements
             int valueIndex = mScreenOffAnimation.findIndexOfValue((String) newValue);
             mScreenOffAnimation.setSummary(mScreenOffAnimation.getEntries()[valueIndex]);
             return true;
-        }  else if (preference == mToastAnimation) {
+        } else if (preference == mToastAnimation) {
             int index = mToastAnimation.findIndexOfValue((String) newValue);
             Settings.System.putString(getContentResolver(), Settings.System.TOAST_ANIMATION, (String) newValue);
             mToastAnimation.setSummary(mToastAnimation.getEntries()[index]);
             mToast.makeText(mContext, "Taste the Sweetness TM", Toast.LENGTH_SHORT).show();
+            return true;
+        } else if (preference == mPowerMenuAnimations) {
+            Settings.System.putInt(getContentResolver(), Settings.System.POWER_MENU_ANIMATIONS,
+                    Integer.valueOf((String) newValue));
+            mPowerMenuAnimations.setValue(String.valueOf(newValue));
+            mPowerMenuAnimations.setSummary(mPowerMenuAnimations.getEntry());
             return true;
         }
         return false;

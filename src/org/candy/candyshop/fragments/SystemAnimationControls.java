@@ -52,7 +52,6 @@ public class SystemAnimationControls extends SettingsPreferenceFragment implemen
     private static final String WALLPAPER_INTRA_OPEN = "wallpaper_intra_open";
     private static final String WALLPAPER_INTRA_CLOSE = "wallpaper_intra_close";
     private static final String TASK_OPEN_BEHIND = "task_open_behind";
-    private static final String POWER_MENU_ANIMATIONS = "power_menu_animations";
 
     // private SystemSettingSeekBarPreference mAnimDuration;
     ListPreference mActivityOpenPref;
@@ -66,7 +65,6 @@ public class SystemAnimationControls extends SettingsPreferenceFragment implemen
     ListPreference mWallpaperIntraOpen;
     ListPreference mWallpaperIntraClose;
     ListPreference mTaskOpenBehind;
-    ListPreference mPowerMenuAnimations;
 
     private int[] mAnimations;
     private String[] mAnimationsStrings;
@@ -159,11 +157,6 @@ public class SystemAnimationControls extends SettingsPreferenceFragment implemen
         mWallpaperIntraClose.setEntryValues(mAnimationsNum);
         mWallpaperIntraClose.setOnPreferenceChangeListener(this);
 
-        mPowerMenuAnimations = (ListPreference) findPreference(POWER_MENU_ANIMATIONS);
-        mPowerMenuAnimations.setValue(String.valueOf(Settings.System.getInt(
-                getContentResolver(), Settings.System.POWER_MENU_ANIMATIONS, 0)));
-        mPowerMenuAnimations.setSummary(mPowerMenuAnimations.getEntry());
-        mPowerMenuAnimations.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -241,12 +234,6 @@ public class SystemAnimationControls extends SettingsPreferenceFragment implemen
             preference.setSummary(getProperSummary(preference));
             return true;
 
-        } else if (preference == mPowerMenuAnimations) {
-            Settings.System.putInt(getContentResolver(), Settings.System.POWER_MENU_ANIMATIONS,
-                    Integer.valueOf((String) newValue));
-            mPowerMenuAnimations.setValue(String.valueOf(newValue));
-            mPowerMenuAnimations.setSummary(mPowerMenuAnimations.getEntry());
-            return true;
         }
         return false;
     }
