@@ -658,4 +658,11 @@
     <string name="power_menu_animation_translucent_top">Translucent (top)</string>
     <string name="power_menu_animation_translucent_bottom">Translucent (bottom)</string>
 
+    <!-- Call notifications -->
+    <string name="call_notifications_cat">Call Notification Options</string>
+    <string name="flashlight_on_call_title">Blink Flashlight on call</string>
+    <string name="flashlight_on_call_disabled">Disabled</string>
+    <string name="flashlight_on_call_not_dnd">Blink flashlight only in ringer mode</string>
+    <string name="flashlight_on_call_dnd">Blink flashlight only in DND mode</string>
+    <string name="flashlight_on_call_always">Always blink flashlight</string>
 </resources>

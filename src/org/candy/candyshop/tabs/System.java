@@ -54,6 +54,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
 import com.android.internal.util.candy.AwesomeAnimationHelper;
+import com.android.internal.util.candy.CandyUtils;
 import com.android.settingslib.CustomDialogPreference;
 import org.candy.candyshop.preference.SystemSettingSeekBarPreference;
 
@@ -72,7 +73,9 @@ public class System extends SettingsPreferenceFragment implements
     private static final String SCREEN_OFF_ANIMATION = "screen_off_animation";
     private static final String KEY_TOAST_ANIMATION = "toast_animation";
     private static final String POWER_MENU_ANIMATIONS = "power_menu_animations";
+    private static final String FLASHLIGHT_ON_CALL = "flashlight_on_call";
 
+    private ListPreference mFlashlightOnCall;
     private ListPreference mScreenOffAnimation;
     private ListPreference mToastAnimation;
     private ListPreference mPowerMenuAnimations;
@@ -91,6 +94,7 @@ public class System extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.system);
+        final PreferenceScreen prefSet = getPreferenceScreen();
 
         mContext = getActivity().getApplicationContext();
         final ContentResolver resolver = getActivity().getContentResolver();
@@ -123,7 +127,18 @@ public class System extends SettingsPreferenceFragment implements
                 getContentResolver(), Settings.System.POWER_MENU_ANIMATIONS, 0)));
         mPowerMenuAnimations.setSummary(mPowerMenuAnimations.getEntry());
         mPowerMenuAnimations.setOnPreferenceChangeListener(this);
+        }
 
+        mFlashlightOnCall = (ListPreference) findPreference(FLASHLIGHT_ON_CALL);
+        Preference FlashOnCall = findPreference("flashlight_on_call");
+        if (!CandyUtils.deviceSupportsFlashLight(getActivity())) {
+            prefSet.removePreference(FlashOnCall);
+        } else {
+        int flashlightValue = Settings.System.getInt(getContentResolver(),
+                Settings.System.FLASHLIGHT_ON_CALL, 0);
+        mFlashlightOnCall.setValue(String.valueOf(flashlightValue));
+        mFlashlightOnCall.setSummary(mFlashlightOnCall.getEntry());
+        mFlashlightOnCall.setOnPreferenceChangeListener(this);
         }
     }
 
@@ -158,6 +173,13 @@ public class System extends SettingsPreferenceFragment implements
                     Integer.valueOf((String) newValue));
             mPowerMenuAnimations.setValue(String.valueOf(newValue));
             mPowerMenuAnimations.setSummary(mPowerMenuAnimations.getEntry());
+            return true;
+        } else if (preference == mFlashlightOnCall) {
+            int flashlightValue = Integer.parseInt(((String) newValue).toString());
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.FLASHLIGHT_ON_CALL, flashlightValue);
+            mFlashlightOnCall.setValue(String.valueOf(flashlightValue));
+            mFlashlightOnCall.setSummary(mFlashlightOnCall.getEntry());
             return true;
         }
         return false;
