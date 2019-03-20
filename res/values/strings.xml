@@ -639,6 +639,9 @@
     <string name="lockscreen_clock_selection_du">Analog (du)</string>
     <string name="lockscreen_clock_selection_sammy">Sammy</string>
     <string name="lockscreen_clock_selection_sammy_bold">Sammy (bold)</string>
+    <string name="lockscreen_clock_selection_custom1">Analog Candy logo (dark)</string>
+    <string name="lockscreen_clock_selection_custom2">Analog Candy light</string>
+    <string name="lockscreen_clock_selection_custom3">Analog Candy dark</string>
 
     <!-- Power menu Animations  -->
     <string name="power_menu_animation_title">Power menu animation</string>
