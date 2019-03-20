@@ -192,6 +192,7 @@
     <string name="status_bar_clock">Clock and Date</string>
     <string name="status_bar_clock_summary">Configure statusbar clock and date appearance</string>
     <string name="status_bar_clock_show">Show clock and date</string>
+    <string name="status_bar_show_clock_title">Show clock and date</string>
     <string name="status_bar_clock_style_title">Clock style</string>
     <string name="status_bar_clock_style_right">Right</string>
     <string name="status_bar_clock_style_left">Left</string>
@@ -625,5 +626,9 @@
     <string name="toast_SlideRightLeft_animation">Slide right to left</string>
     <string name="toast_animation_test">This is test for selected toast animation</string>
     <string name="toast">Toast</string>
+
+    <!-- Smart Clock -->
+    <string name="use_smart_clock">Smart Clock</string>
+    <string name="use_smart_clock_summary">Show statusbar clock periodically</string>
 
 </resources>
