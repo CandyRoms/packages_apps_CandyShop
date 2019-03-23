@@ -119,7 +119,7 @@ public class PowerButton extends SettingsPreferenceFragment implements
                             new ArrayList<SearchIndexableResource>();
 
                     SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.torch;
+                    sir.xmlResId = R.xml.power_button;
                     result.add(sir);
 
                     return result;
