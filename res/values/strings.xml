@@ -72,6 +72,7 @@
     <!-- Fragments -->
     <string name="headset_title">Headset</string>
     <string name="button_title">Volume buttons</string>
+    <string name="power_button_title">Power button</string>
     <string name="quicksettings_title">Quick settings</string>
     <string name="torch_title">Power button</string>
     <string name="battery_title">Battery settings</string>
@@ -94,7 +95,7 @@
     <!-- Fragment summaries -->
     <string name="headset_preference_summary">Headset connect options</string>
     <string name="buttons_preference_summary">Volume key behavior options</string>
-    <string name="power_button_preference_summary">Power button torch control</string>
+    <string name="power_button_preference_summary">Power key gesture and menu options</string>
     <string name="powermenu_preference_summary">Configure power menu options</string>
     <string name="leds_preference_summary">Battery and notification LED options</string>
     <string name="ls_shortcuts_preference_summary">Lockscreen bottom shorcut options</string>

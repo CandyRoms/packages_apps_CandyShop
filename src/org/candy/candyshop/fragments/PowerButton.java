@@ -45,7 +45,7 @@ import java.util.HashMap;
 import java.util.List;
 import com.android.settings.Utils;
 
-public class Torch extends SettingsPreferenceFragment implements
+public class PowerButton extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener, Indexable {
 
     private static final String TORCH_POWER_BUTTON_GESTURE = "torch_power_button_gesture";
@@ -55,7 +55,7 @@ public class Torch extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.torch);
+        addPreferencesFromResource(R.xml.power_button);
         ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
