@@ -324,6 +324,10 @@
     <string name="lockscreen_visualizer_title">Music visualizer</string>
     <string name="lockscreen_visualizer_summary">Toggles visualizer display on lockscreen</string>
 
+    <!-- Custom Seek bar -->
+    <string name="edit_hint">Value</string>
+    <string name="seek_value_edit_label">Set value</string>
+
     <!-- General messages -->
     <string name="ok">OK</string>
     <string name="reset">Reset</string>
@@ -715,4 +719,5 @@
     <string name="flashlight_on_call_not_dnd">Blink flashlight only in ringer mode</string>
     <string name="flashlight_on_call_dnd">Blink flashlight only in DND mode</string>
     <string name="flashlight_on_call_always">Always blink flashlight</string>
+
 </resources>
