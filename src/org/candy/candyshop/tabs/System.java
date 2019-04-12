@@ -23,6 +23,7 @@ import android.content.ContentResolver;
 import android.content.IntentFilter;
 import android.content.res.Resources;
 import android.content.pm.PackageManager;
+import android.hardware.fingerprint.FingerprintManager;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.ServiceManager;
@@ -74,6 +75,8 @@ public class System extends SettingsPreferenceFragment implements
     private static final String KEY_TOAST_ANIMATION = "toast_animation";
     private static final String POWER_MENU_ANIMATIONS = "power_menu_animations";
     private static final String FLASHLIGHT_ON_CALL = "flashlight_on_call";
+    private static final String KEY_FINGERPRINT_SETTINGS = "fingerprint_settings";
+    private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
 
     private ListPreference mFlashlightOnCall;
     private ListPreference mScreenOffAnimation;
@@ -81,7 +84,7 @@ public class System extends SettingsPreferenceFragment implements
     private ListPreference mPowerMenuAnimations;
 
     protected Context mContext;
-
+    private FingerprintManager mFingerprintManager;
 
     private int[] mAnimations;
     private String[] mAnimationsStrings;
@@ -139,6 +142,14 @@ public class System extends SettingsPreferenceFragment implements
         mFlashlightOnCall.setValue(String.valueOf(flashlightValue));
         mFlashlightOnCall.setSummary(mFlashlightOnCall.getEntry());
         mFlashlightOnCall.setOnPreferenceChangeListener(this);
+        }
+
+        mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
+        if (mFingerprintManager == null || !mFingerprintManager.isHardwareDetected()){
+            Preference pref = getPreferenceScreen().findPreference(KEY_FINGERPRINT_SETTINGS);
+            if (pref != null) {
+                getPreferenceScreen().removePreference(pref);
+            }
         }
     }
 

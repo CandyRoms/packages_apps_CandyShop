@@ -19,6 +19,7 @@ package org.candy.candyshop.fragments;
 import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
@@ -43,6 +44,10 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
 
+import com.android.internal.util.candy.ActionConstants;
+import com.android.internal.util.candy.CandyUtils;
+import com.android.internal.util.candy.DeviceUtils;
+
 public class Button extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
@@ -51,6 +56,7 @@ public class Button extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.button);
+
     }
 
     @Override

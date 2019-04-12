@@ -44,6 +44,12 @@
             android:fragment="org.candy.candyshop.fragments.PowerButton" />
 
         <Preference
+            android:key="fingerprint_settings"
+            android:title="@string/fingerprint_settings_title"
+            android:icon="@drawable/ic_settings_fingerprint"
+            android:fragment="org.candy.candyshop.fragments.FingerprintSettings" />
+
+        <Preference
             android:key="ime"
             android:title="@string/keyboard_ime_summary"
             android:fragment="org.candy.candyshop.fragments.IME" />
