@@ -88,6 +88,7 @@
     <!-- Fragment summaries -->
     <string name="headset_preference_summary">耳机连接选项</string>
     <string name="buttons_preference_summary">音量键行为选项</string>
+    <string name="power_button_preference_summary">电源键手势以及重启菜单选项</string>
     <string name="powermenu_preference_summary">配置电源菜单选项</string>
     <string name="leds_preference_summary">电池和通知LED选项</string>
     <string name="ls_shortcuts_preference_summary">锁屏底部快捷方式选项</string>
@@ -99,11 +100,21 @@
     <string name="recents_preference_summary">AOSP 最近任务和 Slim最近任务选项</string>
     <string name="ga_preference_summary">屏幕手势启动器选项</string>
     <string name="custom_carrier_label_preference_summary">自定义状态栏运营商文字</string>
+    <string name="navigationbar_settings_summary">- 导航栏\n- 智能栏\n- Fling导航</string>
+    <string name="hwkeys_options_summary">注意：这些都是设备专用！\n- 实体按键重制\n- 实体按钮禁用\n- 最近任务和返回按钮互换\n- 按钮背光亮度\n- 按钮背光超时\n- 触摸按键时按钮背光</string>
+    <string name="carrier_label_summary">自定状态栏运营商名称</string>
     <!-- Buttons -->
+    <string name="volume_keys_swap_summary">当设备旋转至横屏方向时，音量键+/-将交换</string>
     <string name="volume_keys_control_media_stream_title">媒体音量控制</string>
     <string name="volume_keys_control_media_stream_summary">强制音量控制媒体流</string>
     <!-- QuickSettings -->
     <!-- Quick Settings brightness icon -->
+    <string name="brightness_icon_title">亮度滑块图标</string>
+    <string name="brightness_icon_summary">显示自动亮度开关按钮</string>
+    <string name="qs_auto_brightness_right_title">自动亮度图标居右</string>
+    <string name="qs_auto_brightness_right_summary">在亮度滑块右侧显示图标</string>
+    <string name="qs_show_brightness_buttons_title">亮度控制按钮</string>
+    <string name="qs_show_brightness_buttons_summary">在亮度条旁显示按钮来调整亮度</string>
     <!-- Color Picker -->
     <string name="dialog_color_picker">选色器</string>
     <string name="press_color_to_apply">选取一个颜色并应用</string>
@@ -112,25 +123,47 @@
     <string name="fp_unlock_keystore_title">指纹解锁</string>
     <string name="fp_unlock_keystore_summary">在重启后用指纹解锁设备，无须 PIN/密码/图案\n注意：请注意风险！</string>
     <!-- StatusBar Tuner -->
+    <string name="status_bar_tuner_title">状态栏图标</string>
+    <string name="status_bar_tuner_summary">修改状态栏图标和设置</string>
     <!-- Navbar tuner -->
+    <string name="navbar_tuner_title">编辑导航栏</string>
+    <string name="navbar_tuner_summary">编辑导航栏布局和按钮</string>
     <!-- Bottom navigation gestures -->
     <string name="gesture_settings_title">手势操作</string>
+    <string name="gesture_settings_info">必须关闭导航栏！\n\n可用手势\n\n后退\n-向左或向右滑动\n\n主页\n-上滑到中心\n\n最近打开的程序\n-向上滑到中心并长按住\n\n上一个应用\n-从中间向上短滑短并按住</string>
+    <string name="use_bottom_gesture_title">导航手势</string>
+    <string name="use_bottom_gesture_summary">使用从屏幕底部向上滑动的手势进行导航操作</string>
     <!-- Three-fingers-swipe to screenshot -->
     <!-- Lockscreen tuner -->
+    <string name="lock_screen_shortcuts_title">锁屏快捷方式</string>
+    <string name="lock_screen_shortcuts_summary">管理锁定屏幕底部的快捷方式</string>
     <!-- Battery percentage -->
+    <string name="status_bar_battery_percentage_title">电量百分比</string>
+    <string name="status_bar_battery_percentage_default">隐藏</string>
+    <string name="status_bar_battery_percentage_text_next">在图标旁</string>
+    <string name="status_bar_battery_percentage_text_inside">在图标内</string>
     <!-- Status bar battery style-->
+    <string name="status_bar_battery_style_title">电池样式</string>
     <string name="status_bar_battery_style_port">纵向</string>
     <string name="status_bar_battery_style_circle">圆圈</string>
     <string name="status_bar_battery_style_big_circle">大圆圈</string>
     <string name="status_bar_battery_style_dotted_circle">虚线圆圈</string>
     <string name="status_bar_battery_style_big_dotted_circle">大虚线圆圈</string>
     <string name="status_bar_battery_style_text">文字</string>
+    <string name="status_bar_battery_style_hidden">隐藏</string>
     <!-- Statusbar Clock -->
+    <string name="status_bar_clock">时钟和日期</string>
     <string name="status_bar_clock_summary">配置状态栏时钟和日期外观</string>
+    <string name="status_bar_clock_show">显示时钟和日期</string>
+    <string name="status_bar_show_clock_title">显示时钟和日期</string>
     <string name="status_bar_clock_style_title">时钟样式</string>
     <string name="status_bar_clock_style_right">右</string>
     <string name="status_bar_clock_style_left">左</string>
+    <string name="status_bar_am_pm_title">上午/下午样式</string>
     <string name="status_bar_am_pm_info">24小时制已启用</string>
+    <string name="status_bar_am_pm_small">小</string>
+    <string name="status_bar_am_pm_hidden">隐藏 (默认值)</string>
+    <string name="clock_seconds_display">显示秒</string>
     <string name="clock_date_display_summary">在时钟前显示自定义日期</string>
     <string name="clock_date_display_none">不显示</string>
     <string name="clock_date_display_small">较小字体大小</string>
@@ -190,6 +223,7 @@
     <string name="reset">重置</string>
     <string name="cancel">取消</string>
     <!-- Keyboard and IME  -->
+    <string name="ime_switcher_notify_summary">显示输入法选择器通知</string>
     <!-- Incall Home button behavior-->
     <string name="allow_incall_home_title">响铃时使用 Home 键</string>
     <string name="allow_incall_home_summary">设备响铃时允许使用主页键</string>
@@ -199,6 +233,8 @@
     <string name="backlight_timeout_3s">3 秒</string>
     <!-- Enable keys backlight-->
     <!-- Enable keys backlight-->
+    <string name="button_brightness_sw_title">启用按键背光灯</string>
+    <string name="button_backlight_on_touch_only_title">触摸按钮时点亮</string>
     <string name="button_backlight_on_touch_only_summary">当按钮按下的时候而不是一直按下，按钮背光才会出现。超时仍然影响这个特性。</string>
     <!-- HW Keys customization -->
     <string name="picker_activities">活动</string>
