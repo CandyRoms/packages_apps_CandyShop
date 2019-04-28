@@ -381,13 +381,35 @@
     <string name="ambient_ticker_footer">环境音乐收录器显示在环境显示屏幕内播放音乐曲目信息。\n\n如果在启动新曲目时禁用环境显示，则会触发此操作，从而在屏幕中间强制显示带有曲目信息的干净环境屏幕。\n\n您也可以双击音轨信息以跳过音轨。\n\n如果您拥有Pixel并启用正在播放及其在系统音频设置中的通知，环境音乐收录器也可以在其中使用。</string>
     <string name="force_ambient_for_media_title">启用</string>
     <!-- Network traffic -->
+    <string name="network_traffic_state_title">网络流量显示</string>
+    <string name="network_traffic_state_summary">显示上传 &amp; 下载网络速度</string>
     <string name="network_traffic_autohide_threshold_title">自动隐藏网速指示的阈值 (KB/s)</string>
+    <string name="network_traffic_location_title">流量指示器位置</string>
+    <string name="network_traffic_location_summary">将指示器放置在状态栏或下拉栏顶部(有刘海的设备推荐使用)</string>
     <string name="network_traffic_statusbar">状态栏</string>
+    <string name="network_traffic_header">下拉栏顶部</string>
+    <string name="network_traffic_hidearrow">隐藏箭头</string>
+    <string name="network_traffic_hidearrow_summary">隐藏网络流量监控中的指示箭头</string>
     <!-- Recents mods -->
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">时钟部件</string>
+    <string name="lockscreen_clock_summary">在锁屏上显示时钟小部件</string>
+    <string name="lockscreen_info_title">时钟下的项目</string>
+    <string name="lockscreen_info_summary">在锁屏上显示日期，天气，闹钟和提示</string>
     <!-- Incall vibrate options -->
+    <string name="incall_vibration_options_title">来电振动</string>
+    <string name="incall_vibration_options_summary">来电振动选项</string>
+    <string name="incall_vibration_category">来电通知</string>
+    <string name="incall_vibrate_connect_title">接通时振动</string>
+    <string name="incall_vibrate_call_wait_title">呼叫等待时震动</string>
+    <string name="incall_vibrate_disconnect_title">挂断时振动</string>
     <!-- Audio Panel view  -->
+    <string name="audio_panel_view">音量面板滑块</string>
+    <string name="audio_panel_view_media_title">媒体</string>
+    <string name="audio_panel_view_ringer_title">铃声</string>
+    <string name="audio_panel_view_notification_title">通知</string>
+    <string name="audio_panel_view_alarm_title">闹钟</string>
+    <string name="audio_panel_view_voice_title">声音</string>
     <!-- Volume Panel on Left -->
     <!-- Weather -->
     <!-- Volume keys control ring tone stream -->
@@ -399,22 +421,50 @@
     <!-- Toast Animation -->
     <string name="toast_none_animation">无</string>
     <!-- Smart Clock -->
+    <string name="use_smart_clock_summary">定期显示状态栏时钟</string>
     <!-- Lockscreen clock styles -->
     <string name="lockscreen_clock_selection_title">时钟样式</string>
     <string name="lockscreen_clock_selection_digital_bold">数字时钟 (粗体)</string>
     <string name="lockscreen_clock_selection_analog">模拟时钟</string>
+    <string name="lockscreen_clock_selection_du">摸拟时钟 (du)</string>
     <string name="lockscreen_clock_selection_sammy">竖式时钟</string>
     <string name="lockscreen_clock_selection_sammy_bold">竖式时钟 (粗体)</string>
+    <string name="lockscreen_clock_selection_custom1">模拟时钟 Candy徽标（暗黑）</string>
+    <string name="lockscreen_clock_selection_custom2">模拟时钟 Candy 亮色</string>
+    <string name="lockscreen_clock_selection_custom3">模拟时钟 Candy 暗色</string>
     <string name="lockscreen_clock_selection_text">文字</string>
     <!-- Power menu Animations  -->
+    <string name="power_menu_animation_title">电源菜单动画</string>
+    <string name="power_menu_animation_summary">更改电源菜单进入/退出的动画</string>
+    <string name="power_menu_animation_dialog_title">选择电源菜单动画</string>
+    <string name="power_menu_animation_aosp">AOSP（默认）</string>
+    <string name="power_menu_animation_bottom">底部位置</string>
+    <string name="power_menu_animation_top">顶部位置</string>
+    <string name="power_menu_animation_xylon">飞入</string>
+    <string name="power_menu_animation_slide">划入</string>
+    <string name="power_menu_animation_turn">翻转</string>
+    <string name="power_menu_animation_fly">发光</string>
+    <string name="power_menu_animation_card">3D</string>
+    <string name="power_menu_animation_translucent_top">半透明 （顶部）</string>
+    <string name="power_menu_animation_translucent_bottom">半透明（底部）</string>
     <!-- Call notifications -->
+    <string name="call_notifications_cat">电话通知选项</string>
+    <string name="flashlight_on_call_title">来电时闪烁闪光灯</string>
     <string name="flashlight_on_call_disabled">禁用</string>
+    <string name="flashlight_on_call_not_dnd">仅在铃声模式下闪烁闪光灯</string>
+    <string name="flashlight_on_call_dnd">仅在DND模式下闪烁闪光灯</string>
+    <string name="flashlight_on_call_always">总是闪烁闪光灯</string>
     <!-- Fingerprint settings-->
+    <string name="fingerprint_settings_title">指纹</string>
+    <string name="fingerprint_category_custom_icon">自定义图标</string>
     <!-- fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">指纹认证震动</string>
     <string name="fprint_sucess_vib_summary">指纹认证成功时震动</string>
     <!--Double Tap to Sleep Statusbar-->
+    <string name="double_tap_sleep_gesture_title">双击状态栏休眠</string>
     <!-- MultiTouch Gestures -->
+    <string name="multi_touch_gesture_preference_title">多重触摸手势</string>
+    <string name="multi_touch_gestures_summary">配置自定义全局手势</string>
     <string name="multi_touch_gesture_disabled">禁用</string>
     <string name="multi_touch_gesture_recents">最近任务</string>
     <string name="multi_touch_gesture_power">电源</string>
