@@ -86,8 +86,8 @@
     <string name="theme_category_title">系统主题甜度</string>
     <string name="systemui_theme_style_title">系统界面主题</string>
     <string name="systemui_theme_style_auto">自动 (基于壁纸)</string>
-    <string name="systemui_theme_style_light">亮色</string>
-    <string name="systemui_theme_style_dark">黑色</string>
+    <string name="systemui_theme_style_light">白巧克力</string>
+    <string name="systemui_theme_style_dark">黑巧克力</string>
     <string name="systemui_theme_style_blackaf">黑甘草</string>
     <string name="system_dark_theme_toast_before">正在甜化主题，请稍后……</string>
     <!-- Color Picker -->
@@ -558,6 +558,7 @@
     <string name="battery_style_square">方形</string>
     <string name="battery_style_text">文字</string>
     <string name="show_battery_percent_title">显示电量百分比</string>
+    <string name="show_battery_percent_summary">在电池图标旁边显示电量</string>
     <!--Recents Membar -->
     <!-- ANBI -->
     <!-- Recents panel settings -->
@@ -635,18 +636,70 @@
     <!-- Toggle for face auto unlock -->
     <!-- Screenshot sound -->
     <!-- Smart Pixels -->
+    <string name="chooser_activity_blacklist_title">选择器活动黑名单</string>
+    <string name="chooser_activity_blacklist_summary">在点击 \"分享\" 按钮时不显示的应用程序</string>
     <string name="chooser_activity_blacklist_cat_title">黑名单</string>
     <string name="chooser_activity_blacklist_pref_title">添加应用</string>
     <string name="chooser_activity_blacklist_pref_summary">点击此处添加应用，点击已添加的应用程序来移除</string>
     <!-- Disable QS on secure Lockscreen -->
+    <string name="lockscreen_qs_disabled_title">锁屏时禁用快速设置</string>
+    <string name="lockscreen_qs_disabled_summary">在锁屏界面禁用下拉访问快捷设置</string>
     <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">音乐可视化</string>
+    <string name="lockscreen_visualizer_summary">锁屏音乐可视化开关</string>
     <!-- Fingerprint unlock keystore -->
+    <string name="fp_unlock_keystore_title">指纹解锁</string>
+    <string name="fp_unlock_keystore_summary">在重启后用指纹解锁设备，无须 PIN/密码/图案\n注意：请注意风险！</string>
     <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">清除应用按钮</string>
+    <string name="notification_guts_kill_app_button_summary">在通知的长按菜单中显示清除应用按钮</string>
+    <string name="app_ops_settings_summary">控制应用程序权限</string>
     <!-- Tiles animation/interpolator style  -->
+    <string name="qs_animation_options_title">动画</string>
+    <string name="qs_tile_animation_style_title">动画风格</string>
+    <string name="qs_tile_animation_duration_title">动画持续时间</string>
+    <string name="qs_tile_animation_interpolator_title">动画插值器</string>
+    <string name="qs_tile_animation_style_off">无动画</string>
     <string name="qs_tile_animation_style_flip">翻转</string>
+    <string name="qs_tile_animation_style_rotate">旋转</string>
+    <string name="qs_tile_animation_duration_low">低</string>
     <string name="qs_tile_animation_duration_fast">快速</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">线性</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">加速</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">减速</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">先加速后减速</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">弹跳</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">越界</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">预留</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">预留和越界</string>
+    <string name="qs_set_animation_style">%1$s</string>
+    <string name="qs_set_animation_duration">%1$s</string>
+    <string name="qs_set_animation_interpolator">%1$s</string>
     <!-- Expanded desktop -->
+    <string name="general_display_options_category">一般显示选项</string>
+    <string name="expanded_desktop_title">扩展桌面</string>
+    <string name="expanded_desktop_summary">每个应用的状态栏和导航栏视图配置</string>
+    <string name="expanded_hide_nothing">不隐藏</string>
+    <string name="expanded_hide_status">隐藏状态栏</string>
+    <string name="expanded_hide_navigation">隐藏导航栏</string>
+    <string name="expanded_hide_both">同时隐藏</string>
+    <string name="expanded_nothing_to_show">要为每个应用程序添加自定义配置，请将“全部启用”设置为关闭</string>
+    <string name="expanded_desktop_state">扩展桌面状态</string>
+    <string name="expanded_enabled_for_all">为全部应用启用</string>
+    <string name="expanded_user_configurable">用户可配置</string>
     <!-- Status bar brightness slider -->
+    <string name="status_bar_toggle_brightness">亮度控制</string>
+    <string name="status_bar_toggle_brightness_summary">通过在状态栏上滑动调整亮度</string>
     <!-- Quick QS scroller -->
+    <string name="qqs_scroll_title">快速滚动小磁贴</string>
+    <string name="qqs_scroll_summary">允许滚动快设小磁贴</string>
     <!-- Carrier Label -->
+    <string name="carrier_category">运营商标签</string>
+    <string name="carrier_options">选择显示位置</string>
+    <string name="custom_carrier_label_title">自定义运营商标签</string>
+    <string name="custom_carrier_label_explain">请输入一个新的标签，留空将恢复至默认的运营商标签.</string>
+    <string name="custom_carrier_label_notset">自定义标签当前没有设置</string>
+    <string name="show_carrier_title">显示于</string>
+    <string name="show_carrier_disabled">不显示</string>
+    <string name="show_carrier_keyguard">仅锁屏界面</string>
 </resources>
