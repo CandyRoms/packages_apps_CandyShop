@@ -194,6 +194,7 @@
     <string name="lockscreen_clock_selection_analog">模拟时钟</string>
     <string name="hide_lockscreen_date_title">日期部件</string>
     <string name="hide_lockscreen_date_summary">在时钟小部件下面更改日期的可见性</string>
+    <string name="lockscreen_date_selection_title">日期样式</string>
     <string name="lockscreen_date_selection_default">默认（更大）</string>
     <string name="lockscreen_date_selection_str_box">半透明方形</string>
     <string name="lockscreen_date_selection_str_round">半透明方形（圆角）</string>
@@ -515,10 +516,48 @@
     <!-- Status bar clock options -->
     <string name="clock_footer">注意: 由于安卓奥利奥的问题, 时钟居中和计时/通知图标可能存在问题。 如果继续，请您做好准备自己承担风险。🍬</string>
     <string name="status_bar_clock">时钟 &amp; 日期</string>
+    <string name="status_bar_clock_summary">配置状态栏时钟和日期外观</string>
+    <string name="clock_title_enable">对齐方式</string>
+    <string name="clock_enabled">已启用</string>
     <string name="clock_disabled">禁用</string>
+    <string name="status_bar_clock_style_reset">重设颜色</string>
+    <string name="status_bar_show_clock_title">显示时钟 &amp; 日期</string>
+    <string name="right_clock">时钟右置</string>
+    <string name="center_clock">时钟居中</string>
+    <string name="left_clock">时钟左置</string>
+    <string name="status_bar_clock_seconds_title">时钟秒数</string>
+    <string name="status_bar_clock_seconds_summary">在状态栏时钟后面显示秒数</string>
+    <string name="status_bar_am_pm_title">上午/下午</string>
+    <string name="status_bar_am_pm_info">24小时制已启用</string>
+    <string name="am_pm_clock_normal">正常字体大小</string>
+    <string name="am_pm_clock_small">较小字体大小</string>
+    <string name="am_pm_clock_none">不显示</string>
+    <string name="clock_date_display_summary">在时钟前显示自定义日期</string>
+    <string name="clock_date_style">日期样式</string>
+    <string name="clock_date_format">日期格式</string>
+    <string name="clock_date_string_edittext_title">日期格式必须如：MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">输入字符串</string>
+    <string name="clock_date_display_none">不显示</string>
+    <string name="clock_date_display_small">较小字体大小</string>
+    <string name="clock_date_display_normal">正常字体大小</string>
+    <string name="clock_date_style_lowercase">小写字母</string>
+    <string name="clock_date_style_uppercase">大写字母</string>
+    <string name="clock_date_format_custom">自定义java格式</string>
     <string name="menu_cancel">取消</string>
+    <string name="clock_date_right">位于时间右侧</string>
+    <string name="clock_date_left">位于时间左侧</string>
+    <string name="clock_date_position">日期位置</string>
     <!-- Battery Styles -->
+    <string name="battery_style_title">电池图标样式</string>
+    <string name="battery_style_summary">更改状态栏电池图标的外观</string>
     <string name="battery_style_port">纵向</string>
+    <string name="battery_style_circle">圆圈</string>
+    <string name="battery_style_dotted_circle">虚线圆圈</string>
+    <string name="battery_style_big_circle">大圆圈</string>
+    <string name="battery_style_big_dotted_circle">大虚线圆圈</string>
+    <string name="battery_style_square">方形</string>
+    <string name="battery_style_text">文字</string>
+    <string name="show_battery_percent_title">显示电量百分比</string>
     <!--Recents Membar -->
     <!-- ANBI -->
     <!-- Recents panel settings -->
