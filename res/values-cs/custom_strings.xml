@@ -14,34 +14,4 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Main abc pref screens -->
-    <!-- Color Picker -->
-    <!-- Media art -->
-    <!-- Sms security limit -->
-    <!-- Torch Power button gestures -->
-    <!-- Launch music player when headset is connected -->
-    <!-- Battery light -->
-    <!-- QS footer warnings -->
-    <!--SysUI tuner options -->
-    <!-- Heads up options -->
-    <!-- QS rows and columns -->
-    <!-- Statusbar net monitor -->
-    <!-- Power plug events -->
-    <!-- Headset ringtone audio focus -->
-    <!-- Power menu on secure lockscreen -->
-    <!-- Statusbar ticker -->
-    <!-- Slim Recents panel -->
-    <!-- ATTENTION: RTL languages need to replace left with right -->
-    <!-- Navigation -->
-    <!-- DUI -->
-    <!-- Actions dialog and default task values set in ActionPreference xml-->
-    <!-- Fling -->
-    <!-- Pulse navigation bar music visualizer -->
-    <!-- Pulse config -->
-    <!-- Navbar height -->
-    <!-- SmartBar -->
-    <!-- Less Notification sounds -->
-    <!-- Status bar clock options -->
-    <!-- Battery Styles -->
-</resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"/>
