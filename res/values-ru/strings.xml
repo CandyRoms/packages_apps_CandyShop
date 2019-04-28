@@ -22,7 +22,6 @@
     <!-- System -->
     <!-- Lockscreen -->
     <!-- Statusbar -->
-    <string name="notifications_title">Уведомления</string>
     <!-- Navigation -->
     <!-- Multitasking -->
     <!-- Button brightness -->
@@ -53,10 +52,8 @@
     <!-- Toast icons -->
     <!-- Volume rocker wake -->
     <!-- DUI -->
-    <string name="navbar_interface_title">Интерфейс</string>
     <!-- Actions dialog and default task values set in ActionPreference xml-->
     <!-- Fling -->
-    <string name="long_swipe_portrait_title">Вертикальный</string>
     <!-- Pulse navigation bar music visualizer -->
     <!-- Pulse config -->
     <!-- Navbar height -->
