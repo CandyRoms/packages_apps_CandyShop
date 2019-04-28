@@ -190,17 +190,36 @@
     <string name="disable_accents_installed_title">口味选择器不可用，以避免和 Substratum 发生冲突。如果要使用口味选择器, 请卸载 Substratum。</string>
     <string name="accent_picker_dialog_title">选择一个强调色</string>
     <string name="theme_accent_picker_title">颜色</string>
+    <string name="theme_accent_picker_summary">选择糖果颜色</string>
+    <string name="theme_accent_picker_default">恢复成默认设置</string>
+    <string name="accent_picker_material_colors">物化设计颜色</string>
+    <string name="accent_picker_custom_colors">用户颜色</string>
+    <string name="qs_styles_dialog_title">选择一个快速设置的样式</string>
     <!-- AboutCandy-->
+    <string name="dialog_about_candy_title">关于CandyRoms</string>
+    <string name="candy_links_title">相关链接</string>
+    <string name="candy_team_title">Candy团队</string>
     <!-- Power Menu -->
     <string name="powermenu_reboot_title">重启</string>
     <string name="powermenu_advanced_reboot_title">高级重启</string>
+    <string name="powermenu_advanced_reboot_summary">启用高级重启以选择重启到恢复模式，引导程序，重启系统界面或软重启</string>
     <string name="powermenu_screenshot_title">截屏</string>
     <string name="powermenu_airplane_title">飞行模式</string>
     <!-- Changelog -->
+    <string name="changelog_title">更新日志</string>
+    <string name="changelog_summary">看看最近提交的内容。</string>
+    <string name="changelog_error">无法加载更新日志</string>
     <!-- Toast app icon -->
+    <string name="toast_icon_title">Toast 通知图标</string>
+    <string name="toast_icon_summary">Toast 通知显示相应的应用图标</string>
     <!-- Power menu on lockscreen -->
+    <string name="lockscreen_power_menu_disabled_title">禁用锁屏时的电源菜单</string>
+    <string name="lockscreen_power_menu_disabled_summary">这个选项将仅在安全锁屏下禁用电源菜单</string>
     <!--Volume keys wake -->
+    <string name="volume_rocker_wake_title">通过音量键唤醒设备</string>
+    <string name="volume_rocker_wake_summary">按下音量键将唤醒手机</string>
     <!-- QS rows and columns -->
+    <string name="qs_rows_columns_title">快速设置界面调整</string>
     <string name="qs_rows_portrait_title">纵向时瓷贴行数</string>
     <string name="qs_rows_landscape_title">横向时磁贴行数</string>
     <string name="qs_columns_portrait_title">纵向时瓷贴列数</string>
@@ -211,25 +230,49 @@
     <string name="lockscreen_qs_disabled_title">锁屏时禁用快速设置</string>
     <string name="lockscreen_qs_disabled_summary">在锁屏界面禁用下拉访问快捷设置</string>
     <!-- Quick Settings brightness slider -->
+    <string name="qs_show_brightness_summary">在快速设置面板中显示亮度滑块</string>
+    <string name="qs_brightness_position_bottom_title">底部亮度滑块</string>
+    <string name="qs_brightness_position_bottom_summary">显示快速设置底部的亮度滑块</string>
     <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">电源键手电筒 (仅关闭屏幕)</string>
     <string name="torch_power_button_gesture_none">禁用</string>
     <string name="torch_power_button_gesture_dt">双击</string>
+    <string name="torch_power_button_gesture_dt_toast">双击启动相机手势已禁用</string>
     <string name="torch_power_button_gesture_lp">长按</string>
     <!-- Toggle for face auto unlock -->
     <!-- Notification with screen on -->
+    <string name="notification_sound_vib_screen_on_title">若屏幕为开启状态, 发出通知提醒声音和振动</string>
+    <string name="notification_sound_vib_screen_on_summary">当屏幕唤醒时禁用通知声音和振动</string>
     <!-- Screenshot sound -->
+    <string name="screenshot_shutter_sound_summary">禁用屏幕截图声音</string>
     <!--Double Tap to Sleep Lockscreen-->
     <!--Quick pulldown-->
     <!-- Onehand UI mode -->
+    <string name="one_hand_mode_title">单手模式</string>
+    <string name="one_hand_mode_summary">允许向右或向左滑动导航栏以启用</string>
     <!-- Lockscreen visualizer -->
     <string name="lockscreen_visualizer_title">音乐可视化</string>
     <string name="lockscreen_visualizer_summary">锁屏音乐可视化开关</string>
     <!-- Custom Seek bar -->
+    <string name="edit_hint">数值</string>
+    <string name="seek_value_edit_label">设置数值</string>
     <!-- General messages -->
     <string name="reset">重置</string>
     <string name="cancel">取消</string>
+    <string name="attention">注意</string>
     <!-- Keyboard and IME  -->
+    <string name="disable_fullscreen_keyboard_title">禁用全屏键盘</string>
+    <string name="disable_fullscreen_keyboard_summary">横屏时键盘将不会占据整个屏幕</string>
+    <string name="keyboard_rotation_toggle_title">自动键盘旋转</string>
+    <string name="keyboard_rotation_toggle_summary">键盘显示时强制自动旋转</string>
+    <string name="keyboard_rotation_timeout_title">自动旋转超时</string>
+    <string name="keyboard_rotation_timeout_summary">隐藏键盘后禁用自动旋转传感器 <xliff:g id="rotate_timeout">%1$s</xliff:g> 秒</string>
+    <string name="keyboard_rotation_dialog">当键盘显示时，此功能强制临时启用自动旋转。当自动旋转已启用时，此功能无效。</string>
+    <string name="show_enter_key_title">显示回车键</string>
+    <string name="show_enter_key_summary">强制键盘显示回车键，而不是表情符号键</string>
+    <string name="keyboard_ime_title">输入法设置</string>
+    <string name="keyboard_ime_summary">输入法高级设置</string>
+    <string name="ime_switcher_notify">输入法选择器通知</string>
     <string name="ime_switcher_notify_summary">显示输入法选择器通知</string>
     <!-- Incall Home button behavior-->
     <string name="allow_incall_home_title">响铃时使用 Home 键</string>
@@ -417,11 +460,21 @@
     <string name="audio_panel_view_notification_title">通知</string>
     <string name="audio_panel_view_alarm_title">闹钟</string>
     <string name="audio_panel_view_voice_title">声音</string>
+    <string name="audio_panel_view_bt_sco_title">蓝牙</string>
     <!-- Volume Panel on Left -->
+    <string name="volume_panel_on_left_title">音量面板居左</string>
+    <string name="volume_panel_on_left_summary">在屏幕左侧显示音量面板</string>
     <!-- Weather -->
+    <string name="weather_unit">温度单位</string>
+    <string name="weather_unit_summary">(摄氏度/华氏度)</string>
     <!-- Volume keys control ring tone stream -->
+    <string name="volume_keys_control_ring_tone_title">控制铃声音量</string>
+    <string name="volume_keys_control_ring_tone_summary">默认情况下，音量键控制媒体音量滑块。启用以切换到铃声音量滑块。</string>
     <!-- In-call vibration options -->
+    <string name="incall_notifications_vibrate">通知时震动</string>
     <!-- AOKP custom system animations -->
+    <string name="system_animation_title">系统动画</string>
+    <string name="system_animation_summary">自定义系统中每个窗口的动画</string>
     <string name="animation_duration_title">动画持续时间</string>
     <!-- Animations -->
     <!-- Screen Off animation -->
