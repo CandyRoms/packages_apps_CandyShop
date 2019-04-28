@@ -14,7 +14,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources>
     <!-- The Team -->
     <!-- Bottom navigation -->
     <!-- Footer warnings -->
@@ -30,8 +30,6 @@
     <!-- Color Picker -->
     <!-- Network Traffic -->
     <!-- Volume key controls media stream -->
-    <!-- Volume rocker music control -->
-    <!-- Volume key rotation -->
     <!-- Launch music player when headset is connected -->
     <!-- Carrier Label -->
     <!-- Quick Pulldown-->
@@ -41,6 +39,8 @@
     <!-- Clear all recents -->
     <!-- Hide Lockscreen clock, date, & alarm -->
     <!-- Fingerprint authentication vibration -->
+    <!-- Volume rocker music control -->
+    <!-- Volume key rotation -->
     <!-- Heads up -->
     <!-- Status bar ticker -->
     <!-- Notification light dialogs -->
@@ -60,4 +60,5 @@
     <!-- SmartBar -->
     <!-- Hardware button navigation -->
     <!-- Torch Power button gestures -->
+    <!-- Ambient music -->
 </resources>
