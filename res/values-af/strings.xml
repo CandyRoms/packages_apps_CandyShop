@@ -14,7 +14,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- The Team -->
     <!-- Bottom navigation -->
     <!-- Footer warnings -->
@@ -24,23 +24,20 @@
     <!-- Statusbar -->
     <!-- Navigation -->
     <!-- Multitasking -->
-    <!-- Button brightness -->
-    <!-- Power Menu -->
     <!-- SystemUI theme -->
+    <!-- Power Menu -->
     <!-- Color Picker -->
     <!-- Network Traffic -->
     <!-- Volume key controls media stream -->
+    <!-- Volume rocker music control -->
+    <!-- Volume key rotation -->
     <!-- Launch music player when headset is connected -->
-    <!-- Carrier Label -->
     <!-- Quick Pulldown-->
     <!-- Quick Settings brightness icon -->
     <!-- Option to show brightness bar in quick settings -->
     <!-- Quick settings -->
     <!-- Clear all recents -->
-    <!-- Hide Lockscreen clock, date, & alarm -->
     <!-- Fingerprint authentication vibration -->
-    <!-- Volume rocker music control -->
-    <!-- Volume key rotation -->
     <!-- Heads up -->
     <!-- Status bar ticker -->
     <!-- Notification light dialogs -->
@@ -58,7 +55,4 @@
     <!-- Pulse config -->
     <!-- Navbar height -->
     <!-- SmartBar -->
-    <!-- Hardware button navigation -->
-    <!-- Torch Power button gestures -->
-    <!-- Ambient music -->
 </resources>
