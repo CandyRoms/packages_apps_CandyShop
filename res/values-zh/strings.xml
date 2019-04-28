@@ -475,12 +475,52 @@
     <!-- AOKP custom system animations -->
     <string name="system_animation_title">系统动画</string>
     <string name="system_animation_summary">自定义系统中每个窗口的动画</string>
+    <string name="activity_open_title">活动项打开动画</string>
+    <string name="activity_close_title">活动项关闭动画</string>
+    <string name="task_open_title">任务打开动画</string>
+    <string name="task_close_title">任务关闭动画</string>
+    <string name="task_move_to_front_title">切换到前台动画</string>
+    <string name="task_move_to_back_title">切换到后台动画</string>
+    <string name="task_open_behind_title">后台任务打开动画</string>
+    <string name="wallpaper_open_title">壁纸打开动画</string>
+    <string name="wallpaper_close_title">壁纸关闭动画</string>
+    <string name="wallpaper_intra_open_title">壁纸内部打开动画</string>
+    <string name="wallpaper_intra_close_title">壁纸内部关闭动画</string>
     <string name="animation_duration_title">动画持续时间</string>
+    <string name="title_animation_no_override">防止应用程序覆盖</string>
+    <string name="summary_animation_no_override">防止应用程序覆盖过渡动画</string>
     <!-- Animations -->
+    <string name="scroll_title">滚动</string>
+    <string name="misc_animation_title">其他动画</string>
+    <string name="tile_animation_title">磁贴动画</string>
+    <string name="list_animation_title">列表动画</string>
+    <string name="system_keyguard_animation_title">系统和键盘动画</string>
     <!-- Screen Off animation -->
+    <string name="screen_off_animation_title">屏幕关闭动画</string>
+    <string name="screen_off_animation_color">显色褪色</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">缩放</string>
     <!-- Toast Animation -->
+    <string name="toast_animation_title">Toast 动画</string>
     <string name="toast_none_animation">无</string>
+    <string name="toast_fade_animation">淡入淡出</string>
+    <string name="toast_SlideRight_animation">向右滑动</string>
+    <string name="toast_SlideLeft_animation">向左滑动</string>
+    <string name="toast_Xylon_animation">Xylon 动画</string>
+    <string name="toast_Toko_animation">Toko 动画</string>
+    <string name="toast_Tn_animation">Tn 动画</string>
+    <string name="toast_Honami_animation">Honami 动画</string>
+    <string name="toast_FastFade_animation">快速淡入淡出</string>
+    <string name="toast_GrowFade_animation">缓慢淡出淡入</string>
+    <string name="toast_GrowFadeCenter_animation">从中心缓慢淡入淡出</string>
+    <string name="toast_GrowFadeBottom_animation">从底部缓慢淡出淡入</string>
+    <string name="toast_Translucent_animation">半透明</string>
+    <string name="toast_SlideLeftRight_animation">从左向右滑</string>
+    <string name="toast_SlideRightLeft_animation">从右向左滑</string>
+    <string name="toast_animation_test">这是对所选择的 Toast 动画的测试</string>
+    <string name="toast">Toast 通知</string>
     <!-- Smart Clock -->
+    <string name="use_smart_clock">智能时钟</string>
     <string name="use_smart_clock_summary">定期显示状态栏时钟</string>
     <!-- Lockscreen clock styles -->
     <string name="lockscreen_clock_selection_title">时钟样式</string>
