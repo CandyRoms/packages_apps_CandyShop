@@ -176,12 +176,19 @@
     <string name="clock_date_string_edittext_title">日期格式必须如：MM/dd/yy</string>
     <string name="clock_date_string_edittext_summary">输入字符串</string>
     <!-- Old Style Mobile -->
+    <string name="use_old_mobiletype_title">使用旧的移动信号图标</string>
+    <string name="use_old_mobiletype_summary">使用Android O或更老的移动信号图标\n系统界面将会重启</string>
     <!-- System theme -->
+    <string name="theme_category_title">系统甜化剂</string>
     <string name="systemui_theme_style_title">系统界面主题</string>
     <string name="systemui_theme_style_auto">自动 (基于壁纸)</string>
     <string name="systemui_theme_style_light">白巧克力</string>
     <string name="systemui_theme_style_dark">黑巧克力</string>
     <string name="systemui_theme_style_blackaf">黑甘草</string>
+    <string name="applying_theme_toast">正在甜化主题，请稍等…</string>
+    <string name="disable_themes_installed_title">糖果甜化剂已停止使用，以避免与 Substratum 发生冲突。如果您希望使用系统内置主题, 请卸载 Substratum。</string>
+    <string name="disable_accents_installed_title">口味选择器不可用，以避免和 Substratum 发生冲突。如果要使用口味选择器, 请卸载 Substratum。</string>
+    <string name="accent_picker_dialog_title">选择一个强调色</string>
     <string name="theme_accent_picker_title">颜色</string>
     <!-- AboutCandy-->
     <!-- Power Menu -->
@@ -465,11 +472,28 @@
     <!-- MultiTouch Gestures -->
     <string name="multi_touch_gesture_preference_title">多重触摸手势</string>
     <string name="multi_touch_gestures_summary">配置自定义全局手势</string>
+    <string name="multi_touch_gestures_fingers_title">手势使用时的手指数量</string>
+    <string name="multi_touch_gestures_right_title">右手势</string>
+    <string name="multi_touch_gestures_left_title">左手势</string>
+    <string name="multi_touch_gestures_up_title">向上手势</string>
+    <string name="multi_touch_gestures_down_title">向下手势</string>
     <string name="multi_touch_gesture_disabled">禁用</string>
+    <string name="multi_touch_gesture_back">返回</string>
+    <string name="multi_touch_gesture_home">主页</string>
     <string name="multi_touch_gesture_recents">最近任务</string>
     <string name="multi_touch_gesture_power">电源</string>
+    <string name="multi_touch_gesture_volume_down">调低音量</string>
+    <string name="multi_touch_gesture_volume_up">调高音量</string>
+    <string name="multi_touch_gesture_volume_mute">静音</string>
     <string name="multi_touch_gesture_screenshot">截屏</string>
+    <string name="multi_touch_gesture_media_play_pause">播放/暂停媒体</string>
+    <string name="multi_touch_gesture_media_skip">下一个媒体</string>
+    <string name="multi_touch_gesture_media_previous">上一个媒体</string>
+    <string name="multi_touch_gesture_customapp">启动应用程序</string>
+    <string name="multi_touch_gesture_launch">启动</string>
     <!-- Hide Apps from Recents -->
+    <string name="hide_apps_from_recents_title">从最近任务中隐藏应用程序</string>
+    <string name="hide_apps_from_recents_summary">防止应用在最近任务中出现</string>
     <string name="hide_from_recents_add_app">添加应用</string>
     <string name="title_activity_carbon_recents_settings">最近任务</string>
 </resources>
