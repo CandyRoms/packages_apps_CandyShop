@@ -26,8 +26,18 @@
     <!-- Category titles -->
     <string name="button_category_title">Tasti</string>
     <string name="media_options_category_title">Opzioni multimediali</string>
+    <string name="lockscreen_security_category_title">Opzioni di sicurezza</string>
     <string name="lockscreen_icons_category_title">Collegamenti parte bassa lockscreen</string>
+    <string name="lockscreen_clock_category_title">Stile Data e ora</string>
+    <string name="lockscreen_other_category_title">Altro</string>
+    <string name="statusbar_options_category_title">Impostazioni barra di stato</string>
+    <string name="multitasking_category_title">Multi-Tasking</string>
+    <string name="screen_capture_options_category_title">Opzioni di cattura schermo</string>
+    <string name="miscellaneous_category_title">Varie</string>
     <!-- Fragments -->
+    <string name="headset_title">Auricolari</string>
+    <string name="button_title">Tasti Volume</string>
+    <string name="quicksettings_title">Impostazioni rapide</string>
     <!-- Fragment summaries -->
     <!-- Power Menu -->
     <!-- System theme -->
@@ -116,6 +126,7 @@
     <!-- Option to show brightness bar in quick settings -->
     <string name="show_brightness_title">Slider luminosità</string>
     <!-- Hide Lockscreen clock, date, & alarm -->
+    <string name="lockscreen_items_other">Altro</string>
     <string name="lockscreen_date_selection_title">Stile data</string>
     <!-- Hide lockscreen status bar, clock, date, alarm -->
     <!-- Fingerprint authentication vibration -->
