@@ -17,8 +17,15 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Tabs -->
+    <string name="system_category">Sistema</string>
+    <string name="quicksettings_category">Impostazioni rapide</string>
+    <string name="lockscreen_category">Blocco schermo</string>
+    <string name="statusbar_category">Barra di Stato</string>
+    <string name="multitasking_category">Multi-Tasking</string>
     <!-- CandyShop menu title -->
     <!-- Category titles -->
+    <string name="button_category_title">Tasti</string>
+    <string name="media_options_category_title">Opzioni multimediali</string>
     <string name="lockscreen_icons_category_title">Collegamenti parte bassa lockscreen</string>
     <!-- Fragments -->
     <!-- Fragment summaries -->
@@ -170,6 +177,7 @@
     <string name="slim_blacklist_add_apps_summary">Tap qui per aggiungere, tap su un\'app aggiunta per rimuoverla</string>
     <!-- Navbar -->
     <!-- Navigation -->
+    <string name="buttons_title">Tasti</string>
     <!-- DUI -->
     <!-- Gesture Anywhere -->
     <!-- Label, button used to add a gesture -->
