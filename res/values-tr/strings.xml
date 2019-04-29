@@ -22,6 +22,7 @@
     <!-- System -->
     <!-- Lockscreen -->
     <!-- Statusbar -->
+    <string name="notifications_title">Bildirimler</string>
     <!-- Navigation -->
     <!-- Multitasking -->
     <!-- Button brightness -->
