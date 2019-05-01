@@ -288,7 +288,16 @@
     <string name="incall_vibration_options_title">Вибрация во время звонка</string>
     <string name="incall_vibration_options_summary">Параметры вибрации при вызове</string>
     <string name="incall_vibration_category">Уведомления при звонке</string>
+    <string name="incall_vibrate_connect_title">Вибрация при подключении</string>
+    <string name="incall_vibrate_call_wait_title">Вибрировать при ожидании вызова</string>
+    <string name="incall_vibrate_disconnect_title">Вибрация при отключении</string>
     <!-- Audio Panel view  -->
+    <string name="audio_panel_view">Ползунок панели громкости</string>
+    <string name="audio_panel_view_media_title">Медиа</string>
+    <string name="audio_panel_view_ringer_title">Звонок</string>
+    <string name="audio_panel_view_notification_title">Уведомления</string>
+    <string name="audio_panel_view_alarm_title">Будильник</string>
+    <string name="audio_panel_view_voice_title">Голос</string>
     <!-- Volume Panel on Left -->
     <!-- Weather -->
     <!-- Volume keys control ring tone stream -->
@@ -302,6 +311,7 @@
     <string name="toast_none_animation">Ни какие</string>
     <string name="toast_default_animation">По умолчанию</string>
     <!-- Smart Clock -->
+    <string name="use_smart_clock_summary">Показывать часы в строке состояния периодически</string>
     <!-- Lockscreen clock styles -->
     <string name="lockscreen_clock_selection_digital">По умолчанию</string>
     <string name="lockscreen_clock_selection_text">Текст</string>
