@@ -137,6 +137,8 @@
     <string name="clock_date_string_edittext_title">Должен быть в DateFormat, например MM/dd/yy</string>
     <string name="clock_date_string_edittext_summary">Введите значение</string>
     <!-- Old Style Mobile -->
+    <string name="use_old_mobiletype_title">Использовать старый значок сети</string>
+    <string name="use_old_mobiletype_summary">Использовать значки сети из Oreo и ранее\nSystemUI будет перезапущен</string>
     <!-- System theme -->
     <string name="systemui_theme_style_title">Тема интерфейса</string>
     <string name="systemui_theme_style_auto">Автоматическая (на основе обоев)</string>
@@ -349,8 +351,27 @@
     <!--Double Tap to Sleep Statusbar-->
     <string name="double_tap_sleep_gesture_title">Двойное касание по строке состояния для перехода в режим сна</string>
     <!-- MultiTouch Gestures -->
+    <string name="multi_touch_gesture_preference_title">Мультитач жесты</string>
+    <string name="multi_touch_gestures_summary">Настройка пользовательских глобальных жестов</string>
+    <string name="multi_touch_gestures_fingers_title">Количество пальцев, используемых для жеста</string>
+    <string name="multi_touch_gestures_right_title">Жест вправо</string>
+    <string name="multi_touch_gestures_left_title">Жест влево</string>
+    <string name="multi_touch_gestures_up_title">Жест вверх</string>
+    <string name="multi_touch_gestures_down_title">Жест вниз</string>
     <string name="multi_touch_gesture_disabled">Отключено</string>
+    <string name="multi_touch_gesture_back">Назад</string>
+    <string name="multi_touch_gesture_home">Домой</string>
+    <string name="multi_touch_gesture_volume_down">Уменьшить громкость</string>
+    <string name="multi_touch_gesture_volume_up">Увеличить громкость</string>
+    <string name="multi_touch_gesture_volume_mute">Отключить звук</string>
     <string name="multi_touch_gesture_screenshot">Скриншот</string>
+    <string name="multi_touch_gesture_media_play_pause">Воспроизведение/пауза трека</string>
+    <string name="multi_touch_gesture_media_skip">Следующий трек</string>
+    <string name="multi_touch_gesture_media_previous">Предыдущий трек</string>
+    <string name="multi_touch_gesture_customapp">Запустить приложение</string>
+    <string name="multi_touch_gesture_launch">Запустить</string>
     <!-- Hide Apps from Recents -->
+    <string name="hide_apps_from_recents_title">Скрыть приложения из недавних</string>
+    <string name="hide_apps_from_recents_summary">Запретить приложениям появляться в недавних</string>
     <string name="hide_from_recents_add_app">Добавить приложение</string>
 </resources>
