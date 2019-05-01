@@ -253,16 +253,27 @@
     <string name="show_carrier_enabled">На экране блокировки и в строке состояния</string>
     <string name="carrier_label_warning_text">Обратите внимание, что пользовательское название оператора не отображается на панели быстрых настроек. Кроме того, использование эмоджи в качестве названия оператора может вызвать проблемы с отображением на более светлых фонах.</string>
     <!-- Candy logo -->
+    <string name="candy_logo_title">Логотип Candy</string>
+    <string name="candy_logo_summary">Покажите всем, что вы используете Candy, когда они видят ваш экран</string>
     <!-- Tiles animation/interpolator style  -->
+    <string name="qs_animation_options_title">Анимации плиток быстрых настроек</string>
     <string name="qs_tile_animation_style_flip">Кувырок</string>
     <string name="qs_tile_animation_duration_default">По умолчанию</string>
     <string name="qs_tile_animation_duration_fast">Быстрый</string>
     <!-- Ambient display music ticker -->
     <string name="force_ambient_for_media_pref_summary">Информация о текущем треке в режиме «Ambient Display»</string>
+    <string name="ambient_ticker_footer">«Сейчас играет» отображает проигрываемый музыкальный трек на Ambient display.\n\nТакже срабатывает при выключенном Ambient display во время запуска нового трека, показывая пустой Ambient display с информацией о треке в центре экрана.\n\nВы также можете пропустить трек двойным нажатем на нём.\n\nЕсли у вас есть Pixel, включите функцию «Сейчас играет» и её нотификации в системных настройках звука. Ambient Music Ticker также будет работать с этой функцией.</string>
     <string name="force_ambient_for_media_title">Включена</string>
     <!-- Network traffic -->
+    <string name="network_traffic_state_title">Индикатор сетевого трафика</string>
+    <string name="network_traffic_state_summary">Показать загрузку &amp; скорость загрузки сети</string>
     <string name="network_traffic_autohide_threshold_title">Порог сетевой активности (KB/s)</string>
+    <string name="network_traffic_location_title">Расположение индикатора трафика</string>
+    <string name="network_traffic_location_summary">Расположение индикатора в строке состояния или заголовке быстрых настроек (рекомендуется для устройств с вырезами)</string>
     <string name="network_traffic_statusbar">Строка состояния</string>
+    <string name="network_traffic_header">Заголовок быстрых настроек</string>
+    <string name="network_traffic_hidearrow">Скрыть стрелки</string>
+    <string name="network_traffic_hidearrow_summary">Скрыть стрелки индикатора сетевого трафика</string>
     <!-- Recents mods -->
     <string name="recents_icon_pack_title">Набор значков</string>
     <string name="recents_icon_pack_summary">Применить пользовательский набор значков для панели недваних приложений</string>
@@ -270,7 +281,13 @@
     <string name="dialog_pick_iconpack_title">Выберите набор значков</string>
     <string name="default_iconpack_title">Значки по умолчанию</string>
     <!-- Lockscreen items -->
+    <string name="lockscreen_clock_summary">Показывать виджет часов на экране блокировки</string>
+    <string name="lockscreen_info_title">Информация под часами</string>
+    <string name="lockscreen_info_summary">Показывать дату, будильник, погоду и дзен на экране блокировки</string>
     <!-- Incall vibrate options -->
+    <string name="incall_vibration_options_title">Вибрация во время звонка</string>
+    <string name="incall_vibration_options_summary">Параметры вибрации при вызове</string>
+    <string name="incall_vibration_category">Уведомления при звонке</string>
     <!-- Audio Panel view  -->
     <!-- Volume Panel on Left -->
     <!-- Weather -->
