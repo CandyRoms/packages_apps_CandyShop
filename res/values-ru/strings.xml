@@ -369,9 +369,22 @@
     <string name="task_close_title">Анимация заткрытия задачи</string>
     <string name="task_move_to_front_title">Анимация перемещения на передний план</string>
     <string name="task_move_to_back_title">Анимация движения назад</string>
+    <string name="task_open_behind_title">Открыть за анимацией</string>
+    <string name="wallpaper_open_title">Анимация открытия обоев</string>
+    <string name="wallpaper_close_title">Анимация закрытия обоев</string>
+    <string name="wallpaper_intra_open_title">Внутр. анимация открытия обоев</string>
+    <string name="wallpaper_intra_close_title">Внутр. анимация закрытия обоев</string>
+    <string name="title_animation_no_override">Предотвратить переопределение приложения</string>
+    <string name="summary_animation_no_override">Предотвратить переопределение переходов приложением</string>
     <string name="animation_duration_default">По умолчанию</string>
     <!-- Animations -->
+    <string name="scroll_title">Прокрутка</string>
+    <string name="misc_animation_title">Разная анимация</string>
+    <string name="tile_animation_title">Анимация плиток</string>
+    <string name="list_animation_title">Анимация при прокрутке</string>
+    <string name="system_keyguard_animation_title">Анимация системы и клавиатуры</string>
     <!-- Screen Off animation -->
+    <string name="screen_off_animation_title">Анимация выключения экрана</string>
     <string name="screen_off_animation_fade">По умолчанию</string>
     <!-- Toast Animation -->
     <string name="toast_none_animation">Ни какие</string>
