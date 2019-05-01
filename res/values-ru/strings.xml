@@ -82,6 +82,10 @@
     <!-- Color Picker -->
     <string name="dialog_color_picker">Выбор цвета</string>
     <string name="press_color_to_apply">Нажмите на цвет ниже, чтобы применить</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
     <string name="set">Выбрать</string>
     <string name="color_default">По умолчанию</string>
     <!-- Fingerprint unlock keystore -->
@@ -386,10 +390,31 @@
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Анимация выключения экрана</string>
     <string name="screen_off_animation_fade">По умолчанию</string>
+    <string name="screen_off_animation_color">Затухание цвета</string>
+    <string name="screen_off_animation_crt">Эффект старого телевизора</string>
+    <string name="screen_off_animation_scale">Масштаб</string>
     <!-- Toast Animation -->
+    <string name="toast_animation_title">Анимация всплывающих уведомлений</string>
     <string name="toast_none_animation">Ни какие</string>
     <string name="toast_default_animation">По умолчанию</string>
+    <string name="toast_fade_animation">Затухание</string>
+    <string name="toast_SlideRight_animation">Сдвиг вправо</string>
+    <string name="toast_SlideLeft_animation">Сдвиг влево</string>
+    <string name="toast_Xylon_animation">Ксилон</string>
+    <string name="toast_Toko_animation">Токо</string>
+    <string name="toast_Tn_animation">Tn</string>
+    <string name="toast_Honami_animation">Хонами</string>
+    <string name="toast_FastFade_animation">Быстрое затухание</string>
+    <string name="toast_GrowFade_animation">Растущее затухание</string>
+    <string name="toast_GrowFadeCenter_animation">Постепенное затухание от центра</string>
+    <string name="toast_GrowFadeBottom_animation">Постепенное затухание вниз</string>
+    <string name="toast_Translucent_animation">Полупрозрачный</string>
+    <string name="toast_SlideLeftRight_animation">Сдвиг слева направо</string>
+    <string name="toast_SlideRightLeft_animation">Слайд справа налево</string>
+    <string name="toast_animation_test">Тест анимации всплывающих уведомлений</string>
+    <string name="toast">Всплывающее уведомление</string>
     <!-- Smart Clock -->
+    <string name="use_smart_clock">Умные часы</string>
     <string name="use_smart_clock_summary">Показывать часы в строке состояния периодически</string>
     <!-- Lockscreen clock styles -->
     <string name="lockscreen_clock_selection_digital">По умолчанию</string>
