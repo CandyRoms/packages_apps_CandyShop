@@ -57,18 +57,28 @@
     <string name="animations_summary">Параметры анимации</string>
     <!-- Fragment summaries -->
     <string name="power_button_preference_summary">Жест клавиши питания и настройки меню перезагрузки</string>
+    <string name="navigationbar_settings_summary">- Панель навигации\n- Умный Бар\n- Fling</string>
+    <string name="hwkeys_options_summary">ПРИМЕЧАНИЕ. Это зависит от устройства!\n- Перераспределение аппаратных клавиш\n- Отключение аппаратных кнопок\n- Поменять местами Недавние и Назад\n- Яркость подсветки кнопок\n- Время подсветки кнопок\n- Подсветка кнопок при нажатии клавиш</string>
+    <string name="carrier_label_summary">Настроить своё имя оператора</string>
     <!-- Buttons -->
     <string name="volbtn_down_zen_title">Громкость вниз для «Не беспокоить»</string>
     <string name="volbtn_down_zen_summary">Включать режим «Не беспокоить» при уменьшении громкости</string>
     <string name="volbtn_up_zen_title">Громкость вверх для «Не беспокоить»</string>
     <string name="volbtn_up_zen_summary">Отключать режим «Не беспокоить» при увеличении громкости</string>
     <string name="swap_volume_buttons">Менять местами кнопки громкости при повороте экрана</string>
+    <string name="volume_keys_swap_summary">Клавиши регулировки громкости +/- меняются при повороте устройства в горизонтальную ориентацию</string>
     <string name="volume_keys_control_media_stream_title">Управление громкостью мультимедиа</string>
     <string name="volume_keys_control_media_stream_summary">Клавиши регулировки громкости управляют медиа</string>
     <string name="volume_rocker_music_controls_title">Управление плеером</string>
     <string name="volume_rocker_music_controls_summary">Переключать треки долгим нажатием кнопок громкости при выключенном экране</string>
     <!-- QuickSettings -->
     <!-- Quick Settings brightness icon -->
+    <string name="brightness_icon_title">Инонка автояркости</string>
+    <string name="brightness_icon_summary">Показывать кнопку автояркости</string>
+    <string name="qs_auto_brightness_right_title">Значок автояркости справа</string>
+    <string name="qs_auto_brightness_right_summary">Показать иконку справа от ползунка яркости</string>
+    <string name="qs_show_brightness_buttons_title">Кнопка управления яркостью</string>
+    <string name="qs_show_brightness_buttons_summary">Показывать кнопки рядом с слайдером яркости для её настройки</string>
     <!-- Color Picker -->
     <string name="dialog_color_picker">Выбор цвета</string>
     <string name="press_color_to_apply">Нажмите на цвет ниже, чтобы применить</string>
@@ -76,6 +86,7 @@
     <string name="color_default">По умолчанию</string>
     <!-- Fingerprint unlock keystore -->
     <!-- StatusBar Tuner -->
+    <string name="status_bar_tuner_title">Значки в строке состояния</string>
     <!-- Navbar tuner -->
     <!-- Bottom navigation gestures -->
     <!-- Three-fingers-swipe to screenshot -->
