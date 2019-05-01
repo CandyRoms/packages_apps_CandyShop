@@ -314,15 +314,40 @@
     <string name="use_smart_clock_summary">Показывать часы в строке состояния периодически</string>
     <!-- Lockscreen clock styles -->
     <string name="lockscreen_clock_selection_digital">По умолчанию</string>
+    <string name="lockscreen_clock_selection_du">Аналоговые (du)</string>
+    <string name="lockscreen_clock_selection_custom1">Аналоговый Candy логотип (темный)</string>
+    <string name="lockscreen_clock_selection_custom2">Аналоговый Candy light</string>
+    <string name="lockscreen_clock_selection_custom3">Аналоговый Candy dark</string>
     <string name="lockscreen_clock_selection_text">Текст</string>
     <!-- Power menu Animations  -->
+    <string name="power_menu_animation_title">Анимация меню питания</string>
+    <string name="power_menu_animation_summary">Изменить анимацию входа/выхода меню питания</string>
+    <string name="power_menu_animation_dialog_title">Выбор анимации меню питания</string>
+    <string name="power_menu_animation_aosp">AOSP (по умолчанию)</string>
+    <string name="power_menu_animation_bottom">Вниз</string>
+    <string name="power_menu_animation_top">Вверху</string>
+    <string name="power_menu_animation_xylon">Полет</string>
+    <string name="power_menu_animation_slide">Слайд</string>
+    <string name="power_menu_animation_turn">Поворот</string>
+    <string name="power_menu_animation_fly">Свечение</string>
+    <string name="power_menu_animation_card">3D</string>
+    <string name="power_menu_animation_translucent_top">Полупрозрачная (сверху)</string>
+    <string name="power_menu_animation_translucent_bottom">Полупрозрачная (снизу)</string>
     <!-- Call notifications -->
+    <string name="call_notifications_cat">Параметры уведомлений вызова</string>
+    <string name="flashlight_on_call_title">Мигание фонарика при звонке</string>
     <string name="flashlight_on_call_disabled">Отключено</string>
+    <string name="flashlight_on_call_not_dnd">Мигание фонарика только в режиме вызовов</string>
+    <string name="flashlight_on_call_dnd">Мигание фонарика только в режиме \"Не беспокоить\"</string>
+    <string name="flashlight_on_call_always">Фонарик мигает всегда</string>
     <!-- Fingerprint settings-->
+    <string name="fingerprint_settings_title">Отпечаток пальца</string>
+    <string name="fingerprint_category_custom_icon">Свой значок</string>
     <!-- fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">Отпечаток пальца</string>
     <string name="fprint_sucess_vib_summary">Вибрировать при успешном распознавании отпечатка пальца</string>
     <!--Double Tap to Sleep Statusbar-->
+    <string name="double_tap_sleep_gesture_title">Двойное касание по строке состояния для перехода в режим сна</string>
     <!-- MultiTouch Gestures -->
     <string name="multi_touch_gesture_disabled">Отключено</string>
     <string name="multi_touch_gesture_screenshot">Скриншот</string>
