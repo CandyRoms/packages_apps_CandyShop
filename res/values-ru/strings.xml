@@ -147,17 +147,38 @@
     <string name="systemui_theme_style_dark">Темная</string>
     <string name="applying_theme_toast">Применение темы, пожалуйста, подождите...</string>
     <string name="disable_themes_installed_title">Системные темы конфликтуют с Substratum. Удалите его, если хотите и дальше использовать темы.</string>
+    <string name="disable_accents_installed_title">Управление шрифтом конфликтует с Substratum. Удалите его, если хотите и дальше использовать системное управление шрифтом.</string>
+    <string name="accent_picker_dialog_title">Выберите цвет акцента Candy</string>
+    <string name="theme_accent_picker_summary">Выберите цвет Candy</string>
+    <string name="theme_accent_picker_default">Восстановить значения по умолчанию</string>
+    <string name="accent_picker_material_colors">Material цвета</string>
+    <string name="accent_picker_custom_colors">Пользовательские цвета</string>
+    <string name="qs_styles_dialog_title">Выбор стиля плиток быстрых настроек</string>
     <!-- AboutCandy-->
+    <string name="dialog_about_candy_title">О CandyRoms</string>
+    <string name="candy_links_title">Полезные ссылки</string>
+    <string name="candy_team_title">Команда Candy</string>
     <!-- Power Menu -->
     <string name="powermenu_reboot_title">Перезагрузка</string>
     <string name="powermenu_advanced_reboot_title">Расширенная перезагрузка</string>
+    <string name="powermenu_advanced_reboot_summary">Включить расширенную перезагрузку для перезагрузки в рекавери или фастбут, перезагрузки системного интерфейса или быстрой перезагрузки</string>
     <string name="powermenu_screenshot_title">Скриншот</string>
     <string name="powermenu_airplane_title">Режим полета</string>
     <!-- Changelog -->
+    <string name="changelog_title">Список изменений</string>
+    <string name="changelog_summary">См. некоторые из недавних коммитов.</string>
+    <string name="changelog_error">Ошибка загрузки списка изменений</string>
     <!-- Toast app icon -->
+    <string name="toast_icon_title">Иконка всплывающего уведомления</string>
+    <string name="toast_icon_summary">Показать значок приложения, соответствующий тост-сообщению</string>
     <!-- Power menu on lockscreen -->
+    <string name="lockscreen_power_menu_disabled_title">Отключить меню кнопки питания на экране блокировки</string>
+    <string name="lockscreen_power_menu_disabled_summary">Эта опция отключит меню питания на экране блокировки</string>
     <!--Volume keys wake -->
+    <string name="volume_rocker_wake_title">Пробуждение кнопками громкости</string>
+    <string name="volume_rocker_wake_summary">Нажатие клавиш громкости разбудит ваше устройство</string>
     <!-- QS rows and columns -->
+    <string name="qs_rows_columns_title">Настройка панели быстрых настроек</string>
     <string name="qs_rows_portrait_title">Число рядов (портрет.)</string>
     <string name="qs_rows_landscape_title">Число рядов (альбом.)</string>
     <string name="qs_columns_portrait_title">Число столбцов (портрет.)</string>
@@ -166,6 +187,8 @@
     <!-- Disable QS on secure Lockscreen -->
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_title">Регулятор яркости</string>
+    <string name="qs_show_brightness_summary">Показывать регулятор яркости в панели быстрых настроек</string>
+    <string name="qs_brightness_position_bottom_title">Ползунок яркости внизу</string>
     <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">Фонарик по кнопке питания</string>
     <string name="torch_power_button_gesture_none">Отключено</string>
