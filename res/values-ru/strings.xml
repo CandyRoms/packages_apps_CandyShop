@@ -197,11 +197,15 @@
     <string name="hardware_keys_disable_title">Отключить кнопки</string>
     <!-- Swap navigation keys -->
     <string name="swap_navigation_keys_title">Поменять кнопки местами</string>
+    <string name="swap_navigation_keys_title_summary">Поменять местами кнопки назад и недавние</string>
     <!-- Screenshot editor -->
+    <string name="screenshot_edit_app">Приложение для изменения скриншотов</string>
+    <string name="screenshot_edit_app_summary">Выберите, какое приложение должно быть запущено при нажатии на кнопку редактирования в уведомлении скриншота</string>
     <string name="profile_choose_app">Выберите приложение</string>
     <string name="dialog_delete_title">Удалить</string>
     <string name="dialog_delete_message">Удалить выбранный элемент?</string>
     <!-- Gesture Anywhere -->
+    <string name="gesture_anywhere_summary">Нарисуйте ваши жесты для запуска выбранного приложения/действия</string>
     <!-- Label, button used to add a gesture -->
     <!-- Label, button used to reload all gestures -->
     <!-- Label, button used to cancel the operation of adding a gesture -->
@@ -223,16 +227,31 @@
     <!-- Label of gesture name field in Rename gesture dialog box -->
     <!-- Message, displayed when the sdcard cannot be found, 1st parameter is the name of the file that stores the gestures.  CHAR LIMIT=80 -->
     <!-- Force expanded notifications -->
+    <string name="force_expanded_notifications_title">Принудительно разворачивать уведомления</string>
+    <string name="force_expanded_notifications_summary">Доступно только для приложений, поддерживающих расширенные уведомления</string>
     <!-- CPU Info -->
+    <string name="show_cpu_info">Показывать информацию о процессоре</string>
+    <string name="show_cpu_info_summary">Показывать поверх экрана информацию о процессоре</string>
     <!-- Navbar Settings -->
+    <string name="enable_navigation_bar_summary">Опция включения или отключения панели навигации</string>
     <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Вибрация при касании</string>
+    <string name="quick_settings_vibrate_summary">Вибрировать при нажатии на плитки быстрых настроек</string>
     <!-- Media art -->
     <string name="media_art_title">Медиа-обложка</string>
     <!-- Bluetooth battery status -->
+    <string name="bluetooth_battery_title">Заряд Bluetooth-устройства</string>
+    <string name="bluetooth_battery_summary">Показывать заряд батареи подключенных Bluetooth-устройств, если доступно</string>
     <!-- Show LTE/4G switch -->
+    <string name="show_lte_fourgee_title">Значок сети 4G/LTE</string>
+    <string name="show_lte_fourgee_summary">Показывать 4G или LTE иконку в строке состояния</string>
     <!-- Carrier Label -->
+    <string name="custom_carrier_label_explain">Введите свое название. Оставьте пустым, чтобы использовать текущее имя сети</string>
     <string name="show_carrier_disabled">Отключено</string>
     <string name="show_carrier_keyguard">Экран блокировки</string>
+    <string name="show_carrier_statusbar">Строка состояния</string>
+    <string name="show_carrier_enabled">На экране блокировки и в строке состояния</string>
+    <string name="carrier_label_warning_text">Обратите внимание, что пользовательское название оператора не отображается на панели быстрых настроек. Кроме того, использование эмоджи в качестве названия оператора может вызвать проблемы с отображением на более светлых фонах.</string>
     <!-- Candy logo -->
     <!-- Tiles animation/interpolator style  -->
     <string name="qs_tile_animation_style_flip">Кувырок</string>
@@ -243,6 +262,7 @@
     <string name="force_ambient_for_media_title">Включена</string>
     <!-- Network traffic -->
     <string name="network_traffic_autohide_threshold_title">Порог сетевой активности (KB/s)</string>
+    <string name="network_traffic_statusbar">Строка состояния</string>
     <!-- Recents mods -->
     <string name="recents_icon_pack_title">Набор значков</string>
     <string name="recents_icon_pack_summary">Применить пользовательский набор значков для панели недваних приложений</string>
