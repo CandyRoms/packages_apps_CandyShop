@@ -18,16 +18,26 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Tabs -->
+    <string name="candyshop_category">Магазин Сладостей</string>
     <string name="system_category">Система</string>
     <string name="quicksettings_category">Быстрые настройки</string>
     <string name="lockscreen_category">Экран блокировки</string>
+    <string name="statusbar_category">Строка состояния</string>
+    <string name="stockroom_category">Склад</string>
+    <string name="battery_category">Значок батареи</string>
     <!-- Bottom Navigation -->
     <string name="system_bottom_nav_title">Система</string>
     <string name="lockscreen_bottom_nav_title">Экран блокировки</string>
+    <string name="statusbar_bottom_nav_title">Строка состояния</string>
+    <string name="stockroom_bottom_nav_title">Склад</string>
     <!-- CandyShop Aisles tab header text -->
+    <string name="system_aisle_header">Система - Проход 1</string>
+    <string name="lockscreen_aisle_header">Экран блокировки - Проход 2</string>
+    <string name="statusbar_aisle_header">Строка состояния - Проход 3</string>
     <!-- Category titles -->
     <string name="button_category_title">Кнопки</string>
     <string name="qs_cat_title">Панель быстрых настроек</string>
+    <string name="battery_style_category_title">Значок батареи</string>
     <string name="brightness_category_title">Регулятор яркости</string>
     <!-- Fragments -->
     <string name="quicksettings_title">Быстрые настройки</string>
