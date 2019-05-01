@@ -87,23 +87,44 @@
     <!-- Fingerprint unlock keystore -->
     <!-- StatusBar Tuner -->
     <string name="status_bar_tuner_title">Значки в строке состояния</string>
+    <string name="status_bar_tuner_summary">Изменить значки и параметры строки состояния</string>
     <!-- Navbar tuner -->
+    <string name="navbar_tuner_title">Изменить панель навигации</string>
+    <string name="navbar_tuner_summary">Изменить расположение панели навигации и кнопок</string>
     <!-- Bottom navigation gestures -->
+    <string name="gesture_settings_info">Панель навигации должна быть отключена!\n\nДоступны жесты:\n\nНазад\n- Свайп вверх слева или справа\n\nДомой\n- Свайп вверх по центру\n\nНедавние приложения\n\n- Свайп вверх по центру и удержание\n\nДолгое нажатие \"Домой\"\n- Короткий свайп вверх и удержание в центре</string>
+    <string name="use_bottom_gesture_title">Жесты навигации</string>
+    <string name="use_bottom_gesture_summary">Используйте жесты вверх-вниз для навигации</string>
     <!-- Three-fingers-swipe to screenshot -->
     <!-- Lockscreen tuner -->
+    <string name="lock_screen_shortcuts_title">Ярлыки на экране блокировки</string>
+    <string name="lock_screen_shortcuts_summary">Ярлыки в нижних углах экрана блокировки</string>
     <!-- Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Процент заряда батареи</string>
+    <string name="status_bar_battery_percentage_default">Скрыта</string>
+    <string name="status_bar_battery_percentage_text_next">Рядом со значком</string>
+    <string name="status_bar_battery_percentage_text_inside">Внутри значка</string>
     <!-- Status bar battery style-->
+    <string name="status_bar_battery_style_title">Стиль значка батареи</string>
     <string name="status_bar_battery_style_port">Вертикальный</string>
     <string name="status_bar_battery_style_circle">Круглый значок</string>
     <string name="status_bar_battery_style_big_circle">Большой круг</string>
     <string name="status_bar_battery_style_dotted_circle">Пунктирный круг</string>
     <string name="status_bar_battery_style_big_dotted_circle">Большой пунктирный круг</string>
     <string name="status_bar_battery_style_text">Текст</string>
+    <string name="status_bar_battery_style_hidden">Скрыта</string>
     <!-- Statusbar Clock -->
+    <string name="status_bar_clock">Часы и дата</string>
     <string name="status_bar_clock_summary">Пользовательские настройки расположения часов и даты</string>
+    <string name="status_bar_clock_show">Отображать часы и дату</string>
+    <string name="status_bar_show_clock_title">Отображать часы и дату</string>
     <string name="status_bar_clock_style_right">Справа</string>
     <string name="status_bar_clock_style_left">Слева</string>
+    <string name="status_bar_am_pm_title">Стиль AM/PM</string>
     <string name="status_bar_am_pm_info">Включен 24-часовой формат времени</string>
+    <string name="status_bar_am_pm_small">Маленький</string>
+    <string name="status_bar_am_pm_hidden">Скрытый (по умолчанию)</string>
+    <string name="clock_seconds_display">Отображать секунды</string>
     <string name="clock_date_display_summary">Отображать дату перед часами</string>
     <string name="clock_date_display_none">Не отображать</string>
     <string name="clock_date_display_small">Мелкий шрифт</string>
@@ -158,10 +179,13 @@
     <!-- General messages -->
     <string name="reset">Сброс</string>
     <!-- Keyboard and IME  -->
+    <string name="ime_switcher_notify_summary">Показывать уведомление выбора способа ввода</string>
     <!-- Incall Home button behavior-->
     <!-- Buttons backlight timeout -->
     <!-- Enable keys backlight-->
     <!-- Enable keys backlight-->
+    <string name="button_brightness_sw_title">Включить подсветку кнопок</string>
+    <string name="button_backlight_on_touch_only_title">Подсвечивать кнопки при нажатии </string>
     <!-- HW Keys customization -->
     <string name="picker_activities">Действия</string>
     <string name="select_custom_app_title">Выберите пользовательское приложение</string>
@@ -170,7 +194,9 @@
     <string name="action_entry_default_action">Настройки по умолчанию</string>
     <string name="action_entry_select_app">Выберите приложение </string>
     <string name="action_entry_custom_action">Выберите пользовательское действие</string>
+    <string name="hardware_keys_disable_title">Отключить кнопки</string>
     <!-- Swap navigation keys -->
+    <string name="swap_navigation_keys_title">Поменять кнопки местами</string>
     <!-- Screenshot editor -->
     <string name="profile_choose_app">Выберите приложение</string>
     <string name="dialog_delete_title">Удалить</string>
