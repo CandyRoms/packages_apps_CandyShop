@@ -189,24 +189,46 @@
     <string name="qs_show_brightness_title">Регулятор яркости</string>
     <string name="qs_show_brightness_summary">Показывать регулятор яркости в панели быстрых настроек</string>
     <string name="qs_brightness_position_bottom_title">Ползунок яркости внизу</string>
+    <string name="qs_brightness_position_bottom_summary">Показывать ползунок яркости внизу быстрых настроек</string>
     <!-- Torch Power button gestures -->
     <string name="torch_power_button_gesture_title">Фонарик по кнопке питания</string>
     <string name="torch_power_button_gesture_none">Отключено</string>
+    <string name="torch_power_button_gesture_dt_toast">Двойной жест для запуска камеры теперь отключен</string>
     <string name="torch_power_button_gesture_lp">Удержание при выключенном экране</string>
     <!-- Toggle for face auto unlock -->
     <!-- Notification with screen on -->
+    <string name="notification_sound_vib_screen_on_title">Надоедливые уведомления при включенном экране</string>
+    <string name="notification_sound_vib_screen_on_summary">Воспроизведение звука и вибрации для уведомлений при включенном экране</string>
     <!-- Screenshot sound -->
+    <string name="screenshot_shutter_sound_summary">Отключить звук скриншота</string>
     <!--Double Tap to Sleep Lockscreen-->
     <string name="double_tap_sleep_lockscreen">Двойное нажатие по экрану блокировки для сна</string>
     <!--Quick pulldown-->
     <string name="status_bar_quick_qs_pulldown">Быстрый доступ</string>
     <string name="status_bar_quick_qs_pulldown_summary">Правый угол строки состояния открывает панель быстрых настроек</string>
     <!-- Onehand UI mode -->
+    <string name="one_hand_mode_title">Режим «Управление одной рукой»</string>
+    <string name="one_hand_mode_summary">Включение свайпом вправо или влево по панели навигации</string>
     <!-- Lockscreen visualizer -->
     <!-- Custom Seek bar -->
+    <string name="edit_hint">Значение</string>
+    <string name="seek_value_edit_label">Установленное значение</string>
     <!-- General messages -->
     <string name="reset">Сброс</string>
+    <string name="attention">Внимание!</string>
     <!-- Keyboard and IME  -->
+    <string name="disable_fullscreen_keyboard_title">Отключить клавиатуру в полноэкранном режиме</string>
+    <string name="disable_fullscreen_keyboard_summary">В ландшафтном режиме клавиатура не будет разворачиваться в полный экран</string>
+    <string name="keyboard_rotation_toggle_title">Автоповорот клавиатуры</string>
+    <string name="keyboard_rotation_toggle_summary">Принудительный поворот экрана, когда показывается клавиатура</string>
+    <string name="keyboard_rotation_timeout_title">Задержка при повороте</string>
+    <string name="keyboard_rotation_timeout_summary">Отключить датчик автоповорота на <xliff:g id="rotate_timeout">%1$s</xliff:g> секунд после скрытия клавиатуры</string>
+    <string name="keyboard_rotation_dialog">Эта функция включает автоповорот на время отображения клавиатуры. В ней нет смысла при включенном автоповороте экрана.</string>
+    <string name="show_enter_key_title">Показывать кнопку ввода</string>
+    <string name="show_enter_key_summary">Принудительно показывать клавишу \"Ввод\" вместо клавиши со смайликами</string>
+    <string name="keyboard_ime_title">Настройки IME</string>
+    <string name="keyboard_ime_summary">Расширенные настройки IME</string>
+    <string name="ime_switcher_notify">Уведомление о выборе метода ввода</string>
     <string name="ime_switcher_notify_summary">Показывать уведомление выбора способа ввода</string>
     <!-- Incall Home button behavior-->
     <!-- Buttons backlight timeout -->
@@ -326,7 +348,9 @@
     <string name="audio_panel_view_notification_title">Уведомления</string>
     <string name="audio_panel_view_alarm_title">Будильник</string>
     <string name="audio_panel_view_voice_title">Голос</string>
+    <string name="audio_panel_view_bt_sco_title">Bluetooth</string>
     <!-- Volume Panel on Left -->
+    <string name="volume_panel_on_left_title">Панель регулировки громкости слева</string>
     <!-- Weather -->
     <!-- Volume keys control ring tone stream -->
     <!-- In-call vibration options -->
