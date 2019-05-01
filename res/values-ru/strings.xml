@@ -351,10 +351,24 @@
     <string name="audio_panel_view_bt_sco_title">Bluetooth</string>
     <!-- Volume Panel on Left -->
     <string name="volume_panel_on_left_title">Панель регулировки громкости слева</string>
+    <string name="volume_panel_on_left_summary">Изменить расположение панели регулировки громкости с правой стороны на левую</string>
     <!-- Weather -->
+    <string name="weather_unit">Единицы измерения температуры</string>
+    <string name="weather_unit_summary">(Цельсий/Фаренгейт)</string>
     <!-- Volume keys control ring tone stream -->
+    <string name="volume_keys_control_ring_tone_title">Управление громкостью звонка</string>
+    <string name="volume_keys_control_ring_tone_summary">По умолчанию клавиши управляют громкостью мультимедиа. Включите, чтобы управлять громкостью мелодии звонка.</string>
     <!-- In-call vibration options -->
+    <string name="incall_notifications_vibrate">Вибрировать при уведомлении</string>
     <!-- AOKP custom system animations -->
+    <string name="system_animation_title">Системные анимации</string>
+    <string name="system_animation_summary">Настройте анимацию для каждого окна в системе</string>
+    <string name="activity_open_title">Анимация открытия</string>
+    <string name="activity_close_title">Анимация закрытия</string>
+    <string name="task_open_title">Анимация открытия задачи</string>
+    <string name="task_close_title">Анимация заткрытия задачи</string>
+    <string name="task_move_to_front_title">Анимация перемещения на передний план</string>
+    <string name="task_move_to_back_title">Анимация движения назад</string>
     <string name="animation_duration_default">По умолчанию</string>
     <!-- Animations -->
     <!-- Screen Off animation -->
