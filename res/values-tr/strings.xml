@@ -18,58 +18,11 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Tabs -->
-    <string name="system_category">Sistem</string>
-    <string name="quicksettings_category">Hızlı Ayarlar</string>
-    <string name="lockscreen_category">Kilit Ekranı</string>
     <!-- Bottom Navigation -->
-    <string name="system_bottom_nav_title">Sistem</string>
-    <string name="lockscreen_bottom_nav_title">Kilit Ekranı</string>
     <!-- CandyShop Aisles tab header text -->
-    <string name="candyshop_summary_title">Bize biraz şeker al!</string>
     <!-- Category titles -->
-    <string name="button_category_title">Düğmeler</string>
-    <string name="media_options_category_title">Medya Seçenekleri</string>
-    <string name="sleep_controls_category_title">Uyku denetimleri</string>
-    <string name="lockscreen_security_category_title">Güvenlik Seçenekleri</string>
-    <string name="lockscreen_clock_category_title">Saat ve tarih biçimi</string>
-    <string name="lockscreen_other_category_title">Diğer</string>
-    <string name="statusbar_options_category_title">Durum Çubuğu ayarları</string>
-    <string name="multitasking_category_title">Çoklu Görev</string>
-    <string name="screen_capture_options_category_title">Ekran yakalama seçenekleri</string>
-    <string name="miscellaneous_category_title">Çeşitli</string>
     <!-- Fragments -->
-    <string name="headset_title">Kulaklık</string>
-    <string name="button_title">Ses düğmeleri</string>
-    <string name="power_button_title">Güç düğmesi</string>
-    <string name="quicksettings_title">Hızlı ayarlar</string>
-    <string name="torch_title">Güç düğmesi</string>
-    <string name="battery_title">Pil ayarları</string>
-    <string name="leds_title">Işıklar</string>
-    <string name="network_traffic_title">İnternet Trafiği </string>
-    <string name="notification_light_settings">Bildirimler ışığı</string>
-    <string name="powermenu_title">Güç menüsü</string>
-    <string name="navbar_title">Gezinti çubuğu</string>
-    <string name="notifications_title">Bildirimler</string>
-    <string name="various_system_title">Çeşitli</string>
-    <string name="various_lockscreen_title">Çeşitli</string>
-    <string name="various_statusbar_title">Çeşitli</string>
-    <string name="various_navigation_title">Çeşitli</string>
-    <string name="recent_settings_title">Son Uygulamalar</string>
-    <string name="status_bar_clock_title">Saat Ayarları</string>
     <!-- Fragment summaries -->
-    <string name="headset_preference_summary">Kulaklık bağlantı seçenekleri</string>
-    <string name="buttons_preference_summary">Ses seviyesi anahtarı davranış seçenekleri</string>
-    <string name="powermenu_preference_summary">Güç menüsü seçeneklerinin yapılandırılması</string>
-    <string name="leds_preference_summary">Pil ve bildirim LED ışığı seçenekleri</string>
-    <string name="ls_shortcuts_preference_summary">Ekran kilidi düğmesi kısayol seçenekleri</string>
-    <string name="clock_preference_summary">Saat ve tarih görüntüleme seçenekleri</string>
-    <string name="battery_preference_summary">Simge ve yüzde oranının görüntüsünü değiştir</string>
-    <string name="net_traffic_preference_summary">Durum çubuğu ağ trafiği seçenekleri</string>
-    <string name="qs_preference_summary">Fayans, çabuk açılanma, parlaklık, şeffaflık seçenekleri</string>
-    <string name="statusbar_preference_summary">Durum çubuğu simgesi görüntüleme seçenekleri</string>
-    <string name="recents_preference_summary">AOSP yenilikleri ve SlimRecents seçenekleri</string>
-    <string name="ga_preference_summary">Ekranı açmak için hareket başlatıcı seçenekleri</string>
-    <string name="custom_carrier_label_preference_summary">Durum çubuğu metni özelleştirmeleri</string>
     <!-- Buttons -->
     <!-- QuickSettings -->
     <!-- Quick Settings brightness icon -->
@@ -87,10 +40,6 @@
     <!-- System theme -->
     <!-- AboutCandy-->
     <!-- Power Menu -->
-    <string name="powermenu_reboot_title">Yeniden Başlat</string>
-    <string name="powermenu_advanced_reboot_title">Gelişmiş yeniden başlatma</string>
-    <string name="powermenu_screenshot_title">Ekran görüntüsü al</string>
-    <string name="powermenu_airplane_title">Uçak modu</string>
     <!-- Changelog -->
     <!-- Toast app icon -->
     <!-- Power menu on lockscreen -->
@@ -99,9 +48,6 @@
     <!-- Disable QS on secure Lockscreen -->
     <!-- Quick Settings brightness slider -->
     <!-- Torch Power button gestures -->
-    <string name="torch_power_button_gesture_title">Ekran kapalı iken güç tuşu ile feneri aç</string>
-    <string name="torch_power_button_gesture_dt">El fenerini açmak için güç tuşuna iki kez hafifçe dokunun (tek dokunuşa küçük bir gecikme ekleyecektir)</string>
-    <string name="torch_power_button_gesture_lp">El fenerini açmak için güç tuşuna uzun basın</string>
     <!-- Toggle for face auto unlock -->
     <!-- Notification with screen on -->
     <!-- Screenshot sound -->
@@ -146,7 +92,6 @@
     <!-- Bluetooth battery status -->
     <!-- Show LTE/4G switch -->
     <!-- Carrier Label -->
-    <string name="show_carrier_keyguard">Kilit Ekranı</string>
     <!-- Candy logo -->
     <!-- Tiles animation/interpolator style  -->
     <!-- Ambient display music ticker -->
@@ -171,8 +116,5 @@
     <!-- fingerprint authentication vibration -->
     <!--Double Tap to Sleep Statusbar-->
     <!-- MultiTouch Gestures -->
-    <string name="multi_touch_gesture_recents">Son Uygulamalar</string>
-    <string name="multi_touch_gesture_screenshot">Ekran görüntüsü al</string>
     <!-- Hide Apps from Recents -->
-    <string name="title_activity_carbon_recents_settings">Son Uygulamalar</string>
 </resources>
