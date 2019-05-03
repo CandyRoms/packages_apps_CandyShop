@@ -18,12 +18,29 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Tabs -->
+    <string name="system_category">Sistema</string>
+    <string name="quicksettings_category">Impostazioni rapide</string>
+    <string name="lockscreen_category">Blocco schermo</string>
     <!-- Bottom Navigation -->
+    <string name="system_bottom_nav_title">Sistema</string>
+    <string name="lockscreen_bottom_nav_title">Blocco schermo</string>
     <!-- CandyShop Aisles tab header text -->
     <!-- Category titles -->
+    <string name="button_category_title">Tasti</string>
+    <string name="media_options_category_title">Opzioni multimediali</string>
+    <string name="lockscreen_security_category_title">Opzioni di sicurezza</string>
+    <string name="lockscreen_clock_category_title">Stile Data e ora</string>
+    <string name="lockscreen_other_category_title">Altro</string>
     <string name="qs_cat_title">Pannello tiles</string>
+    <string name="statusbar_options_category_title">Impostazioni barra di stato</string>
+    <string name="multitasking_category_title">Multi-Tasking</string>
+    <string name="screen_capture_options_category_title">Opzioni di cattura schermo</string>
+    <string name="miscellaneous_category_title">Varie</string>
     <string name="brightness_category_title">Slider luminosità</string>
     <!-- Fragments -->
+    <string name="headset_title">Auricolari</string>
+    <string name="button_title">Tasti Volume</string>
+    <string name="quicksettings_title">Impostazioni rapide</string>
     <!-- Fragment summaries -->
     <!-- Buttons -->
     <string name="volbtn_down_zen_title">Volume giù in Non Disturbare</string>
@@ -141,6 +158,7 @@
     <!-- Show LTE/4G switch -->
     <!-- Carrier Label -->
     <string name="show_carrier_disabled">Disattivato</string>
+    <string name="show_carrier_keyguard">Blocco schermo</string>
     <!-- Candy logo -->
     <!-- Tiles animation/interpolator style  -->
     <!-- Ambient display music ticker -->
