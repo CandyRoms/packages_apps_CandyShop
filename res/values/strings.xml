@@ -741,7 +741,7 @@
      <!-- MultiTouch Gestures -->
     <string name="multi_touch_gesture_preference_title">MultiTouch Gestures</string>
     <string name="multi_touch_gestures_summary">Configure custom global gestures</string>
-    <string name="multi_touch_gestures_fingers_title">Number of ingers used for gesture</string>
+    <string name="multi_touch_gestures_fingers_title">Number of fingers used for gesture</string>
     <string name="multi_touch_gestures_right_title">Right gesture</string>
     <string name="multi_touch_gestures_left_title">Left gesture</string>
     <string name="multi_touch_gestures_up_title">Up gesture</string>
