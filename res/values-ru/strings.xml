@@ -480,6 +480,7 @@
     <!-- MultiTouch Gestures -->
     <string name="multi_touch_gesture_preference_title">Мультитач жесты</string>
     <string name="multi_touch_gestures_summary">Настройка пользовательских глобальных жестов</string>
+    <string name="multi_touch_gestures_fingers_title">Количество пальцев, используемых для жеста</string>
     <string name="multi_touch_gestures_right_title">Жест вправо</string>
     <string name="multi_touch_gestures_left_title">Жест влево</string>
     <string name="multi_touch_gestures_up_title">Жест вверх</string>
