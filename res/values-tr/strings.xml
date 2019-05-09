@@ -20,7 +20,9 @@
     <!-- Tabs -->
     <!-- Bottom Navigation -->
     <!-- CandyShop Aisles tab header text -->
+    <string name="candyshop_summary_title">Bize biraz şeker al!</string>
     <!-- Category titles -->
+    <string name="multitasking_category_title">Çoklu Görev</string>
     <!-- Fragments -->
     <!-- Fragment summaries -->
     <!-- Buttons -->
