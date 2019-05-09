@@ -100,6 +100,7 @@
     <!-- Lockscreen items -->
     <!-- Incall vibrate options -->
     <!-- Audio Panel view  -->
+    <string name="audio_panel_view_bt_sco_title">蓝牙</string>
     <!-- Volume Panel on Left -->
     <!-- Weather -->
     <!-- Volume keys control ring tone stream -->
@@ -108,9 +109,11 @@
     <!-- Animations -->
     <!-- Screen Off animation -->
     <!-- Toast Animation -->
+    <string name="toast_Tn_animation">Tn 动画</string>
     <!-- Smart Clock -->
     <!-- Lockscreen clock styles -->
     <!-- Power menu Animations  -->
+    <string name="power_menu_animation_card">3D</string>
     <!-- Call notifications -->
     <!-- Fingerprint settings-->
     <!-- fingerprint authentication vibration -->
