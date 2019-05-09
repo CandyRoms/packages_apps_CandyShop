@@ -20,9 +20,7 @@
     <!-- Tabs -->
     <!-- Bottom Navigation -->
     <!-- CandyShop Aisles tab header text -->
-    <string name="candyshop_summary_title">Выпей Candy от нас!</string>
     <!-- Category titles -->
-    <string name="multitasking_category_title">Многозадачость</string>
     <!-- Fragments -->
     <!-- Fragment summaries -->
     <!-- Buttons -->
@@ -37,7 +35,6 @@
     <!-- Lockscreen tuner -->
     <!-- Battery percentage -->
     <!-- Status bar battery style-->
-    <string name="status_bar_battery_style_text">Текст</string>
     <!-- Statusbar Clock -->
     <!-- Old Style Mobile -->
     <!-- System theme -->
@@ -113,7 +110,6 @@
     <!-- Toast Animation -->
     <!-- Smart Clock -->
     <!-- Lockscreen clock styles -->
-    <string name="lockscreen_clock_selection_text">Текст</string>
     <!-- Power menu Animations  -->
     <!-- Call notifications -->
     <!-- Fingerprint settings-->
