@@ -21,7 +21,6 @@
     <!-- Bottom Navigation -->
     <!-- CandyShop Aisles tab header text -->
     <!-- Category titles -->
-    <string name="multitasking_category_title">Multi-Tasking</string>
     <!-- Fragments -->
     <!-- Fragment summaries -->
     <!-- Buttons -->
@@ -36,7 +35,6 @@
     <!-- Lockscreen tuner -->
     <!-- Battery percentage -->
     <!-- Status bar battery style-->
-    <string name="status_bar_battery_style_text">Testo</string>
     <!-- Statusbar Clock -->
     <!-- Old Style Mobile -->
     <!-- System theme -->
@@ -112,7 +110,6 @@
     <!-- Toast Animation -->
     <!-- Smart Clock -->
     <!-- Lockscreen clock styles -->
-    <string name="lockscreen_clock_selection_text">Testo</string>
     <!-- Power menu Animations  -->
     <!-- Call notifications -->
     <!-- Fingerprint settings-->
