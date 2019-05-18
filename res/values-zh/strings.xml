@@ -66,7 +66,6 @@
     <!-- Swap navigation keys -->
     <!-- Screenshot editor -->
     <!-- Gesture Anywhere -->
-    <string name="gesture_anywhere_position_summary">%1$s</string>
     <!-- Label, button used to add a gesture -->
     <!-- Label, button used to reload all gestures -->
     <!-- Label, button used to cancel the operation of adding a gesture -->
@@ -85,11 +84,6 @@
     <!-- Title of dialog box -->
     <!-- Label of gesture name field in Rename gesture dialog box -->
     <!-- Message, displayed when the sdcard cannot be found, 1st parameter is the name of the file that stores the gestures.  CHAR LIMIT=80 -->
-    <string name="gesture_anywhere_48">48px</string>
-    <string name="gesture_anywhere_52">52px</string>
-    <string name="gesture_anywhere_56">56px</string>
-    <string name="gesture_anywhere_64">64px</string>
-    <string name="gesture_anywhere_68">68px</string>
     <!-- Force expanded notifications -->
     <!-- CPU Info -->
     <!-- Navbar Settings -->
@@ -100,9 +94,6 @@
     <!-- Carrier Label -->
     <!-- Candy logo -->
     <!-- Tiles animation/interpolator style  -->
-    <string name="qs_set_animation_style">%1$s</string>
-    <string name="qs_set_animation_duration">%1$s</string>
-    <string name="qs_set_animation_interpolator">%1$s</string>
     <!-- Ambient display music ticker -->
     <!-- Network traffic -->
     <!-- Recents mods -->
@@ -116,12 +107,10 @@
     <!-- AOKP custom system animations -->
     <!-- Animations -->
     <!-- Screen Off animation -->
-    <string name="screen_off_animation_crt">CRT</string>
     <!-- Toast Animation -->
     <!-- Smart Clock -->
     <!-- Lockscreen clock styles -->
     <!-- Power menu Animations  -->
-    <string name="power_menu_animation_card">3D</string>
     <!-- Call notifications -->
     <!-- Fingerprint settings-->
     <!-- fingerprint authentication vibration -->
