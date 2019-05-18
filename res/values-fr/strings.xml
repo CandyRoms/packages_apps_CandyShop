@@ -18,12 +18,26 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Tabs -->
+    <string name="system_category">Système</string>
+    <string name="quicksettings_category">Panneau de configuration</string>
+    <string name="statusbar_category">Barre d\'état</string>
     <!-- Bottom Navigation -->
+    <string name="system_bottom_nav_title">Système</string>
+    <string name="statusbar_bottom_nav_title">Barre d\'état</string>
     <!-- CandyShop Aisles tab header text -->
     <!-- Category titles -->
+    <string name="button_category_title">Boutons</string>
+    <string name="lockscreen_other_category_title">Autre</string>
+    <string name="multitasking_category_title">Multi-tâche</string>
     <!-- Fragments -->
     <string name="quicksettings_title">Panneau de configuration</string>
+    <string name="notification_light_settings">Voyant de notification</string>
     <string name="powermenu_title">Menu Marche/Arrêt</string>
+    <string name="navbar_title">Navigation</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="recent_settings_title">Applications récentes</string>
+    <string name="status_bar_clock_title">Horloge</string>
+    <string name="carrier_label_title">Libellé opérateur</string>
     <!-- Fragment summaries -->
     <!-- Buttons -->
     <string name="volume_keys_control_media_stream_title">Flux audio \"multimédia\"</string>
@@ -33,7 +47,6 @@
     <!-- Color Picker -->
     <string name="dialog_color_picker">Sélecteur de couleur</string>
     <string name="press_color_to_apply">Appuyer sur la couleur pour valider</string>
-    <string name="hex">Hex :</string>
     <string name="set">Définir</string>
     <!-- Fingerprint unlock keystore -->
     <!-- StatusBar Tuner -->
@@ -43,16 +56,15 @@
     <!-- Lockscreen tuner -->
     <!-- Battery percentage -->
     <!-- Status bar battery style-->
+    <string name="status_bar_battery_style_port">Portrait</string>
     <!-- Statusbar Clock -->
-    <string name="status_bar_clock_style_right">À droite</string>
-    <string name="status_bar_clock_style_left">À gauche</string>
+    <string name="status_bar_clock_style_right">droit</string>
+    <string name="status_bar_clock_style_left">gauche</string>
     <!-- Old Style Mobile -->
     <!-- System theme -->
     <string name="systemui_theme_style_title">Thème de l\'interface</string>
     <string name="systemui_theme_style_auto">Automatique (basé sur le fond d\'écran)</string>
-    <string name="systemui_theme_style_light">Clair</string>
-    <string name="systemui_theme_style_dark">Foncé</string>
-    <string name="theme_applied_toast">Thème ajusté !</string>
+    <string name="theme_accent_picker_title">Couleurs</string>
     <!-- AboutCandy-->
     <!-- Power Menu -->
     <string name="powermenu_reboot_title">Redémarrer</string>
@@ -78,6 +90,7 @@
     <!--Double Tap to Sleep Lockscreen-->
     <!--Quick pulldown-->
     <!-- Onehand UI mode -->
+    <string name="one_hand_mode_title">Mode une seule main</string>
     <!-- Lockscreen visualizer -->
     <!-- Custom Seek bar -->
     <!-- General messages -->
@@ -93,8 +106,8 @@
     <string name="select_custom_app_title">Sélectionner l\'application</string>
     <string name="select_custom_activity_title">Sélectionner l\'activité</string>
     <string name="choose_action_title">Type de raccourci</string>
-    <string name="action_entry_default_action">Par défaut</string>
-    <string name="action_entry_select_app">Application</string>
+    <string name="action_entry_default_action">Configuration d\'origine</string>
+    <string name="action_entry_select_app">Sélectionner une application</string>
     <string name="action_entry_custom_action">Action</string>
     <string name="hardware_keys_home_key_title">Bouton Accueil</string>
     <string name="hardware_keys_menu_key_title">Bouton Menu</string>
@@ -109,6 +122,7 @@
     <string name="hardware_keys_double_tap_title">Raccourci \"Double appui\"</string>
     <!-- Swap navigation keys -->
     <!-- Screenshot editor -->
+    <string name="profile_choose_app">Sélectionner une application</string>
     <string name="dialog_delete_title">Supprimer</string>
     <string name="dialog_delete_message">Supprimer l\'élément sélectionné ?</string>
     <!-- Gesture Anywhere -->
@@ -116,6 +130,7 @@
     <!-- Label, button used to reload all gestures -->
     <!-- Label, button used to cancel the operation of adding a gesture -->
     <!-- Label, button used to save a gesture newly created -->
+    <string name="ga_button_done">OK</string>
     <!-- Label, prompt asking the user to enter the name of the gesture -->
     <!-- Error message, informs the user he needs to enter a name before saving a gesture -->
     <!-- success message, tells the user where the gesture was saved -->
@@ -141,23 +156,24 @@
     <!-- Carrier Label -->
     <string name="carrier_options">Affichage</string>
     <string name="custom_carrier_label_title">Libellé</string>
-    <string name="custom_carrier_label_notset">Non défini</string>
+    <string name="show_carrier_title">Libellé opérateur</string>
     <string name="show_carrier_disabled">Désactivé</string>
+    <string name="show_carrier_statusbar">Barre d\'état</string>
     <!-- Candy logo -->
     <!-- Tiles animation/interpolator style  -->
     <string name="qs_tile_animation_style_flip">Retournement</string>
     <string name="qs_tile_animation_duration_fast">Rapide</string>
     <!-- Ambient display music ticker -->
-    <string name="force_ambient_for_media_pref_title">Informations de la piste musicale</string>
-    <string name="force_ambient_for_media_pref_summary">Réglages des informations de la piste musicale</string>
     <string name="force_ambient_for_media_title">Activé</string>
     <!-- Network traffic -->
     <string name="network_traffic_autohide_threshold_title">Seuil de masquage automatique (KB/s)</string>
+    <string name="network_traffic_statusbar">Barre d\'état</string>
     <!-- Recents mods -->
     <!-- Lockscreen items -->
     <string name="lockscreen_clock_title">Horloge</string>
     <!-- Incall vibrate options -->
     <!-- Audio Panel view  -->
+    <string name="audio_panel_view_notification_title">Notifications</string>
     <!-- Volume Panel on Left -->
     <!-- Weather -->
     <!-- Volume keys control ring tone stream -->
@@ -170,6 +186,7 @@
     <!-- Smart Clock -->
     <!-- Lockscreen clock styles -->
     <!-- Power menu Animations  -->
+    <string name="power_menu_animation_turn">Retournement</string>
     <!-- Call notifications -->
     <string name="flashlight_on_call_disabled">Désactivé</string>
     <!-- Fingerprint settings-->
@@ -179,7 +196,9 @@
     <!--Double Tap to Sleep Statusbar-->
     <!-- MultiTouch Gestures -->
     <string name="multi_touch_gesture_disabled">Désactivé</string>
+    <string name="multi_touch_gesture_recents">Applications récentes</string>
     <string name="multi_touch_gesture_screenshot">Capture d\'écran</string>
     <!-- Hide Apps from Recents -->
     <string name="hide_from_recents_add_app">Ajouter une application</string>
+    <string name="title_activity_carbon_recents_settings">Applications récentes</string>
 </resources>

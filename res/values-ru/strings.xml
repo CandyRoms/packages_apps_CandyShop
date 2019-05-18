@@ -36,27 +36,61 @@
     <string name="statusbar_aisle_header">Строка состояния - Проход 3</string>
     <string name="navigation_aisle_header">Навигация - Проход 4</string>
     <string name="stockroom_aisle_header">Склад</string>
+    <string name="candyshop_summary_title">Выпей Candy от нас!</string>
     <!-- Category titles -->
     <string name="button_category_title">Кнопки</string>
     <string name="hwkeys_options_title">Параметры кнопок и подсветки</string>
+    <string name="media_options_category_title">Параметры медиа</string>
+    <string name="sleep_controls_category_title">Управление сна</string>
+    <string name="lockscreen_security_category_title">Параметры безопасности</string>
     <string name="lockscreen_icons_category_title">Управление элементами экрана блокировки</string>
+    <string name="lockscreen_clock_category_title">Настройки часов и даты на экране блокировки</string>
+    <string name="lockscreen_other_category_title">Другое</string>
     <string name="notifications_category_title">Системные уведомления</string>
     <string name="qs_cat_title">Панель быстрых настроек</string>
     <string name="qs_layout_category_title">Расположение плиток быстрых настроек</string>
     <string name="qs_options_category_title">Параметры панели быстрых настроек</string>
     <string name="battery_style_category_title">Значок батареи</string>
+    <string name="statusbar_options_category_title">Параметры строки состояния</string>
+    <string name="multitasking_category_title">Многозадачость</string>
+    <string name="screen_capture_options_category_title">Параметры захвата экрана</string>
+    <string name="miscellaneous_category_title">Другие настройки</string>
     <string name="ime_title">Настройки клавиатуры и курсора</string>
     <string name="brightness_category_title">Регулятор яркости</string>
     <string name="power_button_gestures_title">Жесты кнопки питания</string>
     <string name="power_button_reboot_menu_title">Меню перезагрузки кнопки питания</string>
+    <string name="wakelocks_title">Вэйклоки</string>
     <!-- Fragments -->
+    <string name="headset_title">Гарнитура</string>
+    <string name="button_title">Кнопки громкости</string>
+    <string name="power_button_title">Кнопка питания</string>
     <string name="quicksettings_title">Быстрые настройки</string>
+    <string name="torch_title">Кнопка питания</string>
+    <string name="battery_title">Параметры батареи</string>
+    <string name="leds_title">Индикация</string>
+    <string name="network_traffic_title">Сетевой трафик</string>
+    <string name="notification_light_settings">Индикация уведомлений</string>
     <string name="powermenu_title">Меню питания</string>
+    <string name="navbar_title">Панель навигации</string>
     <string name="notifications_title">Уведомления</string>
+    <string name="various_system_title">Разное</string>
+    <string name="various_lockscreen_title">Разное</string>
+    <string name="various_statusbar_title">Разное</string>
+    <string name="various_navigation_title">Разное</string>
+    <string name="recent_settings_title">Меню недавних приложений</string>
+    <string name="status_bar_clock_title">Параметры часов</string>
     <string name="navigationbar_settings_title">Параметры панели навигации</string>
     <string name="animations_summary">Параметры анимации</string>
     <!-- Fragment summaries -->
+    <string name="headset_preference_summary">Настройки подключения гарнитуры</string>
+    <string name="buttons_preference_summary">Настройки поведения клавиш громкости</string>
     <string name="power_button_preference_summary">Жест клавиши питания и настройки меню перезагрузки</string>
+    <string name="powermenu_preference_summary">Настройка параметров меню кнопки питания</string>
+    <string name="leds_preference_summary">Параметры индикатора батареи и уведомления</string>
+    <string name="ls_shortcuts_preference_summary">Параметры кнопок блокировки экрана</string>
+    <string name="clock_preference_summary">Настройки отображения времени и даты</string>
+    <string name="battery_preference_summary">Изменить значок и процентный дисплей</string>
+    <string name="net_traffic_preference_summary">Мониторинг сетевого трафика в статус баре</string>
     <string name="navigationbar_settings_summary">- Панель навигации\n- Умный Бар\n- Fling</string>
     <string name="hwkeys_options_summary">ПРИМЕЧАНИЕ. Это зависит от устройства!\n- Перераспределение аппаратных клавиш\n- Отключение аппаратных кнопок\n- Поменять местами Недавние и Назад\n- Яркость подсветки кнопок\n- Время подсветки кнопок\n- Подсветка кнопок при нажатии клавиш</string>
     <string name="carrier_label_summary">Настроить своё имя оператора</string>
@@ -463,6 +497,7 @@
     <string name="multi_touch_gesture_disabled">Отключено</string>
     <string name="multi_touch_gesture_back">Назад</string>
     <string name="multi_touch_gesture_home">Домой</string>
+    <string name="multi_touch_gesture_recents">Меню недавних приложений</string>
     <string name="multi_touch_gesture_volume_down">Уменьшить громкость</string>
     <string name="multi_touch_gesture_volume_up">Увеличить громкость</string>
     <string name="multi_touch_gesture_volume_mute">Отключить звук</string>
@@ -476,4 +511,10 @@
     <string name="hide_apps_from_recents_title">Скрыть приложения из недавних</string>
     <string name="hide_apps_from_recents_summary">Запретить приложениям появляться в недавних</string>
     <string name="hide_from_recents_add_app">Добавить приложение</string>
+    <string name="title_activity_carbon_recents_settings">Меню недавних приложений</string>
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Менее надоедливые всплывающие уведомления</string>
+    <string name="less_boring_heads_up_summary">Показать всплывающие уведомления только для звонков или сообщений (если они не на переднем плане)</string>
+    <!-- Wakelock blocker -->
+    <string name="wakelock_blocker_title">Блокировщик вэйклоков</string>
 </resources>
