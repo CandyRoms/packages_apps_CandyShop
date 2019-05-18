@@ -27,6 +27,7 @@
     <!-- QuickSettings -->
     <!-- Quick Settings brightness icon -->
     <!-- Color Picker -->
+    <string name="hex">Hex :</string>
     <!-- Fingerprint unlock keystore -->
     <!-- StatusBar Tuner -->
     <!-- Navbar tuner -->
