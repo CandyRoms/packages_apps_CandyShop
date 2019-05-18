@@ -76,34 +76,34 @@ public class AboutCandy extends DialogFragment {
             setUriTarget("https://github.com/topjohnwu/Magisk/releases", magisk);
 
             FrameLayout candyroms = view.findViewById(R.id.candyroms);
-            setUriTarget("https://plus.google.com/communities/108100228397827258211", candyroms);
+            setUriTarget("http://candyroms.org", candyroms);
 
             FrameLayout dan = view.findViewById(R.id.dan);
-            setUriTarget("https://plus.google.com/+DanCartier", dan);
+            setUriTarget("http://candyroms.org/nospamdan-dan-cartier", dan);
 
             FrameLayout tony = view.findViewById(R.id.tony);
-            setUriTarget("https://plus.google.com/102341413337882269722", tony);
+            setUriTarget("https://forum.xda-developers.com/member.php?u=4779996", tony);
 
             FrameLayout kevin = view.findViewById(R.id.kevin);
-            setUriTarget("https://plus.google.com/+KevinPrinciotta", kevin);
+            setUriTarget("http://candyroms.org/candymaker_d-kevin-princiotta", kevin);
 
             FrameLayout nick = view.findViewById(R.id.nick);
-            setUriTarget("https://plus.google.com/+Cloud9ner", nick);
+            setUriTarget("https://forum.xda-developers.com/member.php?u=6220524", nick);
 
             FrameLayout bhi = view.findViewById(R.id.bhi);
-            setUriTarget("https://plus.google.com/+bhimananddharmatti", bhi);
+            setUriTarget("http://candyroms.org/bhi244-bhimanand-dharmatti", bhi);
 
             FrameLayout mourya = view.findViewById(R.id.mourya);
-            setUriTarget("https://plus.google.com/102171551866121426915", mourya);
+            setUriTarget("http://candyroms.org/miju12-mourya-baruah", mourya);
 
             FrameLayout rajat = view.findViewById(R.id.rajat);
-            setUriTarget("https://plus.google.com/+RajatGupta1998", rajat);
+            setUriTarget("http://candyroms.org/rajatgupta1998-rajat-gupta", rajat);
 
             FrameLayout sanjay = view.findViewById(R.id.sanjay);
-            setUriTarget("https://plus.google.com/+SanjayShrestha53", sanjay);
+            setUriTarget("http://candyroms.org/yaznas-sanjay-shrestha", sanjay);
 
             FrameLayout chad = view.findViewById(R.id.chad);
-            setUriTarget("https://plus.google.com/+ChadCormierRoussel", chad);
+            setUriTarget("https://forum.xda-developers.com/member.php?u=1986924", chad);
         }
          dialog.show();
          return dialog;
