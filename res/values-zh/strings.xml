@@ -22,6 +22,7 @@
     <!-- CandyShop Aisles tab header text -->
     <!-- Category titles -->
     <!-- Fragments -->
+    <string name="notifications_title">通知</string>
     <!-- Fragment summaries -->
     <!-- Buttons -->
     <!-- QuickSettings -->
@@ -35,6 +36,7 @@
     <!-- Lockscreen tuner -->
     <!-- Battery percentage -->
     <!-- Status bar battery style-->
+    <string name="status_bar_battery_style_port">纵向</string>
     <!-- Statusbar Clock -->
     <!-- Old Style Mobile -->
     <!-- System theme -->
@@ -100,6 +102,7 @@
     <!-- Lockscreen items -->
     <!-- Incall vibrate options -->
     <!-- Audio Panel view  -->
+    <string name="audio_panel_view_notification_title">通知</string>
     <!-- Volume Panel on Left -->
     <!-- Weather -->
     <!-- Volume keys control ring tone stream -->
@@ -117,6 +120,4 @@
     <!--Double Tap to Sleep Statusbar-->
     <!-- MultiTouch Gestures -->
     <!-- Hide Apps from Recents -->
-    <!-- Heads up options -->
-    <!-- Wakelock blocker -->
 </resources>
