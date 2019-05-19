@@ -21,7 +21,6 @@
     <!-- Bottom Navigation -->
     <!-- CandyShop Aisles tab header text -->
     <!-- Category titles -->
-    <string name="multitasking_category_title">Многозадачость</string>
     <!-- Fragments -->
     <!-- Fragment summaries -->
     <!-- Buttons -->
@@ -118,4 +117,6 @@
     <!--Double Tap to Sleep Statusbar-->
     <!-- MultiTouch Gestures -->
     <!-- Hide Apps from Recents -->
+    <!-- Heads up options -->
+    <!-- Wakelock blocker -->
 </resources>
