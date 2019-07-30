@@ -78,17 +78,20 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
 
     private SharedPreferences mPreferences;
 
+
+    private boolean mIsAvailable;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.doze_settings);
 
         Context context = getContext();
-
-        PreferenceCategory dozeSensorCategory =
-                (PreferenceCategory) getPreferenceScreen().findPreference(CATEG_DOZE_SENSOR);
-
         final ContentResolver resolver = getActivity().getContentResolver();
+
+        //SharedPreferences mPreferences = (SharedPreferences) context.getSharedPreferences();
+
+        PreferenceCategory dozeSensorCategory = (PreferenceCategory) findPreference(CATEG_DOZE_SENSOR);
 
         mDozeEnabledPreference = (SecureSettingSwitchPreference) findPreference("doze_enabled");
         mDozeEnabledPreference.setOnPreferenceChangeListener(this);
@@ -97,36 +100,59 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
         mDozeAlwaysOnPreference.setOnPreferenceChangeListener(this);
 
         mTiltPreference = (SecureSettingSwitchPreference) findPreference("doze_tilt_gesture");
-        mTiltPreference.setOnPreferenceChangeListener(this);
+        if (mTiltPreference != null) {
+            mTiltPreference.setOnPreferenceChangeListener(this);
+        }
 
         mPickUpPreference = (SecureSettingSwitchPreference) findPreference("doze_pick_up_gesture");
-        mPickUpPreference.setOnPreferenceChangeListener(this);
+        if (mPickUpPreference != null) {
+            mPickUpPreference.setOnPreferenceChangeListener(this);
+        }
 
         mHandwavePreference = (SecureSettingSwitchPreference) findPreference("doze_handwave_gesture");
-        mHandwavePreference.setOnPreferenceChangeListener(this);
+        if (mHandwavePreference != null) {
+            mHandwavePreference.setOnPreferenceChangeListener(this);
+        }
 
         mPocketPreference = (SecureSettingSwitchPreference) findPreference("doze_pocket_gesture");
-        mPocketPreference.setOnPreferenceChangeListener(this);
+        if (mPocketPreference != null) {
+            mPocketPreference.setOnPreferenceChangeListener(this);
+        }
 
+        // tilt
+        mIsAvailable = context.getResources().getBoolean(com.android.internal.R.bool.config_dozePulseTilt);
+        if (((!mIsAvailable) || !Utils.getTiltSensor(context)) &&
+                (mTiltPreference != null) && (dozeSensorCategory != null))  {
+            dozeSensorCategory.removePreference(mTiltPreference);
+        }
 
-        // Hide sensor related features if the device doesn't support them
-        if (!Utils.getTiltSensor(context) && !Utils.getPickupSensor(context) && !Utils.getProximitySensor(context)) {
-            getPreferenceScreen().removePreference(dozeSensorCategory);
-        } else {
-            if (!Utils.getTiltSensor(context)) {
-                getPreferenceScreen().removePreference(mTiltPreference);
-            } else if (!Utils.getPickupSensor(context)) {
-                getPreferenceScreen().removePreference(mPickUpPreference);
-            } else if (!Utils.getProximitySensor(context)) {
-                getPreferenceScreen().removePreference(mHandwavePreference);
-                getPreferenceScreen().removePreference(mPocketPreference);
-            }
+        // pick up
+        mIsAvailable = context.getResources().getBoolean(com.android.internal.R.bool.config_dozePulsePickup);
+        if (((!mIsAvailable) || !Utils.getPickupSensor(context)) &&
+                (mPickUpPreference != null) && (dozeSensorCategory != null))  {
+            dozeSensorCategory.removePreference(mPickUpPreference);
+        }
+
+        // hand wave
+        mIsAvailable = context.getResources().getBoolean(com.android.internal.R.bool.config_dozePulseProximity);
+        if (((!mIsAvailable) || !Utils.getProximitySensor(context)) &&
+                (mHandwavePreference != null) && (dozeSensorCategory != null))  {
+            dozeSensorCategory.removePreference(mHandwavePreference);
+        }
+
+        // pocket
+        mIsAvailable = context.getResources().getBoolean(com.android.internal.R.bool.config_dozePulseProximity);
+        if (((!mIsAvailable) || !Utils.getProximitySensor(context)) &&
+                (mPocketPreference != null) && (dozeSensorCategory != null))  {
+            dozeSensorCategory.removePreference(mPocketPreference);
         }
 
         // Hides always on toggle if device doesn't support it (based on config_dozeAlwaysOnDisplayAvailable overlay)
         boolean mAlwaysOnAvailable = getResources().getBoolean(com.android.internal.R.bool.config_dozeAlwaysOnDisplayAvailable);
         if (!mAlwaysOnAvailable) {
-            getPreferenceScreen().removePreference(mDozeAlwaysOnPreference);
+            if (dozeSensorCategory != null) {
+                dozeSensorCategory.removePreference(mDozeAlwaysOnPreference);
+            }
         }
         updatePrefs();
     }
@@ -224,11 +250,11 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
     }
 
     private void sensorWarning(Context context) {
-        mPreferences = context.getSharedPreferences("dozesettingsfragment", Activity.MODE_PRIVATE);
+        mPreferences = context.getSharedPreferences("dozesettings", Activity.MODE_PRIVATE);
         if (mPreferences.getBoolean("sensor_warning_shown", false)) {
             return;
         }
-        context.getSharedPreferences("dozesettingsfragment", Activity.MODE_PRIVATE)
+        context.getSharedPreferences("dozesettings", Activity.MODE_PRIVATE)
                 .edit()
                 .putBoolean("sensor_warning_shown", true)
                 .commit();

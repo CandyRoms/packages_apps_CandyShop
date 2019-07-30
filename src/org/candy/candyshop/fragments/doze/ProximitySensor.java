@@ -29,6 +29,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+import org.candy.candyshop.R;
+
 public class ProximitySensor implements SensorEventListener {
 
     private static final boolean DEBUG = false;
@@ -41,7 +43,7 @@ public class ProximitySensor implements SensorEventListener {
     private static final int POCKET_MIN_DELTA_NS = 2000 * 1000 * 1000;
 
     private SensorManager mSensorManager;
-    private Sensor mSensor;
+    private Sensor mSensorProximity;
     private Context mContext;
     private ExecutorService mExecutorService;
 
@@ -50,9 +52,18 @@ public class ProximitySensor implements SensorEventListener {
 
     public ProximitySensor(Context context) {
         mContext = context;
-        mSensorManager = (SensorManager) mContext.getSystemService(Context.SENSOR_SERVICE);
         final boolean wakeup = context.getResources().getBoolean(com.android.internal.R.bool.config_deviceHaveWakeUpProximity);
-        mSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY, wakeup);
+        mSensorManager = (SensorManager)
+                mContext.getSystemService(Context.SENSOR_SERVICE);
+        if (mSensorManager != null) {
+            String customProximity = mContext.getResources().getString(R.string.config_custom_proximity);
+            if (!customProximity.isEmpty()) {
+                mSensorManager = mContext.getSystemService(SensorManager.class);
+                mSensorProximity = Utils.getSensor(mSensorManager, customProximity);
+            } else {
+                mSensorProximity = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY, wakeup);
+            }
+        }
         mExecutorService = Executors.newSingleThreadExecutor();
     }
 
@@ -62,7 +73,7 @@ public class ProximitySensor implements SensorEventListener {
 
     @Override
     public void onSensorChanged(SensorEvent event) {
-        boolean isNear = event.values[0] < mSensor.getMaximumRange();
+        boolean isNear = event.values[0] < mSensorProximity.getMaximumRange();
         if (mSawNear && !isNear) {
             if (shouldPulse(event.timestamp)) {
                 Utils.launchDozePulse(mContext);
@@ -94,7 +105,7 @@ public class ProximitySensor implements SensorEventListener {
     protected void enable() {
         if (DEBUG) Log.d(TAG, "Enabling");
         submit(() -> {
-            mSensorManager.registerListener(this, mSensor,
+            mSensorManager.registerListener(this, mSensorProximity,
                     SensorManager.SENSOR_DELAY_NORMAL);
         });
     }
@@ -102,7 +113,7 @@ public class ProximitySensor implements SensorEventListener {
     protected void disable() {
         if (DEBUG) Log.d(TAG, "Disabling");
         submit(() -> {
-            mSensorManager.unregisterListener(this, mSensor);
+            mSensorManager.unregisterListener(this, mSensorProximity);
         });
     }
 }

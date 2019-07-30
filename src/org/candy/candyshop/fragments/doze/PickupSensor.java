@@ -32,6 +32,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+import org.candy.candyshop.R;
+
 public class PickupSensor implements SensorEventListener {
     private static final boolean DEBUG = false;
     private static final String TAG = "TiltSensor";
@@ -42,7 +44,7 @@ public class PickupSensor implements SensorEventListener {
     private SensorManager mSensorManager;
     private Sensor mSensorPickup;
     private Context mContext;
-    private TelephonyManager telephonyManager;
+    private TelephonyManager mTelephonyManager;
     private ExecutorService mExecutorService;
 
     private float[] mGravity;
@@ -52,10 +54,20 @@ public class PickupSensor implements SensorEventListener {
 
     public PickupSensor(Context context) {
         mContext = context;
+        mTelephonyManager = (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
+
         mSensorManager = (SensorManager) mContext.getSystemService(Context.SENSOR_SERVICE);
-        mSensorPickup = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-        telephonyManager = (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
+        if (mSensorManager != null) {
+            String customPickup = mContext.getResources().getString(R.string.config_custom_pickup);
+            if (!customPickup.isEmpty()) {
+                mSensorManager = mContext.getSystemService(SensorManager.class);
+                mSensorPickup = Utils.getSensor(mSensorManager, customPickup);
+            } else {
+                mSensorPickup = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+            }
+        }
         mExecutorService = Executors.newSingleThreadExecutor();
+
         mAccelLast = SensorManager.GRAVITY_EARTH;
         mAccelCurrent = SensorManager.GRAVITY_EARTH;
     }

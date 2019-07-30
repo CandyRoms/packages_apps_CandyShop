@@ -30,6 +30,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+import org.candy.candyshop.R;
+
 public class TiltSensor implements SensorEventListener {
 
     private static final boolean DEBUG = false;
@@ -39,7 +41,7 @@ public class TiltSensor implements SensorEventListener {
     private static final int MIN_PULSE_INTERVAL_MS = 2500;
 
     private SensorManager mSensorManager;
-    private Sensor mSensor;
+    private Sensor mSensorTilt;
     private Context mContext;
     private ExecutorService mExecutorService;
 
@@ -47,8 +49,17 @@ public class TiltSensor implements SensorEventListener {
 
     public TiltSensor(Context context) {
         mContext = context;
+
         mSensorManager = (SensorManager) mContext.getSystemService(Context.SENSOR_SERVICE);
-        mSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_TILT_DETECTOR);
+        if (mSensorManager != null) {
+            String customTilt = mContext.getResources().getString(R.string.config_custom_tilt);
+            if (!customTilt.isEmpty()) {
+                mSensorManager = mContext.getSystemService(SensorManager.class);
+                mSensorTilt = Utils.getSensor(mSensorManager, customTilt);
+            } else {
+                mSensorTilt = mSensorManager.getDefaultSensor(Sensor.TYPE_TILT_DETECTOR);
+            }
+        }
         mExecutorService = Executors.newSingleThreadExecutor();
     }
 
@@ -80,7 +91,7 @@ public class TiltSensor implements SensorEventListener {
     protected void enable() {
         if (DEBUG) Log.d(TAG, "Enabling");
         submit(() -> {
-            mSensorManager.registerListener(this, mSensor,
+            mSensorManager.registerListener(this, mSensorTilt,
                     SensorManager.SENSOR_DELAY_NORMAL, BATCH_LATENCY_IN_MS * 1000);
             mEntryTimestamp = SystemClock.elapsedRealtime();
         });
@@ -89,7 +100,7 @@ public class TiltSensor implements SensorEventListener {
     protected void disable() {
         if (DEBUG) Log.d(TAG, "Disabling");
         submit(() -> {
-            mSensorManager.unregisterListener(this, mSensor);
+            mSensorManager.unregisterListener(this, mSensorTilt);
         });
     }
 }
