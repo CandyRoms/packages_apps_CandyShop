@@ -17,6 +17,8 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <string name="candyshop_title">CandyShop</string>
+
     <!-- Tabs -->
     <string name="candyshop_category">CandyShop</string>
     <string name="system_category">System</string>
