@@ -6,8 +6,6 @@ import android.graphics.PixelFormat;
 import android.graphics.PorterDuff;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
-import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceViewHolder;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.Gravity;
@@ -22,6 +20,9 @@ import android.widget.RelativeLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.preference.Preference;
+import androidx.preference.PreferenceViewHolder;
 
 import com.android.settings.R;
 
@@ -257,17 +258,17 @@ public class SeekBarPreferenceCham extends Preference implements SeekBar.OnSeekB
     }
 
     @Override
-    public void onStartTrackingTouch(SeekBar seekBar) { 
-        mTrackingTouch = true; 
-    } 
- 
-    @Override 
-    public void onStopTrackingTouch(SeekBar seekBar) { 
-        notifyChanged(); 
-        mTrackingTouch = false; 
-    } 
- 
-    @Override 
+    public void onStartTrackingTouch(SeekBar seekBar) {
+        mTrackingTouch = true;
+    }
+
+    @Override
+    public void onStopTrackingTouch(SeekBar seekBar) {
+        notifyChanged();
+        mTrackingTouch = false;
+    }
+
+    @Override
     protected Object onGetDefaultValue(TypedArray ta, int index){
         int defaultValue = ta.getInt(index, DEFAULT_VALUE);
         return defaultValue;

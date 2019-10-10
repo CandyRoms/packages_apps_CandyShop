@@ -18,24 +18,52 @@
 package org.candy.candyshop;
 
 import android.app.Activity;
-import android.app.DialogFragment;
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.ContentResolver;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v13.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
+import android.os.SystemProperties;
+import android.provider.Settings;
+import android.text.Html;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.preference.CheckBoxPreference;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
+import androidx.preference.PreferenceDialogFragment;
+import androidx.preference.PreferenceManager;
+import androidx.preference.Preference.OnPreferenceChangeListener;
+import androidx.preference.PreferenceScreen;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
+import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.SettingsPreferenceFragment;
 
 import org.candy.candyshop.fragments.AboutCandy;
@@ -59,7 +87,7 @@ public class CandyShop extends SettingsPreferenceFragment {
         navigation.setBackground(new ColorDrawable(getResources().getColor(R.color.BottomBarBackgroundColor)));
 
         final ViewPager viewPager = view.findViewById(R.id.pager);
-        PagerAdapter mPagerAdapter = new PagerAdapter(getFragmentManager());
+        FragmentPagerAdapter mPagerAdapter = new PagerAdapter(getFragmentManager());
         viewPager.setAdapter(mPagerAdapter);
 
         navigation.setOnNavigationItemSelectedListener(new BottomNavigationViewCustom.OnNavigationItemSelectedListener() {

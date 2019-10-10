@@ -18,6 +18,7 @@ package org.candy.candyshop.preference;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import androidx.preference.SeekBarPreference;
 
 public class SystemSettingSeekBarPreference extends SeekBarPreferenceCham {
 

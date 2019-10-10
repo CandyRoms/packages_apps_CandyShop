@@ -19,6 +19,7 @@ package org.candy.candyshop.preference;
 import android.content.Context;
 import android.text.TextUtils;
 import android.util.AttributeSet;
+import androidx.preference.ListPreference;
 
 public class SecureSettingListPreference extends ListPreference {
 

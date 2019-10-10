@@ -18,8 +18,8 @@ package org.candy.candyshop.preference;
 
 import android.content.Context;
 import android.provider.Settings;
-import android.support.v7.preference.CheckBoxPreference;
 import android.util.AttributeSet;
+import androidx.preference.CheckBoxPreference;
 
 public class GlobalCheckBoxPreference extends CheckBoxPreference {
     public GlobalCheckBoxPreference(Context context, AttributeSet attrs, int defStyle) {
