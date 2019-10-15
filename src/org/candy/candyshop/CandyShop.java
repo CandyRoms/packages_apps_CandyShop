@@ -76,6 +76,9 @@ import org.candy.candyshop.tabs.StockRoom;
 
 public class CandyShop extends SettingsPreferenceFragment {
 
+    private static final String TAG = "CandyShop";
+    public static final String CATEGORY_CANDY = "com.android.settings.category.ia.candy";
+
     MenuItem menuitem;
 
     @Override
