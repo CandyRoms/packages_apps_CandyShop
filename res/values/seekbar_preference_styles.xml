@@ -20,7 +20,7 @@
     <style name="SeekBarPreferenceChamValueTextAppearance" parent="@*android:style/TextAppearance.Toast" />
 
     <!-- SeekBarPreferenceCham value popup -->
-    <style name="SeekBarPreferenceChamValueView">
+    <style name="SeekBarPreferenceChamValueView" parent="Theme.AppCompat.DayNight">
         <item name="android:textColor">?attr/value_popup_view_fg</item>
         <item name="android:textAppearance">@style/SeekBarPreferenceChamValueTextAppearance</item>
         <item name="android:background">@drawable/seekbar_popup_bg</item>

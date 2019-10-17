@@ -66,6 +66,8 @@ import com.android.settings.R;
 import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.SettingsPreferenceFragment;
 
+import com.google.android.material.appbar.AppBarLayout;
+
 import org.candy.candyshop.fragments.AboutCandy;
 import org.candy.candyshop.navigation.BottomNavigationViewCustom;
 import org.candy.candyshop.tabs.System;

@@ -79,11 +79,9 @@
                         android:id="@+id/dan"
                         android:layout_width="80dp"
                         android:layout_height="90dp">
-
                         <RelativeLayout
                             android:layout_width="80dp"
                             android:layout_height="90dp">
-
                             <org.candy.candyshop.helpers.CircularImageView
                                 android:id="@+id/dan_image"
                                 android:layout_width="50dp"
@@ -96,7 +94,6 @@
                                 app:civ_border_color="@*android:color/accent_device_default_light"
                                 app:civ_shadow="true"
                                 app:civ_shadow_radius="4" />
-
                             <TextView
                                 android:id="@+id/dan_text"
                                 android:layout_width="wrap_content"
@@ -108,58 +105,16 @@
                                 android:layout_centerHorizontal="true"
                                 android:gravity="center_horizontal"
                                 android:layout_marginTop="3dp" />
-
                         </RelativeLayout>
-
-                    </FrameLayout>
-
-                   <FrameLayout
-                        android:id="@+id/tony"
-                        android:layout_width="80dp"
-                        android:layout_height="90dp">
-
-                        <RelativeLayout
-                            android:layout_width="80dp"
-                            android:layout_height="90dp">
-
-                            <org.candy.candyshop.helpers.CircularImageView
-                                android:id="@+id/tony_image"
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:layout_marginStart="15dp"
-                                android:layout_marginEnd="15dp"
-                                android:src="@drawable/tony"
-                                app:civ_border="true"
-                                app:civ_border_width="1dp"
-                                app:civ_border_color="@*android:color/accent_device_default_light"
-                                app:civ_shadow="true"
-                                app:civ_shadow_radius="4" />
-
-                            <TextView
-                                android:id="@+id/tony_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Tony"
-                                android:textSize="14sp"
-                                android:layout_below="@+id/tony_image"
-                                android:layout_gravity="center"
-                                android:layout_centerHorizontal="true"
-                                android:gravity="center_horizontal"
-                                android:layout_marginTop="3dp" />
-
-                        </RelativeLayout>
-
                     </FrameLayout>
 
                    <FrameLayout
                         android:id="@+id/kevin"
                         android:layout_width="80dp"
                         android:layout_height="90dp">
-
                         <RelativeLayout
                             android:layout_width="80dp"
                             android:layout_height="90dp">
-
                             <org.candy.candyshop.helpers.CircularImageView
                                 android:id="@+id/kevin_image"
                                 android:layout_width="50dp"
@@ -172,7 +127,6 @@
                                 app:civ_border_color="@*android:color/accent_device_default_light"
                                 app:civ_shadow="true"
                                 app:civ_shadow_radius="4" />
-
                             <TextView
                                 android:id="@+id/kevin_text"
                                 android:layout_width="wrap_content"
@@ -184,20 +138,16 @@
                                 android:layout_centerHorizontal="true"
                                 android:gravity="center_horizontal"
                                 android:layout_marginTop="3dp" />
-
                         </RelativeLayout>
-
                     </FrameLayout>
 
                    <FrameLayout
                         android:id="@+id/bhi"
                         android:layout_width="80dp"
                         android:layout_height="90dp">
-
                         <RelativeLayout
                             android:layout_width="80dp"
                             android:layout_height="90dp">
-
                             <org.candy.candyshop.helpers.CircularImageView
                                 android:id="@+id/bhi_image"
                                 android:layout_width="50dp"
@@ -210,7 +160,6 @@
                                 app:civ_border_color="@*android:color/accent_device_default_light"
                                 app:civ_shadow="true"
                                 app:civ_shadow_radius="4" />
-
                             <TextView
                                 android:id="@+id/bhi_text"
                                 android:layout_width="wrap_content"
@@ -222,20 +171,16 @@
                                 android:layout_centerHorizontal="true"
                                 android:gravity="center_horizontal"
                                 android:layout_marginTop="3dp" />
-
                         </RelativeLayout>
-
                     </FrameLayout>
 
                    <FrameLayout
                         android:id="@+id/sanjay"
                         android:layout_width="80dp"
                         android:layout_height="90dp">
-
                         <RelativeLayout
                             android:layout_width="80dp"
                             android:layout_height="90dp">
-
                             <org.candy.candyshop.helpers.CircularImageView
                                 android:id="@+id/sanjay_image"
                                 android:layout_width="50dp"
@@ -248,7 +193,6 @@
                                 app:civ_border_color="@*android:color/accent_device_default_light"
                                 app:civ_shadow="true"
                                 app:civ_shadow_radius="4" />
-
                             <TextView
                                 android:id="@+id/sanjay_text"
                                 android:layout_width="wrap_content"
@@ -260,58 +204,16 @@
                                 android:layout_centerHorizontal="true"
                                 android:gravity="center_horizontal"
                                 android:layout_marginTop="3dp" />
-
                         </RelativeLayout>
-
-                    </FrameLayout>
-
-                   <FrameLayout
-                        android:id="@+id/nick"
-                        android:layout_width="80dp"
-                        android:layout_height="90dp">
-
-                        <RelativeLayout
-                            android:layout_width="80dp"
-                            android:layout_height="90dp">
-
-                            <org.candy.candyshop.helpers.CircularImageView
-                                android:id="@+id/nick_image"
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:layout_marginStart="15dp"
-                                android:layout_marginEnd="15dp"
-                                android:src="@drawable/nick"
-                                app:civ_border="true"
-                                app:civ_border_width="1dp"
-                                app:civ_border_color="@*android:color/accent_device_default_light"
-                                app:civ_shadow="true"
-                                app:civ_shadow_radius="4" />
-
-                            <TextView
-                                android:id="@+id/nick_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Nick"
-                                android:textSize="14sp"
-                                android:layout_below="@+id/nick_image"
-                                android:layout_gravity="center"
-                                android:layout_centerHorizontal="true"
-                                android:gravity="center_horizontal"
-                                android:layout_marginTop="3dp" />
-
-                        </RelativeLayout>
-
                     </FrameLayout>
 
                    <FrameLayout
                         android:id="@+id/mourya"
                         android:layout_width="80dp"
                         android:layout_height="90dp">
-
                         <RelativeLayout
                             android:layout_width="80dp"
                             android:layout_height="90dp">
-
                             <org.candy.candyshop.helpers.CircularImageView
                                 android:id="@+id/mourya_image"
                                 android:layout_width="50dp"
@@ -324,7 +226,6 @@
                                 app:civ_border_color="@*android:color/accent_device_default_light"
                                 app:civ_shadow="true"
                                 app:civ_shadow_radius="4" />
-
                             <TextView
                                 android:id="@+id/mourya_text"
                                 android:layout_width="wrap_content"
@@ -336,20 +237,16 @@
                                 android:layout_centerHorizontal="true"
                                 android:gravity="center_horizontal"
                                 android:layout_marginTop="3dp" />
-
                         </RelativeLayout>
-
                     </FrameLayout>
 
                    <FrameLayout
                         android:id="@+id/rajat"
                         android:layout_width="80dp"
                         android:layout_height="90dp">
-
                         <RelativeLayout
                             android:layout_width="80dp"
                             android:layout_height="90dp">
-
                             <org.candy.candyshop.helpers.CircularImageView
                                 android:id="@+id/rajat_image"
                                 android:layout_width="50dp"
@@ -362,7 +259,6 @@
                                 app:civ_border_color="@*android:color/accent_device_default_light"
                                 app:civ_shadow="true"
                                 app:civ_shadow_radius="4" />
-
                             <TextView
                                 android:id="@+id/rajat_text"
                                 android:layout_width="wrap_content"
@@ -374,7 +270,6 @@
                                 android:layout_centerHorizontal="true"
                                 android:gravity="center_horizontal"
                                 android:layout_marginTop="3dp" />
-
                         </RelativeLayout>
 
                     </FrameLayout>
@@ -383,11 +278,9 @@
                         android:id="@+id/chad"
                         android:layout_width="80dp"
                         android:layout_height="90dp">
-
                         <RelativeLayout
                             android:layout_width="80dp"
                             android:layout_height="90dp">
-
                             <org.candy.candyshop.helpers.CircularImageView
                                 android:id="@+id/chad_image"
                                 android:layout_width="50dp"
@@ -400,7 +293,6 @@
                                 app:civ_border_color="@*android:color/accent_device_default_light"
                                 app:civ_shadow="true"
                                 app:civ_shadow_radius="4" />
-
                             <TextView
                                 android:id="@+id/chad_text"
                                 android:layout_width="wrap_content"
@@ -412,10 +304,74 @@
                                 android:layout_centerHorizontal="true"
                                 android:gravity="center_horizontal"
                                 android:layout_marginTop="3dp" />
-
                         </RelativeLayout>
-
                     </FrameLayout>
+
+                   <FrameLayout
+                        android:id="@+id/tony"
+                        android:layout_width="80dp"
+                        android:layout_height="90dp">
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="90dp">
+                            <org.candy.candyshop.helpers.CircularImageView
+                                android:id="@+id/tony_image"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:src="@drawable/tony"
+                                app:civ_border="true"
+                                app:civ_border_width="1dp"
+                                app:civ_border_color="@*android:color/accent_device_default_light"
+                                app:civ_shadow="true"
+                                app:civ_shadow_radius="4" />
+                            <TextView
+                                android:id="@+id/tony_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tony"
+                                android:textSize="14sp"
+                                android:layout_below="@+id/tony_image"
+                                android:layout_gravity="center"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center_horizontal"
+                                android:layout_marginTop="3dp" />
+                        </RelativeLayout>
+                    </FrameLayout>
+
+                   <!--<FrameLayout
+                        android:id="@+id/nick"
+                        android:layout_width="80dp"
+                        android:layout_height="90dp">
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="90dp">
+                            <org.candy.candyshop.helpers.CircularImageView
+                                android:id="@+id/nick_image"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:src="@drawable/nick"
+                                app:civ_border="true"
+                                app:civ_border_width="1dp"
+                                app:civ_border_color="@*android:color/accent_device_default_light"
+                                app:civ_shadow="true"
+                                app:civ_shadow_radius="4" />
+                            <TextView
+                                android:id="@+id/nick_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nick"
+                                android:textSize="14sp"
+                                android:layout_below="@+id/nick_image"
+                                android:layout_gravity="center"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center_horizontal"
+                                android:layout_marginTop="3dp" />
+                        </RelativeLayout>
+                    </FrameLayout>-->
 
                 </org.candy.candyshop.helpers.RowLayout>
 
@@ -443,166 +399,12 @@
                     android:verticalSpacing="10dp">
 
                     <FrameLayout
-                        android:id="@+id/gerrit"
-                        android:layout_width="80dp"
-                        android:layout_height="90dp">
-
-                        <RelativeLayout
-                            android:layout_width="80dp"
-                            android:layout_height="90dp">
-
-                            <org.candy.candyshop.helpers.CircularImageView
-                                android:id="@+id/candy_image"
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:layout_marginStart="15dp"
-                                android:layout_marginEnd="15dp"
-                                android:src="@drawable/about_candy"
-                                app:civ_border="true"
-                                app:civ_border_width="1dp"
-                                app:civ_border_color="@*android:color/accent_device_default_light"
-                                app:civ_shadow="true"
-                                app:civ_shadow_radius="4" />
-
-                            <TextView
-                                android:id="@+id/gerrit_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="CandyRoms\nGerrit"
-                                android:textSize="14sp"
-                                android:layout_below="@+id/candy_image"
-                                android:layout_gravity="center"
-                                android:layout_centerHorizontal="true"
-                                android:gravity="center_horizontal"
-                                android:layout_marginTop="3dp" />
-
-                        </RelativeLayout>
-
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:id="@+id/candyroms_github"
-                        android:layout_width="80dp"
-                        android:layout_height="90dp">
-
-                        <RelativeLayout
-                            android:layout_width="80dp"
-                            android:layout_height="90dp">
-
-                            <org.candy.candyshop.helpers.CircularImageView
-                                android:id="@+id/candyroms_github_image"
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:layout_marginStart="15dp"
-                                android:layout_marginEnd="15dp"
-                                android:src="@drawable/about_candy"
-                                app:civ_border="true"
-                                app:civ_border_width="1dp"
-                                app:civ_border_color="@*android:color/accent_device_default_light"
-                                app:civ_shadow="true"
-                                app:civ_shadow_radius="4" />
-
-                            <TextView
-                                android:id="@+id/candyroms_github_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="CandyRoms\nGithub"
-                                android:textSize="14sp"
-                                android:layout_below="@+id/candyroms_github_image"
-                                android:layout_gravity="center"
-                                android:layout_centerHorizontal="true"
-                                android:gravity="center_horizontal"
-                                android:layout_marginTop="3dp" />
-
-                        </RelativeLayout>
-
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:id="@+id/candydev_github"
-                        android:layout_width="80dp"
-                        android:layout_height="90dp">
-
-                        <RelativeLayout
-                            android:layout_width="80dp"
-                            android:layout_height="90dp">
-
-                            <org.candy.candyshop.helpers.CircularImageView
-                                android:id="@+id/candydevices_github_image"
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:layout_marginStart="15dp"
-                                android:layout_marginEnd="15dp"
-                                android:src="@drawable/about_candy"
-                                app:civ_border="true"
-                                app:civ_border_width="1dp"
-                                app:civ_border_color="@*android:color/accent_device_default_light"
-                                app:civ_shadow="true"
-                                app:civ_shadow_radius="4" />
-
-                            <TextView
-                                android:id="@+id/candydevices_github_text"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="CandyDevices\nGithub"
-                                android:textSize="14sp"
-                                android:layout_below="@+id/candydevices_github_image"
-                                android:layout_gravity="center"
-                                android:layout_centerHorizontal="true"
-                                android:gravity="center_horizontal"
-                                android:layout_marginTop="3dp" />
-
-                        </RelativeLayout>
-
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:id="@+id/candyroms_tg"
-                        android:layout_width="80dp"
-                        android:layout_height="90dp">
-
-                        <RelativeLayout
-                            android:layout_width="80dp"
-                            android:layout_height="90dp">
-
-                            <org.candy.candyshop.helpers.CircularImageView
-                                android:id="@+id/candyroms_tg_image"
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:layout_marginStart="15dp"
-                                android:layout_marginEnd="15dp"
-                                android:src="@drawable/about_candy"
-                                app:civ_border="true"
-                                app:civ_border_width="1dp"
-                                app:civ_border_color="@*android:color/accent_device_default_light"
-                                app:civ_shadow="true"
-                                app:civ_shadow_radius="4" />
-
-                            <TextView
-                                android:id="@+id/candyroms_tg"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="CandyRoms\n@Telegram"
-                                android:textSize="14sp"
-                                android:layout_below="@+id/candyroms_tg_image"
-                                android:layout_gravity="center"
-                                android:layout_centerHorizontal="true"
-                                android:gravity="center_horizontal"
-                                android:layout_marginTop="3dp" />
-
-                        </RelativeLayout>
-
-                    </FrameLayout>
-
-                    <FrameLayout
                         android:id="@+id/candyroms"
                         android:layout_width="80dp"
                         android:layout_height="90dp">
-
                         <RelativeLayout
                             android:layout_width="80dp"
                             android:layout_height="90dp">
-
                             <org.candy.candyshop.helpers.CircularImageView
                                 android:id="@+id/candyroms_image"
                                 android:layout_width="50dp"
@@ -615,32 +417,159 @@
                                 app:civ_border_color="@*android:color/accent_device_default_light"
                                 app:civ_shadow="true"
                                 app:civ_shadow_radius="4" />
-
                             <TextView
                                 android:id="@+id/candyroms_text"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Candy G+"
+                                android:text="CandyRoms.org"
                                 android:textSize="14sp"
                                 android:layout_below="@+id/candyroms_image"
                                 android:layout_gravity="center"
                                 android:layout_centerHorizontal="true"
                                 android:gravity="center_horizontal"
                                 android:layout_marginTop="3dp" />
-
                         </RelativeLayout>
+                    </FrameLayout>
 
+                    <FrameLayout
+                        android:id="@+id/gerrit"
+                        android:layout_width="80dp"
+                        android:layout_height="90dp">
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="90dp">
+                            <org.candy.candyshop.helpers.CircularImageView
+                                android:id="@+id/candy_image"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:src="@drawable/about_candy"
+                                app:civ_border="true"
+                                app:civ_border_width="1dp"
+                                app:civ_border_color="@*android:color/accent_device_default_light"
+                                app:civ_shadow="true"
+                                app:civ_shadow_radius="4" />
+                            <TextView
+                                android:id="@+id/gerrit_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="CandyRoms\nGerrit"
+                                android:textSize="14sp"
+                                android:layout_below="@+id/candy_image"
+                                android:layout_gravity="center"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center_horizontal"
+                                android:layout_marginTop="3dp" />
+                        </RelativeLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/candyroms_github"
+                        android:layout_width="80dp"
+                        android:layout_height="90dp">
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="90dp">
+                            <org.candy.candyshop.helpers.CircularImageView
+                                android:id="@+id/candyroms_github_image"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:src="@drawable/about_candy"
+                                app:civ_border="true"
+                                app:civ_border_width="1dp"
+                                app:civ_border_color="@*android:color/accent_device_default_light"
+                                app:civ_shadow="true"
+                                app:civ_shadow_radius="4" />
+                            <TextView
+                                android:id="@+id/candyroms_github_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="CandyRoms\nGithub"
+                                android:textSize="14sp"
+                                android:layout_below="@+id/candyroms_github_image"
+                                android:layout_gravity="center"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center_horizontal"
+                                android:layout_marginTop="3dp" />
+                        </RelativeLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/candydev_github"
+                        android:layout_width="80dp"
+                        android:layout_height="90dp">
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="90dp">
+                            <org.candy.candyshop.helpers.CircularImageView
+                                android:id="@+id/candydevices_github_image"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:src="@drawable/about_candy"
+                                app:civ_border="true"
+                                app:civ_border_width="1dp"
+                                app:civ_border_color="@*android:color/accent_device_default_light"
+                                app:civ_shadow="true"
+                                app:civ_shadow_radius="4" />
+                            <TextView
+                                android:id="@+id/candydevices_github_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="CandyDevices\nGithub"
+                                android:textSize="14sp"
+                                android:layout_below="@+id/candydevices_github_image"
+                                android:layout_gravity="center"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center_horizontal"
+                                android:layout_marginTop="3dp" />
+                        </RelativeLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/candyroms_tg"
+                        android:layout_width="80dp"
+                        android:layout_height="90dp">
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="90dp">
+                            <org.candy.candyshop.helpers.CircularImageView
+                                android:id="@+id/candyroms_tg_image"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:src="@drawable/about_candy"
+                                app:civ_border="true"
+                                app:civ_border_width="1dp"
+                                app:civ_border_color="@*android:color/accent_device_default_light"
+                                app:civ_shadow="true"
+                                app:civ_shadow_radius="4" />
+                            <TextView
+                                android:id="@+id/candyroms_tg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="CandyRoms\n@Telegram"
+                                android:textSize="14sp"
+                                android:layout_below="@+id/candyroms_tg_image"
+                                android:layout_gravity="center"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center_horizontal"
+                                android:layout_marginTop="3dp" />
+                        </RelativeLayout>
                     </FrameLayout>
 
                     <FrameLayout
                         android:id="@+id/opengapps"
                         android:layout_width="80dp"
                         android:layout_height="90dp">
-
                         <RelativeLayout
                             android:layout_width="80dp"
                             android:layout_height="90dp">
-
                             <org.candy.candyshop.helpers.CircularImageView
                                 android:id="@+id/opengapps_image"
                                 android:layout_width="50dp"
@@ -653,7 +582,6 @@
                                 app:civ_border_color="@*android:color/accent_device_default_light"
                                 app:civ_shadow="true"
                                 app:civ_shadow_radius="4" />
-
                             <TextView
                                 android:id="@+id/opengapps_text"
                                 android:layout_width="wrap_content"
@@ -665,20 +593,16 @@
                                 android:layout_centerHorizontal="true"
                                 android:gravity="center_horizontal"
                                 android:layout_marginTop="3dp" />
-
                         </RelativeLayout>
-
                     </FrameLayout>
 
                     <FrameLayout
                         android:id="@+id/magisk"
                         android:layout_width="80dp"
                         android:layout_height="90dp">
-
                         <RelativeLayout
                             android:layout_width="80dp"
                             android:layout_height="90dp">
-
                             <org.candy.candyshop.helpers.CircularImageView
                                 android:id="@+id/magisk_image"
                                 android:layout_width="50dp"
@@ -691,7 +615,6 @@
                                 app:civ_border_color="@*android:color/accent_device_default_light"
                                 app:civ_shadow="true"
                                 app:civ_shadow_radius="4" />
-
                             <TextView
                                 android:id="@+id/magisk_text"
                                 android:layout_width="wrap_content"
@@ -703,9 +626,7 @@
                                 android:layout_centerHorizontal="true"
                                 android:gravity="center_horizontal"
                                 android:layout_marginTop="3dp" />
-
                         </RelativeLayout>
-
                     </FrameLayout>
 
                 </org.candy.candyshop.helpers.RowLayout>
@@ -717,12 +638,24 @@
     </FrameLayout>
 
     <!-- candy_logo.png -->
-    <ImageView
+    <!--<ImageView
         android:id="@+id/bkgnd2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:src="@drawable/candy_logo"
+        android:alpha="0.0875" />-->
+
+    <ImageView
+        android:id="@+id/bkgnd2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_candy_logo"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:alpha="0.0875" />
 
 </RelativeLayout>
