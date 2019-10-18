@@ -31,17 +31,29 @@
         android:key="statusbar_options_category"
         android:title="@string/statusbar_options_category_title" >
 
-       <Preference
-           android:key="network_traffic"
-           android:title="@string/traffic_title"
-           android:summary="@string/traffic_summary"
-           android:fragment="org.candy.candyshop.fragments.NetworkTraffic" />
-      
-    </PreferenceCategory>
+    </PreferenceCategory>-->
 
-    <!--<PreferenceCategory
+    <PreferenceCategory
         android:key="statusbar_notifications"
         android:title="@string/statusbar_notifications_title" >
 
-   </PreferenceCategory>-->
+    </PreferenceCategory>-->
+
+    <Preference
+         android:key="network_traffic"
+         android:title="@string/traffic_title"
+         android:summary="@string/traffic_summary"
+         android:fragment="org.candy.candyshop.fragments.NetworkTraffic" />
+
+    <PreferenceCategory
+        android:key="statusbar_gestures"
+        android:title="@string/gestures_title">
+
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="double_tap_sleep_gesture"
+            android:title="@string/double_tap_sleep_gesture_title"
+            android:summary="@string/double_tap_sleep_gesture_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
 </PreferenceScreen>
