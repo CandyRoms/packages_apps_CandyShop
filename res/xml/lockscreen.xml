@@ -37,6 +37,18 @@
         android:summary="@string/wakeup_when_plugged_unplugged_summary"
         android:defaultValue="true" />
 
+    <PreferenceCategory
+        android:key="ls_gestures"
+        android:title="@string/gestures_title">
+
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+        android:key="double_tap_sleep_lockscreen"
+        android:title="@string/double_tap_sleep_lockscreen_title"
+        android:summary="@string/double_tap_sleep_lockscreen_summary"
+        android:defaultValue="false" />
+
+    </PreferenceCategory>
+
     <!--<PreferenceCategory
         android:key="media_options_category"
         android:title="@string/media_options_category_title" >
