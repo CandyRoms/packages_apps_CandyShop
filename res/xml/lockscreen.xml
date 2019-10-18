@@ -31,6 +31,12 @@
         android:summary="@string/lockscreen_battery_info_summary"
 	android:defaultValue="true" />
 
+        <org.candy.candyshop.preference.GlobalSettingSwitchPreference
+        android:key="wake_when_plugged_or_unplugged"
+        android:title="@string/wakeup_when_plugged_unplugged_title"
+        android:summary="@string/wakeup_when_plugged_unplugged_summary"
+        android:defaultValue="true" />
+
     <!--<PreferenceCategory
         android:key="media_options_category"
         android:title="@string/media_options_category_title" >
