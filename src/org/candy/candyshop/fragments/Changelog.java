@@ -16,7 +16,7 @@
 
 package org.candy.candyshop.fragments;
 
-import android.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -53,7 +53,7 @@ public class Changelog extends Fragment {
         Pattern p2 = Pattern.compile("\\s+\\*\\s(([\\w_\\-]+/)+)");
         Pattern p3 = Pattern.compile("(\\d\\d\\-\\d\\d\\-\\d{4})");
         try {
-            char tmp[] = new char[2048];
+            char tmp[] = new char[8192];
             int numRead;
 
             inputReader = new FileReader(CHANGELOG_PATH);
