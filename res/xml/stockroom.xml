@@ -48,10 +48,10 @@
         android:key="miscellaneous_category"
         android:title="@string/miscellaneous_category_title" >
 
-        <com.android.settings.applications.LayoutPreference
+        <Preference
             android:key="changelog"
-            android:fragment="org.candy.candyshop.fragments.Changelog"
-            android:layout="@layout/changelog" />
+            android:title="@string/changelog_title"
+            android:fragment="org.candy.candyshop.fragments.Changelog" />
 
     </PreferenceCategory>
 
