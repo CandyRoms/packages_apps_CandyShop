@@ -239,4 +239,9 @@
     <string name="pulse_custom_div">Bar spacing</string>
     <string name="pulse_filled_block_size">Block size</string>
     <string name="pulse_empty_block_size">Block spacing</string>
+
+    <!-- Swap volume buttons on rotation -->
+    <string name="swap_volume_keys_on_rotation_title">Swap volume buttons</string>
+    <string name="swap_volume_keys_on_rotation_summary">Swap volume buttons when rotating the device to landscape orientation</string>
+
 </resources>

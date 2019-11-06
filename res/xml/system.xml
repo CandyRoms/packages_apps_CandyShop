@@ -39,14 +39,18 @@
             android:fragment="org.candy.candyshop.fragments.AggressiveBattery" />
     </PreferenceCategory>
 
-
-
-    <!--<PreferenceCategory
+    <PreferenceCategory
         android:id="@+id/buttons_category"
         android:key="buttons_category"
         android:title="@string/button_category_title" >
 
-    </PreferenceCategory>-->
+         <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="swap_volume_keys_on_rotation"
+            android:title="@string/swap_volume_keys_on_rotation_title"
+            android:summary="@string/swap_volume_keys_on_rotation_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
 
     <!--<PreferenceCategory
         android:key="notifications_category"
