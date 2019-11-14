@@ -16,7 +16,6 @@
  -->
 
 <resources>
-
     <declare-styleable name="PagerSlidingTabStrip">
         <attr name="indicatorColor" format="color" />
         <attr name="dividerColor" format="color" />
@@ -53,6 +52,7 @@
         <attr name="min" format="integer" />
         <attr name="max" format="integer" />
         <attr name="units" format="string|reference" />
+        <attr name="defaultText" format="string|reference" />
     </declare-styleable>
 
     <!-- Value to pass to callback when restore button is pressed -->

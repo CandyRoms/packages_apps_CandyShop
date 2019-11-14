@@ -26,7 +26,7 @@
         android:layout="@layout/tab_header_preference_category"
         android:title="@string/statusbar_aisle_header" />
 
-    <PreferenceCategory
+    <!--<PreferenceCategory
         android:id="@+id/statusbar_options_category"
         android:key="statusbar_options_category"
         android:title="@string/statusbar_options_category_title" >
@@ -37,7 +37,7 @@
         android:key="statusbar_notifications"
         android:title="@string/statusbar_notifications_title" >
 
-    </PreferenceCategory>-->
+    </PreferenceCategory>
 
     <Preference
          android:key="network_traffic"
