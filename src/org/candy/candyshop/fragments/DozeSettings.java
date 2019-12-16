@@ -58,10 +58,8 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
 
     public static final String TAG = "DozeSettings";
 
-    private static final String KEY_DOZE = "doze_enabled";
     private static final String KEY_DOZE_ALWAYS_ON = "doze_always_on";
 
-    private static final String PULSE_AMBIENT_LIGHT_COLOR = "pulse_ambient_light_color";
 
     private static final String CATEG_DOZE_SENSOR = "doze_sensor";
 
@@ -71,9 +69,6 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
     private static final String KEY_DOZE_POCKET_GESTURE = "doze_pocket_gesture";
     private static final String KEY_DOZE_GESTURE_VIBRATE = "doze_gesture_vibrate";
 
-    private ColorPickerPreference mEdgeLightColorPreference;
-
-    private SwitchPreference mDozePreference;
     private SwitchPreference mDozeAlwaysOnPreference;
     private SwitchPreference mTiltPreference;
     private SwitchPreference mPickUpPreference;
@@ -89,26 +84,10 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
 
         Context context = getContext();
 
-        mEdgeLightColorPreference = (ColorPickerPreference) findPreference(PULSE_AMBIENT_LIGHT_COLOR);
-        int edgeLightColor = Settings.System.getInt(getContentResolver(),
-                Settings.System.PULSE_AMBIENT_LIGHT_COLOR, 0xFF3980FF);
-        mEdgeLightColorPreference.setNewPreviewColor(edgeLightColor);
-        mEdgeLightColorPreference.setAlphaSliderEnabled(false);
-        String edgeLightColorHex = String.format("#%08x", (0xFF3980FF & edgeLightColor));
-        if (edgeLightColorHex.equals("#ff3980ff")) {
-            mEdgeLightColorPreference.setSummary(R.string.default_string);
-        } else {
-            mEdgeLightColorPreference.setSummary(edgeLightColorHex);
-        }
-        mEdgeLightColorPreference.setOnPreferenceChangeListener(this);
-
         PreferenceCategory dozeSensorCategory =
                 (PreferenceCategory) getPreferenceScreen().findPreference(CATEG_DOZE_SENSOR);
 
-        mDozePreference = (SwitchPreference) findPreference(KEY_DOZE);
-
         mDozeAlwaysOnPreference = (SwitchPreference) findPreference(KEY_DOZE_ALWAYS_ON);
-        mDozeAlwaysOnPreference.setOnPreferenceChangeListener(this);
 
         mTiltPreference = (SwitchPreference) findPreference(KEY_DOZE_TILT_GESTURE);
         mTiltPreference.setOnPreferenceChangeListener(this);
@@ -121,8 +100,6 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
 
         mPocketPreference = (SwitchPreference) findPreference(KEY_DOZE_POCKET_GESTURE);
         mPocketPreference.setOnPreferenceChangeListener(this);
-
-        updateState();
 
         // Hide sensor related features if the device doesn't support them
         if (!Utils.getTiltSensor(context) && !Utils.getPickupSensor(context) && !Utils.getProximitySensor(context)) {
@@ -141,36 +118,7 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
         // Hides always on toggle if device doesn't support it (based on config_dozeAlwaysOnDisplayAvailable overlay)
         boolean mAlwaysOnAvailable = getResources().getBoolean(com.android.internal.R.bool.config_dozeAlwaysOnDisplayAvailable);
         if (!mAlwaysOnAvailable) {
-            getPreferenceScreen().removePreference(findPreference(KEY_DOZE_ALWAYS_ON));
-        }
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        updateState();
-    }
-
-    private void updateState() {
-        Context context = getContext();
-
-        if (mDozePreference != null) {
-            mDozePreference.setChecked(Utils.isDozeEnabled(context));
-        }
-        if (mDozeAlwaysOnPreference != null) {
-            mDozeAlwaysOnPreference.setChecked(Utils.isDozeAlwaysOnEnabled(context));
-        }
-        if (mTiltPreference != null) {
-            mTiltPreference.setChecked(Utils.tiltEnabled(context));
-        }
-        if (mPickUpPreference != null) {
-            mPickUpPreference.setChecked(Utils.pickUpEnabled(context));
-        }
-        if (mHandwavePreference != null) {
-            mHandwavePreference.setChecked(Utils.handwaveGestureEnabled(context));
-        }
-        if (mPocketPreference != null) {
-            mPocketPreference.setChecked(Utils.pocketGestureEnabled(context));
+            getPreferenceScreen().removePreference(mDozeAlwaysOnPreference);
         }
     }
 
@@ -179,24 +127,7 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
         Context context = getContext();
         ContentResolver resolver = context.getContentResolver();
 
-        if (preference == mDozePreference) {
-            boolean value = (Boolean) newValue;
-            Settings.Secure.putIntForUser(resolver, Settings.Secure.DOZE_ENABLED,
-                 value ? 1 : 0, UserHandle.USER_CURRENT);
-            return true;
-        } else if (preference == mEdgeLightColorPreference) {
-            String hex = ColorPickerPreference.convertToARGB(
-                    Integer.valueOf(String.valueOf(newValue)));
-            if (hex.equals("#ff3980ff")) {
-                preference.setSummary(R.string.default_string);
-            } else {
-                preference.setSummary(hex);
-            }
-            int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putIntForUser(resolver,
-                    Settings.System.PULSE_AMBIENT_LIGHT_COLOR, intHex, UserHandle.USER_CURRENT);
-            return true;
-        } else if (preference == mTiltPreference) {
+        if (preference == mTiltPreference) {
             boolean value = (Boolean) newValue;
             Settings.Secure.putIntForUser(resolver, Settings.Secure.DOZE_TILT_GESTURE,
                  value ? 1 : 0, UserHandle.USER_CURRENT);
@@ -266,10 +197,6 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
                 Settings.Secure.DOZE_ALWAYS_ON, mContext.getResources().getBoolean(
                 com.android.internal.R.bool.config_dozeAlwaysOnEnabled) ? 1 : 0,
                 UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.PULSE_AMBIENT_LIGHT, 0, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.PULSE_AMBIENT_LIGHT_COLOR, 0xFF3980FF, UserHandle.USER_CURRENT);
         Settings.Secure.putIntForUser(resolver,
                 Settings.Secure.DOZE_TILT_GESTURE, 0, UserHandle.USER_CURRENT);
         Settings.Secure.putIntForUser(resolver,
