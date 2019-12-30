@@ -298,7 +298,7 @@
     <string name="qs_panel_alpha_title">Quick Settings panel opacity</string>
     <string name="qs_panel_alpha_summary">Configure opacity of background</string>
 
-    <!-- Battery mode -->
+    <!-- Battery mode/percent -->
     <string name="battery_mode_title">Battery Style</string>
     <string name="battery_mode_summary">Configure Stausbar battery style</string>
     <string name="battery_percentage_title">Battery percentage</string>
