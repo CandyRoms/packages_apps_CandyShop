@@ -106,7 +106,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:id="@+id/lockscreen_security_category"
+        android:id="@+id/fod_category"
         android:key="lockscreen_security_category"
         android:title="@string/lockscreen_security_category_title" >
 
@@ -114,6 +114,20 @@
             android:key="fod_on_doze"
             android:title="@string/fod_on_doze_title"
             android:summary="@string/fod_on_doze_summary"
+            android:defaultValue="false" />
+
+        <!-- FOD icon picker -->
+        <Preference
+            android:key="fod_icon_picker"
+            android:icon="@drawable/ic_fp"
+            android:title="@string/fod_icon_picker_title"
+            android:summary="@string/fod_icon_picker_summary"
+            android:fragment="org.candy.candyshop.fragments.lockscreen.FODIconPickerFragment" />
+
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="fod_icon_wallpaper_color"
+            android:title="@string/fod_wallpaper_color"
+            android:summary="@string/fod_wallpaper_color_summary"
             android:defaultValue="false" />
 
     </PreferenceCategory>

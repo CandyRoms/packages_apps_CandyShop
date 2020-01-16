@@ -343,4 +343,12 @@
     <!-- FOD on doze -->
     <string name="fod_on_doze_title">FOD on doze</string>
     <string name="fod_on_doze_summary">Show fingerprint in display on ambient display and AOD. This only hides the icon and will not disable functionality</string>
+
+	<!--FOD -->
+    <string name="fod_icon_picker_title">FOD icon picker</string>
+    <string name="fod_icon_picker_summary">Pick your favourite fingerprint icon</string>
+    <string name="fod_icon_picker_footer">In order to add your own icon, select the top left icon and use the OnePlus 6T FP Customizer app to select the icon you want.</string>
+    <string name="fod_wallpaper_color">Use wallpaper color for FOD icon</string>
+    <string name="fod_wallpaper_color_summary">Uses adjusted primary wallpaper color for FOD icon\nNOTE: might look good only with some wallpapers</string>
+
 </resources>
