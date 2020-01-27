@@ -97,6 +97,14 @@
                 android:summary="@string/fod_wallpaper_color_summary"
                 android:defaultValue="false" />
 
+	            <!-- FOD recognizing animation -->
+            <org.candy.candyshop.preference.SystemSettingSwitchPreference
+                android:key="fod_recognizing_animation"
+                android:icon="@drawable/ic_fp"
+                android:title="@string/fod_recog_animation"
+                android:summary="@string/fod_recog_animation_summary"
+                android:defaultValue="false" />
+
             <org.candy.candyshop.preference.SystemSettingListPreference
                 android:key="fod_anim"
                 android:icon="@drawable/ic_fp_animation"
