@@ -16,8 +16,11 @@
 
 package org.candy.candyshop.tabs;
 
-import android.content.Context;
+
+import android.app.Activity;
+import android.app.WallpaperManager;
 import android.content.ContentResolver;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
@@ -58,6 +61,13 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
+import org.candy.candyshop.preference.SecureSettingMasterSwitchPreference;
+import org.candy.candyshop.preference.SystemSettingSwitchPreference;
+import org.candy.candyshop.preference.SystemSettingListPreference;
+import org.candy.candyshop.preference.SystemSettingSeekBarPreference;
+
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
+
 @SearchIndexable
 public class Lockscreen extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -65,6 +75,7 @@ public class Lockscreen extends SettingsPreferenceFragment implements
     private static final String MISC_CATEGORY = "lockscreen_category";
     private static final String FOD_ICON_PICKER_CATEGORY = "fod_icon_picker";
     private static final String FOD_ANIMATION = "fod_anim";
+    private static final String LOCK_CLOCK_FONTS = "lock_clock_fonts";
 
     private PreferenceCategory mFODIconPickerCategory;
     private ListPreference mFODAnimation;

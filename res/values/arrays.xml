@@ -94,6 +94,37 @@
         <item>14</item>
     </string-array>
 
+    <!-- Lock Clock Fonts -->
+    <string-array name="lock_clock_fonts_entries">
+        <item>@string/lock_clock_font_stock</item>
+        <item>@string/lock_clock_font_bold</item>
+        <item>@string/lock_clock_font_italic</item>
+        <item>@string/lock_clock_font_bold_italic</item>
+        <item>@string/lock_clock_font_light_italic</item>
+        <item>@string/lock_clock_font_thin_italic</item>
+        <item>@string/lock_clock_font_condensed_normal</item>
+        <item>@string/lock_clock_font_condensed_italic</item>
+        <item>@string/lock_clock_font_condensed_bold</item>
+        <item>@string/lock_clock_font_condensed_bold_italic</item>
+        <item>@string/lock_clock_font_medium_normal</item>
+        <item>@string/lock_clock_font_medium_italic</item>
+    </string-array>
+
+    <string-array name="lock_clock_fonts_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+
     <!-- Statusbar Clock -->
     <string-array name="status_bar_clock_style_entries" translatable="false">
         <item>@string/status_bar_clock_style_left</item>
@@ -176,6 +207,7 @@
         <item>0</item>
         <item>1</item>
         <item>2</item>
+    </string-array>
 
     <!-- Battery Mod for Android 10 -->
     <string-array name="status_bar_battery_style_entries" translatable="false">
@@ -269,4 +301,4 @@
         <item>7</item>
     </string-array>
 
- </resources>
+</resources>
