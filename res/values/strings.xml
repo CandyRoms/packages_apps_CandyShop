@@ -55,7 +55,7 @@
     <string name="qs_cat_title">Quick settings panel</string>
     <string name="statusbar_options_category_title">Statusbar options</string>
     <string name="statusbar_notifications">Statusbar notifications</string>
-    <string name="statusbar_notifications_title">Statusbar ticker and heads-up options</string>
+    <string name="statusbar_notifications_title">Statusbar notification options</string>
     <string name="multitasking_category_title">Multi-tasking</string>
     <string name="screen_capture_options_category_title">Screen capture options</string>
     <string name="miscellaneous_category_title">Miscellaneous</string>
@@ -72,7 +72,7 @@
     <string name="battery_light_reallyfull_color">Full (100) battery</string>    
 
     <!-- Fragments -->
-
+    <string name="notification_settings_title">Notifications Settings</string>
 
     <!-- AboutCandy-->
     <string name="dialog_about_candy_title">About CandyRoms</string>
@@ -140,5 +140,9 @@
     <string name="changelog_title">Changelog</string>
     <string name="changelog_summary">See some of the recent commits.</string>
     <string name="changelog_error">Unable to load changelog</string>
+
+    <!-- Force expanded notifications -->
+    <string name="force_expanded_notifications_title">Force expanded notifications</string>
+    <string name="force_expanded_notifications_summary">Force apps that support expanded notifications</string>
 
 </resources>
