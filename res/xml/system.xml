@@ -41,6 +41,20 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:id="@+id/security_category"
+        android:key="security_category"
+        android:title="@string/system_security_category_title" >
+
+    <!-- Disable device identifier restrictions -->
+    <org.candy.candyshop.preference.GlobalSettingSwitchPreference
+        android:key="privileged_device_identifier_check_relaxed"
+        android:icon="@drawable/ic_identifier"
+        android:title="@string/device_identifier_access_restrictions_title"
+        android:summary="@string/device_identifier_access_restrictions_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:id="@+id/buttons_category"
         android:key="buttons_category"
         android:title="@string/button_category_title" >
@@ -65,7 +79,6 @@
             android:defaultValue="0"
             android:summary="%s"
             android:title="@string/volume_key_cursor_control_title" />
-
 
     </PreferenceCategory>
 

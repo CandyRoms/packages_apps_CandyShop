@@ -57,6 +57,8 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
+import org.candy.candyshop.preference.GlobalSettingSwitchPreference;
+
 @SearchIndexable
 public class System extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {

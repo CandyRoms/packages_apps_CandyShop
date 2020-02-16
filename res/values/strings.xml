@@ -52,6 +52,7 @@
     <string name="lockscreen_other_category_title">Other</string>
     <string name="lockscreen_gestures_category_title">Lockscreen gestures</string>
     <string name="system_notifications_category_title">System notifications</string>
+    <string name="system_security_category_title">System security</string>
     <string name="quicksettings_layout_category_title">QuickSettings rows and columns</string>
     <string name="quicksettings_options_category_title">QuickSettings options</string>
     <string name="statusbar_gestures_category_title">Statusbar gestures</string>
@@ -252,5 +253,9 @@
     <string name="volume_key_cursor_control_off">Disabled</string>
     <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
     <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+
+    <!-- Device identifier access restrictions -->
+    <string name="device_identifier_access_restrictions_title">Disable device identifier restrictions</string>
+    <string name="device_identifier_access_restrictions_summary">Disable the new access restrictions for device identifiers</string>
 
 </resources>
