@@ -75,8 +75,14 @@
             android:summary="%s"
             android:title="@string/volume_key_cursor_control_title" />
 
+        <SwitchPreference
+            android:key="force_show_navbar"
+            android:title="@string/navigation_bar_title"
+            android:summary="@string/navigation_bar_summary" />
+
         <Preference
-            android:title="@string/navigation_tuner_title" >
+            android:title="@string/navigation_tuner_title"
+            android:dependency="force_show_navbar" >
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.tuner.NavBarActivity" />

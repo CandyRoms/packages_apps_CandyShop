@@ -385,4 +385,8 @@
     <string name="partial_screenshot_as_default_title">Partial screenshot as default action</string>
     <string name="partial_screenshot_as_default_summary">Set partial screenshot as default action for Screenshot button in power menu. Otherwise a long press action triggers it.</string>
 
+    <!-- Navigation bar -->
+    <string name="navigation_bar_title">On-screen navigation bar</string>
+    <string name="navigation_bar_summary">Enable on-screen navigation keys</string>
+
 </resources>

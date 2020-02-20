@@ -61,17 +61,18 @@ import org.candy.candyshop.preference.GlobalSettingSwitchPreference;
 
 @SearchIndexable
 public class System extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+        Preference.OnPreferenceChangeListener, Indexable {
 
     private static final String DEVICE_CATEGORY = "device_extras_category";
     private static final String MISC_CATEGORY = "system_category";
 	private static final String TAG = "System";
     private static final String NOTIFICATIONS = "notifications_category";
     private static final String CHARGING_LIGHT = "charging_light";
+    private static final String KEY_NAVIGATION_BAR_ENABLED = "force_show_navbar";
 
     private PreferenceCategory mNotifications = null;
     private Preference mChargingLight = null;
-
+    private SwitchPreference mNavigationBar;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -86,6 +87,20 @@ public class System extends SettingsPreferenceFragment implements
         if (!(getResources().getBoolean(com.android.internal.R.bool.config_intrusiveNotificationLed))) {
             mNotifications.removePreference(mChargingLight);
         }
+
+        final ContentResolver resolver = getActivity().getContentResolver();
+
+        final boolean defaultToNavigationBar = getResources().getBoolean(
+                com.android.internal.R.bool.config_showNavigationBar);
+        final boolean navigationBarEnabled = Settings.System.getIntForUser(
+                resolver, Settings.System.FORCE_SHOW_NAVBAR,
+                defaultToNavigationBar ? 1 : 0, UserHandle.USER_CURRENT) != 0;
+
+        mNavigationBar = (SwitchPreference) findPreference(KEY_NAVIGATION_BAR_ENABLED);
+        mNavigationBar.setChecked((Settings.System.getInt(getContentResolver(),
+                Settings.System.FORCE_SHOW_NAVBAR,
+                defaultToNavigationBar ? 1 : 0) == 1));
+        mNavigationBar.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -99,7 +114,12 @@ public class System extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        final String key = preference.getKey();
+        if (preference == mNavigationBar) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.FORCE_SHOW_NAVBAR, value ? 1 : 0);
+            return true;
+        }
         return false;
     }
 
@@ -130,4 +150,3 @@ public class System extends SettingsPreferenceFragment implements
                 }
     };
 }
-
