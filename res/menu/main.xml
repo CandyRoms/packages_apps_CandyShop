@@ -36,9 +36,9 @@
         app:showAsAction="ifRoom|withText"/>
 
     <item
-        android:id="@+id/navigation"
-        android:icon="@drawable/bottomnav_navigation"
-        android:title="@string/navigation_bottom_nav_title"
+        android:id="@+id/quicksettings"
+        android:icon="@drawable/bottomnav_lockscreen"
+        android:title="@string/quicksettings_bottom_nav_title"
         app:showAsAction="ifRoom|withText"/>
 
     <item

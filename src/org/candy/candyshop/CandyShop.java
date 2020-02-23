@@ -73,7 +73,7 @@ import org.candy.candyshop.navigation.BottomNavigationViewCustom;
 import org.candy.candyshop.tabs.System;
 import org.candy.candyshop.tabs.Lockscreen;
 import org.candy.candyshop.tabs.StatusBar;
-import org.candy.candyshop.tabs.Navigation;
+import org.candy.candyshop.tabs.QuickSettings;
 import org.candy.candyshop.tabs.StockRoom;
 
 public class CandyShop extends SettingsPreferenceFragment {
@@ -109,7 +109,7 @@ public class CandyShop extends SettingsPreferenceFragment {
                     case R.id.statusbar:
                         viewPager.setCurrentItem(2);
                         return true;
-                    case R.id.navigation:
+                    case R.id.quicksettings:
                         viewPager.setCurrentItem(3);
                         return true;
                     case R.id.stockroom:
@@ -156,7 +156,7 @@ public class CandyShop extends SettingsPreferenceFragment {
             frags[0] = new System();
             frags[1] = new Lockscreen();
             frags[2] = new StatusBar();
-            frags[3] = new Navigation();
+            frags[3] = new QuickSettings();
             frags[4] = new StockRoom();
         }
 
@@ -182,7 +182,7 @@ public class CandyShop extends SettingsPreferenceFragment {
                 getString(R.string.system_category),
                 getString(R.string.lockscreen_category),
                 getString(R.string.statusbar_category),
-                getString(R.string.navigation_category),
+                getString(R.string.quicksettings_category),
                 getString(R.string.stockroom_category)};
 
         return titleString;
