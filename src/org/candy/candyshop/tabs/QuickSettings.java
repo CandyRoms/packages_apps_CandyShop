@@ -38,15 +38,15 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.Utils;
 
-public class Navigation extends SettingsPreferenceFragment implements
+public class QuickSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-    private static final String MISC_CATEGORY = "navigation_category";
-    private static final String TAG = "Navigation";
+    private static final String MISC_CATEGORY = "quicksettings_category";
+    private static final String TAG = "QuickSettings";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.navigation);
+        addPreferencesFromResource(R.xml.quicksettings);
     }
 
     @Override

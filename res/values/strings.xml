@@ -25,7 +25,6 @@
     <string name="quicksettings_category">QuickSettings</string>
     <string name="lockscreen_category">Lockscreen</string>
     <string name="statusbar_category">Statusbar</string>
-    <string name="navigation_category">Navigation</string>
     <string name="stockroom_category">StockRoom</string>
     <string name="simple_category">SIMPLE</string>
     <string name="advanced_category">ADVANCED</string>
@@ -34,14 +33,14 @@
     <string name="system_bottom_nav_title">System</string>
     <string name="lockscreen_bottom_nav_title">Lockscreen</string>
     <string name="statusbar_bottom_nav_title">Statusbar</string>
-    <string name="navigation_bottom_nav_title">Navigation</string>
+    <string name="quicksettings_bottom_nav_title">QuickSettings</string>
     <string name="stockroom_bottom_nav_title">StockRoom</string>
 
     <!-- CandyShop Aisles tab header text -->
     <string name="system_aisle_header">System - Aisle 1</string>
     <string name="lockscreen_aisle_header">Lockscreen - Aisle 2</string>
     <string name="statusbar_aisle_header">Statusbar - Aisle 3</string>
-    <string name="navigation_aisle_header">Navigation - Aisle 4</string>
+    <string name="quicksettings_aisle_header">QuickSettings - Aisle 4</string>
     <string name="stockroom_aisle_header">The StockRoom</string>
 
     <string name="candyshop_summary_title">Have some Candy, on us!</string>
@@ -57,7 +56,6 @@
     <string name="lockscreen_clock_category_title">Clock and date options</string>
     <string name="lockscreen_other_category_title">Other</string>
     <string name="notifications_category_title">System notifications</string>
-    <string name="qs_cat_title">Quick settings panel</string>
     <string name="statusbar_options_category_title">Statusbar options</string>
     <string name="statusbar_notifications">Statusbar notifications</string>
     <string name="statusbar_notifications_title">Statusbar ticker and heads-up options</string>
@@ -67,6 +65,8 @@
     <string name="clock_options_title">Clock &amp; date</string>
 
     <!-- Fragments -->
+    <string name="notification_settings_title">Notifications Settings</string>
+    <string name="quicksettings_title">QuickSettings options</string>
 
     <!-- AboutCandy-->
     <string name="dialog_about_candy_title">About CandyRoms</string>
