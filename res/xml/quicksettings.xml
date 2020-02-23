@@ -21,4 +21,16 @@
         android:layout="@layout/tab_header_preference_category"
         android:title="@string/quicksettings_aisle_header" />
 
+    <PreferenceCategory
+        android:id="@+id/quicksettings_options_category"
+        android:key="quicksettings_options_category"
+        android:title="@string/quicksettings_options_category_title" >
+
+        <Preference
+            android:key="qs_rows_columns"
+            android:fragment="org.candy.candyshop.fragments.QuickSettings"
+            android:title="@string/qs_rows_columns_title"/>
+
+     </PreferenceCategory>
+
 </PreferenceScreen>

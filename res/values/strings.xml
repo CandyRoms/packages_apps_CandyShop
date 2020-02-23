@@ -28,7 +28,7 @@
     <string name="system_bottom_nav_title">System</string>
     <string name="lockscreen_bottom_nav_title">Lockscreen</string>
     <string name="statusbar_bottom_nav_title">Statusbar</string>
-    <string name="navigation_bottom_nav_title">QuickSettings</string>
+    <string name="quicksettings_bottom_nav_title">QuickSettings</string>
     <string name="stockroom_bottom_nav_title">StockRoom</string>
 
     <!-- CandyShop Aisles tab header text -->
@@ -51,6 +51,7 @@
     <string name="lockscreen_clock_category_title">Clock and date options</string>
     <string name="lockscreen_other_category_title">Other</string>
     <string name="notifications_category_title">System notifications</string>
+    <string name="quicksettings_options_category_title">QuickSettings Options</string>
     <string name="statusbar_options_category_title">Statusbar options</string>
     <string name="statusbar_notifications">Statusbar notifications</string>
     <string name="statusbar_notifications_title">Statusbar notification options</string>
@@ -153,5 +154,12 @@
     <string name="volte_icon_volte">VoLTE Icon</string>
     <string name="volte_icon_oos">VoLTE OOS Icon</string>
     <string name="volte_icon_hd">HD Icon</string>
+
+     <!-- QS rows and columns -->
+    <string name="qs_rows_columns_title">QS Panel Layout</string>
+    <string name="qs_rows_portrait_title">Tiles rows on portrait</string>
+    <string name="qs_rows_landscape_title">Tiles rows on landscape</string>
+    <string name="qs_columns_portrait_title">Tiles columns on portrait</string>
+    <string name="qs_columns_landscape_title">Tiles columns on landscape</string>
 
 </resources>
