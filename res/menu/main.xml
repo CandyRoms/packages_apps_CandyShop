@@ -37,7 +37,7 @@
 
     <item
         android:id="@+id/quicksettings"
-        android:icon="@drawable/bottomnav_lockscreen"
+        android:icon="@drawable/bottomnav_quicksettings"
         android:title="@string/quicksettings_bottom_nav_title"
         app:showAsAction="ifRoom|withText"/>
 
