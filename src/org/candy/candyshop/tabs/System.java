@@ -41,6 +41,12 @@ public class System extends SettingsPreferenceFragment implements
     private static final String DEVICE_CATEGORY = "device_extras_category";
     private static final String MISC_CATEGORY = "system_category";
 	private static final String TAG = "System";
+    private static final String NOTIFICATIONS = "notifications_category";
+    private static final String CHARGING_LIGHT = "charging_light";
+
+    private PreferenceCategory mNotifications = null;
+    private Preference mChargingLight = null;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -48,6 +54,13 @@ public class System extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.system);
 
+        // This should remove the batter light preference if config_intrusiveBatteryLed is not set
+        mNotifications = (PreferenceCategory)findPreference(NOTIFICATIONS);
+        mChargingLight = (Preference) findPreference(CHARGING_LIGHT);
+
+        if (!(getResources().getBoolean(com.android.internal.R.bool.config_intrusiveNotificationLed))) {
+            mNotifications.removePreference(mChargingLight);
+        }
     }
 
     @Override

@@ -23,25 +23,14 @@
         android:layout="@layout/tab_header_preference_category"
         android:title="@string/system_aisle_header" />
 
-     <Preference
-        android:key="charging_light"
-        android:fragment="org.candy.candyshop.fragments.BatteryLightSettings"
-        android:title="@string/battery_light_settings" />
-
-    <!--<PreferenceCategory
-        android:id="@+id/buttons_category"
-        android:key="buttons_category"
-        android:title="@string/button_category_title" >
-    </PreferenceCategory>-->
-
-    <!--<PreferenceCategory
+    <PreferenceCategory
         android:key="notifications_category"
         android:title="@string/notifications_category_title" >
-    </PreferenceCategory>-->
 
-    <PreferenceCategory
-        android:key="incall_vib_options"
-        android:title="@string/incall_vibration_category" >
+         <Preference
+            android:key="charging_light"
+            android:fragment="org.candy.candyshop.fragments.BatteryLightSettings"
+            android:title="@string/battery_light_settings" />
 
         <Preference
             android:key="incall_notification_options"
@@ -50,4 +39,11 @@
             android:fragment="org.candy.candyshop.fragments.DialerSettings" />
 
     </PreferenceCategory>
+
+    <!--<PreferenceCategory
+        android:id="@+id/buttons_category"
+        android:key="buttons_category"
+        android:title="@string/button_category_title" >
+    </PreferenceCategory>-->
+
 </PreferenceScreen>

@@ -53,6 +53,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         mColorCategory = (PreferenceCategory) findPreference("battery_light_cat");
 
         mLowBatteryBlinking = (SystemSettingSwitchPreference)prefSet.findPreference("battery_light_low_blinking");
+
         if (getResources().getBoolean(
                         com.android.internal.R.bool.config_ledCanPulse)) {
             mLowBatteryBlinking.setChecked(Settings.System.getIntForUser(getContentResolver(),
