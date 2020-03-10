@@ -61,6 +61,9 @@
     <string name="multitasking_category_title">Multi-tasking</string>
     <string name="screen_capture_options_category_title">Screen capture</string>
     <string name="miscellaneous_category_title">Miscellaneous</string>
+    <string name="fod_icon_picker_category_title">FOD customization options</string>
+    <string name="fod_recog_animation_effect_title">FOD recognizing animation effect</string>
+
 
     <!-- Battery light -->
     <string name="battery_light_settings">Battery charging light</string>
@@ -192,5 +195,6 @@
     <string name="fod_icon_picker_footer">In order to add your own icon, select the top left icon and use the OnePlus 6T FP Customizer app to select the icon you want.</string>
     <string name="fod_wallpaper_color">Use wallpaper color for FOD icon</string>
     <string name="fod_wallpaper_color_summary">Uses adjusted primary wallpaper color for FOD icon\nNOTE: might look good only with some wallpapers</string>
+
 
 </resources>
