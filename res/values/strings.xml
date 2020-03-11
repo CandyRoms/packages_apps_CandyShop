@@ -50,13 +50,15 @@
     <string name="lockscreen_icons_category_title">Lockscreen icons</string>
     <string name="lockscreen_clock_category_title">Clock and date options</string>
     <string name="lockscreen_other_category_title">Other</string>
-    <string name="notifications_category_title">System notifications</string>
-    <string name="quicksettings_options_category_title">QuickSettings Options</string>
+    <string name="lockscreen_gestures_category_title">Lockscreen gestures</string>
+    <string name="system_notifications_category_title">System notifications</string>
+    <string name="quicksettings_options_category_title">QuickSettings options</string>
+    <string name="statusbar_gestures_category_title">Statusbar gestures</string>
     <string name="statusbar_options_category_title">Statusbar options</string>
     <string name="statusbar_notifications">Statusbar notifications</string>
-    <string name="statusbar_notifications_title">Statusbar notification options</string>
+    <string name="statusbar_notifications_category_title">Statusbar notifications</string>
     <string name="multitasking_category_title">Multi-tasking</string>
-    <string name="screen_capture_options_category_title">Screen capture options</string>
+    <string name="screen_capture_options_category_title">Screen capture</string>
     <string name="miscellaneous_category_title">Miscellaneous</string>
 
     <!-- Battery light -->
@@ -68,11 +70,11 @@
     <string name="battery_light_low_color">Low battery</string>
     <string name="battery_light_medium_color">Medium battery</string>
     <string name="battery_light_full_color">Almost full battery</string>
-    <string name="battery_light_reallyfull_color">Full (100) battery</string>    
+    <string name="battery_light_reallyfull_color">Full (100) battery</string>
 
     <!-- Fragments -->
-    <string name="notification_settings_title">Notifications Settings</string>
-    <string name="quicksettings_title">QuickSettings Settings</string>
+    <string name="notification_settings_title">Notifications settings</string>
+    <string name="quicksettings_title">QuickSettings settings</string>
 
     <!-- AboutCandy-->
     <string name="dialog_about_candy_title">About CandyRoms</string>

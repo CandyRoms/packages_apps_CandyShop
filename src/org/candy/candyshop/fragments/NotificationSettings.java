@@ -46,24 +46,27 @@ import androidx.preference.PreferenceViewHolder;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.SwitchPreference;
 
+import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-
 import com.android.settings.R;
-import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
-
-import org.candy.candyshop.preference.GlobalSettingMasterSwitchPreference;
-import org.candy.candyshop.preference.PackageListAdapter.PackageItem;
-import org.candy.candyshop.preference.PackageListAdapter;
-
+import com.android.settings.SettingsActivity;
+import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.Utils;
+import com.android.settingslib.search.SearchIndexable;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.candy.candyshop.preference.GlobalSettingMasterSwitchPreference;
+import org.candy.candyshop.preference.PackageListAdapter;
+import org.candy.candyshop.preference.PackageListAdapter.PackageItem;
+
+@SearchIndexable
 public class NotificationSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 

@@ -35,7 +35,7 @@
 
     <PreferenceCategory
         android:key="statusbar_notifications"
-        android:title="@string/statusbar_notifications_title" >
+        android:title="@string/statusbar_notifications_category_title" >
 
         <org.candy.candyshop.preference.SystemSettingSwitchPreference
             android:key="force_expanded_notifications"
@@ -68,7 +68,7 @@
 
     <PreferenceCategory
         android:key="statusbar_gestures"
-        android:title="@string/gestures_title">
+        android:title="@string/statusbar_gestures_category_title" >
 
         <org.candy.candyshop.preference.SystemSettingSwitchPreference
             android:key="double_tap_sleep_gesture"

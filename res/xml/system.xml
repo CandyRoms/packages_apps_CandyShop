@@ -25,7 +25,7 @@
 
     <PreferenceCategory
         android:key="notifications_category"
-        android:title="@string/notifications_category_title" >
+        android:title="@string/system_notifications_category_title" >
 
         <Preference
             android:key="charging_light"
@@ -48,7 +48,7 @@
         <org.candy.candyshop.preference.SystemSettingSwitchPreference
             android:key="volume_rocker_wake"
             android:summary="@string/volume_rocker_wake_summary"
-            android:title="@string/volume_rocker_wake_title" 
+            android:title="@string/volume_rocker_wake_title"
             android:defaultValue="false" />
 
         <org.candy.candyshop.preference.SystemSettingSwitchPreference
