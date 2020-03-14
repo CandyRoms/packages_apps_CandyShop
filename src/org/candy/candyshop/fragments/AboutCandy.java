@@ -59,7 +59,7 @@ public class AboutCandy extends DialogFragment {
 
         if (view != null) {
             FrameLayout candyroms = view.findViewById(R.id.candyroms);
-            setUriTarget("http://candyroms.org", candyroms);
+            setUriTarget("https://candyroms.org", candyroms);
 
             FrameLayout gerrit = view.findViewById(R.id.gerrit);
             setUriTarget("https://gerrit.bbqdroid.org", gerrit);
@@ -80,22 +80,22 @@ public class AboutCandy extends DialogFragment {
             setUriTarget("https://github.com/topjohnwu/Magisk/releases", magisk);
 
             FrameLayout dan = view.findViewById(R.id.dan);
-            setUriTarget("http://candyroms.org/nospamdan-dan-cartier", dan);
+            setUriTarget("https://candyroms.org/nospamdan-dan-cartier", dan);
 
             FrameLayout kevin = view.findViewById(R.id.kevin);
-            setUriTarget("http://candyroms.org/candymaker_d-kevin-princiotta", kevin);
+            setUriTarget("https://candyroms.org/candymaker_d-kevin-princiotta", kevin);
 
             FrameLayout bhi = view.findViewById(R.id.bhi);
-            setUriTarget("http://candyroms.org/bhi244-bhimanand-dharmatti", bhi);
+            setUriTarget("https://candyroms.org/bhi244-bhimanand-dharmatti", bhi);
 
             FrameLayout mourya = view.findViewById(R.id.mourya);
-            setUriTarget("http://candyroms.org/miju12-mourya-baruah", mourya);
+            setUriTarget("https://candyroms.org/miju12-mourya-baruah", mourya);
 
             FrameLayout rajat = view.findViewById(R.id.rajat);
-            setUriTarget("http://candyroms.org/rajatgupta1998-rajat-gupta", rajat);
+            setUriTarget("https://candyroms.org/rajatgupta1998-rajat-gupta", rajat);
 
             FrameLayout sanjay = view.findViewById(R.id.sanjay);
-            setUriTarget("http://candyroms.org/yaznas-sanjay-shrestha", sanjay);
+            setUriTarget("https://candyroms.org/yaznas-sanjay-shrestha", sanjay);
 
             FrameLayout chad = view.findViewById(R.id.chad);
             setUriTarget("https://forum.xda-developers.com/member.php?u=1986924", chad);
