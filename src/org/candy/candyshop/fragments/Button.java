@@ -48,15 +48,52 @@ import com.android.internal.util.candy.ActionConstants;
 import com.android.internal.util.candy.CandyUtils;
 import com.android.internal.util.candy.DeviceUtils;
 
+import org.candy.candyshop.preference.SystemSettingListPreference;
+import org.candy.candyshop.preference.SystemSettingSwitchPreference;
+
 public class Button extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    // Volume keys cursor control
+    private static final String VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
 
+    private SystemSettingListPreference mVolumeKeyCursorControl;
+
+
+    @Override
+    public void onCreate(Bundle icicle) {
+        super.onCreate(icicle);
         addPreferencesFromResource(R.xml.system);
 
+        final Resources res = getResources();
+        final ContentResolver resolver = getActivity().getContentResolver();
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        // volume key cursor control
+        mVolumeKeyCursorControl = (SystemSettingListPreference) findPreference(VOLUME_KEY_CURSOR_CONTROL);
+        if (mVolumeKeyCursorControl != null) {
+            mVolumeKeyCursorControl.setOnPreferenceChangeListener(this);
+            int volumeRockerCursorControl = Settings.System.getInt(getContentResolver(),
+                    Settings.System.VOLUME_KEY_CURSOR_CONTROL, 0);
+            mVolumeKeyCursorControl.setValue(Integer.toString(volumeRockerCursorControl));
+           mVolumeKeyCursorControl.setSummary(mVolumeKeyCursorControl.getEntry());
+        }
+    }
+
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mVolumeKeyCursorControl) {
+            String volumeKeyCursorControl = (String) newValue;
+            int volumeKeyCursorControlValue = Integer.parseInt(volumeKeyCursorControl);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.VOLUME_KEY_CURSOR_CONTROL, volumeKeyCursorControlValue);
+            int volumeKeyCursorControlIndex = mVolumeKeyCursorControl
+                    .findIndexOfValue(volumeKeyCursorControl);
+            mVolumeKeyCursorControl
+        .setSummary(mVolumeKeyCursorControl.getEntries()[volumeKeyCursorControlIndex]);
+            return true;
+        }
+        return false;
     }
 
     @Override
@@ -67,10 +104,6 @@ public class Button extends SettingsPreferenceFragment implements
     @Override
     public void onResume() {
         super.onResume();
-    }
-
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        return false;
     }
 
     public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

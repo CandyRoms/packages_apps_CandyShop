@@ -38,7 +38,7 @@
             android:summary="@string/incall_vibration_options_summary"
             android:fragment="org.candy.candyshop.fragments.DialerSettings" />
 
- </PreferenceCategory>
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:id="@+id/buttons_category"
@@ -56,6 +56,16 @@
             android:title="@string/volume_rocker_music_controls_title"
             android:summary="@string/volume_rocker_music_controls_summary"
             android:defaultValue="false" />
+
+        <org.candy.candyshop.preference.SystemSettingListPreference
+            android:key="volume_key_cursor_control"
+            android:dialogTitle="@string/volume_key_cursor_control_title"
+            android:entries="@array/volume_key_cursor_control_entries"
+            android:entryValues="@array/volume_key_cursor_control_values"
+            android:defaultValue="0"
+            android:summary="%s"
+            android:title="@string/volume_key_cursor_control_title" />
+
 
     </PreferenceCategory>
 
