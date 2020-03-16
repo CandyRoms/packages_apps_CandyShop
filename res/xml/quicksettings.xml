@@ -22,14 +22,21 @@
         android:title="@string/quicksettings_aisle_header" />
 
     <PreferenceCategory
-        android:id="@+id/quicksettings_options_category"
-        android:key="quicksettings_options_category"
-        android:title="@string/quicksettings_options_category_title" >
+        android:id="@+id/quicksettings_layout_category"
+        android:key="quicksettings_layout_category"
+        android:title="@string/quicksettings_layout_category_title" >
 
         <Preference
             android:key="qs_rows_columns"
             android:fragment="org.candy.candyshop.fragments.QuickSettings"
             android:title="@string/qs_rows_columns_title"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:id="@+id/quicksettings_options_category"
+        android:key="quicksettings_options_category"
+        android:title="@string/quicksettings_options_category_title" >
 
         <org.candy.candyshop.preference.SecureSettingSwitchPreference
             android:key="quick_settings_vibrate"
@@ -40,7 +47,7 @@
         <org.candy.candyshop.preference.SystemSettingSwitchPreference
             android:key="qs_tile_title_visibility"
             android:title="@string/qs_tile_title_visibility_title"
-            android:title="@string/qs_tile_title_visibility_summary"
+            android:summary="@string/qs_tile_title_visibility_summary"
             android:defaultValue="false" />
 
         <org.candy.candyshop.preference.SecureSettingSwitchPreference

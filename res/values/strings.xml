@@ -52,6 +52,7 @@
     <string name="lockscreen_other_category_title">Other</string>
     <string name="lockscreen_gestures_category_title">Lockscreen gestures</string>
     <string name="system_notifications_category_title">System notifications</string>
+    <string name="quicksettings_layout_category_title">QuickSettings rows and columns</string>
     <string name="quicksettings_options_category_title">QuickSettings options</string>
     <string name="statusbar_gestures_category_title">Statusbar gestures</string>
     <string name="statusbar_options_category_title">Statusbar options</string>
