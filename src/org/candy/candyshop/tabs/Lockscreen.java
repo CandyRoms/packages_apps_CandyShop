@@ -77,13 +77,13 @@ public class Lockscreen extends SettingsPreferenceFragment implements
         Context mContext = getContext();
 
 	    PackageManager packageManager = mContext.getPackageManager();
-        boolean hasFod = packageManager.hasSystemFeature(LineageContextConstants.Features.FOD);
+        boolean hasFod = mContext.getResources().getBoolean(com.android.internal.R.bool.config_needCustomFODView);
 
         mFODIconPickerCategory = (PreferenceCategory) findPreference(FOD_ICON_PICKER_CATEGORY);
         if (mFODIconPickerCategory != null && !hasFod) {
             prefSet.removePreference(mFODIconPickerCategory);
         }
-        boolean showFODAnimationPicker = mContext.getResources().getBoolean(R.bool.showFODAnimationPicker);
+        boolean showFODAnimationPicker = mContext.getResources().getBoolean(com.android.internal.R.bool.showFODAnimationPicker);
         mFODAnimation = (Preference) findPreference(FOD_ANIMATION);
         if ((mFODIconPickerCategory != null && mFODAnimation != null && !hasFod) ||
                 (mFODIconPickerCategory != null && mFODAnimation != null && !showFODAnimationPicker)) {
