@@ -22,6 +22,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.content.res.Resources;
+import android.hardware.fingerprint.FingerprintManager;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
@@ -66,7 +67,7 @@ public class Lockscreen extends SettingsPreferenceFragment implements
     private static final String FOD_ANIMATION = "fod_anim";
 
     private PreferenceCategory mFODIconPickerCategory;
-    private Preference mFODAnimation;
+    private ListPreference mFODAnimation;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -83,8 +84,8 @@ public class Lockscreen extends SettingsPreferenceFragment implements
         if (mFODIconPickerCategory != null && !hasFod) {
             prefSet.removePreference(mFODIconPickerCategory);
         }
-        boolean showFODAnimationPicker = mContext.getResources().getBoolean(com.android.internal.R.bool.showFODAnimationPicker);
-        mFODAnimation = (Preference) findPreference(FOD_ANIMATION);
+        boolean showFODAnimationPicker = mContext.getResources().getBoolean(R.bool.showFODAnimationPicker);
+        mFODAnimation = (ListPreference) findPreference(FOD_ANIMATION);
         if ((mFODIconPickerCategory != null && mFODAnimation != null && !hasFod) ||
                 (mFODIconPickerCategory != null && mFODAnimation != null && !showFODAnimationPicker)) {
             mFODIconPickerCategory.removePreference(mFODAnimation);
