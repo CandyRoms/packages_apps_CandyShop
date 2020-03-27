@@ -85,11 +85,11 @@
             android:defaultValue="100"
             android:dependency="lockscreen_media_metadata" />
 
-        <org.candy.candyshop.preference.SecureSettingSwitchPreference
+        <Preference
             android:key="lockscreen_visualizer_enabled"
             android:title="@string/lockscreen_visualizer_enable"
             android:summary="@string/lockscreen_visualizer_enable_summary"
-            android:defaultValue="false" />
+            android:fragment="org.candy.candyshop.fragments.lockscreen.LockScreenVisualizer" />
 
     </PreferenceCategory>
 
