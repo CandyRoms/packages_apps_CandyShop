@@ -85,11 +85,6 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         mQsColumnsLand.setOnPreferenceChangeListener(this);
     }
 
-    @Override
-    public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.CANDYSHOP;
-    }
-
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         final ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mQsRowsPort) {
@@ -114,6 +109,11 @@ public class QuickSettings extends SettingsPreferenceFragment implements
             return true;
         }
         return false;
+    }
+
+    @Override
+    public int getMetricsCategory() {
+        return MetricsProto.MetricsEvent.CANDYSHOP;
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

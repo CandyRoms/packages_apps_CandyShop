@@ -63,6 +63,19 @@
             android:defaultValue="false"
             android:dependency="qs_show_brightness" />
 
-     </PreferenceCategory>
+        </PreferenceCategory>
+
+        <PreferenceCategory
+           android:id="@+id/qs_animations"
+           android:key="qs_animations_category"
+           android:title="@string/qs_animations_category_title" >
+
+       <Preference
+           android:key="qs_animations"
+           android:title="@string/qs_animations_title"
+           android:summary="@string/qs_animations_summary"
+           android:fragment="org.candy.candyshop.fragments.QuickSettingsAnimations" />
+
+       </PreferenceCategory>
 
 </PreferenceScreen>
