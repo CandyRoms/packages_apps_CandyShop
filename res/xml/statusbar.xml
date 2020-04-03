@@ -32,6 +32,12 @@
         android:title="@string/statusbar_options_category_title" >
 
         <Preference
+         android:key="battery_mode"
+         android:title="@string/battery_mode_title"
+         android:summary="@string/battery_mode_summary"
+         android:fragment="org.candy.candyshop.fragments.XBatteryMode" />
+
+        <Preference
             android:key="clock_settings"
             android:title="@string/status_bar_clock"
             android:summary="@string/status_bar_clock_summary"
