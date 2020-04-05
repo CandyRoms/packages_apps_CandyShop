@@ -278,4 +278,16 @@
     <string name="disable_transition_animations_title">Disable transition animations</string>
     <string name="disable_transition_animations_summary">Force disable all transition animations</string>
 
+    <!-- QS tile interpolators -->
+    <string name="qs_tile_animation_interpolator_title">QS tile animation interpolator</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accelerate</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Decelerate</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Accelerate decelerate</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Bounce</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Overshoot</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipate</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
+    <string name="qs_set_animation_interpolator">%1$s</string>
+
 </resources>
