@@ -80,6 +80,20 @@
             android:summary="%s"
             android:title="@string/volume_key_cursor_control_title" />
 
+       </PreferenceCategory>
+
+    <PreferenceCategory
+        android:id="@+id/animations_category"
+        android:key="animations_category"
+        android:title="@string/animations_title"
+        android:icon="@drawable/ic_settings_animations" />
+
+        <org.candy.candyshop.preference.GlobalSettingSwitchPreference 
+            android:key="disable_transition_animations" 
+            android:title="@string/disable_transition_animations_title" 
+            android:summary="@string/disable_transition_animations_summary" 
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>

@@ -63,6 +63,7 @@
     <string name="screen_capture_options_category_title">Screen capture</string>
     <string name="miscellaneous_category_title">Miscellaneous</string>
     <string name="fod_icon_picker_category_title">FOD customization options</string>
+    <string name="animations_title">Animations</string>
 
     <!-- Battery light -->
     <string name="battery_light_settings">Battery charging light</string>
@@ -272,5 +273,9 @@
     <string name="qs_tile_animation_duration_fast">fast</string>
     <string name="qs_set_animation_style">Animation is set to %1$s</string>
     <string name="qs_set_animation_duration">Animation duration is set to %1$s</string>
+
+     <!-- Force disable transition animation -->
+    <string name="disable_transition_animations_title">Disable transition animations</string>
+    <string name="disable_transition_animations_summary">Force disable all transition animations</string>
 
 </resources>
