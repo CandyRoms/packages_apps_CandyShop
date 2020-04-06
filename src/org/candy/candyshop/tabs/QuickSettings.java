@@ -50,6 +50,8 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import com.android.settingslib.search.SearchIndexable;
 
+import org.candy.candyshop.preference.CustomSeekBarPreference;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -60,14 +62,27 @@ import java.util.Map;
 @SearchIndexable
 public class QuickSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-
+ 
     private static final String MISC_CATEGORY = "quicksettings_category";
     private static final String TAG = "QuickSettings";
+
+    private static final String KEY_QS_PANEL_ALPHA = "qs_panel_alpha";
+
+    private CustomSeekBarPreference mQsPanelAlpha;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.quicksettings);
+
+     PreferenceScreen prefScreen = getPreferenceScreen();
+        ContentResolver resolver = getActivity().getContentResolver();
+
+      mQsPanelAlpha = (CustomSeekBarPreference) findPreference(KEY_QS_PANEL_ALPHA);
+        int qsPanelAlpha = Settings.System.getInt(getContentResolver(),
+                Settings.System.QS_PANEL_BG_ALPHA, 221);
+        mQsPanelAlpha.setValue((int)(((double) qsPanelAlpha / 255) * 100));
+        mQsPanelAlpha.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -81,11 +96,18 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     }
 
 
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
-        final String key = preference.getKey();
+     @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+    	ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mQsPanelAlpha) {
+            int bgAlpha = (Integer) newValue;
+            int trueValue = (int) (((double) bgAlpha / 100) * 255);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.QS_PANEL_BG_ALPHA, trueValue);
+            return true;
+        }
         return false;
     }
-
 
     @Override
     public int getMetricsCategory() {
@@ -114,4 +136,3 @@ public class QuickSettings extends SettingsPreferenceFragment implements
                 }
     };
 }
-
