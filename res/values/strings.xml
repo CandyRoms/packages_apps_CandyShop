@@ -358,4 +358,11 @@
     <string name="lockscreen_solid_units_opacity_title">Solid lines opacity</string>
     <string name="unit_milliseconds">ms</string>
 
+    <!-- Tuner stuff -->
+    <string name="status_bar_icons_title">Statusbar icons</string>
+    <string name="lockscreen_tuner_title">Lockscreen shortcuts</string>
+    <string name="status_bar_system_icons_title">Statusbar system icons</string>
+    <string name="status_bar_system_icons_summary">Control which status bar icons are shown</string>
+    <string name="navigation_tuner_title">Navigation Bar options</string>
+
 </resources>
