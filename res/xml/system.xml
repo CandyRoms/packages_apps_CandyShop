@@ -86,7 +86,7 @@
         android:id="@+id/animations_category"
         android:key="animations_category"
         android:title="@string/animations_title"
-        android:icon="@drawable/ic_settings_animations" />
+        android:icon="@drawable/ic_settings_animations" >
 
         <org.candy.candyshop.preference.GlobalSettingSwitchPreference 
             android:key="disable_transition_animations" 

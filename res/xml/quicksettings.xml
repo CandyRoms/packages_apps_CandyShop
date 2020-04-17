@@ -70,25 +70,25 @@
            android:key="qs_animations_category"
            android:title="@string/qs_animations_category_title" >
 
-       <Preference
-           android:key="qs_animations"
-           android:title="@string/qs_animations_title"
-           android:summary="@string/qs_animations_summary"
-           android:fragment="org.candy.candyshop.fragments.QuickSettingsAnimations" />
+           <Preference
+               android:key="qs_animations"
+               android:title="@string/qs_animations_title"
+               android:summary="@string/qs_animations_summary"
+               android:fragment="org.candy.candyshop.fragments.QuickSettingsAnimations" />
 
        </PreferenceCategory>
 
         <PreferenceCategory
-          android:key="quick_settings_category"
-          android:title="@string/qs_panel_alpha_title">
+            android:key="quick_settings_category"
+            android:title="@string/qs_panel_alpha_title">
 
-        <org.candy.candyshop.preference.CustomSeekBarPreference
-          android:key="qs_panel_alpha"
-          android:title="@string/qs_panel_alpha_title"
-          android:summary="@string/qs_panel_alpha_summary"
-          android:max="100"
-          settings:min="0"
-          android:persistent="false" />
+            <org.candy.candyshop.preference.CustomSeekBarPreference
+                android:key="qs_panel_alpha"
+                android:title="@string/qs_panel_alpha_title"
+                android:summary="@string/qs_panel_alpha_summary"
+                android:max="100"
+                settings:min="0"
+                android:persistent="false" />
 
     </PreferenceCategory>
 

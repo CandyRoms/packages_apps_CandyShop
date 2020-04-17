@@ -64,6 +64,8 @@
     <string name="miscellaneous_category_title">Miscellaneous</string>
     <string name="fod_icon_picker_category_title">FOD customization options</string>
     <string name="animations_title">Animations</string>
+    <string name="qs_animations_category_title">Animations</string>
+
 
     <!-- Battery light -->
     <string name="battery_light_settings">Battery charging light</string>
@@ -344,6 +346,7 @@
     <string name="lockscreen_visualizer_enable">Music Visualizer</string>
     <string name="lockscreen_visualizer_enable_summary">Show visualizer bars while playing music</string>
     <string name="lockscreen_visualizer_summary">Display music visualizer when available</string>
+    <string name="lockscreen_visualizer_title">Visualizer options</string>
     <string name="lockscreen_autocolor_title">Automatic color</string>
     <string name="lockscreen_autocolor_summary">Sync color with background</string>
     <string name="lockscreen_autocolor_lavalamp">Requires lava lamp disabled</string>
