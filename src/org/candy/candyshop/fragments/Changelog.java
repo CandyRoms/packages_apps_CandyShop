@@ -41,7 +41,7 @@ import java.util.regex.Matcher;
 
 public class Changelog extends Fragment {
 
-    private static final String CHANGELOG_PATH = "/system/etc/changelog.txt";
+    private static final String CHANGELOG_PATH = "/system/etc/Changelog.txt";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
