@@ -27,12 +27,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.widget.EditText;
+import android.view.KeyEvent;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
 import com.android.settings.R;
 
-public class ColorPickerDialog extends AlertDialog implements ColorPickerView.OnColorChangedListener, View.OnClickListener {
+public class ColorPickerDialog extends AlertDialog implements ColorPickerView.OnColorChangedListener, View.OnClickListener, View.OnKeyListener {
+
 
     private ColorPickerView mColorPicker;
     private ColorPickerPanelView mOldColor;
@@ -56,6 +58,15 @@ public class ColorPickerDialog extends AlertDialog implements ColorPickerView.On
         mShowLedPreview = showLedPreview;
         init(initialColor);
     }
+
+    private void setColorFromHex() {
+        String text = mHex.getText().toString();
+        try {
+            int newColor = ColorPickerPreference.convertToColorInt(text);
+            mColorPicker.setColor(newColor, true);
+        } catch (Exception ignored) {
+     }
+  }
 
     private void init(int color) {
         if (getWindow() != null) {
@@ -93,19 +104,9 @@ public class ColorPickerDialog extends AlertDialog implements ColorPickerView.On
         showLed(color);
 
         if (mHex != null) {
-            mHex.setText(ColorPickerPreference.convertToARGB(color));
+            mHex.setText(ColorPickerPreference.convertToRGB(color));
+            mHex.setOnKeyListener(this);
         }
-        if (mSetButton != null) {
-            mSetButton.setOnClickListener(v -> {
-                String text = mHex.getText().toString();
-                try {
-                    int newColor = ColorPickerPreference.convertToColorInt(text);
-                    mColorPicker.setColor(newColor, true);
-                } catch (Exception ignored) {
-                }
-            });
-        }
-
         setView(layout);
     }
 
@@ -115,7 +116,7 @@ public class ColorPickerDialog extends AlertDialog implements ColorPickerView.On
         mNewColor.setColor(color);
         try {
             if (mHex != null) {
-                mHex.setText(ColorPickerPreference.convertToARGB(color));
+                mHex.setText(ColorPickerPreference.convertToRGB(color));
             }
         } catch (Exception ignored) {
         }
@@ -153,6 +154,16 @@ public class ColorPickerDialog extends AlertDialog implements ColorPickerView.On
 
     public int getColor() {
         return mColorPicker.getColor();
+    }
+
+     @Override
+    public boolean onKey(View v, int keyCode, KeyEvent event) {
+        if ((event.getAction() == KeyEvent.ACTION_DOWN) &&
+                    (keyCode == KeyEvent.KEYCODE_ENTER)) {
+            setColorFromHex();
+            return true;
+        }
+        return false;
     }
 
     @Override
