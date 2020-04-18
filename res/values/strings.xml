@@ -264,7 +264,7 @@
     <string name="device_identifier_access_restrictions_summary">Disable the new access restrictions for device identifiers</string>
 
     <!-- Tiles animation style  -->
-    <string name="qs_animations_title">QS tile animation effectss</string>
+    <string name="qs_animations_title">QS tile animation effects</string>
     <string name="qs_animations_summary">Style, duration and interpolation options</string>
     <string name="qs_tile_animation_title">Animations</string>
     <string name="qs_tile_animation_style_title">Animation style</string>
