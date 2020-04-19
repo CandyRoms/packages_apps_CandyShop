@@ -47,6 +47,8 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
     protected int mMaxValue = 100;
     protected boolean mDefaultValueExists = false;
     protected int mDefaultValue;
+    protected boolean mDefaultValueTextExists = false;
+    protected String mDefaultValueText;
 
     protected int mValue;
 
@@ -89,6 +91,12 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
             mValue = mDefaultValue;
         } else {
             mValue = mMinValue;
+        }
+
+        String defaultValueText = attrs.getAttributeValue(SETTINGS_NS, "defaultValueText");
+        mDefaultValueTextExists = defaultValueText != null && !defaultValueText.isEmpty();
+        if (mDefaultValueTextExists) {
+            mDefaultValueText = defaultValueText;
         }
 
         mSeekBar = new SeekBar(context, attrs);
@@ -170,16 +178,30 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
     }
 
     protected String getTextValue(int v) {
+        if (mDefaultValueTextExists && mDefaultValueExists && v == mDefaultValue) {
+            return mDefaultValueText;
+        }
         return (mShowSign && v > 0 ? "+" : "") + String.valueOf(v) + mUnits;
     }
 
     protected void updateValueViews() {
         if (mValueTextView != null) {
-            mValueTextView.setText(getContext().getString(R.string.custom_seekbar_value,
-                (!mTrackingTouch || mContinuousUpdates ? getTextValue(mValue) +
-                (mDefaultValueExists && mValue == mDefaultValue ? " (" +
-                getContext().getString(R.string.custom_seekbar_default_value) + ")" : "")
-                    : "[" + getTextValue(mTrackingValue) + "]")));
+            if (!mTrackingTouch || mContinuousUpdates) {
+                if (mDefaultValueTextExists && mDefaultValueExists && mValue == mDefaultValue) {
+                    mValueTextView.setText(mDefaultValueText + " (" +
+                        getContext().getString(R.string.custom_seekbar_default_value) + ")");
+                } else {
+                    mValueTextView.setText(getContext().getString(R.string.custom_seekbar_value, getTextValue(mValue)) +
+                        (mDefaultValueExists && mValue == mDefaultValue ? " (" +
+                        getContext().getString(R.string.custom_seekbar_default_value) + ")" : ""));
+                }
+            } else {
+                if (mDefaultValueTextExists && mDefaultValueExists && mTrackingValue == mDefaultValue) {
+                    mValueTextView.setText("[" + mDefaultValueText + "]");
+                } else {
+                    mValueTextView.setText(getContext().getString(R.string.custom_seekbar_value, "[" + getTextValue(mTrackingValue) + "]"));
+                }
+            }
         }
         if (mResetImageView != null) {
             if (!mDefaultValueExists || mValue == mDefaultValue || mTrackingTouch)
