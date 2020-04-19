@@ -13,9 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package org.candy.candyshop.tabs;
-
 
 import android.app.Activity;
 import android.app.WallpaperManager;
@@ -79,12 +77,14 @@ public class Lockscreen extends SettingsPreferenceFragment implements
 
     private PreferenceCategory mFODIconPickerCategory;
     private ListPreference mFODAnimation;
+    private ListPreference mLockClockFonts;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.lockscreen);
+
         PreferenceScreen prefSet = getPreferenceScreen();
         Context mContext = getContext();
 
@@ -95,6 +95,14 @@ public class Lockscreen extends SettingsPreferenceFragment implements
         if (mFODIconPickerCategory != null && !hasFod) {
             prefSet.removePreference(mFODIconPickerCategory);
         }
+
+        // Lockscreen Clock Fonts
+        mLockClockFonts = (ListPreference) findPreference(LOCK_CLOCK_FONTS);
+        mLockClockFonts.setValue(String.valueOf(Settings.System.getInt(
+                getContentResolver(), Settings.System.LOCK_CLOCK_FONTS, 28)));
+        mLockClockFonts.setSummary(mLockClockFonts.getEntry());
+        mLockClockFonts.setOnPreferenceChangeListener(this);
+
         boolean showFODAnimationPicker = mContext.getResources().getBoolean(R.bool.showFODAnimationPicker);
         mFODAnimation = (ListPreference) findPreference(FOD_ANIMATION);
         if ((mFODIconPickerCategory != null && mFODAnimation != null && !hasFod) ||
@@ -114,8 +122,16 @@ public class Lockscreen extends SettingsPreferenceFragment implements
     }
 
 
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
-        final String key = preference.getKey();
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        if (preference == mLockClockFonts) {
+            Settings.System.putInt(getContentResolver(), Settings.System.LOCK_CLOCK_FONTS,
+                    Integer.valueOf((String) newValue));
+            mLockClockFonts.setValue(String.valueOf(newValue));
+            mLockClockFonts.setSummary(mLockClockFonts.getEntry());
+            return true;
+        }
         return false;
     }
 
