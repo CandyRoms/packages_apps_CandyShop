@@ -45,12 +45,13 @@
         android:key="security_category"
         android:title="@string/system_security_category_title" >
 
-    <!-- Disable device identifier restrictions -->
-    <org.candy.candyshop.preference.GlobalSettingSwitchPreference
-        android:key="privileged_device_identifier_check_relaxed"
-        android:icon="@drawable/ic_identifier"
-        android:title="@string/device_identifier_access_restrictions_title"
-        android:summary="@string/device_identifier_access_restrictions_summary" />
+        <!-- Disable device identifier restrictions -->
+        <org.candy.candyshop.preference.GlobalSettingSwitchPreference
+            android:key="privileged_device_identifier_check_relaxed"
+            android:icon="@drawable/ic_identifier"
+            android:title="@string/device_identifier_access_restrictions_title"
+            android:summary="@string/device_identifier_access_restrictions_summary"
+            android:defaultValue="false" />
 
     </PreferenceCategory>
 
@@ -95,10 +96,10 @@
         android:title="@string/animations_title"
         android:icon="@drawable/ic_settings_animations" >
 
-        <org.candy.candyshop.preference.GlobalSettingSwitchPreference 
-            android:key="disable_transition_animations" 
-            android:title="@string/disable_transition_animations_title" 
-            android:summary="@string/disable_transition_animations_summary" 
+        <org.candy.candyshop.preference.GlobalSettingSwitchPreference
+            android:key="disable_transition_animations"
+            android:title="@string/disable_transition_animations_title"
+            android:summary="@string/disable_transition_animations_summary"
             android:defaultValue="false" />
 
     </PreferenceCategory>
