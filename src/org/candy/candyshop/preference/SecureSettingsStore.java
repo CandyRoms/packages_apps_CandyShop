@@ -17,9 +17,8 @@
 package org.candy.candyshop.preference;
 
 import android.content.ContentResolver;
-import android.content.SharedPreferences;
-import android.provider.Settings;
 import android.preference.PreferenceDataStore;
+import android.provider.Settings;
 
 public class SecureSettingsStore extends androidx.preference.PreferenceDataStore
         implements PreferenceDataStore {

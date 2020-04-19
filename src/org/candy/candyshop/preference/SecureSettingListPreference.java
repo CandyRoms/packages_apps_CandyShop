@@ -17,11 +17,12 @@
 package org.candy.candyshop.preference;
 
 import android.content.Context;
+import androidx.preference.ListPreference;
 import android.text.TextUtils;
 import android.util.AttributeSet;
-import androidx.preference.ListPreference;
 
 public class SecureSettingListPreference extends ListPreference {
+    private boolean mAutoSummary = false;
 
     public SecureSettingListPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
@@ -39,6 +40,24 @@ public class SecureSettingListPreference extends ListPreference {
     }
 
     @Override
+    public void setValue(String value) {
+        super.setValue(value);
+        if (mAutoSummary || TextUtils.isEmpty(getSummary())) {
+            setSummary(getEntry(), true);
+        }
+    }
+
+    @Override
+    public void setSummary(CharSequence summary) {
+        setSummary(summary, false);
+    }
+
+    private void setSummary(CharSequence summary, boolean autoSummary) {
+        mAutoSummary = autoSummary;
+        super.setSummary(summary);
+    }
+
+    @Override
     protected void onSetInitialValue(boolean restoreValue, Object defaultValue) {
         // This is what default ListPreference implementation is doing without respecting
         // real default value:
@@ -48,3 +67,4 @@ public class SecureSettingListPreference extends ListPreference {
     }
 
 }
+
