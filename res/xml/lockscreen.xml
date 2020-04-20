@@ -42,7 +42,7 @@
             android:icon="@drawable/ic_ambient"
             android:title="@string/doze_display_title"
             android:summary="@string/doze_display_summary"
-            android:fragment="org.candy.candyshop.fragments.DozeSettings" />
+            android:fragment="org.candy.candyshop.fragments.doze.DozeSettings" />
 
     <PreferenceCategory
         android:key="lockscreen_clock_category"

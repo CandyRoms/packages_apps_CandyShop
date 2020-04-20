@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.candy.candyshop.fragments;
+package org.candy.candyshop.fragments.doze;
 
 import android.app.Activity;
 import android.app.AlertDialog;

@@ -307,6 +307,10 @@
     <string name="battery_percentage_estimate">Enabled (estimate)</string>
     <string name="qs_battery_mode_title">QS battery style</string>
 
+    <!-- Battery estimate -->
+    <string name="battery_estimate_title">Battery estimate</string>
+    <string name="battery_estimate_summary">Display estimated remaining battery life when available</string>
+
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">SB Battery style</string>
     <string name="status_bar_battery_style_icon_portrait">Icon portrait</string>
@@ -366,8 +370,8 @@
     <string name="navigation_tuner_title">Navigation Bar options</string>
 
     <!-- ROM based doze -->
-    <string name="doze_display_title">Ambient display</string>
-    <string name="doze_display_summary">Configure settings for ambient display</string>
+    <string name="doze_display_title">Advanced doze options</string>
+    <string name="doze_display_summary">Configure triggers and settings for doze action</string>
     <string name="tilt_sensor_title">Tilt sensor</string>
     <string name="pickup_sensor_title">Pick up sensor</string>
     <string name="proximity_sensor_title">Proximity sensor</string>
