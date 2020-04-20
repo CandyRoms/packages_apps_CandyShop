@@ -47,6 +47,7 @@ import com.android.settingslib.search.SearchIndexable;
 import org.candy.candyshop.R;
 import org.candy.candyshop.fragments.doze.Utils;
 import org.candy.candyshop.preference.CustomSeekBarPreference;
+import org.candy.candyshop.preference.SecureSettingSwitchPreference;
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
 import java.util.List;
@@ -60,7 +61,6 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
 
     private static final String KEY_DOZE_ALWAYS_ON = "doze_always_on";
 
-
     private static final String CATEG_DOZE_SENSOR = "doze_sensor";
 
     private static final String KEY_DOZE_TILT_GESTURE = "doze_tilt_gesture";
@@ -69,11 +69,11 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
     private static final String KEY_DOZE_POCKET_GESTURE = "doze_pocket_gesture";
     private static final String KEY_DOZE_GESTURE_VIBRATE = "doze_gesture_vibrate";
 
-    private SwitchPreference mDozeAlwaysOnPreference;
-    private SwitchPreference mTiltPreference;
-    private SwitchPreference mPickUpPreference;
-    private SwitchPreference mHandwavePreference;
-    private SwitchPreference mPocketPreference;
+    private SecureSettingSwitchPreference mDozeAlwaysOnPreference;
+    private SecureSettingSwitchPreference mTiltPreference;
+    private SecureSettingSwitchPreference mPickUpPreference;
+    private SecureSettingSwitchPreference mHandwavePreference;
+    private SecureSettingSwitchPreference mPocketPreference;
 
     private SharedPreferences mPreferences;
 
@@ -86,20 +86,6 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
 
         PreferenceCategory dozeSensorCategory =
                 (PreferenceCategory) getPreferenceScreen().findPreference(CATEG_DOZE_SENSOR);
-
-        mDozeAlwaysOnPreference = (SwitchPreference) findPreference(KEY_DOZE_ALWAYS_ON);
-
-        mTiltPreference = (SwitchPreference) findPreference(KEY_DOZE_TILT_GESTURE);
-        mTiltPreference.setOnPreferenceChangeListener(this);
-
-        mPickUpPreference = (SwitchPreference) findPreference(KEY_DOZE_PICK_UP_GESTURE);
-        mPickUpPreference.setOnPreferenceChangeListener(this);
-
-        mHandwavePreference = (SwitchPreference) findPreference(KEY_DOZE_HANDWAVE_GESTURE);
-        mHandwavePreference.setOnPreferenceChangeListener(this);
-
-        mPocketPreference = (SwitchPreference) findPreference(KEY_DOZE_POCKET_GESTURE);
-        mPocketPreference.setOnPreferenceChangeListener(this);
 
         // Hide sensor related features if the device doesn't support them
         if (!Utils.getTiltSensor(context) && !Utils.getPickupSensor(context) && !Utils.getProximitySensor(context)) {
@@ -127,34 +113,9 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
         Context context = getContext();
         ContentResolver resolver = context.getContentResolver();
 
-        if (preference == mTiltPreference) {
+        if ((preference == mTiltPreference) || (preference == mPickUpPreference) ||
+                (preference == mHandwavePreference) || (preference == mPocketPreference)) {
             boolean value = (Boolean) newValue;
-            Settings.Secure.putIntForUser(resolver, Settings.Secure.DOZE_TILT_GESTURE,
-                 value ? 1 : 0, UserHandle.USER_CURRENT);
-            Utils.enableService(context);
-            if (newValue != null)
-                sensorWarning(context);
-            return true;
-        } else if (preference == mPickUpPreference) {
-            boolean value = (Boolean) newValue;
-            Settings.Secure.putIntForUser(resolver, Settings.Secure.DOZE_PICK_UP_GESTURE,
-                 value ? 1 : 0, UserHandle.USER_CURRENT);
-            Utils.enableService(context);
-            if (newValue != null)
-                sensorWarning(context);
-            return true;
-        } else if (preference == mHandwavePreference) {
-            boolean value = (Boolean) newValue;
-            Settings.Secure.putIntForUser(resolver, Settings.Secure.DOZE_HANDWAVE_GESTURE,
-                 value ? 1 : 0, UserHandle.USER_CURRENT);
-            Utils.enableService(context);
-            if (newValue != null)
-                sensorWarning(context);
-            return true;
-        } else if (preference == mPocketPreference) {
-            boolean value = (Boolean) newValue;
-            Settings.Secure.putIntForUser(resolver, Settings.Secure.DOZE_POCKET_GESTURE,
-                 value ? 1 : 0, UserHandle.USER_CURRENT);
             Utils.enableService(context);
             if (newValue != null)
                 sensorWarning(context);
