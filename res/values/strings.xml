@@ -299,13 +299,14 @@
     <string name="qs_panel_alpha_summary">Configure opacity of background</string>
 
     <!-- Battery mode -->
-    <string name="battery_mode_title">Battery Styles</string>
+    <string name="battery_mode_title">Battery Style</string>
     <string name="battery_mode_summary">Configure Stausbar battery style</string>
     <string name="battery_percentage_title">Battery percentage</string>
     <string name="battery_percentage_off">Disabled</string>
     <string name="battery_percentage_next">Enabled</string>
     <string name="battery_percentage_inside">Enabled (inside icon)</string>
     <string name="battery_percentage_estimate">Enabled (estimate)</string>
+    <string name="qs_battery_mode_title">QS battery style</string>
 
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">SB Battery style</string>
