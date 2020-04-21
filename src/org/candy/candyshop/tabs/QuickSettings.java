@@ -62,7 +62,7 @@ import java.util.Map;
 @SearchIndexable
 public class QuickSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
- 
+
     private static final String MISC_CATEGORY = "quicksettings_category";
     private static final String TAG = "QuickSettings";
 
@@ -75,10 +75,10 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.quicksettings);
 
-     PreferenceScreen prefScreen = getPreferenceScreen();
+        PreferenceScreen prefScreen = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 
-      mQsPanelAlpha = (CustomSeekBarPreference) findPreference(KEY_QS_PANEL_ALPHA);
+        mQsPanelAlpha = (CustomSeekBarPreference) findPreference(KEY_QS_PANEL_ALPHA);
         int qsPanelAlpha = Settings.System.getInt(getContentResolver(),
                 Settings.System.QS_PANEL_BG_ALPHA, 221);
         mQsPanelAlpha.setValue((int)(((double) qsPanelAlpha / 255) * 100));

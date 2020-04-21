@@ -82,7 +82,6 @@
     <string name="notification_settings_title">Notifications settings</string>
     <string name="quicksettings_title">QuickSettings settings</string>
     <string name="lockscreenholder_title">LockScreen Holder</string>
-    <string name="lockscreen_visualizer_title">LockScreen Visualizer</string>
 
     <!-- AboutCandy-->
     <string name="dialog_about_candy_title">About CandyRoms</string>
@@ -347,7 +346,7 @@
     <string name="lockscreen_visualizer_enable">Music Visualizer</string>
     <string name="lockscreen_visualizer_enable_summary">Show visualizer bars while playing music</string>
     <string name="lockscreen_visualizer_summary">Display music visualizer when available</string>
-    <string name="lockscreen_visualizer_title">Visualizer options</string>
+    <string name="lockscreen_visualizer_title">Lockscreen Visualizer options</string>
     <string name="lockscreen_autocolor_title">Automatic color</string>
     <string name="lockscreen_autocolor_summary">Sync color with background</string>
     <string name="lockscreen_autocolor_lavalamp">Requires lava lamp disabled</string>
@@ -393,10 +392,13 @@
     <string name="custom_seekbar_default_value_is_set">Default value is set</string>
 
 	<!-- QS battery -->
-    <string name="qs_battery_location_title">Battery location</string>
+    <string name="quicksettings_clock_battery_category_title">QS clock and battery options</string>
+    <string name="qs_battery_location_title">QS battery location</string>
     <string name="qs_battery_location_qs_panel">QS Panel</string>
     <string name="qs_battery_location_qs_statusbar">Quick Statusbar</string>
     <string name="qs_use_status_bar_battery_style">Follow status bar style</string>
+    <string name="qs_battery_style_title">QS battery style</string>
+    <string name="qs_battery_percentage_title">QS battery percentage</string>
 
     <!-- QS clock -->
     <string name="qs_clock_title">Clock</string>

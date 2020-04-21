@@ -56,19 +56,48 @@
             android:summary="@string/qs_show_brightness_summary"
             android:defaultValue="true" />
 
-         <org.candy.candyshop.preference.SecureSettingSwitchPreference
+        <org.candy.candyshop.preference.SecureSettingSwitchPreference
             android:key="qs_brightness_position_bottom"
             android:title="@string/qs_brightness_position_bottom_title"
             android:summary="@string/qs_brightness_position_bottom_summary"
             android:defaultValue="false"
             android:dependency="qs_show_brightness" />
 
+        <org.candy.candyshop.preference.CustomSeekBarPreference
+            android:key="qs_panel_alpha"
+            android:title="@string/qs_panel_alpha_title"
+            android:summary="@string/qs_panel_alpha_summary"
+            android:max="100"
+            settings:min="0"
+            android:persistent="false" />
+
+       <Preference
+           android:key="qs_animations"
+           android:title="@string/qs_animations_title"
+           android:summary="@string/qs_animations_summary"
+           android:fragment="org.candy.candyshop.fragments.QuickSettingsAnimations" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:id="@+id/quicksettings_clock_battery_category"
+        android:key="quicksettings_clock_battery_category"
+        android:title="@string/quicksettings_clock_battery_category_title" >
+
+        <!-- QS clock -->
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="show_qs_clock"
+            android:icon="@drawable/ic_clock"
+            android:title="@string/qs_clock_title"
+            android:summary="@string/qs_clock_summary"
+            android:defaultValue="true" />
+
         <!-- Battery styles -->
         <org.candy.candyshop.preference.SystemSettingListPreference
             android:key="qs_battery_style"
             android:icon="@drawable/ic_battery"
-            android:title="@string/status_bar_battery_style_title"
-            android:dialogTitle="@string/status_bar_battery_style_title"
+            android:title="@string/qs_battery_style_title"
+            android:dialogTitle="@string/qs_battery_style_title"
             android:entries="@array/qs_battery_style_entries"
             android:entryValues="@array/qs_battery_style_values"
             android:defaultValue="-1" />
@@ -85,53 +114,18 @@
 
         <org.candy.candyshop.preference.SystemSettingListPreference
             android:key="qs_show_battery_percent"
-            android:title="@string/qs_battery_mode_title"
+            android:title="@string/qs_battery_percentage_title"
             android:entries="@array/battery_percentage_entries"
             android:entryValues="@array/battery_percentage_values"
             android:summary="%s"
             android:defaultValue="2" />
 
         <!-- Battery estimate -->
-        <org.candy.candyshop.preference.SystemSettingListPreference
-            android:key="qs_show_battery_estimate"
-            android:icon="@drawable/ic_timelapse"
-            android:title="@string/battery_estimate_title"
-            android:summary="@string/battery_estimate_summary" />
-
-        <!-- QS clock -->
         <org.candy.candyshop.preference.SystemSettingSwitchPreference
-            android:key="show_qs_clock"
-            android:icon="@drawable/ic_clock"
-            android:title="@string/qs_clock_title"
-            android:summary="@string/qs_clock_summary"
-            android:defaultValue="true" />
-
-        </PreferenceCategory>
-
-        <PreferenceCategory
-           android:id="@+id/qs_animations"
-           android:key="qs_animations_category"
-           android:title="@string/qs_animations_category_title" >
-
-           <Preference
-               android:key="qs_animations"
-               android:title="@string/qs_animations_title"
-               android:summary="@string/qs_animations_summary"
-               android:fragment="org.candy.candyshop.fragments.QuickSettingsAnimations" />
-
-       </PreferenceCategory>
-
-        <PreferenceCategory
-            android:key="quick_settings_category"
-            android:title="@string/qs_panel_alpha_title">
-
-            <org.candy.candyshop.preference.CustomSeekBarPreference
-                android:key="qs_panel_alpha"
-                android:title="@string/qs_panel_alpha_title"
-                android:summary="@string/qs_panel_alpha_summary"
-                android:max="100"
-                settings:min="0"
-                android:persistent="false" />
+            android:key="qs_show_battery_estimate"
+            android:title="@string/battery_estimate_title"
+            android:summary="@string/battery_estimate_summary"
+            android:defaultValue="false" />
 
     </PreferenceCategory>
 

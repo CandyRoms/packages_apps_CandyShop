@@ -66,7 +66,7 @@
             android:max="2000"
             settings:min="0"
             settings:interval="10"
-            settings:units="@string/unit_milliseconds" />
+            settings:units="ms" />
 
     </PreferenceCategory>
 
