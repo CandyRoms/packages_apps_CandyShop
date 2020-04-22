@@ -27,6 +27,7 @@
     <!-- QuickSettings -->
     <!-- Quick Settings brightness icon -->
     <!-- Color Picker -->
+    <string name="hex">Hex :</string>
     <!-- Fingerprint unlock keystore -->
     <!-- StatusBar Tuner -->
     <!-- Navbar tuner -->
@@ -117,4 +118,6 @@
     <!--Double Tap to Sleep Statusbar-->
     <!-- MultiTouch Gestures -->
     <!-- Hide Apps from Recents -->
+    <!-- Heads up options -->
+    <!-- Wakelock blocker -->
 </resources>
