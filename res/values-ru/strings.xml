@@ -17,104 +17,106 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Tabs -->
-  <!-- Bottom Navigation -->
-  <!-- CandyShop Aisles tab header text -->
-  <!-- Category titles -->
-  <!-- Fragments -->
-  <!-- Fragment summaries -->
-  <!-- Buttons -->
-  <!-- QuickSettings -->
-  <!-- Quick Settings brightness icon -->
-  <!-- Color Picker -->
-  <!-- Fingerprint unlock keystore -->
-  <!-- StatusBar Tuner -->
-  <!-- Navbar tuner -->
-  <!-- Bottom navigation gestures -->
-  <!-- Three-fingers-swipe to screenshot -->
-  <!-- Lockscreen tuner -->
-  <!-- Battery percentage -->
-  <!-- Status bar battery style-->
-  <!-- Statusbar Clock -->
-  <!-- Old Style Mobile -->
-  <!-- System theme -->
-  <!-- AboutCandy-->
-  <!-- Power Menu -->
-  <!-- Changelog -->
-  <!-- Toast app icon -->
-  <!-- Power menu on lockscreen -->
-  <!--Volume keys wake -->
-  <!-- QS rows and columns -->
-  <!-- Disable QS on secure Lockscreen -->
-  <!-- Quick Settings brightness slider -->
-  <!-- Torch Power button gestures -->
-  <!-- Toggle for face auto unlock -->
-  <!-- Notification with screen on -->
-  <!-- Screenshot sound -->
-  <!--Double Tap to Sleep Lockscreen-->
-  <!--Quick pulldown-->
-  <!-- Onehand UI mode -->
-  <!-- Lockscreen visualizer -->
-  <!-- Custom Seek bar -->
-  <!-- General messages -->
-  <!-- Keyboard and IME  -->
-  <!-- Incall Home button behavior-->
-  <!-- Buttons backlight timeout -->
-  <!-- Enable keys backlight-->
-  <!-- Enable keys backlight-->
-  <!-- HW Keys customization -->
-  <!-- Swap navigation keys -->
-  <!-- Screenshot editor -->
-  <!-- Gesture Anywhere -->
-  <!-- Label, button used to add a gesture -->
-  <!-- Label, button used to reload all gestures -->
-  <!-- Label, button used to cancel the operation of adding a gesture -->
-  <!-- Label, button used to save a gesture newly created -->
-  <!-- Label, prompt asking the user to enter the name of the gesture -->
-  <!-- Error message, informs the user he needs to enter a name before saving a gesture -->
-  <!-- success message, tells the user where the gesture was saved -->
-  <!-- Buttons in Rename gesture dialog box -->
-  <!-- Buttons in Rename gesture dialog box -->
-  <!-- Message displayed when the user opens the gestures settings screen -->
-  <!-- Message displayed when the user has no gestures -->
-  <!-- Title of the screen used to view/manage gestures -->
-  <!-- Noun, menu item used to edit a gesture -->
-  <!-- Noun, menu item used to remove a gesture -->
-  <!-- Message displayed when a gesture is successfully deleted -->
-  <!-- Title of dialog box -->
-  <!-- Label of gesture name field in Rename gesture dialog box -->
-  <!-- Message, displayed when the sdcard cannot be found, 1st parameter is the name of the file that stores the gestures.  CHAR LIMIT=80 -->
-  <!-- Force expanded notifications -->
-  <!-- CPU Info -->
-  <!-- Navbar Settings -->
-  <!-- QuickSettings haptic feedback -->
-  <!-- Media art -->
-  <!-- Bluetooth battery status -->
-  <!-- Show LTE/4G switch -->
-  <!-- Carrier Label -->
-  <!-- Candy logo -->
-  <!-- Tiles animation/interpolator style  -->
-  <!-- Ambient display music ticker -->
-  <!-- Network traffic -->
-  <!-- Recents mods -->
-  <!-- Lockscreen items -->
-  <!-- Incall vibrate options -->
-  <!-- Audio Panel view  -->
-  <!-- Volume Panel on Left -->
-  <!-- Weather -->
-  <!-- Volume keys control ring tone stream -->
-  <!-- In-call vibration options -->
-  <!-- AOKP custom system animations -->
-  <!-- Animations -->
-  <!-- Screen Off animation -->
-  <!-- Toast Animation -->
-  <!-- Smart Clock -->
-  <!-- Lockscreen clock styles -->
-  <!-- Power menu Animations  -->
-  <!-- Call notifications -->
-  <!-- Fingerprint settings-->
-  <!-- fingerprint authentication vibration -->
-  <!--Double Tap to Sleep Statusbar-->
-  <!-- MultiTouch Gestures -->
-  <!-- Hide Apps from Recents -->
+    <!-- Tabs -->
+    <!-- Bottom Navigation -->
+    <!-- CandyShop Aisles tab header text -->
+    <!-- Category titles -->
+    <!-- Fragments -->
+    <!-- Fragment summaries -->
+    <!-- Buttons -->
+    <!-- QuickSettings -->
+    <!-- Quick Settings brightness icon -->
+    <!-- Color Picker -->
+    <!-- Fingerprint unlock keystore -->
+    <!-- StatusBar Tuner -->
+    <!-- Navbar tuner -->
+    <!-- Bottom navigation gestures -->
+    <!-- Three-fingers-swipe to screenshot -->
+    <!-- Lockscreen tuner -->
+    <!-- Battery percentage -->
+    <!-- Status bar battery style-->
+    <!-- Statusbar Clock -->
+    <!-- Old Style Mobile -->
+    <!-- System theme -->
+    <!-- AboutCandy-->
+    <!-- Power Menu -->
+    <!-- Changelog -->
+    <!-- Toast app icon -->
+    <!-- Power menu on lockscreen -->
+    <!--Volume keys wake -->
+    <!-- QS rows and columns -->
+    <!-- Disable QS on secure Lockscreen -->
+    <!-- Quick Settings brightness slider -->
+    <!-- Torch Power button gestures -->
+    <!-- Toggle for face auto unlock -->
+    <!-- Notification with screen on -->
+    <!-- Screenshot sound -->
+    <!--Double Tap to Sleep Lockscreen-->
+    <!--Quick pulldown-->
+    <!-- Onehand UI mode -->
+    <!-- Lockscreen visualizer -->
+    <!-- Custom Seek bar -->
+    <!-- General messages -->
+    <!-- Keyboard and IME  -->
+    <!-- Incall Home button behavior-->
+    <!-- Buttons backlight timeout -->
+    <!-- Enable keys backlight-->
+    <!-- Enable keys backlight-->
+    <!-- HW Keys customization -->
+    <!-- Swap navigation keys -->
+    <!-- Screenshot editor -->
+    <!-- Gesture Anywhere -->
+    <!-- Label, button used to add a gesture -->
+    <!-- Label, button used to reload all gestures -->
+    <!-- Label, button used to cancel the operation of adding a gesture -->
+    <!-- Label, button used to save a gesture newly created -->
+    <!-- Label, prompt asking the user to enter the name of the gesture -->
+    <!-- Error message, informs the user he needs to enter a name before saving a gesture -->
+    <!-- success message, tells the user where the gesture was saved -->
+    <!-- Buttons in Rename gesture dialog box -->
+    <!-- Buttons in Rename gesture dialog box -->
+    <!-- Message displayed when the user opens the gestures settings screen -->
+    <!-- Message displayed when the user has no gestures -->
+    <!-- Title of the screen used to view/manage gestures -->
+    <!-- Noun, menu item used to edit a gesture -->
+    <!-- Noun, menu item used to remove a gesture -->
+    <!-- Message displayed when a gesture is successfully deleted -->
+    <!-- Title of dialog box -->
+    <!-- Label of gesture name field in Rename gesture dialog box -->
+    <!-- Message, displayed when the sdcard cannot be found, 1st parameter is the name of the file that stores the gestures.  CHAR LIMIT=80 -->
+    <!-- Force expanded notifications -->
+    <!-- CPU Info -->
+    <!-- Navbar Settings -->
+    <!-- QuickSettings haptic feedback -->
+    <!-- Media art -->
+    <!-- Bluetooth battery status -->
+    <!-- Show LTE/4G switch -->
+    <!-- Carrier Label -->
+    <!-- Candy logo -->
+    <!-- Tiles animation/interpolator style  -->
+    <!-- Ambient display music ticker -->
+    <!-- Network traffic -->
+    <!-- Recents mods -->
+    <!-- Lockscreen items -->
+    <!-- Incall vibrate options -->
+    <!-- Audio Panel view  -->
+    <!-- Volume Panel on Left -->
+    <!-- Weather -->
+    <!-- Volume keys control ring tone stream -->
+    <!-- In-call vibration options -->
+    <!-- AOKP custom system animations -->
+    <!-- Animations -->
+    <!-- Screen Off animation -->
+    <string name="screen_off_animation_crt">Эффект старого телевизора</string>
+    <!-- Toast Animation -->
+    <!-- Smart Clock -->
+    <!-- Lockscreen clock styles -->
+    <!-- Power menu Animations  -->
+    <string name="power_menu_animation_card">3D</string>
+    <!-- Call notifications -->
+    <!-- Fingerprint settings-->
+    <!-- fingerprint authentication vibration -->
+    <!--Double Tap to Sleep Statusbar-->
+    <!-- MultiTouch Gestures -->
+    <!-- Hide Apps from Recents -->
 </resources>
