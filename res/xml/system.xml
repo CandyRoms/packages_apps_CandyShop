@@ -38,13 +38,6 @@
             android:summary="@string/incall_vibration_options_summary"
             android:fragment="org.candy.candyshop.fragments.DialerSettings" />
 
-        <PreferenceScreen
-            android:key="doze_fragment"
-            android:icon="@drawable/ic_ambient"
-            android:title="@string/doze_display_title"
-            android:summary="@string/doze_display_summary"
-            android:fragment="org.candy.candyshop.fragments.DozeSettings" />
-
     </PreferenceCategory>
 
     <PreferenceCategory
