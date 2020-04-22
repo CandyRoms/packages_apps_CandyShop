@@ -27,10 +27,6 @@
     <!-- QuickSettings -->
     <!-- Quick Settings brightness icon -->
     <!-- Color Picker -->
-    <string name="arrow_right">→</string>
-    <string name="arrow_down">↓</string>
-    <string name="hex">Hex:</string>
-    <string name="hex_hint">#ff000000</string>
     <!-- Fingerprint unlock keystore -->
     <!-- StatusBar Tuner -->
     <!-- Navbar tuner -->
@@ -104,7 +100,6 @@
     <!-- Lockscreen items -->
     <!-- Incall vibrate options -->
     <!-- Audio Panel view  -->
-    <string name="audio_panel_view_bt_sco_title">Bluetooth</string>
     <!-- Volume Panel on Left -->
     <!-- Weather -->
     <!-- Volume keys control ring tone stream -->
@@ -113,17 +108,13 @@
     <!-- Animations -->
     <!-- Screen Off animation -->
     <!-- Toast Animation -->
-    <string name="toast_Tn_animation">Tn</string>
     <!-- Smart Clock -->
     <!-- Lockscreen clock styles -->
     <!-- Power menu Animations  -->
-    <string name="power_menu_animation_card">3D</string>
     <!-- Call notifications -->
     <!-- Fingerprint settings-->
     <!-- fingerprint authentication vibration -->
     <!--Double Tap to Sleep Statusbar-->
     <!-- MultiTouch Gestures -->
     <!-- Hide Apps from Recents -->
-    <!-- Heads up options -->
-    <!-- Wakelock blocker -->
 </resources>
