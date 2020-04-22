@@ -35,6 +35,7 @@
     <!-- Lockscreen tuner -->
     <!-- Battery percentage -->
     <!-- Status bar battery style-->
+    <string name="status_bar_battery_style_port">Retrato</string>
     <!-- Statusbar Clock -->
     <!-- Old Style Mobile -->
     <!-- System theme -->
