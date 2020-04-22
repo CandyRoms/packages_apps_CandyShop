@@ -107,12 +107,10 @@
     <!-- AOKP custom system animations -->
     <!-- Animations -->
     <!-- Screen Off animation -->
-    <string name="screen_off_animation_crt">Эффект старого телевизора</string>
     <!-- Toast Animation -->
     <!-- Smart Clock -->
     <!-- Lockscreen clock styles -->
     <!-- Power menu Animations  -->
-    <string name="power_menu_animation_card">3D</string>
     <!-- Call notifications -->
     <!-- Fingerprint settings-->
     <!-- fingerprint authentication vibration -->
