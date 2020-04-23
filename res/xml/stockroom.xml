@@ -42,6 +42,12 @@
           android:summary="@string/three_finger_gesture_summary"
           android:defaultValue="false" />
 
+      <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="partial_screenshot_as_default"
+            android:title="@string/partial_screenshot_as_default_title"
+            android:summary="@string/partial_screenshot_as_default_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
