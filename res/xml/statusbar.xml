@@ -32,16 +32,22 @@
         android:key="statusbar_options_category"
         android:title="@string/statusbar_options_category_title" >
 
-    <Preference
-        android:key="network_traffic"
-        android:fragment="org.candy.candyshop.fragments.NetworkTraffic"
-        android:title="@string/traffic_title" />
+        <Preference
+            android:key="network_traffic"
+            android:fragment="org.candy.candyshop.fragments.NetworkTraffic"
+            android:title="@string/traffic_title" />
 
         <Preference
             android:key="clock_settings"
             android:title="@string/status_bar_clock_title"
             android:summary="@string/status_bar_clock_summary"
             android:fragment="org.candy.candyshop.fragments.ClockOptions" />
+
+        <Preference
+            android:key="statusbar_battery"
+            android:title="@string/battery_percent_title"
+            android:summary="@string/battery_percent_summary"
+            android:fragment="org.candy.candyshop.fragments.StatusBarBatterySettings"/>
 
     </PreferenceCategory>
 
