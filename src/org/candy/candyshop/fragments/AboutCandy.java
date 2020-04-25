@@ -62,7 +62,7 @@ public class AboutCandy extends DialogFragment {
             setUriTarget("https://candyroms.org", candyroms);
 
             FrameLayout gerrit = view.findViewById(R.id.gerrit);
-            setUriTarget("https://gerrit.bbqdroid.org", gerrit);
+            setUriTarget("https://gerrit.candyroms.org", gerrit);
 
             FrameLayout candyroms_github = view.findViewById(R.id.candyroms_github);
             setUriTarget("https://github.com/CandyRoms", candyroms_github);
