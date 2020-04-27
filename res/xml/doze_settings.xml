@@ -19,12 +19,6 @@
     android:title="@string/doze_display_title">
 
     <org.candy.candyshop.preference.SecureSettingSwitchPreference
-        android:key="doze_enabled"
-        android:title="@string/doze_title"
-        android:summary="@string/doze_summary"
-        android:defaultValue="false" />
-
-    <org.candy.candyshop.preference.SecureSettingSwitchPreference
         android:key="doze_always_on"
         android:title="@string/doze_always_on_title"
         android:summary="@string/doze_always_on_summary"
@@ -32,7 +26,14 @@
 
     <PreferenceCategory
         android:key="doze_sensor"
-        android:title="@string/doze_sensor_title" >
+        android:title="@string/doze_sensor_title"
+        android:summary="@string/doze_sensor_summary" >
+
+        <org.candy.candyshop.preference.SecureSettingSwitchPreference
+            android:key="doze_enabled"
+            android:title="@string/custom_doze_title"
+            android:summary="@string/custom_doze_summary"
+            android:defaultValue="false" />
 
         <org.candy.candyshop.preference.SecureSettingSwitchPreference
             android:key="doze_tilt_gesture"

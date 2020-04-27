@@ -371,7 +371,7 @@
 
     <!-- ROM based doze -->
     <string name="doze_display_title">Advanced doze options</string>
-    <string name="doze_display_summary">Configure triggers and settings for doze action</string>
+    <string name="doze_display_summary">Sensor-based doze pulse settings</string>
     <string name="tilt_sensor_title">Tilt sensor</string>
     <string name="pickup_sensor_title">Pick up sensor</string>
     <string name="proximity_sensor_title">Proximity sensor</string>
@@ -386,8 +386,12 @@
     <string name="doze_vibrate">Vibrate</string>
     <string name="doze_vibrate_summary">Duration to vibrate when pulsing notifications</string>
     <string name="doze_sensor_title">Sensor based</string>
+    <string name="doze_sensor_summary">(Only available when AOD is disabled)</string>
     <string name="sensor_warning_title">Caution</string>
     <string name="sensor_warning_message">Settings based on sensors are subject to hardware compatibility. Enabling sensors for ambient display may increase power drain.</string>
+    <string name="custom_doze_title">Allow sensor-based doze triggers</string>
+    <string name="custom_doze_summary">Allow accelerometer and proximity sensor to trigger doze pulses</string>
+
 
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value">Value: <xliff:g id="v">%s</xliff:g></string>

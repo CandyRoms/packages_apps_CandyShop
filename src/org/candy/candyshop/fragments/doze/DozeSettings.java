@@ -48,6 +48,7 @@ import org.candy.candyshop.R;
 import org.candy.candyshop.fragments.doze.Utils;
 import org.candy.candyshop.preference.CustomSeekBarPreference;
 import org.candy.candyshop.preference.SecureSettingSwitchPreference;
+import org.candy.candyshop.preference.SecureSettingSeekBarPreference;
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
 import java.util.List;
@@ -59,21 +60,23 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
 
     public static final String TAG = "DozeSettings";
 
-    private static final String KEY_DOZE_ALWAYS_ON = "doze_always_on";
-
     private static final String CATEG_DOZE_SENSOR = "doze_sensor";
 
+    private static final String KEY_DOZE_ENABLED = "doze_enabled";
+    private static final String KEY_DOZE_ALWAYS_ON = "doze_always_on";
     private static final String KEY_DOZE_TILT_GESTURE = "doze_tilt_gesture";
     private static final String KEY_DOZE_PICK_UP_GESTURE = "doze_pick_up_gesture";
     private static final String KEY_DOZE_HANDWAVE_GESTURE = "doze_handwave_gesture";
     private static final String KEY_DOZE_POCKET_GESTURE = "doze_pocket_gesture";
     private static final String KEY_DOZE_GESTURE_VIBRATE = "doze_gesture_vibrate";
 
+    private SecureSettingSwitchPreference mDozeEnabledPreference;
     private SecureSettingSwitchPreference mDozeAlwaysOnPreference;
     private SecureSettingSwitchPreference mTiltPreference;
     private SecureSettingSwitchPreference mPickUpPreference;
     private SecureSettingSwitchPreference mHandwavePreference;
     private SecureSettingSwitchPreference mPocketPreference;
+    private SecureSettingSeekBarPreference mVibratePreference;
 
     private SharedPreferences mPreferences;
 
@@ -86,6 +89,30 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
 
         PreferenceCategory dozeSensorCategory =
                 (PreferenceCategory) getPreferenceScreen().findPreference(CATEG_DOZE_SENSOR);
+
+        final ContentResolver resolver = getActivity().getContentResolver();
+
+        mDozeEnabledPreference = (SecureSettingSwitchPreference) findPreference("doze_enabled");
+        mDozeEnabledPreference.setOnPreferenceChangeListener(this);
+
+        mDozeAlwaysOnPreference = (SecureSettingSwitchPreference) findPreference("doze_always_on");
+        mDozeAlwaysOnPreference.setOnPreferenceChangeListener(this);
+
+        mTiltPreference = (SecureSettingSwitchPreference) findPreference("doze_tilt_gesture");
+        mTiltPreference.setOnPreferenceChangeListener(this);
+
+        mPickUpPreference = (SecureSettingSwitchPreference) findPreference("doze_pick_up_gesture");
+        mPickUpPreference.setOnPreferenceChangeListener(this);
+
+        mHandwavePreference = (SecureSettingSwitchPreference) findPreference("doze_handwave_gesture");
+        mHandwavePreference.setOnPreferenceChangeListener(this);
+
+        mPocketPreference = (SecureSettingSwitchPreference) findPreference("doze_pocket_gesture");
+        mPocketPreference.setOnPreferenceChangeListener(this);
+
+        mVibratePreference = (SecureSettingSeekBarPreference) findPreference("doze_gesture_vibrate");
+        mVibratePreference.setOnPreferenceChangeListener(this);
+
 
         // Hide sensor related features if the device doesn't support them
         if (!Utils.getTiltSensor(context) && !Utils.getPickupSensor(context) && !Utils.getProximitySensor(context)) {
@@ -106,6 +133,72 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
         if (!mAlwaysOnAvailable) {
             getPreferenceScreen().removePreference(mDozeAlwaysOnPreference);
         }
+        updatePrefs();
+    }
+
+    public void updatePrefs() {
+        final ContentResolver resolver = getActivity().getContentResolver();
+        // Disable sensor settings if doze and AOD are enabled
+        boolean mAODEnabled = (Settings.Secure.getIntForUser(resolver,
+                Settings.Secure.DOZE_ALWAYS_ON, 0, UserHandle.USER_CURRENT) == 1);
+        boolean mDozeEnabled = (Settings.Secure.getIntForUser(resolver,
+                Settings.Secure.DOZE_ENABLED, 0, UserHandle.USER_CURRENT) == 1);
+
+        if (mAODEnabled) {
+            if (mDozeEnabledPreference != null) {
+                mDozeEnabledPreference.setEnabled(false);
+            }
+            if (mTiltPreference != null) {
+                mTiltPreference.setEnabled(false);
+            }
+            if (mPickUpPreference != null) {
+                mPickUpPreference.setEnabled(false);
+            }
+            if (mHandwavePreference != null) {
+                mHandwavePreference.setEnabled(false);
+            }
+            if (mPocketPreference != null) {
+                mPocketPreference.setEnabled(false);
+            }
+            if (mVibratePreference != null) {
+                mVibratePreference.setEnabled(false);
+            }
+        } else {
+            mDozeEnabledPreference.setEnabled(true);
+            if (!mDozeEnabled){
+                if (mTiltPreference != null) {
+                    mTiltPreference.setEnabled(false);
+                }
+                if (mPickUpPreference != null) {
+                    mPickUpPreference.setEnabled(false);
+                }
+                if (mHandwavePreference != null) {
+                    mHandwavePreference.setEnabled(false);
+                }
+                if (mPocketPreference != null) {
+                    mPocketPreference.setEnabled(false);
+                }
+                if (mVibratePreference != null) {
+                    mVibratePreference.setEnabled(false);
+                }
+            } else {
+                if (mTiltPreference != null) {
+                    mTiltPreference.setEnabled(true);
+                }
+                if (mPickUpPreference != null) {
+                    mPickUpPreference.setEnabled(true);
+                }
+                if (mHandwavePreference != null) {
+                    mHandwavePreference.setEnabled(true);
+                }
+                if (mPocketPreference != null) {
+                    mPocketPreference.setEnabled(true);
+                }
+                if (mVibratePreference != null) {
+                    mVibratePreference.setEnabled(true);
+                }
+            }
+        }
     }
 
     @Override
@@ -120,12 +213,27 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
             if (newValue != null)
                 sensorWarning(context);
             return true;
+        } else if (preference == mDozeAlwaysOnPreference) {
+            boolean value = (Boolean) newValue;
+            Settings.Secure.putInt(resolver,
+                    Settings.Secure.DOZE_ALWAYS_ON, value ? 1 : 0);
+            mDozeAlwaysOnPreference.setChecked(value);
+            updatePrefs();
+            return true;
+        } else if (preference == mDozeEnabledPreference) {
+            boolean value = (Boolean) newValue;
+            Settings.Secure.putInt(resolver,
+                    Settings.Secure.DOZE_ENABLED, value ? 1 : 0);
+            mDozeEnabledPreference.setChecked(value);
+            updatePrefs();
+            return true;
         }
         return false;
     }
 
     @Override
     public boolean onPreferenceTreeClick(Preference preference) {
+        updatePrefs();
         return super.onPreferenceTreeClick(preference);
     }
 
