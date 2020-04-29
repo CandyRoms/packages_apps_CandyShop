@@ -407,4 +407,9 @@
     <!-- QS clock -->
     <string name="qs_clock_title">Clock</string>
     <string name="qs_clock_summary">Display clock in quick status bar header</string>
+
+    <!-- Partial screenshot -->
+    <string name="partial_screenshot_as_default_title">Partial screenshot as default action</string>
+    <string name="partial_screenshot_as_default_summary">Set partial screenshot as default action for Screenshot button in power menu. Otherwise a long press action triggers it.</string>
+
 </resources>
