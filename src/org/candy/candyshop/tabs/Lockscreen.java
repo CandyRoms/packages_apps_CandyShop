@@ -23,7 +23,6 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.content.res.Resources;
-import android.hardware.fingerprint.FingerprintManager;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
@@ -71,12 +70,8 @@ public class Lockscreen extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String MISC_CATEGORY = "lockscreen_category";
-    private static final String FOD_ICON_PICKER_CATEGORY = "fod_icon_picker";
-    private static final String FOD_ANIMATION = "fod_anim";
     private static final String LOCK_CLOCK_FONTS = "lock_clock_fonts";
 
-    private PreferenceCategory mFODIconPickerCategory;
-    private ListPreference mFODAnimation;
     private ListPreference mLockClockFonts;
 
     @Override
@@ -91,24 +86,12 @@ public class Lockscreen extends SettingsPreferenceFragment implements
 	    PackageManager packageManager = mContext.getPackageManager();
         boolean hasFod = mContext.getResources().getBoolean(com.android.internal.R.bool.config_needCustomFODView);
 
-        mFODIconPickerCategory = (PreferenceCategory) findPreference(FOD_ICON_PICKER_CATEGORY);
-        if (mFODIconPickerCategory != null && !hasFod) {
-            prefSet.removePreference(mFODIconPickerCategory);
-        }
-
         // Lockscreen Clock Fonts
         mLockClockFonts = (ListPreference) findPreference(LOCK_CLOCK_FONTS);
         mLockClockFonts.setValue(String.valueOf(Settings.System.getInt(
                 getContentResolver(), Settings.System.LOCK_CLOCK_FONTS, 28)));
         mLockClockFonts.setSummary(mLockClockFonts.getEntry());
         mLockClockFonts.setOnPreferenceChangeListener(this);
-
-        boolean showFODAnimationPicker = mContext.getResources().getBoolean(R.bool.showFODAnimationPicker);
-        mFODAnimation = (ListPreference) findPreference(FOD_ANIMATION);
-        if ((mFODIconPickerCategory != null && mFODAnimation != null && !hasFod) ||
-                (mFODIconPickerCategory != null && mFODAnimation != null && !showFODAnimationPicker)) {
-            mFODIconPickerCategory.removePreference(mFODAnimation);
-        }
     }
 
     @Override

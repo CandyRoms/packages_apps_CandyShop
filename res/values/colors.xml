@@ -37,6 +37,4 @@
     <!-- Default accent color - Candy apple red #ff0d00 -->
     <color name="candy_default">#ff0d00</color>
 
-    <!-- FOD -->
-    <color name="fod_item_background_stroke_color">#d6d6d6</color>
 </resources>
