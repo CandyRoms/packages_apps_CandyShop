@@ -59,16 +59,6 @@
             android:title="@string/pocket_title"
             android:summary="@string/pocket_summary" />
 
-        <org.candy.candyshop.preference.SecureSettingSeekBarPreference
-            android:key="doze_gesture_vibrate"
-            android:title="@string/doze_vibrate"
-            android:summary="@string/doze_vibrate_summary"
-            android:defaultValue="0"
-            android:max="2000"
-            settings:min="0"
-            settings:interval="10"
-            settings:units="ms" />
-
     </PreferenceCategory>
 
 </PreferenceScreen>

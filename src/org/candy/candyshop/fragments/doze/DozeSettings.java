@@ -68,7 +68,6 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
     private static final String KEY_DOZE_PICK_UP_GESTURE = "doze_pick_up_gesture";
     private static final String KEY_DOZE_HANDWAVE_GESTURE = "doze_handwave_gesture";
     private static final String KEY_DOZE_POCKET_GESTURE = "doze_pocket_gesture";
-    private static final String KEY_DOZE_GESTURE_VIBRATE = "doze_gesture_vibrate";
 
     private SecureSettingSwitchPreference mDozeEnabledPreference;
     private SecureSettingSwitchPreference mDozeAlwaysOnPreference;
@@ -76,7 +75,6 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
     private SecureSettingSwitchPreference mPickUpPreference;
     private SecureSettingSwitchPreference mHandwavePreference;
     private SecureSettingSwitchPreference mPocketPreference;
-    private SecureSettingSeekBarPreference mVibratePreference;
 
     private SharedPreferences mPreferences;
 
@@ -109,9 +107,6 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
 
         mPocketPreference = (SecureSettingSwitchPreference) findPreference("doze_pocket_gesture");
         mPocketPreference.setOnPreferenceChangeListener(this);
-
-        mVibratePreference = (SecureSettingSeekBarPreference) findPreference("doze_gesture_vibrate");
-        mVibratePreference.setOnPreferenceChangeListener(this);
 
 
         // Hide sensor related features if the device doesn't support them
@@ -160,9 +155,6 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
             if (mPocketPreference != null) {
                 mPocketPreference.setEnabled(false);
             }
-            if (mVibratePreference != null) {
-                mVibratePreference.setEnabled(false);
-            }
         } else {
             mDozeEnabledPreference.setEnabled(true);
             if (!mDozeEnabled){
@@ -178,9 +170,6 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
                 if (mPocketPreference != null) {
                     mPocketPreference.setEnabled(false);
                 }
-                if (mVibratePreference != null) {
-                    mVibratePreference.setEnabled(false);
-                }
             } else {
                 if (mTiltPreference != null) {
                     mTiltPreference.setEnabled(true);
@@ -193,9 +182,6 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
                 }
                 if (mPocketPreference != null) {
                     mPocketPreference.setEnabled(true);
-                }
-                if (mVibratePreference != null) {
-                    mVibratePreference.setEnabled(true);
                 }
             }
         }
@@ -274,8 +260,6 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
                 Settings.Secure.DOZE_HANDWAVE_GESTURE, 0, UserHandle.USER_CURRENT);
         Settings.Secure.putIntForUser(resolver,
                 Settings.Secure.DOZE_POCKET_GESTURE, 0, UserHandle.USER_CURRENT);
-        Settings.Secure.putIntForUser(resolver,
-                Settings.Secure.DOZE_GESTURE_VIBRATE, 0, UserHandle.USER_CURRENT);
     }
 
     @Override
@@ -304,7 +288,6 @@ public class DozeSettings extends SettingsPreferenceFragment implements Indexabl
                 public List<String> getNonIndexableKeys(Context context) {
                     List<String> keys = super.getNonIndexableKeys(context);
 
-                    keys.add(KEY_DOZE_GESTURE_VIBRATE);
                     if (!Utils.getTiltSensor(context)) {
                         keys.add(KEY_DOZE_TILT_GESTURE);
                     }

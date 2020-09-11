@@ -23,7 +23,6 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.SystemClock;
 import android.os.UserHandle;
-import android.os.Vibrator;
 import android.provider.Settings;
 import android.util.Log;
 
@@ -46,17 +45,11 @@ public class TiltSensor implements SensorEventListener {
 
     private long mEntryTimestamp;
 
-    private Vibrator mVibrator;
-
     public TiltSensor(Context context) {
         mContext = context;
         mSensorManager = (SensorManager) mContext.getSystemService(Context.SENSOR_SERVICE);
         mSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_TILT_DETECTOR);
         mExecutorService = Executors.newSingleThreadExecutor();
-        mVibrator = (Vibrator) mContext.getSystemService(Context.VIBRATOR_SERVICE);
-        if (mVibrator == null || !mVibrator.hasVibrator()) {
-            mVibrator = null;
-        }
     }
 
     private Future<?> submit(Runnable runnable) {
@@ -76,7 +69,6 @@ public class TiltSensor implements SensorEventListener {
 
         if (event.values[0] == 1) {
             Utils.launchDozePulse(mContext);
-            doHapticFeedback();
         }
     }
 
@@ -99,16 +91,5 @@ public class TiltSensor implements SensorEventListener {
         submit(() -> {
             mSensorManager.unregisterListener(this, mSensor);
         });
-    }
-
-    private void doHapticFeedback() {
-        if (mVibrator == null) {
-            return;
-        }
-        int val = Settings.Secure.getIntForUser(mContext.getContentResolver(),
-                Settings.Secure.DOZE_GESTURE_VIBRATE, 0, UserHandle.USER_CURRENT);
-        if (val > 0) {
-            mVibrator.vibrate(val);
-        }
     }
 }

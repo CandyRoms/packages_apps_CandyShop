@@ -24,7 +24,6 @@ import android.hardware.SensorManager;
 import android.media.AudioManager;
 import android.os.SystemClock;
 import android.os.UserHandle;
-import android.os.Vibrator;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.util.Log;
@@ -51,8 +50,6 @@ public class PickupSensor implements SensorEventListener {
     private float mAccelCurrent;
     private long mEntryTimestamp;
 
-    private Vibrator mVibrator;
-
     public PickupSensor(Context context) {
         mContext = context;
         mSensorManager = (SensorManager) mContext.getSystemService(Context.SENSOR_SERVICE);
@@ -61,10 +58,6 @@ public class PickupSensor implements SensorEventListener {
         mExecutorService = Executors.newSingleThreadExecutor();
         mAccelLast = SensorManager.GRAVITY_EARTH;
         mAccelCurrent = SensorManager.GRAVITY_EARTH;
-        mVibrator = (Vibrator) mContext.getSystemService(Context.VIBRATOR_SERVICE);
-        if (mVibrator == null || !mVibrator.hasVibrator()) {
-            mVibrator = null;
-        }
     }
 
     private Future<?> submit(Runnable runnable) {
@@ -96,7 +89,6 @@ public class PickupSensor implements SensorEventListener {
                 float accDelta = Math.abs(mAccelCurrent - mAccelLast);
                 if (accDelta >= 0.1 && accDelta <= 1.5) {
                     Utils.launchDozePulse(mContext);
-                    doHapticFeedback();
                 }
             }
         } catch (Exception e) {
@@ -133,16 +125,5 @@ public class PickupSensor implements SensorEventListener {
         submit(() -> {
             mSensorManager.unregisterListener(this, mSensorPickup);
         });
-    }
-
-    private void doHapticFeedback() {
-        if (mVibrator == null) {
-            return;
-        }
-        int val = Settings.Secure.getIntForUser(mContext.getContentResolver(),
-                Settings.Secure.DOZE_GESTURE_VIBRATE, 0, UserHandle.USER_CURRENT);
-        if (val > 0) {
-            mVibrator.vibrate(val);
-        }
     }
 }

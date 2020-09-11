@@ -22,7 +22,6 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.UserHandle;
-import android.os.Vibrator;
 import android.provider.Settings;
 import android.util.Log;
 
@@ -49,18 +48,12 @@ public class ProximitySensor implements SensorEventListener {
     private boolean mSawNear = false;
     private long mInPocketTime = 0;
 
-    private Vibrator mVibrator;
-
     public ProximitySensor(Context context) {
         mContext = context;
         mSensorManager = (SensorManager) mContext.getSystemService(Context.SENSOR_SERVICE);
         final boolean wakeup = context.getResources().getBoolean(com.android.internal.R.bool.config_deviceHaveWakeUpProximity);
         mSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY, wakeup);
         mExecutorService = Executors.newSingleThreadExecutor();
-        mVibrator = (Vibrator) mContext.getSystemService(Context.VIBRATOR_SERVICE);
-        if (mVibrator == null || !mVibrator.hasVibrator()) {
-            mVibrator = null;
-        }
     }
 
     private Future<?> submit(Runnable runnable) {
@@ -73,7 +66,6 @@ public class ProximitySensor implements SensorEventListener {
         if (mSawNear && !isNear) {
             if (shouldPulse(event.timestamp)) {
                 Utils.launchDozePulse(mContext);
-                doHapticFeedback();
             }
         } else {
             mInPocketTime = event.timestamp;
@@ -112,16 +104,5 @@ public class ProximitySensor implements SensorEventListener {
         submit(() -> {
             mSensorManager.unregisterListener(this, mSensor);
         });
-    }
-
-    private void doHapticFeedback() {
-        if (mVibrator == null) {
-            return;
-        }
-        int val = Settings.Secure.getIntForUser(mContext.getContentResolver(),
-                Settings.Secure.DOZE_GESTURE_VIBRATE, 0, UserHandle.USER_CURRENT);
-        if (val > 0) {
-            mVibrator.vibrate(val);
-        }
     }
 }
