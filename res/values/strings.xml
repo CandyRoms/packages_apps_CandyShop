@@ -127,6 +127,7 @@
     <!-- Incall vibrate options -->
     <string name="incall_vibration_options_title">In-call notifications</string>
     <string name="incall_vibration_options_summary">In-call vibration options</string>
+    <string name="incall_vibration_category">In-call notifications</string>
     <string name="incall_vibrate_connect_title">Vibrate on connect</string>
     <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
     <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
@@ -185,8 +186,6 @@
     <string name="qs_brightness_position_bottom_summary">Show a brightness slider on bottom quick settings</string>
 
      <!--Volume keys -->
-    <string name="volume_rocker_wake_title">Volume rocker wake</string>
-    <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device</string>
     <string name="volume_rocker_music_controls_title">Playback control</string>
     <string name="volume_rocker_music_controls_summary">When the screen is off, long-pressing the volume keys will seek music tracks</string>
 
