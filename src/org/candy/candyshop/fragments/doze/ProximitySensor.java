@@ -52,16 +52,19 @@ public class ProximitySensor implements SensorEventListener {
 
     public ProximitySensor(Context context) {
         mContext = context;
-        final boolean wakeup = context.getResources().getBoolean(com.android.internal.R.bool.config_deviceHaveWakeUpProximity);
+        final boolean wakeup = context.getResources().getBoolean(
+                com.android.internal.R.bool.config_deviceHaveWakeUpProximity);
         mSensorManager = (SensorManager)
                 mContext.getSystemService(Context.SENSOR_SERVICE);
         if (mSensorManager != null) {
-            String customProximity = mContext.getResources().getString(R.string.config_custom_proximity);
+            String customProximity = mContext.getResources().getString(
+                    R.string.config_custom_proximity);
             if (!customProximity.isEmpty()) {
                 mSensorManager = mContext.getSystemService(SensorManager.class);
                 mSensorProximity = Utils.getSensor(mSensorManager, customProximity);
             } else {
-                mSensorProximity = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY, wakeup);
+                mSensorProximity = mSensorManager.getDefaultSensor(
+                        Sensor.TYPE_PROXIMITY, wakeup);
             }
         }
         mExecutorService = Executors.newSingleThreadExecutor();

@@ -54,16 +54,20 @@ public class PickupSensor implements SensorEventListener {
 
     public PickupSensor(Context context) {
         mContext = context;
-        mTelephonyManager = (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
+        mTelephonyManager = (TelephonyManager)
+                mContext.getSystemService(Context.TELEPHONY_SERVICE);
 
-        mSensorManager = (SensorManager) mContext.getSystemService(Context.SENSOR_SERVICE);
+        mSensorManager = (SensorManager)
+                mContext.getSystemService(Context.SENSOR_SERVICE);
         if (mSensorManager != null) {
-            String customPickup = mContext.getResources().getString(R.string.config_custom_pickup);
+            String customPickup = mContext.getResources().getString(
+                    R.string.config_custom_pickup);
             if (!customPickup.isEmpty()) {
                 mSensorManager = mContext.getSystemService(SensorManager.class);
                 mSensorPickup = Utils.getSensor(mSensorManager, customPickup);
             } else {
-                mSensorPickup = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+                mSensorPickup = mSensorManager.getDefaultSensor(
+                        Sensor.TYPE_ACCELEROMETER);
             }
         }
         mExecutorService = Executors.newSingleThreadExecutor();
