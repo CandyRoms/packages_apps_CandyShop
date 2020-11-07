@@ -244,4 +244,8 @@
     <string name="swap_volume_keys_on_rotation_title">Swap volume buttons</string>
     <string name="swap_volume_keys_on_rotation_summary">Swap volume buttons when rotating the device to landscape orientation</string>
 
+    <!-- Lockscreen Media Art Blur -->
+    <string name="lockscreen_media_blur_title">Media art blur level</string>
+    <string name="show_lockscreen_media_art_title">Show media art</string>
+    <string name="lockscreen_media_art_options_title">Lockscreen media art</string>
 </resources>
