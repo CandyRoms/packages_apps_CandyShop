@@ -21,6 +21,7 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.os.SystemClock;
 import android.os.UserHandle;
 import android.provider.Settings;
 import android.util.Log;
@@ -46,15 +47,23 @@ public class ProximitySensor implements SensorEventListener {
     private Sensor mSensorProximity;
     private Context mContext;
     private ExecutorService mExecutorService;
+    private long mEntryTimestamp;
 
     private boolean mSawNear = false;
     private long mInPocketTime = 0;
 
-    private boolean mHandwaveGestureEnabled;
-    private boolean mPocketGestureEnabled;
+    private boolean mHandwaveEnabled;
+    private boolean mPocketEnabled;
 
     public ProximitySensor(Context context) {
         mContext = context;
+
+        mHandwaveEnabled = Utils.handwaveGestureEnabled(mContext);
+        mPocketEnabled = Utils.pocketGestureEnabled(mContext);
+        if (!mHandwaveEnabled && !mPocketEnabled) {
+            disable();
+        }
+
         final boolean wakeup = context.getResources().getBoolean(
                 com.android.internal.R.bool.config_deviceHaveWakeUpProximity);
         mSensorManager = (SensorManager)
@@ -110,26 +119,19 @@ public class ProximitySensor implements SensorEventListener {
 
     // Switching screen OFF - we enable the sensor
     protected void enable() {
-        if (DEBUG) Log.d(TAG, "Enabling");
-        submit(() -> {
-            // We save user settings so at next screen ON call (enable())
+        if (mHandwaveEnabled || mPocketEnabled) {
+            if (DEBUG) Log.d(TAG, "Enabling");
+            mEntryTimestamp = SystemClock.elapsedRealtime();
+           // We save user settings so at next screen ON call (enable())
             // we don't need to read them again from the Settings provider
-            mHandwaveGestureEnabled = Utils.handwaveGestureEnabled(mContext);
-            mPocketGestureEnabled = Utils.pocketGestureEnabled(mContext);
-            if (mHandwaveGestureEnabled || mPocketGestureEnabled) {
-                mSensorManager.registerListener(this, mSensorProximity,
-                        SensorManager.SENSOR_DELAY_NORMAL);
-            }
-        });
+            mSensorManager.registerListener(this, mSensorProximity,
+                    SensorManager.SENSOR_DELAY_NORMAL);
+        }
     }
 
     // Switching screen ON - we disable the sensor
     protected void disable() {
         if (DEBUG) Log.d(TAG, "Disabling");
-        submit(() -> {
-            if (mHandwaveGestureEnabled || mPocketGestureEnabled) {
-                mSensorManager.unregisterListener(this, mSensorProximity);
-            }
-        });
+            mSensorManager.unregisterListener(this, mSensorProximity);
     }
 }

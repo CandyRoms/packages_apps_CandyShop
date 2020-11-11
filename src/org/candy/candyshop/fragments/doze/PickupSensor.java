@@ -52,8 +52,16 @@ public class PickupSensor implements SensorEventListener {
     private float mAccelCurrent;
     private long mEntryTimestamp;
 
+    private boolean mPickupEnabled;
+
     public PickupSensor(Context context) {
         mContext = context;
+
+        mPickupEnabled = Utils.pickupGestureEnabled(mContext);
+        if (!mPickupEnabled) {
+            disable();
+        }
+
         mTelephonyManager = (TelephonyManager)
                 mContext.getSystemService(Context.TELEPHONY_SERVICE);
 
@@ -92,7 +100,8 @@ public class PickupSensor implements SensorEventListener {
         }
 
         try {
-            if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
+            if (mSensorPickup != null) {
+            /*if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {*/
                 mGravity = event.values.clone();
 
                 // Movement detection
@@ -128,14 +137,16 @@ public class PickupSensor implements SensorEventListener {
     }
 
     protected void enable() {
-        if (DEBUG) Log.d(TAG, "Enabling");
+        if (mPickupEnabled) {
+            if (DEBUG) Log.d(TAG, "Enabling");
+            mEntryTimestamp = SystemClock.elapsedRealtime();
             mSensorManager.registerListener(this, mSensorPickup,
                 SensorManager.SENSOR_DELAY_NORMAL, BATCH_LATENCY_IN_MS * 1000);
-            mEntryTimestamp = SystemClock.elapsedRealtime();
+        }
     }
 
     protected void disable() {
         if (DEBUG) Log.d(TAG, "Disabling");
-            mSensorManager.unregisterListener(this, mSensorPickup);
+        mSensorManager.unregisterListener(this, mSensorPickup);
     }
 }

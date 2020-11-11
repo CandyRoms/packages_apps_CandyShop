@@ -98,11 +98,15 @@ public class DozeService extends Service {
 
     private void onDisplayOn() {
         if (DEBUG) Log.d(TAG, "Display on");
+        mTiltSensor.disable();
+        mPickupSensor.disable();
         mProximitySensor.disable();
     }
 
     private void onDisplayOff() {
         if (DEBUG) Log.d(TAG, "Display off");
+        mTiltSensor.enable();
+        mPickupSensor.enable();
         mProximitySensor.enable();
     }
 }

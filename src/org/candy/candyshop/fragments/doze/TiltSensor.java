@@ -47,8 +47,15 @@ public class TiltSensor implements SensorEventListener {
 
     private long mEntryTimestamp;
 
+    private boolean mTiltEnabled;
+
     public TiltSensor(Context context) {
         mContext = context;
+
+        mTiltEnabled = Utils.tiltGestureEnabled(mContext);
+        if (mTiltEnabled) {
+            disable();
+        }
 
         mSensorManager = (SensorManager) mContext.getSystemService(Context.SENSOR_SERVICE);
         if (mSensorManager != null) {
@@ -89,14 +96,16 @@ public class TiltSensor implements SensorEventListener {
     }
 
     protected void enable() {
-        if (DEBUG) Log.d(TAG, "Enabling");
-            mSensorManager.registerListener(this, mSensorTilt,
-                SensorManager.SENSOR_DELAY_NORMAL, BATCH_LATENCY_IN_MS * 1000);
+        if (mTiltEnabled) {
+            if (DEBUG) Log.d(TAG, "Enabling");
             mEntryTimestamp = SystemClock.elapsedRealtime();
+            mSensorManager.registerListener(this, mSensorTilt,
+                   SensorManager.SENSOR_DELAY_NORMAL, BATCH_LATENCY_IN_MS * 1000);
+        }
     }
 
     protected void disable() {
         if (DEBUG) Log.d(TAG, "Disabling");
-            mSensorManager.unregisterListener(this, mSensorTilt);
+        mSensorManager.unregisterListener(this, mSensorTilt);
     }
 }
