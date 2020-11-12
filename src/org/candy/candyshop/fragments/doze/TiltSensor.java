@@ -34,7 +34,7 @@ import org.candy.candyshop.R;
 
 public class TiltSensor implements SensorEventListener {
 
-    private static final boolean DEBUG = false;
+    private static final boolean DEBUG = true;
     private static final String TAG = "TiltSensor";
 
     private static final int BATCH_LATENCY_IN_MS = 100;
@@ -52,10 +52,7 @@ public class TiltSensor implements SensorEventListener {
     public TiltSensor(Context context) {
         mContext = context;
 
-        mTiltEnabled = Utils.tiltGestureEnabled(mContext);
-        if (mTiltEnabled) {
-            disable();
-        }
+        mTiltEnabled = Utils.tiltEnabled(mContext);
 
         mSensorManager = (SensorManager) mContext.getSystemService(Context.SENSOR_SERVICE);
         if (mSensorManager != null) {
@@ -66,6 +63,7 @@ public class TiltSensor implements SensorEventListener {
             } else {
                 mSensorTilt = mSensorManager.getDefaultSensor(Sensor.TYPE_ROTATION_VECTOR);
             }
+            if (DEBUG) Log.d(TAG, "mSensorTilt: "+ mSensorTilt);
         }
         mExecutorService = Executors.newSingleThreadExecutor();
     }

@@ -115,19 +115,19 @@ public final class Utils {
                 Settings.Secure.DOZE_PICK_UP_GESTURE, 0, UserHandle.USER_CURRENT) == 1;
     }
 
-    public static boolean handwaveGestureEnabled(Context context) {
+    public static boolean handwaveEnabled(Context context) {
         return Settings.Secure.getIntForUser(context.getContentResolver(),
                 Settings.Secure.DOZE_HANDWAVE_GESTURE, 0, UserHandle.USER_CURRENT) == 1;
     }
 
-    public static boolean pocketGestureEnabled(Context context) {
+    public static boolean pocketEnabled(Context context) {
         return Settings.Secure.getIntForUser(context.getContentResolver(),
                 Settings.Secure.DOZE_POCKET_GESTURE, 0, UserHandle.USER_CURRENT) == 1;
     }
 
     public static boolean sensorsEnabled(Context context) {
-        return tiltEnabled(context) || pickUpEnabled(context) || handwaveGestureEnabled(context)
-                || pocketGestureEnabled(context);
+        return tiltEnabled(context) || pickUpEnabled(context) || handwaveEnabled(context)
+                || pocketEnabled(context);
     }
 
     public static String getProp(String propName) {

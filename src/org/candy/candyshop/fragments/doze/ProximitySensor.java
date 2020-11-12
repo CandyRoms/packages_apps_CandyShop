@@ -34,7 +34,7 @@ import org.candy.candyshop.R;
 
 public class ProximitySensor implements SensorEventListener {
 
-    private static final boolean DEBUG = false;
+    private static final boolean DEBUG = true;
     private static final String TAG = "ProximitySensor";
 
     // Maximum time for the hand to cover the sensor: 1s
@@ -58,11 +58,8 @@ public class ProximitySensor implements SensorEventListener {
     public ProximitySensor(Context context) {
         mContext = context;
 
-        mHandwaveEnabled = Utils.handwaveGestureEnabled(mContext);
-        mPocketEnabled = Utils.pocketGestureEnabled(mContext);
-        if (!mHandwaveEnabled && !mPocketEnabled) {
-            disable();
-        }
+        mHandwaveEnabled = Utils.handwaveEnabled(mContext);
+        mPocketEnabled = Utils.pocketEnabled(mContext);
 
         final boolean wakeup = context.getResources().getBoolean(
                 com.android.internal.R.bool.config_deviceHaveWakeUpProximity);
@@ -78,6 +75,7 @@ public class ProximitySensor implements SensorEventListener {
                 mSensorProximity = mSensorManager.getDefaultSensor(
                         Sensor.TYPE_PROXIMITY, wakeup);
             }
+            if (DEBUG) Log.d(TAG, "mSensorProximity: "+ mSensorProximity);
         }
         mExecutorService = Executors.newSingleThreadExecutor();
     }
@@ -102,11 +100,11 @@ public class ProximitySensor implements SensorEventListener {
     private boolean shouldPulse(long timestamp) {
         long delta = timestamp - mInPocketTime;
 
-        if (mHandwaveGestureEnabled && mPocketGestureEnabled) {
+        if (mHandwaveEnabled && mPocketEnabled) {
             return true;
-        } else if (mHandwaveGestureEnabled && !mPocketGestureEnabled) {
+        } else if (mHandwaveEnabled && !mPocketEnabled) {
             return delta < POCKET_MIN_DELTA_NS;
-        } else if (!mHandwaveGestureEnabled && mPocketGestureEnabled) {
+        } else if (!mHandwaveEnabled && mPocketEnabled) {
             return delta >= POCKET_MIN_DELTA_NS;
         }
         return false;

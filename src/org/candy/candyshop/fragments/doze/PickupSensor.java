@@ -35,7 +35,7 @@ import java.util.concurrent.Future;
 import org.candy.candyshop.R;
 
 public class PickupSensor implements SensorEventListener {
-    private static final boolean DEBUG = false;
+    private static final boolean DEBUG = true;
     private static final String TAG = "TiltSensor";
 
     private static final int BATCH_LATENCY_IN_MS = 100;
@@ -57,10 +57,7 @@ public class PickupSensor implements SensorEventListener {
     public PickupSensor(Context context) {
         mContext = context;
 
-        mPickupEnabled = Utils.pickupGestureEnabled(mContext);
-        if (!mPickupEnabled) {
-            disable();
-        }
+        mPickupEnabled = Utils.pickUpEnabled(mContext);
 
         mTelephonyManager = (TelephonyManager)
                 mContext.getSystemService(Context.TELEPHONY_SERVICE);
@@ -77,6 +74,7 @@ public class PickupSensor implements SensorEventListener {
                 mSensorPickup = mSensorManager.getDefaultSensor(
                         Sensor.TYPE_ACCELEROMETER);
             }
+            if (DEBUG) Log.d(TAG, "mSensorPickup: "+ mSensorPickup);
         }
         mExecutorService = Executors.newSingleThreadExecutor();
 
