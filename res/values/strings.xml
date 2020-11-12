@@ -261,6 +261,9 @@
     <string name="show_gestures_navbar_switch_title">Show pill</string>
     <string name="show_gestures_navbar_switch_summary">Show gestures navbar</string>
 
+    <!-- Navbar options -->
+    <string name="navbar_invert_layout_title">Invert layout</string>
+
     <!-- Battery Styles -->
     <string name="battery_percent_title">Statusbar battery indicator</string>
     <string name="battery_percent_summary">Configure icon and text styles for the statusbar battery indicator</string>

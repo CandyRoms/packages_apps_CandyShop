@@ -56,11 +56,16 @@
         android:key="nav_category"
         android:title="@string/nav_category_title" >
 
-            <org.candy.candyshop.preference.SecureSettingSwitchPreference
-                android:key="navigation_bar_hint"
-                android:title="@string/show_gestures_navbar_switch_title"
-                android:summary="@string/show_gestures_navbar_switch_summary"
-                android:defaultValue="true" />
+        <org.candy.candyshop.preference.SecureSettingSwitchPreference
+            android:key="navigation_bar_hint"
+            android:title="@string/show_gestures_navbar_switch_title"
+            android:summary="@string/show_gestures_navbar_switch_summary"
+            android:defaultValue="true" />
+
+        <org.candy.candyshop.preference.SecureSettingSwitchPreference
+            android:key="sysui_nav_bar_inverse"
+            android:title="@string/navbar_invert_layout_title"
+            android:defaultValue="true" />
 
     </PreferenceCategory>
 </PreferenceScreen>
