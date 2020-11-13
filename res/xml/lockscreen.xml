@@ -37,7 +37,6 @@
             android:summary="@string/wakeup_when_plugged_unplugged_summary"
             android:defaultValue="true" />
 
-
     <PreferenceCategory
         android:key="lockscreen_clock_category"
         android:title="@string/lockscreen_clock_category_title" >
