@@ -117,14 +117,12 @@ public class ProximitySensor implements SensorEventListener {
 
     // Switching screen OFF - we enable the sensor
     protected void enable() {
-        if (mHandwaveEnabled || mPocketEnabled) {
-            if (DEBUG) Log.d(TAG, "Enabling");
-            mEntryTimestamp = SystemClock.elapsedRealtime();
-           // We save user settings so at next screen ON call (enable())
-            // we don't need to read them again from the Settings provider
-            mSensorManager.registerListener(this, mSensorProximity,
-                    SensorManager.SENSOR_DELAY_NORMAL);
-        }
+        if (DEBUG) Log.d(TAG, "Enabling");
+        mEntryTimestamp = SystemClock.elapsedRealtime();
+       // We save user settings so at next screen ON call (enable())
+        // we don't need to read them again from the Settings provider
+        mSensorManager.registerListener(this, mSensorProximity,
+                SensorManager.SENSOR_DELAY_NORMAL);
     }
 
     // Switching screen ON - we disable the sensor

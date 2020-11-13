@@ -52,12 +52,9 @@ public class PickupSensor implements SensorEventListener {
     private float mAccelCurrent;
     private long mEntryTimestamp;
 
-    private boolean mPickupEnabled;
 
     public PickupSensor(Context context) {
         mContext = context;
-
-        mPickupEnabled = Utils.pickUpEnabled(mContext);
 
         mTelephonyManager = (TelephonyManager)
                 mContext.getSystemService(Context.TELEPHONY_SERVICE);
@@ -135,12 +132,10 @@ public class PickupSensor implements SensorEventListener {
     }
 
     protected void enable() {
-        if (mPickupEnabled) {
-            if (DEBUG) Log.d(TAG, "Enabling");
-            mEntryTimestamp = SystemClock.elapsedRealtime();
-            mSensorManager.registerListener(this, mSensorPickup,
-                SensorManager.SENSOR_DELAY_NORMAL, BATCH_LATENCY_IN_MS * 1000);
-        }
+        if (DEBUG) Log.d(TAG, "Enabling");
+        mEntryTimestamp = SystemClock.elapsedRealtime();
+        mSensorManager.registerListener(this, mSensorPickup,
+               SensorManager.SENSOR_DELAY_NORMAL, BATCH_LATENCY_IN_MS * 1000);
     }
 
     protected void disable() {
