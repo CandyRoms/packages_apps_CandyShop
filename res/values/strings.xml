@@ -65,6 +65,7 @@
     <string name="clock_options_title">Clock &amp; date</string>
     <string name="power_save_category">Power saving</string>
     <string name="qs_brightness_category_title">QS brightness options</string>
+    <string name="nav_category_title">Navigation options</string>
 
     <!-- Fragments -->
     <string name="notification_settings_title">Notifications Settings</string>
@@ -255,5 +256,9 @@
     <string name="qs_show_brightness_summary">Show a brightness slider in the quick settings panel</string>
     <string name="qs_brightness_position_bottom_title">Brightness slider on bottom</string>
     <string name="qs_brightness_position_bottom_summary">Show a brightness slider on bottom quick settings</string>
+
+    <!-- Hide gesture navbar -->
+    <string name="show_gestures_navbar_switch_title">Show pill</string>
+    <string name="show_gestures_navbar_switch_summary">Show gestures navbar</string>
 
 </resources>

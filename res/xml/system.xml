@@ -52,9 +52,15 @@
 
     </PreferenceCategory>
 
-    <!--<PreferenceCategory
-        android:key="notifications_category"
-        android:title="@string/notifications_category_title" >
+    <PreferenceCategory
+        android:key="nav_category"
+        android:title="@string/nav_category_title" >
 
-    </PreferenceCategory>-->
+            <org.candy.candyshop.preference.SecureSettingSwitchPreference
+                android:key="navigation_bar_hint"
+                android:title="@string/show_gestures_navbar_switch_title"
+                android:summary="@string/show_gestures_navbar_switch_summary"
+                android:defaultValue="true" />
+
+    </PreferenceCategory>
 </PreferenceScreen>

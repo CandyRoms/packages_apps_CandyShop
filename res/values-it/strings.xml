@@ -62,4 +62,9 @@
     <string name="lockscreen_media_blur_title">Livello blur media art</string>
     <string name="show_lockscreen_media_art_title">Mostra media art</string>
     <string name="lockscreen_media_art_options_title">Media art losckreen</string>
+
+    <!-- Hide gestural nav -->
+    <string name="show_gestures_navbar_switch_title">Mostra pillola</string>
+    <string name="show_gestures_navbar_switch_summary">Mostra la barra di navigazione</string>
+
 </resources>
