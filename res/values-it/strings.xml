@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- SELinux Status -->
+    <string name="selinux_status">Stato SELinux</string>
+    <string name="selinux_status_disabled">Disattivato</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+
+    <!-- Candy version in About phone -->
+    <string name="rom_version_title">Versione Candy</string>
+
+    <!-- Pulse -->
+    <string name="pulse_help_policy_notice_summary">Pulse non funziona con alcune sorgenti audio durante la riproduzione via altoparlante</string>
+    <string name="pulse_cat_title">Equalizzatore Pulse</string>
+    <string name="pulse_settings">Pulse</string>
+    <string name="pulse_settings_summary">Equalizzatore grafico audio</string>
+    <string name="show_pulse_title">Mostra Pulse</string>
+    <string name="show_pulse_summary">Equalizzatore grafico audio nell\'area della barra di navigazione (anche se la barra è nascosta) e nella lockscreen</string>
+    <string name="show_navbar_pulse_title">Navbar Pulse</string>
+    <string name="show_navbar_pulse_summary">Equalizzatore grafico audio nell\'area della barra di navigazione, anche se la barra è nascosta</string>
+    <string name="show_lockscreen_pulse_title">Lockscreen Pulse</string>
+    <string name="show_lockscreen_pulse_summary">Equalizzatore grafico audio nella schermata di blocco</string>
+    <string name="pulse_render_mode_title">Tipo render</string>
+    <string name="pulse_render_mode_fading_bars">Blocchi a dissolvenza</string>
+    <string name="pulse_render_mode_solid_lines">Linee solide</string>
+    <string name="pulse_color">Colore</string>
+    <string name="pulse_color_mode">Modalità colore</string>
+    <string name="pulse_color_accent">Sistema</string>
+    <string name="pulse_color_custom">Personalizzato</string>
+    <string name="pulse_color_lava_lamp">Lava lamp</string>
+    <string name="pulse_color_auto">Album art</string>
+    <string name="pulse_color_chooser">Scegli colore</string>
+    <string name="smoothing_enabled_title">Attiva smoothing</string>
+    <string name="smoothing_enabled_summary">Ogni barra è animata in modo più fluido</string>
+    <string name="pulse_advanced_category">Avanzate</string>
+    <string name="pulse_legacy_mode_advanced_category">Opzioni modalità blocchi a dissolvenza</string>
+    <string name="pulse_custom_fudge_factor">Livello pulizia visiva</string>
+    <string name="lavamp_speed_title">Velocità Lava lamp</string>
+    <string name="pulse_solid_units_count">Numero linee solide</string>
+    <string name="pulse_solid_units_opacity">Opacità linee solide</string>
+    <string name="pulse_solid_dimen_category">Opzioni modalità linee solide</string>
+    <string name="pulse_custom_dimen">Larghezza barra</string>
+    <string name="pulse_custom_div">Spaziatura barra</string>
+    <string name="pulse_filled_block_size">Dimensione blocco</string>
+    <string name="pulse_empty_block_size">Spaziatura blocco</string>
+</resources>
