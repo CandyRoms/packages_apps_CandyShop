@@ -66,6 +66,7 @@
     <string name="power_save_category">Power saving</string>
     <string name="qs_brightness_category_title">QS brightness options</string>
     <string name="nav_category_title">Navigation options</string>
+    <string name="fod_category_title">FOD options</string>
 
     <!-- Fragments -->
     <string name="notification_settings_title">Notifications Settings</string>
@@ -351,4 +352,11 @@
     <string name="fod_wallpaper_color">Use wallpaper color for FOD icon</string>
     <string name="fod_wallpaper_color_summary">Uses adjusted primary wallpaper color for FOD icon\nNOTE: might look good only with some wallpapers</string>
 
+    <!-- FOD pressed color -->
+    <string name="fod_pressed_color_title">Fingerprint pressed color</string>
+    <string name="fod_pressed_color_footer">Icons/colors may vary depending on which device you are using.</string>
+    <string name="fod_pressed_color_white">White</string>
+    <string name="fod_pressed_color_cyan">Cyan</string>
+    <string name="fod_pressed_color_green">Green</string>
+    <string name="fod_pressed_color_yellow">Yellow</string>
 </resources>

@@ -35,7 +35,9 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 
+import com.android.internal.util.candy.CandyUtils;
 import org.candy.candyshop.preference.SecureSettingSwitchPreference;
+import org.candy.candyshop.preference.SystemSettingListPreference;
 
 public class Lockscreen extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {

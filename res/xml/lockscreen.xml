@@ -87,12 +87,6 @@
 
     </PreferenceCategory>
 
-  <!--<PreferenceCategory
-        android:key="sleep_controls_category"
-        android:title="@string/sleep_controls_category_title" >
-    </PreferenceCategory>-->
-
-
     <PreferenceCategory
         android:key="lockscreen_other_category"
         android:title="@string/lockscreen_other_category_title" >
@@ -107,8 +101,8 @@
 
     <PreferenceCategory
         android:id="@+id/fod_category"
-        android:key="lockscreen_security_category"
-        android:title="@string/lockscreen_security_category_title" >
+        android:key="fod_options_category"
+        android:title="@string/fod_category_title" >
 
         <org.candy.candyshop.preference.SecureSettingSwitchPreference
             android:key="fod_on_doze"
@@ -130,6 +124,18 @@
             android:summary="@string/fod_wallpaper_color_summary"
             android:defaultValue="false" />
 
+        <org.candy.candyshop.preference.SystemSettingListPreference
+            android:key="fod_color"
+            android:icon="@drawable/ic_fp"
+            android:dialogTitle="@string/fod_pressed_color_title"
+            android:title="@string/fod_pressed_color_title"
+            android:summary="%s"
+            android:entries="@array/fod_pressed_color_entries"
+            android:entryValues="@array/fod_pressed_color_values"
+            android:defaultValue="0" />
+
+        <Preference
+            android:summary="@string/fod_pressed_color_footer" />
     </PreferenceCategory>
 
     <!--<PreferenceCategory
