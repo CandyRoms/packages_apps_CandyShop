@@ -34,6 +34,8 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 
+import org.candy.candyshop.preference.SecureSettingSwitchPreference;
+
 public class Lockscreen extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String MISC_CATEGORY = "lockscreen_category";
@@ -44,6 +46,13 @@ public class Lockscreen extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.lockscreen);
 
+        final boolean hasFOD = getResources().getBoolean(
+                com.android.internal.R.bool.config_needCustomFODView);
+        if (!hasFOD) {
+            SecureSettingSwitchPreference fodOnDozePref =
+                    (SecureSettingSwitchPreference) findPreference("fod_on_doze");
+            getPreferenceScreen().removePreference(fodOnDozePref);
+        }
     }
 
     @Override
