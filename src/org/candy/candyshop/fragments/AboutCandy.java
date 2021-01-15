@@ -17,7 +17,6 @@
 
 package org.candy.candyshop.fragments;
 
-import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
@@ -27,35 +26,39 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.FrameLayout;
-import androidx.fragment.app.DialogFragment;
-import androidx.fragment.app.Fragment;
 import androidx.annotation.NonNull;
+import androidx.fragment.app.DialogFragment;
 
-import org.candy.candyshop.R;
+import com.android.settings.R;
+
+import java.util.Objects;
 
 public class AboutCandy extends DialogFragment {
 
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
+    public static final String TAG_ABOUT_CANDY = "AboutCandy";
+
+    private Dialog dialog;
+    private View view;
+
+    public AboutCandy() {
     }
 
-    @NonNull
+    public static AboutCandy newInstance() {
+        return new AboutCandy ();
+    }
+
     @Override
-    public Dialog onCreateDialog(Bundle savedInstanceState) {
-        final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getContext());
-        LayoutInflater inflater = (LayoutInflater) getContext()
-                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        final ViewGroup nullParent = null;
-        View view = null;
-        if (inflater != null) {
-            view = inflater.inflate(R.layout.about_candy, nullParent);
-        }
-        alertDialogBuilder.setView(view);
-        alertDialogBuilder.setCancelable(false);
-        final AlertDialog dialog = alertDialogBuilder.create();
-        dialog.show();
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        dialog = new Dialog(requireActivity(), R.style.AboutCandy);
+    }
+
+    @Override
+    public View onCreateView(
+        LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        view = inflater.inflate(R.layout.about_candy, container, false);
 
         if (view != null) {
             FrameLayout candyroms = view.findViewById(R.id.candyroms);
@@ -106,8 +109,19 @@ public class AboutCandy extends DialogFragment {
             //FrameLayout nick = view.findViewById(R.id.nick);
             //setUriTarget("https://forum.xda-developers.com/member.php?u=6220524", nick);
         }
-         dialog.show();
-         return dialog;
+        return view;
+    }
+
+    @NonNull
+    @Override
+    public Dialog onCreateDialog(Bundle savedInstanceState) {
+        LayoutInflater inflater = requireActivity().getLayoutInflater();
+        view = (inflater.inflate(R.layout.about_candy, null));
+
+        dialog.setContentView(view);
+        dialog.setCanceledOnTouchOutside(true);
+
+        return dialog;
     }
 
     private void setUriTarget(final String uriTarget, final FrameLayout name) {

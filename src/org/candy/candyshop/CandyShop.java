@@ -63,7 +63,6 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
-import com.android.settings.dashboard.SummaryLoader;
 import com.android.settings.SettingsPreferenceFragment;
 
 import com.google.android.material.appbar.AppBarLayout;
@@ -98,25 +97,25 @@ public class CandyShop extends SettingsPreferenceFragment {
         navigation.setOnNavigationItemSelectedListener(new BottomNavigationViewCustom.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
-                switch (item.getItemId()) {
-                    case R.id.system:
-                        viewPager.setCurrentItem(0);
-                        return true;
-                    case R.id.lockscreen:
-                        viewPager.setCurrentItem(1);
-                        return true;
-                    case R.id.statusbar:
-                        viewPager.setCurrentItem(2);
-                        return true;
-                    case R.id.navigation:
-                        viewPager.setCurrentItem(3);
-                        return true;
-                    case R.id.stockroom:
-                        viewPager.setCurrentItem(4);
-                        return true;
+                int id = item.getItemId();
+                if (id == R.id.system){
+                    viewPager.setCurrentItem(0);
+                    return true;
+                } else if (id == R.id.lockscreen){
+                    viewPager.setCurrentItem(1);
+                    return true;
+                } else if (id == R.id.statusbar){
+                    viewPager.setCurrentItem(2);
+                    return true;
+                } else if (id == R.id.navigation){
+                    viewPager.setCurrentItem(3);
+                    return true;
+                } else if (id == R.id.stockroom){
+                    viewPager.setCurrentItem(4);
+                    return true;
+                } else {
+                    return false;
                 }
-                return false;
             }
         });
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
