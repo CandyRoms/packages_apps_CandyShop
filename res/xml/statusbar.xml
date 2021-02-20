@@ -40,10 +40,10 @@
 
     </PreferenceCategory>
 
-    <!--<PreferenceCategory
-        android:key="statusbar_notifications"
-        android:title="@string/statusbar_notifications_title" >
-
-    </PreferenceCategory>-->
+     <org.candy.candyshop.preference.SystemSettingSwitchPreference
+        android:key="notification_headers"
+        android:title="@string/notification_headers_title"
+        android:summary="@string/notification_headers_summary"
+        android:defaultValue="true" />
 
 </PreferenceScreen>
