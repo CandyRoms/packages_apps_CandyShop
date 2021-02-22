@@ -32,6 +32,11 @@
         android:key="statusbar_options_category"
         android:title="@string/statusbar_options_category_title" >
 
+    <Preference
+        android:key="network_traffic"
+        android:fragment="org.candy.candyshop.fragments.NetworkTraffic"
+        android:title="@string/traffic_title" />
+
         <Preference
             android:key="clock_settings"
             android:title="@string/status_bar_clock_title"

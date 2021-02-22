@@ -42,7 +42,6 @@
             android:title="@string/qs_rows_portrait_title"
             android:max="5"
             android:min="1"
-            android:defaultValue="3"
             settings:units="" />
 
         <org.candy.candyshop.preference.CustomSystemSeekBarPreference
@@ -50,7 +49,6 @@
             android:title="@string/qs_rows_landscape_title"
             android:max="5"
             android:min="1"
-            android:defaultValue="1"
             settings:units="" />
 
         <org.candy.candyshop.preference.CustomSystemSeekBarPreference
@@ -58,7 +56,6 @@
             android:title="@string/qs_columns_portrait_title"
             android:max="7"
             android:min="1"
-            android:defaultValue="4"
             settings:units="" />
 
         <org.candy.candyshop.preference.CustomSystemSeekBarPreference
@@ -66,7 +63,6 @@
             android:title="@string/qs_columns_landscape_title"
             android:max="9"
             android:min="1"
-            android:defaultValue="4"
             settings:units="" />
         </PreferenceCategory>
 
