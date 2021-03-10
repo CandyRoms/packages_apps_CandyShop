@@ -32,12 +32,16 @@
 
     </PreferenceCategory>-->
 
-    <!--<PreferenceCategory
+    <PreferenceCategory
         android:id="@+id/screen_capture_category"
         android:key="screen_capture_category"
         android:title="@string/screen_capture_options_category_title" >
-
-    </PreferenceCategory>-->
+       <org.candy.candyshop.preference.SystemSettingSwitchPreference
+          android:key="three_finger_gesture"
+          android:title="@string/three_finger_gesture"
+          android:summary="@string/three_finger_gesture_summary"
+          android:defaultValue="false" />
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="miscellaneous_category"
