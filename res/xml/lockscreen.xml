@@ -18,7 +18,13 @@
         android:key="lockscreen"
         android:layout="@layout/tab" >
 
-      <PreferenceCategory
+     <org.candy.candyshop.preference.SystemSettingSwitchPreference
+        android:key="lockscreen_battery_info"
+        android:title="@string/lockscreen_battery_info_title"
+        android:summary="@string/lockscreen_battery_info_summary"
+        android:defaultValue="true" />
+
+     <PreferenceCategory
         android:id="@+id/lockscreen_tab_header"
         android:layout="@layout/tab_header_preference_category"
         android:title="@string/lockscreen_aisle_header" />
