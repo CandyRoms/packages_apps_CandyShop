@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--  Copyright (C) 2018 Candy Roms
-
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
   the Free Software Foundation, either version 3 of the License, or
   (at your option) any later version.
-
   This program is distributed in the hope that it will be useful,
   but WITHOUT ANY WARRANTY; without even the implied warranty of
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   GNU General Public License for more details.
-
   You should have received a copy of the GNU General Public License
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
@@ -21,39 +18,40 @@
         android:key="lockscreen"
         android:layout="@layout/tab" >
 
-    <PreferenceCategory
+      <PreferenceCategory
         android:id="@+id/lockscreen_tab_header"
         android:layout="@layout/tab_header_preference_category"
         android:title="@string/lockscreen_aisle_header" />
 
-    <!--<PreferenceCategory
+     <PreferenceCategory
         android:key="media_options_category"
         android:title="@string/media_options_category_title" >
-    </PreferenceCategory>-->
-
-    <!--<PreferenceCategory
+        android:order="999">
+            <org.candy.candyshop.preference.SecureSettingSwitchPreference
+                android:key="lockscreen_media_metadata"
+                android:title="@string/lockscreen_media_art_title"
+                android:summary="@string/lockscreen_media_art_summary"
+                android:defaultValue="false" />
+       </PreferenceCategory>
+  <!--<PreferenceCategory
         android:key="sleep_controls_category"
         android:title="@string/sleep_controls_category_title" >
-
     </PreferenceCategory>-->
 
     <!--<PreferenceCategory
         android:id="@+id/lockscreen_security_category"
         android:key="lockscreen_security_category"
         android:title="@string/lockscreen_security_category_title" >
-
     </PreferenceCategory>-->
 
     <!--<PreferenceCategory
         android:key="lockscreen_icons_category"
         android:title="@string/lockscreen_icons_category_title" >
-
     </PreferenceCategory>-->
 
     <!--<PreferenceCategory
         android:key="lockscreen_clock_category"
         android:title="@string/lockscreen_clock_category_title" >
-
     </PreferenceCategory>-->
 
 </PreferenceScreen>
