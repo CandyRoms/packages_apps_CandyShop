@@ -118,13 +118,11 @@ public class NetworkTraffic extends SettingsPreferenceFragment implements OnPref
             mNetTrafficLocation.setValue("0");
             updateTrafficLocation(0);
         }
-        // Only enable orientation (layout) when default is not selected
-        if (type == 0) {
-            mNetTrafficLayout.setEnabled(false);
-        } else {
-            mNetTrafficLayout.setEnabled(true);
-        }
+
         mNetTrafficLocation.setSummary(mNetTrafficLocation.getEntry());
+
+        // Only enable orientation (layout) when default is not selected
+        updateOrientation(type);
     }
 
     @Override
@@ -178,6 +176,7 @@ public class NetworkTraffic extends SettingsPreferenceFragment implements OnPref
                     UserHandle.USER_CURRENT);
             int index = mNetTrafficType.findIndexOfValue((String) objValue);
             mNetTrafficType.setSummary(mNetTrafficType.getEntries()[index]);
+            updateOrientation(index);
             return true;
         }  else if (preference == mNetTrafficSize) {
             int width = ((Integer)objValue).intValue();
@@ -208,6 +207,10 @@ public class NetworkTraffic extends SettingsPreferenceFragment implements OnPref
             default:
                 break;
         }
+    }
+
+    public void updateOrientation(int type) {
+        mNetTrafficLayout.setEnabled(type != 0);
     }
 
     /**
