@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2014-2016 The Dirty Unicorns Project
+ * Copyright (C) 2017-2021 CandyRoms
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,6 +21,7 @@ import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.provider.Settings;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
@@ -38,10 +40,17 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.Utils;
 
+import org.candy.candyshop.preference.CustomSeekBarPreference;
+
 public class QuickSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String MISC_CATEGORY = "quicksettings_category";
     private static final String TAG = "QuickSettings";
+
+    private CustomSeekBarPreference mQsRowsPort;
+    private CustomSeekBarPreference mQsRowsLand;
+    private CustomSeekBarPreference mQsColumnsPort;
+    private CustomSeekBarPreference mQsColumnsLand;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -61,7 +70,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
 
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        final String key = preference.getKey();
+        final ContentResolver resolver = getActivity().getContentResolver();
         return false;
     }
 
@@ -71,4 +80,3 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         return MetricsProto.MetricsEvent.CANDYSHOP;
     }
 }
-
