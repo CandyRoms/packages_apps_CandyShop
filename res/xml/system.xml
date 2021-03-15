@@ -30,8 +30,7 @@
 
    <PreferenceCategory
         android:title="@string/power_save_category"
-        android:key="system_power_save_preference_category"
-        settings:allowDividerAbove="true" >
+        android:key="system_power_save_preference_category" >
 
         <Preference
             android:key="aggressive_battery"
