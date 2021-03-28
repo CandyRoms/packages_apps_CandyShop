@@ -57,4 +57,10 @@
         android:summary="@string/notification_headers_summary"
         android:defaultValue="true" />
 
+      <org.candy.candyshop.preference.SystemSettingSwitchPreference
+        android:key="volte_icon"
+        android:title="@string/volte_switch_title"
+        android:summary="@string/volte_switch_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
