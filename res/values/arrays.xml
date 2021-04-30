@@ -338,9 +338,9 @@
     <string-array name="doze_always_on_auto_mode_entries">
         <item>@string/disabled</item>
         <item>@string/night_display_auto_mode_twilight</item>
-        <item>@string/night_display_auto_mode_custom</item>
         <item>@string/always_on_display_schedule_mixed_sunset</item>
         <item>@string/always_on_display_schedule_mixed_sunrise</item>
+        <item>@string/night_display_auto_mode_custom</item>
     </string-array>
 
     <string-array name="doze_always_on_auto_mode_values" translatable="false">
@@ -352,3 +352,4 @@
     </string-array>
 
 </resources>
+

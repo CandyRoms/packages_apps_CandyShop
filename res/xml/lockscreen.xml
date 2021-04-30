@@ -27,36 +27,36 @@
         android:key="media_options_category"
         android:title="@string/media_options_category_title">
 
-            <org.candy.candyshop.preference.SecureSettingSwitchPreference
-                android:key="lockscreen_media_metadata"
-                android:title="@string/lockscreen_media_art_title"
-                android:summary="@string/lockscreen_media_art_summary"
-                android:defaultValue="false" />
+        <org.candy.candyshop.preference.SecureSettingSwitchPreference
+            android:key="lockscreen_media_metadata"
+            android:title="@string/lockscreen_media_art_title"
+            android:summary="@string/lockscreen_media_art_summary"
+            android:defaultValue="false" />
 
-            <org.candy.candyshop.preference.CustomSystemSeekBarPreference
-                android:key="lockscreen_media_blur"
-                android:title="@string/lockscreen_media_blur_title"
-                android:dependency="lockscreen_media_metadata"
-                settings:allowEditText="true"
-                android:max="25"
-                android:min="0"
-                android:defaultValue="25"
-                settings:units="dp"/>
+        <org.candy.candyshop.preference.CustomSystemSeekBarPreference
+            android:key="lockscreen_media_blur"
+            android:title="@string/lockscreen_media_blur_title"
+            android:dependency="lockscreen_media_metadata"
+            settings:allowEditText="true"
+            android:max="25"
+            android:min="0"
+            android:defaultValue="25"
+            settings:units="dp"/>
 
-            <Preference
-                android:key="pulse"
-                android:title="@string/pulse_settings"
-                android:summary="@string/pulse_settings_summary"
-                android:fragment="org.candy.candyshop.fragments.PulseSettings"/>
+        <Preference
+            android:key="pulse"
+            android:title="@string/pulse_settings"
+            android:summary="@string/pulse_settings_summary"
+            android:fragment="org.candy.candyshop.fragments.PulseSettings"/>
 
-       </PreferenceCategory>
+    </PreferenceCategory>
 
 
     <PreferenceCategory
         android:key="lockscreen_other_category"
         android:title="@string/lockscreen_other_category_title" >
 
-  	 <org.candy.candyshop.preference.SystemSettingListPreference
+  	    <org.candy.candyshop.preference.SystemSettingListPreference
             android:key="ambient_music_ticker"
             android:title="@string/ambient_music_location"
             android:summary="%s"
@@ -70,10 +70,33 @@
             android:summary="@string/lockscreen_battery_info_summary"
             android:defaultValue="true" />
 
-    <Preference
-        android:key="always_on_display_schedule"
-        android:title="@string/always_on_display_schedule_title"
-        android:fragment="org.candy.candyshop.fragments.AODSchedule" />
+        <Preference
+            android:key="always_on_display_schedule"
+            android:title="@string/always_on_display_schedule_title"
+            android:summary="string/always_on_display_schedule_summary"
+            android:fragment="org.candy.candyshop.fragments.AODSchedule" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="lock_aod_icons"
+        android:title="@string/lock_aod_icons_title">
+
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="ambient_icons_lockscreen"
+            android:title="@string/ambient_icons_lockscreen_title"
+            android:summary="@string/ambient_icons_lockscreen_summary"
+            android:defaultValue="false" />
+
+        <org.candy.candyshop.preference.CustomSystemSeekBarPreference
+            android:key="ambient_icons_size"
+            android:title="@string/ambient_icons_size_title"
+            android:dependency="ambient_icons_lockscreen"
+            android:max="80"
+            settings:min="0"
+            settings:units="dp"
+            settings:interval="1"
+            android:defaultValue="80" />
 
     </PreferenceCategory>
 
