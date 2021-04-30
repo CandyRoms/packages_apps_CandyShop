@@ -73,7 +73,7 @@
         <Preference
             android:key="always_on_display_schedule"
             android:title="@string/always_on_display_schedule_title"
-            android:summary="string/always_on_display_schedule_summary"
+            android:summary="@string/always_on_display_schedule_summary"
             android:fragment="org.candy.candyshop.fragments.AODSchedule" />
 
     </PreferenceCategory>
