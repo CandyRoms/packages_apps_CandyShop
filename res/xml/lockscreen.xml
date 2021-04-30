@@ -56,6 +56,14 @@
         android:key="lockscreen_other_category"
         android:title="@string/lockscreen_other_category_title" >
 
+  	 <org.candy.candyshop.preference.SystemSettingListPreference
+            android:key="ambient_music_ticker"
+            android:title="@string/ambient_music_location"
+            android:summary="%s"
+            android:entries="@array/ambient_music_location_entries"
+            android:entryValues="@array/ambient_music_location_values"
+            android:defaultValue="0" />
+
          <org.candy.candyshop.preference.SystemSettingSwitchPreference
             android:key="lockscreen_battery_info"
             android:title="@string/lockscreen_battery_info_title"
