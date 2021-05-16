@@ -46,6 +46,7 @@
         <org.candy.candyshop.preference.SystemSettingListPreference
             android:key="flashlight_on_call"
             android:title="@string/flashlight_on_call_title"
+            android:summary="%s"
             android:entries="@array/flashlight_on_call_entries"
             android:entryValues="@array/flashlight_on_call_values"
             android:defaultValue="0" />

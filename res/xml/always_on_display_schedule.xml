@@ -19,6 +19,7 @@
         android:key="doze_always_on_auto_mode"
         android:title="@string/night_display_auto_mode_title"
         android:dialogTitle="@string/night_display_auto_mode_title"
+        android:summary="%s"
         android:entries="@array/doze_always_on_auto_mode_entries"
         android:entryValues="@array/doze_always_on_auto_mode_values"
         android:persistent="false" />
