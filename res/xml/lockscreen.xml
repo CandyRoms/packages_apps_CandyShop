@@ -51,10 +51,9 @@
 
     </PreferenceCategory>
 
-
     <PreferenceCategory
-        android:key="lockscreen_other_category"
-        android:title="@string/lockscreen_other_category_title" >
+        android:key="lock_aod_icons"
+        android:title="@string/lock_aod_icons_title">
 
   	    <org.candy.candyshop.preference.SystemSettingListPreference
             android:key="ambient_music_ticker"
@@ -63,24 +62,6 @@
             android:entries="@array/ambient_music_location_entries"
             android:entryValues="@array/ambient_music_location_values"
             android:defaultValue="0" />
-
-         <org.candy.candyshop.preference.SystemSettingSwitchPreference
-            android:key="lockscreen_battery_info"
-            android:title="@string/lockscreen_battery_info_title"
-            android:summary="@string/lockscreen_battery_info_summary"
-            android:defaultValue="true" />
-
-        <Preference
-            android:key="always_on_display_schedule"
-            android:title="@string/always_on_display_schedule_title"
-            android:summary="@string/always_on_display_schedule_summary"
-            android:fragment="org.candy.candyshop.fragments.AODSchedule" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="lock_aod_icons"
-        android:title="@string/lock_aod_icons_title">
 
         <org.candy.candyshop.preference.SystemSettingSwitchPreference
             android:key="ambient_icons_lockscreen"
@@ -98,12 +79,31 @@
             settings:interval="1"
             android:defaultValue="80" />
 
+        <Preference
+            android:key="always_on_display_schedule"
+            android:title="@string/always_on_display_schedule_title"
+            android:summary="@string/always_on_display_schedule_summary"
+            android:fragment="org.candy.candyshop.fragments.AODSchedule" />
+
     </PreferenceCategory>
 
   <!--<PreferenceCategory
         android:key="sleep_controls_category"
         android:title="@string/sleep_controls_category_title" >
     </PreferenceCategory>-->
+
+
+    <PreferenceCategory
+        android:key="lockscreen_other_category"
+        android:title="@string/lockscreen_other_category_title" >
+
+         <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="lockscreen_battery_info"
+            android:title="@string/lockscreen_battery_info_title"
+            android:summary="@string/lockscreen_battery_info_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
 
     <!--<PreferenceCategory
         android:id="@+id/lockscreen_security_category"
