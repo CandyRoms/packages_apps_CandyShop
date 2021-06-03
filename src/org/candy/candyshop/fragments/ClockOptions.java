@@ -50,9 +50,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import static android.provider.Settings.Secure.STATUS_BAR_CLOCK;
-import static android.provider.Settings.Secure.STATUS_BAR_CLOCK_SECONDS;
-
 @SearchIndexable
 public class ClockOptions extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
