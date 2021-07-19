@@ -20,6 +20,7 @@ import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
@@ -39,6 +40,7 @@ import org.candy.candyshop.preference.SecureSettingSwitchPreference;
 public class Lockscreen extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String MISC_CATEGORY = "lockscreen_category";
+    private static final String CATEGORY_LS_SECURITY = "lockscreen_security_category";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -46,12 +48,20 @@ public class Lockscreen extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.lockscreen);
 
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        final PreferenceCategory lsSecCat =
+                    (PreferenceCategory) findPreference(CATEGORY_LS_SECURITY);
+
+        final SecureSettingSwitchPreference fodOnDozePref =
+                    (SecureSettingSwitchPreference) findPreference("fod_on_doze");
+
         final boolean hasFOD = getResources().getBoolean(
                 com.android.internal.R.bool.config_needCustomFODView);
+
         if (!hasFOD) {
-            SecureSettingSwitchPreference fodOnDozePref =
-                    (SecureSettingSwitchPreference) findPreference("fod_on_doze");
-            getPreferenceScreen().removePreference(fodOnDozePref);
+            lsSecCat.removePreference(fodOnDozePref);
+            prefScreen.removePreference(lsSecCat);
         }
     }
 
