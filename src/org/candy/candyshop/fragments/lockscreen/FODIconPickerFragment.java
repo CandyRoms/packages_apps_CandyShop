@@ -39,7 +39,7 @@ public class FODIconPickerFragment extends SettingsPreferenceFragment {
 
         getActivity().getActionBar().setTitle(R.string.fod_icon_picker_title);
 
-        mFooterPreferenceMixin.createFooterPreference().setTitle(R.string.fod_icon_picker_footer);
+        //mFooterPreferenceMixin.createFooterPreference().setTitle(R.string.fod_icon_picker_footer);
     }
 
     @Override

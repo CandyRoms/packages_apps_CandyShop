@@ -101,13 +101,19 @@
 
     <PreferenceCategory
         android:id="@+id/fod_category"
-        android:key="fod_options_category"
+        android:key="fod_category"
         android:title="@string/fod_category_title" >
 
         <org.candy.candyshop.preference.SecureSettingSwitchPreference
             android:key="fod_on_doze"
             android:title="@string/fod_on_doze_title"
             android:summary="@string/fod_on_doze_summary"
+            android:defaultValue="false" />
+
+        <org.candy.candyshop.preference.SystemSettingSwitchPreference
+            android:key="fod_icon_wallpaper_color"
+            android:title="@string/fod_wallpaper_color"
+            android:summary="@string/fod_wallpaper_color_summary"
             android:defaultValue="false" />
 
         <!-- FOD icon picker -->
@@ -118,12 +124,6 @@
             android:summary="@string/fod_icon_picker_summary"
             android:fragment="org.candy.candyshop.fragments.lockscreen.FODIconPickerFragment" />
 
-        <org.candy.candyshop.preference.SystemSettingSwitchPreference
-            android:key="fod_icon_wallpaper_color"
-            android:title="@string/fod_wallpaper_color"
-            android:summary="@string/fod_wallpaper_color_summary"
-            android:defaultValue="false" />
-
         <org.candy.candyshop.preference.SystemSettingListPreference
             android:key="fod_color"
             android:icon="@drawable/ic_fp"
@@ -132,7 +132,7 @@
             android:summary="%s"
             android:entries="@array/fod_pressed_color_entries"
             android:entryValues="@array/fod_pressed_color_values"
-            android:defaultValue="0" />
+            android:defaultValue="2" />
 
         <Preference
             android:summary="@string/fod_pressed_color_footer" />
