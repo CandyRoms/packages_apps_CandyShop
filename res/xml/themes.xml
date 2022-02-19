@@ -47,4 +47,10 @@
         android:summary="@string/theme_customization_data_summary"
         android:fragment="org.candy.candyshop.fragments.DataStyles"/>
 
+    <Preference
+        android:key="android.theme.customization.navbar"
+        android:title="@string/theme_customization_navbar_title"
+        android:summary="@string/theme_customization_navbar_summary"
+        android:fragment="org.candy.candyshop.fragments.NavbarStyles" />
+
 </PreferenceScreen>

@@ -90,4 +90,8 @@
     <!-- Status bar -->
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_system_icons_summary">Control which status bar icons are shown</string>
+
+    <!-- Custom Navigation bar -->
+    <string name="theme_customization_navbar_title">Navbar style</string>
+    <string name="theme_customization_navbar_summary">Set custom navigation bar style</string>
 </resources>
