@@ -1,0 +1,31 @@
+<!--
+     Copyright (C) 2019 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!-- This draws a paintbrush like shape -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="30dp"
+        android:height="30dp"
+        android:viewportWidth="24"
+        android:viewportHeight="24">
+    <path
+        android:fillColor="?android:attr/colorAccent"
+        android:pathData="M22.926,6.264c1.43-1.432,1.43-3.759,0-5.188-1.43-1.432-3.76-1.432-5.189,0L6.8,12.011c-1.509-0.083-3.045 0.451 -4.196,1.601C1.103,15.114 0.255 ,19.353 0.017 ,21.383c-0.084 0.713 0.158,1.412 0.664 ,1.918 0.439 0.44,1.025 0.681 ,1.64 0.681 0.093,0,0.186-0.006 0.278 -0.017 0.241 -0.028,5.938-0.718,7.789-2.569,1.15-1.15,1.683-2.686,1.6-4.195l10.938-10.937ZM6.806,12.011h0s0.001-0.001,0,0Zm2.167,7.97c-0.854 0.854 -4.095,1.701-6.609,1.997-0.135 0.021 -0.228-0.05-0.27-0.092-0.041-0.041-0.108-0.131-0.092-0.271 0.294 -2.502,1.174-5.747,2.016-6.59 0.684 -0.683,1.58-1.024,2.478-1.024s1.794 0.342 ,2.478,1.024c1.366,1.366,1.366,3.589,0,4.955Zm1.414-6.369c-0.411-0.411-0.872-0.744-1.363-0.997L19.15,2.489c0.65-0.65,1.711-0.65,2.361,0s0.65,1.709,0,2.36l-10.127,10.126c-0.254-0.491-0.586-0.952-0.997-1.363Z" />
+    <path
+        android:fillColor="?android:attr/colorAccent"
+        android:pathData="M4.722,9.91c0.195 0.195 0.451 0.293 0.707 0.293 s0.512-0.098 0.707 -0.293c0.391-0.391 0.391 -1.023,0-1.414l-3.646-3.646c-0.651-0.651-0.651-1.71,0-2.361 0.651 -0.65,1.711-0.65,2.36,0l3.646,3.647c0.391 0.391 ,1.023 0.391 ,1.414,0s0.391-1.023,0-1.414l-3.646-3.647C4.832-0.355,2.505-0.355,1.075,1.074s-1.431,3.759,0,5.189l3.646,3.646Z" />
+    <path
+        android:fillColor="?android:attr/colorAccent"
+        android:pathData="M22.242,17.054l-2.955-2.956c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414l2.955,2.956c0.745 0.744 ,1.172,1.774,1.172,2.828v0.704h-0.703c-1.069,0-2.074-0.416-2.829-1.172l-2.956-2.955c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414l2.956,2.955c1.132,1.134,2.64,1.758,4.243,1.758h1.703c0.553,0,1-0.447,1-1v-1.704c0-1.58-0.641-3.127-1.758-4.242Z" />
+</vector>
