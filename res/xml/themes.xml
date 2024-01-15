@@ -35,4 +35,10 @@
         android:summary="@string/theme_customization_icon_shape_summary"
         android:fragment="org.candy.candyshop.fragments.IconShapes"/>     
 
+    <Preference
+        android:key="android.theme.customization.brightness_slider"
+        android:title="@string/theme_customization_brightness_slider_title"
+        android:summary="@string/theme_customization_brightness_slider_summary"
+        android:fragment="org.candy.candyshop.fragments.BrightnessSlider"/>
+
 </PreferenceScreen>
