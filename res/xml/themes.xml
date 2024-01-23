@@ -41,4 +41,10 @@
         android:summary="@string/theme_customization_brightness_slider_summary"
         android:fragment="org.candy.candyshop.fragments.BrightnessSlider"/>
 
+    <Preference
+        android:key="android.theme.customization.sb_data"
+        android:title="@string/theme_customization_data_title"
+        android:summary="@string/theme_customization_data_summary"
+        android:fragment="org.candy.candyshop.fragments.DataStyles"/>
+
 </PreferenceScreen>
