@@ -43,6 +43,7 @@
     <string name="themes_category">Themes</string>
     <string name="build_tweaks_summary_title">Sweetener</string>
     <string name="listview">ListView</string>
+    <string name="icons_category">Icon Options</string>
 
     <!-- App info dialog -->
     <string name="candyshop_dialog_title">Help us help you!</string>
@@ -94,4 +95,8 @@
     <!-- Custom Navigation bar -->
     <string name="theme_customization_navbar_title">Navbar style</string>
     <string name="theme_customization_navbar_summary">Set custom navigation bar style</string>
+
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">Show roaming indicator icon</string>
+    <string name="roaming_indicator_icon_summary">Display roaming indicator above signal icon when in roaming mode</string>
 </resources>
