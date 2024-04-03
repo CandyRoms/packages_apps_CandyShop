@@ -18,6 +18,13 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
-    
+
+    <Preference
+        android:key="network_traffic_state"
+        android:icon="@drawable/ic_settings_network_traffic"
+        android:title="@string/network_traffic_state_title"
+        android:summary="@string/network_traffic_state_summary"
+        android:fragment="org.candy.candyshop.fragments.NetworkTrafficSettings"
+        android:defaultValue="false" />    
 
 </PreferenceScreen>
