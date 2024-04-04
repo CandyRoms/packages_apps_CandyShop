@@ -132,4 +132,8 @@
     <string name="status_bar_am_pm_small">Small</string>
     <string name="status_bar_am_pm_title">Clock AM/PM style</string>
     <string name="status_bar_am_pm_unavailable">24-hour clock is enabled</string>
+
+    <!-- Lockscreen battery info indicator  -->
+   <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
+   <string name="lockscreen_battery_info_summary">Show charging current, voltage, wattage and battery temperature on lockscreen while charging</string>
 </resources>
