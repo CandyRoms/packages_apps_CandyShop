@@ -40,6 +40,18 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="general_category"
+	android:title="@string/general_category" >
+
+	<org.candy.candyshop.preferences.SystemSettingSwitchPreference
+            android:key="advanced_reboot"
+            android:title="@string/global_actions_advanced_reboot_title"
+            android:summary="@string/global_actions_advanced_reboot_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="volume_category"
 	android:title="@string/volume_category" >
 
