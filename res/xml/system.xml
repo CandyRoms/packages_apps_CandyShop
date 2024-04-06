@@ -49,6 +49,12 @@
             android:summary="@string/global_actions_advanced_reboot_summary"
             android:defaultValue="true" />
 
+	<org.candy.candyshop.preferences.SecureSettingSwitchPreference
+            android:key="window_ignore_secure"
+            android:title="@string/ignore_window_secure_title"
+            android:summary="@string/ignore_window_secure_summary"
+            android:defaultValue="false"/>
+
     </PreferenceCategory>
 
     <PreferenceCategory
