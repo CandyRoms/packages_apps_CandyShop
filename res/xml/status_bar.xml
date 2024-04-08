@@ -43,7 +43,13 @@
 	    android:summary="Clock settings"
 	    android:fragment="org.candy.candyshop.fragments.StatusBarClock"/>
 
-    </PreferenceCategory>
+	<Preference
+            android:key="sbbatteryicons"
+            android:title="@string/status_bar_battery_style_title"
+            android:summary="@string/status_bar_battery_style_summary"
+            android:fragment="org.candy.candyshop.fragments.BatteryStyleSettings" />
+
+   </PreferenceCategory>
 
     <PreferenceCategory
         android:title="@string/icons_category">
