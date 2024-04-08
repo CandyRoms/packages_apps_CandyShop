@@ -196,4 +196,31 @@
         <item>24</item>
         <item>25</item>
     </string-array>
+
+    <!-- charging symbol -->
+    <string-array name="custom_icon_charging_symbol_entries" translatable="false">
+        <item>@string/custom_symbol_charging_default</item>
+        <item>@string/custom_symbol_charging_type1</item>
+        <item>@string/custom_symbol_charging_type2</item>  
+        <item>@string/custom_symbol_charging_type3</item>
+        <item>@string/custom_symbol_charging_type4</item>
+        <item>@string/custom_symbol_charging_type5</item>     
+        <item>@string/custom_symbol_charging_type6</item>
+        <item>@string/custom_symbol_charging_type7</item>  
+        <item>@string/custom_symbol_charging_type8</item>
+        <item>@string/custom_symbol_charging_type9</item>         
+    </string-array>
+
+    <string-array name="custom_icon_charging_symbol_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>    
+        <item>3</item>
+        <item>4</item> 
+        <item>5</item>
+        <item>6</item>    
+        <item>7</item>
+        <item>8</item>  
+        <item>9</item>    
+    </string-array> 
 </resources>

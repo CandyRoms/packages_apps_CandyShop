@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023 Ancient OS
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="StatusBar Battery Icon Addon">
+
+    <org.candy.candyshop.preferences.SystemSettingListPreference
+        android:key="CUSTOM_CHARGE_SYMBOL"
+        android:defaultValue="0"
+        android:entries="@array/custom_icon_charging_symbol_entries"
+        android:entryValues="@array/custom_icon_charging_symbol_values"
+        android:title="@string/custom_icon_charging_symbol_title" />
+
+    <org.candy.candyshop.preferences.SystemSettingSwitchPreference
+        android:defaultValue="false"
+        android:key="custom_charging_icon_switch"
+        android:summary="@string/custom_battery_charging_icon_summary"
+        android:title="@string/custom_battery_charging_icon_title" />
+
+    <org.candy.candyshop.preferences.SystemSettingSeekBarPreference
+        android:defaultValue="0"
+        android:dependency="custom_charging_icon_switch"
+        android:key="custom_charging_icon_style"
+        android:max="20"
+        android:title="@string/custom_battery_charging_icon_style_title" />
+
+    <org.candy.candyshop.preferences.SystemSettingSeekBarPreference
+        android:defaultValue="1"
+        android:dependency="custom_charging_icon_switch"
+        android:key="custom_charging_icon_ml"
+        android:max="8"
+        android:title="@string/custom_battery_left"
+        android:min="-8"
+        settings:units="dp" />
+
+    <org.candy.candyshop.preferences.SystemSettingSeekBarPreference
+        android:defaultValue="0"
+        android:dependency="custom_charging_icon_switch"
+        android:key="custom_charging_icon_mr"
+        android:max="8"
+        android:title="@string/custom_battery_right"
+        android:min="-8"
+        settings:units="dp" />
+
+    <org.candy.candyshop.preferences.SystemSettingSeekBarPreference
+        android:defaultValue="15"
+        android:dependency="custom_charging_icon_switch"
+        android:key="custom_charging_icon_wh"
+        android:max="28"
+        android:title="@string/custom_battery_charging_icon_wh_title"
+        settings:units="dp" />
+
+    <PreferenceCategory android:title="@string/custom_battery_drawable_title">
+
+        <org.candy.candyshop.preferences.SystemSettingSwitchPreference
+            android:defaultValue="false"
+            android:key="evl_battery_scaled_perimeter_alpha"
+            android:summary="@string/custom_battery_scaled_perimeter_alpha_summary"
+            android:title="@string/custom_battery_scaled_perimeter_alpha_title" />
+
+        <org.candy.candyshop.preferences.SystemSettingSwitchPreference
+            android:defaultValue="false"
+            android:key="evl_battery_scaled_fill_alpha"
+            android:summary="@string/custom_battery_scaled_fill_alpha_summary"
+            android:title="@string/custom_battery_scaled_fill_alpha_title" />
+
+        <org.candy.candyshop.preferences.SystemSettingSwitchPreference
+            android:defaultValue="false"
+            android:key="evl_battery_custom_color"
+            android:summary="@string/custom_battery_color_summary"
+            android:title="@string/custom_battery_color_title" />
+
+        <org.candy.candyshop.colorpicker.ColorPickerPreference
+            android:summary="@string/sthumb_new_tint_picker_summary"
+            android:key="evl_battery_charging_color"
+            android:title="@string/custom_battery_charging_color_title"
+            android:dependency="evl_battery_custom_color"
+            android:defaultValue="0xff3ab74e" />
+
+        <org.candy.candyshop.colorpicker.ColorPickerPreference
+            android:summary="@string/sthumb_new_tint_picker_summary"
+            android:dependency="evl_battery_custom_color"
+            android:key="evl_battery_fill_color"
+            android:title="@string/custom_battery_fill_color_title"
+            android:defaultValue="0xffde57ce" />
+
+        <org.candy.candyshop.colorpicker.ColorPickerPreference
+            android:summary="@string/sthumb_new_tint_picker_summary"
+            android:dependency="evl_battery_custom_color"
+            android:key="evl_battery_fill_gradient_color"
+            android:title="@string/custom_battery_fill_grad_color_title"
+            android:defaultValue="0xff000000" />
+
+        <org.candy.candyshop.colorpicker.ColorPickerPreference
+            android:summary="@string/sthumb_new_tint_picker_summary"
+            android:dependency="evl_battery_custom_color"
+            android:key="evl_battery_powersave_color"
+            android:title="@string/custom_battery_powersave_color_title"
+            android:defaultValue="0xffff5722" />
+
+        <org.candy.candyshop.colorpicker.ColorPickerPreference
+            android:summary="@string/sthumb_new_tint_picker_summary"
+            android:dependency="evl_battery_custom_color"
+            android:key="evl_battery_powersavefill_color"
+            android:title="@string/custom_battery_powersave_fill_color_title"
+            android:defaultValue="0xfffdd015" />
+
+        <org.candy.candyshop.preferences.SystemSettingSwitchPreference
+            android:defaultValue="false"
+            android:key="evl_battery_rainbow_fill_color"
+            android:summary="@string/custom_battery_rainbow_fill_summary"
+            android:title="@string/custom_battery_rainbow_fill_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/custom_battery_layout_title">
+
+        <org.candy.candyshop.preferences.SystemSettingSwitchPreference
+            android:defaultValue="false"
+            android:key="evl_battery_image_rotation"
+            android:summary="@string/custom_battery_rotation_title"
+            android:title="@string/custom_battery_rotation_title" />
+
+        <org.candy.candyshop.preferences.SystemSettingSwitchPreference
+            android:key="FLIPLAYOUTBATRE"
+            android:title="Flip The Battery"
+            android:summary="to take to left the battery percentage "
+            android:defaultValue="0" />
+
+        <org.candy.candyshop.preferences.SystemSettingSwitchPreference
+            android:defaultValue="false"
+            android:key="evl_battery_custom_dimension"
+            android:summary="@string/custom_battery_dimension_summary"
+            android:title="@string/custom_battery_dimension_title" />
+
+        <org.candy.candyshop.preferences.SystemSettingSeekBarPreference
+            android:defaultValue="0"
+            android:dependency="evl_battery_custom_dimension"
+            android:key="evl_battery_custom_margin_left"
+            android:max="20"
+            android:title="@string/custom_battery_left"
+            android:min="-20"
+            settings:units="dp" />
+
+        <org.candy.candyshop.preferences.SystemSettingSeekBarPreference
+            android:defaultValue="0"
+            android:dependency="evl_battery_custom_dimension"
+            android:key="evl_battery_custom_margin_right"
+            android:max="20"
+            android:title="@string/custom_battery_right"
+            android:min="-20"
+            settings:units="dp" />
+
+        <org.candy.candyshop.preferences.SystemSettingSeekBarPreference
+            android:defaultValue="0"
+            android:dependency="evl_battery_custom_dimension"
+            android:key="evl_battery_custom_margin_top"
+            android:max="15"
+            android:title="@string/custom_battery_top"
+            settings:units="dp" />
+
+        <org.candy.candyshop.preferences.SystemSettingSeekBarPreference
+            android:defaultValue="0"
+            android:dependency="evl_battery_custom_dimension"
+            android:key="evl_battery_custom_margin_bottom"
+            android:max="15"
+            android:title="@string/custom_battery_bottom"
+            settings:units="dp" />
+
+        <org.candy.candyshop.preferences.SystemSettingSeekBarPreference
+            android:defaultValue="20"
+            android:dependency="evl_battery_custom_dimension"
+            android:key="evl_battery_custom_scale_height"
+            android:max="50"
+            android:title="@string/custom_battery_height"
+            settings:units="dp" />
+
+        <org.candy.candyshop.preferences.SystemSettingSeekBarPreference
+            android:defaultValue="28"
+            android:dependency="evl_battery_custom_dimension"
+            android:key="evl_battery_custom_scale_width"
+            android:max="50"
+            android:title="@string/custom_battery_width"
+            settings:units="dp" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
