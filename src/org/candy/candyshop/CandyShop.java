@@ -16,18 +16,12 @@
 
 package org.candy.candyshop;
 
-import android.app.ActionBar;
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.ContentResolver;
-import android.content.Context;
 import android.content.DialogInterface;
-import android.content.SharedPreferences;
 import android.content.res.Resources;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.SystemProperties;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -36,16 +30,13 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Toast;
 
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.preference.Preference;
-import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.viewpager.widget.ViewPager;
 
 import com.android.internal.logging.nano.MetricsProto;
@@ -65,7 +56,7 @@ import org.candy.candyshop.navigation.BubbleNavigationChangeListener;
 public class CandyShop extends SettingsPreferenceFragment implements
        Preference.OnPreferenceChangeListener {
 
-    private static final int MENU_HELP  = 0;
+    private static final int MENU_HELP = 0;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -74,25 +65,17 @@ public class CandyShop extends SettingsPreferenceFragment implements
 
         View view = inflater.inflate(R.layout.layout_candyshop, container, false);
 
-        BubbleNavigationConstraintView bubbleNavigationConstraintView =  (BubbleNavigationConstraintView) view.findViewById(R.id.floating_top_bar_navigation);
+        BubbleNavigationConstraintView bubbleNavigationConstraintView = (BubbleNavigationConstraintView) view.findViewById(R.id.floating_top_bar_navigation);
         ViewPager viewPager = view.findViewById(R.id.viewpager);
-        PagerAdapter mPagerAdapter = new PagerAdapter(getFragmentManager());
+        PagerAdapter mPagerAdapter = new PagerAdapter(getChildFragmentManager());
         viewPager.setAdapter(mPagerAdapter);
+
+        viewPager.setOffscreenPageLimit(4); // Set the offscreen page limit
 
         bubbleNavigationConstraintView.setNavigationChangeListener(new BubbleNavigationChangeListener() {
             @Override
             public void onNavigationChanged(View view, int position) {
-                if (view.getId() == R.id.status_bar_category) {
-                    viewPager.setCurrentItem(position, true);
-                } else if (view.getId() == R.id.notifications_panel_category) {
-                    viewPager.setCurrentItem(position, true);
-                } else if (view.getId() == R.id.lockscreen_category) {
-                    viewPager.setCurrentItem(position, true);
-                } else if (view.getId() == R.id.system_category) {
-                    viewPager.setCurrentItem(position, true);
-                } else if (view.getId() == R.id.themes_category) {
-                    viewPager.setCurrentItem(position, true);
-                }
+                viewPager.setCurrentItem(position, true);
             }
         });
 
@@ -116,16 +99,16 @@ public class CandyShop extends SettingsPreferenceFragment implements
         return view;
     }
 
-    class PagerAdapter extends FragmentPagerAdapter {
+    class PagerAdapter extends FragmentStatePagerAdapter {
 
         String titles[] = getTitles();
         private Fragment frags[] = new Fragment[titles.length];
 
         PagerAdapter(FragmentManager fm) {
             super(fm);
-	    frags[0] = new Themes();
+            frags[0] = new Themes();
             frags[1] = new StatusBar();
-	    frags[2] = new NotificationsPanel();
+            frags[2] = new NotificationsPanel();
             frags[3] = new Lockscreen();
             frags[4] = new System();
         }
@@ -147,15 +130,13 @@ public class CandyShop extends SettingsPreferenceFragment implements
     }
 
     private String[] getTitles() {
-        String titleString[];
-        titleString = new String[]{
-	    getString(R.string.themes_category),
-            getString(R.string.status_bar_category),
-	    getString(R.string.notifications_panel_category),
-            getString(R.string.lockscreen_category),
-            getString(R.string.system_category)};
-
-        return titleString;
+        return new String[]{
+                getString(R.string.themes_category),
+                getString(R.string.status_bar_category),
+                getString(R.string.notifications_panel_category),
+                getString(R.string.lockscreen_category),
+                getString(R.string.system_category)
+        };
     }
 
     @Override
@@ -251,4 +232,3 @@ public class CandyShop extends SettingsPreferenceFragment implements
         }
     }
 }
-
